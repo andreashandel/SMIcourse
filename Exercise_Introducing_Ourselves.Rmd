@@ -1,0 +1,65 @@
+---
+title: IDEMA Fall 2020 - Introducing Ourselves 
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+# Overview
+
+The goal of this exercise is to get to know your classmates. You have several ways you can do so, described here.
+
+
+# Content
+
+No matter how you deliver your introduction (see below), it should have at the minimum the following bits of information:
+
+* Talk a bit about yourself, your background, training, research interests. 
+* I'd be curious to know the main reason you signed up for this course an what you most hope to learn in this course. 
+* Mention (at least) one interesting personal fact about you.
+* Include a picture of yourself, either in your post or as a link. 
+* Finally, include a link to a picture/video/website/etc. that has to do with an infectious disease topic that you find cool/interesting/weird/etc. Provide a few explanatory sentences.
+
+
+# Delivery
+
+You can make and deliver the introduction in multiple ways, as follows. No matter what method you choose, post a message into the `introductions` Slack channel so people can find your introduction.
+
+
+## The lazy way
+
+Answer the questions above and send it all as a post straight to the `introductions` Slack channel.
+
+
+## The multimedia way
+
+Record a video of yourself talking about the topics mentioned above, and post the video or a link to it to the Slack channel.
+
+
+## The geeky way
+
+Create a quick website by following the workflow of the introduction exrecise from my Modern Applied Data Analysis class, [described here.]() This requires the use of Github. Note that for our class, there is no Github organization. Instead, create the repository in your own Github account. Everything else should work the same. 
+
+
+## The inventive way
+
+Find another way to produce an introduction of yourself and share it with the class.
+
+
+# Interact
+
+Please freely respond to the introductions posted by your classmates, using Slack.
+
+# Make Slack personal
+
+Instead of seeing an empty cutout of a person, it's much nicer if your Slack persona features your picture. To that end, in Slack click on your name, go to 'edit profile' and upload an image of yourself. Further adjust your profile as suitable. Note that this only applies to our class workspace. If you use other Slack workspaces, your profile on those won't be affected.
+
+
+
+_You need to have your introduction posted by the final date of the module (see syllabus). I encourage you to do it sooner, so we can get to know each other quickly!_
+

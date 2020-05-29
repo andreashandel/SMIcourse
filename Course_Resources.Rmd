@@ -1,0 +1,60 @@
+---
+title: IDEMA Course Resources
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+```{r, echo = FALSE}
+#just so I can use emoticons
+#devtools::install_github("hadley/emo")
+library(emo)
+```
+
+This page lists resources that are used or mentioned in this course. For a more extensive list of resources, see the _General Resources_ page.
+
+All materials described below are (should be) freely available online. If you can't get to them, let me know. Note that a lot of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If you notice anything that's not quite right, please let me know.
+
+# General help
+
+* The main place to get any course specific help are the various Slack channels in our class workspace. Use them widely to ask questions, to answer others' questions, to post links to interesting resources, etc. 
+* There will very likely be times when some material in the course doesn't quite make sense and you need to do some auxiliary reading. Google will be your best friend. Wikipedia is often a very good starting point for many topics. 
+
+
+
+# Books
+
+* [Infectious Disease Epidemiology - a Model-based Approach (IDEMAB)](https://andreashandel.github.io/IDEMAbook/). This is the book that goes with the class, it's basically an extended version of my previous lecture notes. 
+
+
+# Online courses
+* [Epidemics]().
+
+
+
+# Hands-on/interactive resources
+
+* [Dynamical Systems Approach to Infectious Disease Epidemiology (DSAIDE)](https://ahgroup.github.io/DSAIDE/). The R package for the course which lets you do hands-on explorations of the different topics we will cover.
+
+
+# Quiz sheets
+These are links to the Excel files which contain the questions for a given module. Download them, fill in the "Answer" column, and submit [to this website](https://shiny.ovpr.uga.edu/gradingapp/).
+
+__Please do not make any other changes to the sheets apart from filling the "Answer" column. If you do make changes, submission might fail. If that happens and you get an error message, simply come back here, download a fresh sheet and copy and paste your answers into it, making sure to not change any other part of the sheet.__
+
+
+## Module 1
+* [Module 1 Quiz (M1Q)]()
+
+## Module 2
+* [Module 2 DSAIDE (Basic SIR Model)]()
+* [Module 2 Theory (M2T)]()
+
+
+
+

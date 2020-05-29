@@ -1,0 +1,43 @@
+---
+title: Course Communications
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc: FALSE
+---
+
+
+
+```{r, echo = FALSE}
+#just so I can use emoticons
+#devtools::install_github("hadley/emo")
+library(emo)
+```
+
+# Asynchronous communication
+
+The main mode of communication will be through Slack. You should have gotten an email invite to the Slack workspace for this class.
+
+If you are unfamiliar with Slack, it is essentially a chat/discussion tool. Within the workspace for this class, you will find different channels. That's Slack name for a discussion forum. The names and descriptions of the different channels should be self-explanatory. You can also use Slack to send one or more individuals direct messages. 
+I will use Slack to post any course related announcements. Check regularly. They will all be in the announcement channel.
+
+Use the Slack channels widely to ask questions, to answer others' questions, to notify me and others of things that are unclear/wrong, to post links to interesting resources, etc. I hope we can use Slack  to build a _community of learners_ where you help and support each other. So please don't always wait for me to answer questions or provide feedback! Engage with each other. I will regularly visit and read the discussions and participate, but I hope that I will end up as one participant of many, not the only person providing answers.
+
+I prefer that you use Slack instead of email to ask questions. The reason is that if you have a question, it is likely that others have it too. By asking and answering online, everyone can see it. That said, there might be instances where the question only relates to you. In such cases, feel free to either send me a direct message on Slack or email me. 
+
+
+# Synchronous communication
+
+The current plan is to have some synchronous meetings through Zoom. Those are **completely optional.** Once a week I will start a Zoom meeting. Whoever wants to join can do so, and we will use the meeting for discussions, answering questions, and whatever else you want to talk about. Think of those meetings a bit like virtual office hours or virtual in-class discussions. To ensure everyone will be able to join at least occasionally, I plan to alternate between two times each week. 
+
+Tentative dates for Zoom meetings are listed in the _Schedule_ document. Those are subject to change. If we need to move things around, I'll let you know on Slack and also update the _Schedule_ document. At the designated times, I will start the meeting. I'll wait around for 15 minutes. If nobody connects, I'll end the meeting. If people connect, we'll talk until we covered everything, or until I or you need to move on to our next appointments.
+
+I have not tried using Zoom in this way for an online class previously. So this is an experiment, depending on how things go we need to change things.
+
+And of course, if you have something you want to discuss outside of those scheduled times, send me a message and we can schedule a specific meeting.
+
+

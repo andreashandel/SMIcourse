@@ -1,0 +1,98 @@
+---
+title: Infectious Disease Epidemiology - A model-based approach (IDEMA) – Syllabus
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+## Course Information
+
+* Instructor: Andreas Handel
+* Office Location: 124 B.S. Miller Hall, Health Sciences Campus
+* Email: ahandel@uga.edu
+* Office Hours:  by appointment/online
+* Course Meeting Time and Location: online
+
+## Textbook and Other Course Material
+
+There is no required textbook. We will make use of several freely available resources. All course materials will be provided. We will use the R software , which is freely available for download. 
+
+## Course Description
+
+This course provides an introduction to infectious disease epidemiology using a model-based approach. You do not have to (but could) build models or write computer code as part of this course. However, we will use simulation models to understand the dynamics of transmission and spread of infectious diseases.  
+
+
+## Course Learning Objectives
+
+
+The specific learning objectives that I hope you will achieve by going through this course are:
+
+* Explain and compute important epidemiological measures, such as reproductive number and level of herd immunity
+
+* Appraise the fundamentally causal nature of mechanistic infectious disease (ID) computer models and master the use of such models to address important ID epidemiology research questions
+
+* Interpret the meaning of specific dynamic patterns seen in ID incidence and prevalence
+
+*	Choose optimal ID intervention strategies based on features of specific IDs
+
+*	Predict the impact of different ID intervention strategies
+
+*	Critically evaluate the ID epidemiology literature
+
+*	Compare and assess the strengths and weaknesses of different ID data collection and analysis approaches
+
+*	Formulate meaningful ID epidemiology research questions of public health importance 
+
+*	Select the appropriate data collection and analysis approach for a specific ID research question
+
+*	Explain the importance of system dynamical thinking for the study and control of ID
+
+
+## Grading
+
+Please see the _Course Introduction_ document for details regarding grading.
+
+
+## Class Attendance, Make-up Policy
+
+This class is online. You are expected to submit all assignments by their due dates. Excused misses of due dates are only provided by prior agreement with the instructor or for special reasons (e.g. medical emergency).
+
+
+## Prerequisites
+
+This is a quantitative course. We will not go deep into the mathematical details of infectious disease models, you will not need to build models or write computer code. However some statistical background and being comfortable with quantitative thinking are useful. 
+_Formal requirement for the course is BIOS 7010. Knowledge of material from BIOS 7010 is assumed. If you didn't take this course, please contact me to get permission to enroll._
+
+
+## Getting Help
+
+If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the _Communications_ section for more details.
+
+
+## University Honor Code and Academic Honesty Policy
+
+All academic work must meet the standards contained in _A Culture of Honesty_. All students are responsible to inform themselves about those standards before performing any academic work. More detailed information about academic honesty can be found at: http://www.uga.edu/honesty/
+
+Discussions with your classmates and the instructor are encouraged. However, the final work should be your own.
+
+
+## Students with Disabilities
+
+Students with disabilities who require reasonable accommodations in order to participate in course activities or meet course requirements should contact the instructor.
+
+## General Disclaimers
+
+This syllabus is a general plan, deviations announced to the class by the instructor may be necessary.
+
+## Course Outline
+
+For an outline of the course, please see the course schedule document. 
+
+## More Details
+
+The introductory unit of this course contains all the logistic details you need to know.
