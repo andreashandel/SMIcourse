@@ -31,24 +31,25 @@ The majority of the content is listed under the __Modules__ heading. Each module
 
 Instructions for specific exercises are listed in the __Exercises__ section. You will be told when you should access those documents and do the exercises. Of course, reading ahead is allowed `r emo::ji('smiley')`.
 
-The course includes a semester-long project. Instructions and detailed information for this are given in the __Project__ section.
+You have the opportunity to do an optional project. Instructions and detailed information for this are given in the __Project__ section.
 
 The __Communication__ section provides information on how course communications are planned to happen.
 
-The __Resources__ section contains a listing of external materials. Some of this material will be assigned as part of this course. You will be told what exactly to read or work through in the modules documents. Other resources are listed in case you might find them helpful. All materials are (should be) available freely online, unless otherwise stated.
+The __Resources__ section contains a listing of external materials. The _Course Resources_ page lists materials we will be using in the course. The _General Resources_ page lists additional materials that are relevant to the course topic and might be of interest.
 
 Note that by default, all links open in the current tab. You'll likely want external ones to open in a separate tab or window. To do so, you can (with most browsers) hold the `Ctrl` button when clicking, or do a right-click and select `open in new tab/window`.
 
 
 # Getting started
 
-I suggest you start by looking over the __Syllabus__ and __Schedule__ documents, then __Communication__ and __Resources__. After that, start with the __Module 1__ content in the given order. You can read through the _Project_ section to get an idea of what's coming.
+I suggest you start by looking over the __Syllabus__ and __Schedule__ documents, then __Communication__ and __Resources__. After that, start with the __Module 1__ content in the given order. 
 
 ## Acknowledgements
 
 This course was developed and is maintained by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html).
 
-```{r, results = "asis", echo = FALSE, message = FALSE}
+```{r, results = "asis", echo = FALSE, message = FALSE, include=FALSE, eval=FALSE}
+# set include and eval to TRUE if I want to turn that on
 #the following code snipped is taken from Hadley's R4DS intro page
 library(dplyr)
 contributors <- readr::read_csv("contributors.csv", col_types = list())
