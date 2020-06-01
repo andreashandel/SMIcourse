@@ -1,5 +1,5 @@
 ---
-title: IDEMA Course Resources
+title: SMI Course Resources
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -16,7 +16,7 @@ output:
 library(emo)
 ```
 
-This page lists resources that are used or mentioned in this course. For a more extensive list of resources, see the _General Resources_ page.
+This page lists resources that are explicitly used or mentioned in this course. For a more extensive list of resources, see the _General Resources_ page.
 
 All materials described below are (should be) freely available online. If you can't get to them, let me know. Note that a lot of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If you notice anything that's not quite right, please let me know.
 
@@ -27,7 +27,7 @@ All materials described below are (should be) freely available online. If you ca
 
 
 
-# Books
+# Reading
 
 * [Infectious Disease Epidemiology - a Model-based Approach (IDEMAB)](https://andreashandel.github.io/IDEMAbook/). This is the book that goes with the class, it's basically an extended version of my previous lecture notes. 
 
