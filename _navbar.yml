@@ -24,12 +24,18 @@ left:
             href: ./1d_Further_Tools.html
           - text: "1e. Exercises"
             href: ./1e_Exercises.html
-      - text: "2. Topic Introduction"
+      - text: "2. Introduction to Simulation Modeling"
         menu:
-          - text: "2a. Topic introduction"
-            href: ./2a_Topic_Introduction.html
-          - text: "2b. Assessment"
-            href: ./2b_Assessment.html
+          - text: "2a. Introduction to Simulation Modeling"
+            href: ./2a_SMI_Introduction.html
+          - text: "2b. Exercises"
+            href: ./2b_Exercises.html
+      - text: "3. Introduction to Immunology"
+        menu:
+          - text: "3a. Introduction to Immunology"
+            href: ./3a_Immunology_Introduction.html
+          - text: "3b. Exercises"
+            href: ./3b_Exercises.html
   - text: "Project"
     href: ./Project_Information.html
   - text: "Communication"

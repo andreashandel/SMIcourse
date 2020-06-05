@@ -45,7 +45,7 @@ Note that by default, all links open in the current tab. You'll likely want exte
 
 # Getting started
 
-I suggest you start by looking over the __Syllabus__ and __Schedule__ documents, then __Communication__ and __Resources__. After that, start with the __Module 1__ content in the given order. 
+Start by looking over the __Syllabus__ and __Schedule__ documents, then __Communication__ and __Resources__. After that, start with the __Module 1__ content in the given order. 
 
 ## Acknowledgements
 

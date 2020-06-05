@@ -2,10 +2,10 @@ name: "IDEMA Course"
 output_dir: 'docs'
 output:
   html_document:
-    theme: cerulean
-    highlight: zenburn
+    theme: spacelab
+    highlight: espresso
     toc: true
     toc_depth: 2
     toc_float: 
       collapsed: false
-    css: IDEMAstyle.css
+    css: SMIstyle.css
