@@ -14,22 +14,25 @@ library(emo)
 **This website is under construction. As long as you see this message, expect things to not really work `r emo::ji('smiley')`.**
 
 
-Welcome to the website for the **Simulation Modeling in Immunology.** 
+Welcome to the website **Simulation Modeling in Immunology (SMI).** 
 
-This website contains content for the 2020 online course "Infectious Diseases, Immunology and Within-Host Models", which is a Module of the (SISMID).
+This website is the main resource for the course/module called [Infectious Diseases, Immunology and Within-Host Models](https://www.biostat.washington.edu/suminst/sismid2020/modules/MD2010), 
+which is a course of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://www.biostat.washington.edu/suminst/sismid). The course is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html). 
 
-The module is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html). Most materials are hosted here, some are on external sites and either linked or embedded from here.
+This website is your landing page for all course related information. We plan to keep this website continuously online, with updates happening every time we teach the course again - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
 
-We plan to keep this website continuously online, with updates happening every time we teach the course again - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
+
+# Notes
+
+We hope this is not too confusing, but we call every unit in our course a _Module_. So this course is a SISMID module, but in our terminology, we call this whole "thing" the _course_ or _class_, and use _module_ for individual segments, which are further divided into _units_.
 
 
 # Website content
 
 The __General Information__ section provides a  __Syllabus__ and a __Schedule__. 
 
-The majority of the content is listed under the __Modules__ heading. Each module has several units in a drop-down/pop-out menu. Go through them in the listed order.
 
-Instructions for specific exercises are listed in the __Exercises__ section. You will be told when you should access those documents and do the exercises. Of course, reading ahead is allowed `r emo::ji('smiley')`.
+The majority of the content is listed under the __Modules__ heading. Each module has several units in a drop-down/pop-out menu. Go through them in the listed order.
 
 You have the opportunity to do an optional project. Instructions and detailed information for this are given in the __Project__ section.
 

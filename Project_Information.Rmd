@@ -1,5 +1,5 @@
 ---
-title: IDEMA Course Project Information 
+title: SMI Course Project Information 
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -12,58 +12,42 @@ output:
 
 # Overview
 
-This document contains the information you need to get started on the class project. If you still have questions after going through this document, post them in the 'Class Project' discussion area. Also, use that discussion board for anything related to the project.
-
-
-# Timeline
-There are several deadlines throughout the course at which time you need to submit parts of your project
-
-* Part 1: Have a project idea. You need to have picked a topic and written a short plan/proposal describing your topic, project, approach and expected outcomes. 
-* Part 2: Part 1 + background. 
-* Part 3: Part 2 + preliminary results. You need to submit the first draft of your project. You don't need to have everything done by that time, but the main outline of your report and deliverables need to be there and filled with whatever you have done up to that point. 
-* Part 4: Complete project, ready for peer review.
-* Part 5: Complete project, updated based on reviewer feedback, ready for final assessment.
-
-The deadlines are listed in the _Schedule_ document (it's unlikely, but they might change, so keep checking that document).
-
-
-# Project Requirements
-
-Broadly speaking, any substantial project that falls within the overall infectious disease topic covered in this course is acceptable as the class project. Your project should have a model/systems perspective. You are welcome to come up with your own project idea. The final product must at least involve a written report of some form. Beyond that, you can pursue other venues (videos, games, etc.). 
+This document contains suggestions for a possible, completely optional class project. If you have any questions related to a potential project, use the _courseproject_ channel on Slack.
 
 
 # Project Ideas
-The following are some ideas for projects/products I was able to come up with. You don't have to pick any of these ideas/topics. They are mainly meant to get you thinking about suitable types of projects: 
 
-* Pick some ID topic and come up with a concept for a TED Ed lesson (http://ed.ted.com/). Check out the ID examples on the TED webpage for ideas, e.g. this one: https://goo.gl/TBbGMr . Produce a concept book/script/detailed outline of your lesson. Also, design a quiz and a 'further resources' page (the 'think' and 'dig deeper' sections of a TED Ed lesson). If you feel up to it, take a stab at recording a draft of your video.   
-* Use http://usnewsmap.com/ to look at the spread of the term/word 'influenza' (and related terms) during the 1918 pandemic, then look at the spread of information (i.e. the word influenza and related) during 2009 using Google or other sources. Compare that with actual incidence data for those 2 outbreaks. It would be interesting to see if the pace of either information dissemination or the disease spread itself differed. 
-* Use Google trends (https://trends.google.com) to investigate an interesting ID question. E.g. you could look at patterns of one (or multiple) ID and how they might correlate with other search terms (e.g. related to weather), or you could look at patterns in different locations or. Yo can choose any interesting ID question you could come up with. For further ideas, take a look at the published literature, others have used google trends before to look at ID questions. 
-* Use some of the data available from project Tycho (https://www.tycho.pitt.edu/) to investigate an interesting ID question. Questions could be similar to that for google trends. You can pull in other data (e.g. historical weather records, or historical natural births/deaths) and combine with the Tycho data. For further ideas, take a look at the published literature, others have used Tycho data before to look at ID questions.
-* Use one of the apps in the DSAIDE package - potentially supplemented with some of your own code - to answer an interesting question related to a specific ID. Pick an ID, describe what you plan on analyzing, use the appropriate DSAIDE app (either through the graphical interface or the "Level 2/3 approach") to answer your question. The research question should be realistic in scope, interesting, and one that hasn't been asked before.
-* Pick an ID topic (that we did or did not cover in class) for which there is currently no DSAIDE app. Create a new app for DSAIDE that allows users to explore the topic. App development requires at least intermediate R coding skills. If you plan on doing this, I will help you get started and give you further details on how this is best done. 
-* Pick some ID topic and come up with an idea for a simple (online) game illustrating the topic. (For inspiration, check out http://vaxpackhero.com and http://vax.herokuapp.com/ - 2 games we'll be playing later on in the course). Write a report that describes in detail your game idea. Specifically the ID, topic, how it could be implemented, and how game play would work. It should be a document one could give to a software/app developer who would then build the game. If you feel bold and have the necessary coding skills, you are welcome to try and develop the game (or at least a prototype). That can be written in a programming language of your choice - it doesn't have to be R.
+You might already have a specific question or system you are interested in modeling, or maybe in this course you got some ideas. If you are new to modeling, it might be difficult to decide what questions simulations models are good for. Some thoughts on this can be found [in this review paper we recently wrote](http://handelgroup.uga.edu/publication/2019-handel-natrevimm/). We discuss 3 major model uses, namely _Exploration_, _Prediction_ and _Fitting_.
+
+Given the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not too suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest focusing on doing an _Exploration_ project.  
 
 
-Some of the ideas listed above could potentially lead to products that go beyond the class project (e.g. a published paper, a published Ted Ed lesson, an actual game). Getting to that stage is not required for the class, but if you are motivated to pursue it, I'm happy to provide help beyond the class.
+
+
+
+# Project Implementation
+
+Here are some general pointers on how you could go about doing a project, depending on your comfort level writing models and code. There are obviously trade-offs among those approaches. The easier ones (no model building, no coding) are less flexible, the more flexible ones require more coding. Pick the one that works well for your skill and interest level.
+
+* **Requires no model building and no coding:** Use one of the apps included in DSAIRM, choose parameter values that correspond to the system you are trying to model, then explore the model through the graphical user interface.
+
+* **Requires no model building and a little bit of coding:** Use one of the apps included in DSAIRM. Instead of accessing it through the graphical interface, write a few lines of code that call the simulator functions. See level 2 description in the [DSAIRM tutorial.](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html) 
+
+* **Requires model building but no coding:** Use the [modelbuilder](https://ahgroup.github.io/modelbuilder/) R package to build your own model and explore it graphically. Note that _modelbuilder_ is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know in the _modelbuilder_ slack channel.
+
+* **Requires some model building and a coding:** Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the [DSAIRM tutorial.](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html) 
+
+* **Requires some model building and a coding:** the [modelbuilder](https://ahgroup.github.io/modelbuilder/) R package to build your own model. Export the model code from _modelbuilder_, edit further and run the code to answer your question. 
+
+
 
 # Project Logistics
-You'll be doing the project as teams of 3. I will post the teams to the Slack channel.
+Since this is completely optional, it's really up to you how to structure your project. You can just play around, you can try to write a formal report/paper, etc. For any questions, feedback, etc., use the Slack channel. 
 
-Before/by each of the deadlines for the different project parts (for dates, see the _Schedule_ document), submit your results or a link to your results to the 'Class Project' Slack channel. 
+Given the shortness of time, it's probably tricky to try to team up with others and do a project as a group, but you are certainly welcome to try and do so.
 
-Your report should look and read like a nicely formatted research paper or technical report. Include references as usual. Figures and tables should be included at the appropriate places inside the text (not at the end). Look at regular published papers/reports to see examples of formatting. Any additional deliverables (e.g. software, videos, etc.) should be supplied as supplementary files. 
+If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project.
 
-
-# Feedback and Assessment
-You will receive feedback from me and/or your classmates after each submission. 
-
-* I will provide feedback on parts 1-3. 
-* Your classmates will provide peer-review feedback on part 4. Details on that will be provided in a separate document, posted to the _Project_ section of the website.
-* Part 5 is the final submission. 
-
-I will assess parts 1-3, mainly checking to see that you deliver what you were supposed to and got the project to the requested stage. I will also assess your _peer reviews_ for part 4. Those portions are about 25% of the _project grade._ The final submission will count for the remaining 75%. 
-
-**More details on what exactly is expected and how it is assessed is provided in the _Project Rubric_ document.**
 
 # Project communications 
-Any general communication and asking of questions regarding this project should happen in the _Class Project_ channel. Go there to ask project-specific questions, to post links to your documents whenever you have a part finished, etc. I will also post any further or clarifying information there. Of course, beyond that you are welcome to communicate with your project group members in any other way you like.
+Any general communication and asking of questions regarding this project should happen in the _courseproject_ channel. Of course, if you decide to work with others on a project, you are welcome to communicate with your project group members in any other way you like.

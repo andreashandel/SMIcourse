@@ -336,7 +336,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">IDEMA Course</a>
+      <a class="navbar-brand" href="index.html">SMI Course</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -369,19 +369,16 @@ div.tocify {
           <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
         </li>
         <li>
-          <a href="./1b_Teaching_and_Learning.html">1b. Teaching and Learning thoughts</a>
+          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_R_and_RStudio.html">1c. R and Rstudio</a>
+          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_DSAIDE.html">1d. DSAIDE</a>
+          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
         </li>
         <li>
-          <a href="./1e_Further_Tools.html">1e. Further Tools</a>
-        </li>
-        <li>
-          <a href="./1f_Assessment.html">1f. Assessment</a>
+          <a href="./1e_Exercises.html">1e. Exercises</a>
         </li>
       </ul>
     </li>
@@ -400,18 +397,6 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Exercises
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Exercise_Introducing_Ourselves.html">Introducing ourselves</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Project
      
     <span class="caret"></span>
@@ -419,12 +404,6 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="./Project_Information.html">Project information</a>
-    </li>
-    <li>
-      <a href="./Project_Rubric.html">Project rubric</a>
-    </li>
-    <li>
-      <a href="./Project_Review.html">Project review</a>
     </li>
   </ul>
 </li>
@@ -452,7 +431,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/andreashandel/IDEMAcourse">
+  <a href="https://github.com/andreashandel/SMIcourse">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -468,7 +447,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">General Infectious Disease Epidemiology and Modeling Resources</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-05-28 20:30:01</h4>
+<h4 class="date">2020-06-05 11:08:02</h4>
 
 </div>
 
@@ -564,7 +543,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

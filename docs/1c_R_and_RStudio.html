@@ -30,9 +30,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -42,14 +42,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -59,7 +61,7 @@ pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   { color: #cccccc; background-color: #303030; }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ffcfaf; } /* Alert */
 code span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
@@ -426,7 +428,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">IDEMA Course</a>
+      <a class="navbar-brand" href="index.html">SMI Course</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -459,19 +461,16 @@ div.tocify {
           <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
         </li>
         <li>
-          <a href="./1b_Teaching_and_Learning.html">1b. Teaching and Learning thoughts</a>
+          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_R_and_RStudio.html">1c. R and Rstudio</a>
+          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_DSAIDE.html">1d. DSAIDE</a>
+          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
         </li>
         <li>
-          <a href="./1e_Further_Tools.html">1e. Further Tools</a>
-        </li>
-        <li>
-          <a href="./1f_Assessment.html">1f. Assessment</a>
+          <a href="./1e_Exercises.html">1e. Exercises</a>
         </li>
       </ul>
     </li>
@@ -490,18 +489,6 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Exercises
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Exercise_Introducing_Ourselves.html">Introducing ourselves</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Project
      
     <span class="caret"></span>
@@ -509,12 +496,6 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="./Project_Information.html">Project information</a>
-    </li>
-    <li>
-      <a href="./Project_Rubric.html">Project rubric</a>
-    </li>
-    <li>
-      <a href="./Project_Review.html">Project review</a>
     </li>
   </ul>
 </li>
@@ -542,7 +523,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/andreashandel/IDEMAcourse">
+  <a href="https://github.com/andreashandel/SMIcourse">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -558,7 +539,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">R and RStudio</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-05-28 20:30:01</h4>
+<h4 class="date">2020-06-05 11:08:01</h4>
 
 </div>
 
@@ -611,13 +592,13 @@ Installing an R package. Right-click on the image to enlarge it.
 </p>
 </div>
 <p>Try installing a package yourself. Open RStudio. Then go to the R prompt (the <code>&gt;</code> symbol) in the lower-left corner and type</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">install.packages</span>(<span class="st">&#39;DSAIDE&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;DSAIDE&#39;</span>)</span></code></pre></div>
 <p><strong>Question: As you installed the DSAIDE package, which of these packages was also installed: GillespieSSA, adaptivetau, gpDDE, irace? Record the answer. It will likely show up in the quiz.</strong></p>
 <p><em>It is unlikely, but it could be that you already have all packages required by DSAIDE installed. In that case, you won’t see any other packages installed. To see which of the packages above DSAIDE needs (and thus installs if it is not present), type <code>tools::package_dependencies("DSAIDE")</code> into the R console.</em></p>
 <p>In RStudio, you can also install (and update/remove) packages by clicking on the ‘Packages’ tab in the bottom right window.</p>
 <p>It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it’s good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the <code>remotes</code> package and then use the <code>install_github</code> function. We won’t do that now, but it’s quite likely that at one point later in this course we will.</p>
 <p>You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the <code>library()</code> command (an alternative is <code>require()</code> but I recommend <code>library()</code>). For instance to load the <code>DSAIDE</code> package, type</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">library</span>(<span class="st">&#39;DSAIDE&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(<span class="st">&#39;DSAIDE&#39;</span>)</span></code></pre></div>
 <p>You should see a short message on the screen. Some packages show messages when you load them, and others don’t. In this case, the package tells you that you can start using it by typing <code>dsaidemenu()</code> into the R console. You can do that now, or go straight to the next reading, which will talk about DSAIDE in more detail.</p>
 </div>
 <div id="learning-r-studio" class="section level1">
@@ -675,7 +656,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

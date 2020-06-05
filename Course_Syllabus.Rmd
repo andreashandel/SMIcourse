@@ -1,5 +1,5 @@
 ---
-title: Infectious Disease Epidemiology - A model-based approach (IDEMA) – Syllabus
+title: Simulation Modeling in Immunology – Syllabus
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -12,78 +12,37 @@ output:
 
 ## Course Information
 
-* Instructor: Andreas Handel
-* Office Location: 124 B.S. Miller Hall, Health Sciences Campus
-* Email: ahandel@uga.edu
-* Office Hours:  by appointment/online
-* Course Meeting Time and Location: online
+* Instructors: Paul Thomas and Andreas Handel
+* Course Meeting Time and Location: 2020-07-22 - 2020-07-24, online
 
 ## Textbook and Other Course Material
 
-There is no required textbook. We will make use of several freely available resources. All course materials will be provided. We will use the R software , which is freely available for download. 
+All course materials will be provided, mainly through this website. We will use the R software, which is freely available for download. 
 
 ## Course Description
 
-This course provides an introduction to infectious disease epidemiology using a model-based approach. You do not have to (but could) build models or write computer code as part of this course. However, we will use simulation models to understand the dynamics of transmission and spread of infectious diseases.  
-
-
-## Course Learning Objectives
-
-
-The specific learning objectives that I hope you will achieve by going through this course are:
-
-* Explain and compute important epidemiological measures, such as reproductive number and level of herd immunity
-
-* Appraise the fundamentally causal nature of mechanistic infectious disease (ID) computer models and master the use of such models to address important ID epidemiology research questions
-
-* Interpret the meaning of specific dynamic patterns seen in ID incidence and prevalence
-
-*	Choose optimal ID intervention strategies based on features of specific IDs
-
-*	Predict the impact of different ID intervention strategies
-
-*	Critically evaluate the ID epidemiology literature
-
-*	Compare and assess the strengths and weaknesses of different ID data collection and analysis approaches
-
-*	Formulate meaningful ID epidemiology research questions of public health importance 
-
-*	Select the appropriate data collection and analysis approach for a specific ID research question
-
-*	Explain the importance of system dynamical thinking for the study and control of ID
+This course provides an introduction to simulation modeling on the within-host, immunology level. You will learn what simulation models are and how they can be used to study pathogen and immune response dynamics within an infected host. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. You do not have to build models or write computer code as part of this course. But you are certainly welcome and encouraged to do so, and we will provide information and resources to go deeper into any of the topics we cover.
 
 
 ## Grading
 
-Please see the _Course Introduction_ document for details regarding grading.
+This course has no grades. You will get a certificate of completion at the end.
 
 
-## Class Attendance, Make-up Policy
+## Class Attendance
 
-This class is online. You are expected to submit all assignments by their due dates. Excused misses of due dates are only provided by prior agreement with the instructor or for special reasons (e.g. medical emergency).
+This class is online. We hope you will attend any synchronous meetings. We expect that you devote the full time to this online class that you would have devoted to it if it had been in-class. In addition, you have the option to start engaging with the material before the class officially starts and of course you can continue to work on it for as long as you want. 
 
 
 ## Prerequisites
 
-This is a quantitative course. We will not go deep into the mathematical details of infectious disease models, you will not need to build models or write computer code. However some statistical background and being comfortable with quantitative thinking are useful. 
-_Formal requirement for the course is BIOS 7010. Knowledge of material from BIOS 7010 is assumed. If you didn't take this course, please contact me to get permission to enroll._
+We assume you have some general familiarity with basic biology, maybe some immmunology, and some statistical, modeling or coding experience. We understand every student will come with different skillsets. Since this is an introductory course, we try to make things as understandable as possible for anyone, no matter their previous knowledge. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging). 
 
 
 ## Getting Help
 
-If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the _Communications_ section for more details.
+If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the _Communication_ section for more details.
 
-
-## University Honor Code and Academic Honesty Policy
-
-All academic work must meet the standards contained in _A Culture of Honesty_. All students are responsible to inform themselves about those standards before performing any academic work. More detailed information about academic honesty can be found at: http://www.uga.edu/honesty/
-
-Discussions with your classmates and the instructor are encouraged. However, the final work should be your own.
-
-
-## Students with Disabilities
-
-Students with disabilities who require reasonable accommodations in order to participate in course activities or meet course requirements should contact the instructor.
 
 ## General Disclaimers
 

@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>IDEMA Course Resources</title>
+<title>SMI Course Resources</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -336,7 +336,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">IDEMA Course</a>
+      <a class="navbar-brand" href="index.html">SMI Course</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -369,19 +369,16 @@ div.tocify {
           <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
         </li>
         <li>
-          <a href="./1b_Teaching_and_Learning.html">1b. Teaching and Learning thoughts</a>
+          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_R_and_RStudio.html">1c. R and Rstudio</a>
+          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_DSAIDE.html">1d. DSAIDE</a>
+          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
         </li>
         <li>
-          <a href="./1e_Further_Tools.html">1e. Further Tools</a>
-        </li>
-        <li>
-          <a href="./1f_Assessment.html">1f. Assessment</a>
+          <a href="./1e_Exercises.html">1e. Exercises</a>
         </li>
       </ul>
     </li>
@@ -400,18 +397,6 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Exercises
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Exercise_Introducing_Ourselves.html">Introducing ourselves</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Project
      
     <span class="caret"></span>
@@ -419,12 +404,6 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="./Project_Information.html">Project information</a>
-    </li>
-    <li>
-      <a href="./Project_Rubric.html">Project rubric</a>
-    </li>
-    <li>
-      <a href="./Project_Review.html">Project review</a>
     </li>
   </ul>
 </li>
@@ -452,7 +431,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/andreashandel/IDEMAcourse">
+  <a href="https://github.com/andreashandel/SMIcourse">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -466,14 +445,14 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">IDEMA Course Resources</h1>
+<h1 class="title toc-ignore">SMI Course Resources</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-05-28 20:30:01</h4>
+<h4 class="date">2020-06-05 11:08:01</h4>
 
 </div>
 
 
-<p>This page lists resources that are used or mentioned in this course. For a more extensive list of resources, see the <em>General Resources</em> page.</p>
+<p>This page lists resources that are explicitly used or mentioned in this course. For a more extensive list of resources, see the <em>General Resources</em> page.</p>
 <p>All materials described below are (should be) freely available online. If you can’t get to them, let me know. Note that a lot of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If you notice anything that’s not quite right, please let me know.</p>
 <div id="general-help" class="section level1">
 <h1>General help</h1>
@@ -482,8 +461,8 @@ div.tocify {
 <li>There will very likely be times when some material in the course doesn’t quite make sense and you need to do some auxiliary reading. Google will be your best friend. Wikipedia is often a very good starting point for many topics.</li>
 </ul>
 </div>
-<div id="books" class="section level1">
-<h1>Books</h1>
+<div id="reading" class="section level1">
+<h1>Reading</h1>
 <ul>
 <li><a href="https://andreashandel.github.io/IDEMAbook/">Infectious Disease Epidemiology - a Model-based Approach (IDEMAB)</a>. This is the book that goes with the class, it’s basically an extended version of my previous lecture notes.</li>
 </ul>
@@ -569,7 +548,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
