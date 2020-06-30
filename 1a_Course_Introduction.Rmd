@@ -1,5 +1,5 @@
 ---
-title: IDEMA Fall 2020 - Course Introduction 
+title: SMI 2020 - Course Introduction 
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -20,6 +20,8 @@ Welcome to **Infectious Disease Epidemiology - a Model-based Approach**. This is
 
 
 # Module Overview
+
+
 The course is divided into modules. Each module consists of one or several units. This first module provides a brief introduction to the course, followed by discussing and setting up our various tools. 
 
 # Module Learning Objectives

@@ -22,6 +22,8 @@ library(emo)
 
 The main mode of communication will be through Slack. You should have gotten an email invite to the Slack workspace for this class.
 
+Note that SISMID set up a Slack workspace with a channel for each Module. We decided that it's easier and more flexible if we have a separate workspace for this module. Thus, you might get invitations to 2 workspaces, the general SISMID one (called sismidworkspace) and the one for this module (called smi-course-2020).
+
 If you are unfamiliar with Slack, it is essentially a chat/discussion tool. Within the workspace for this class, you will find different channels. That's the Slack name for a discussion forum. The names and descriptions of the different channels should be self-explanatory. You can also use Slack to send one or more individuals direct messages. 
 We will use Slack for all class related communication. Check regularly. 
 

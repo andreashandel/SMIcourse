@@ -1,0 +1,41 @@
+---
+title: DSAIRM
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+# Overview
+This document provides a brief introduction to the DSAIRM package, which we will use in this course. 
+
+# Learning Objectives
+* Know how to run and use the DSAIRM package.
+
+
+# DSAIRM Introduction
+
+DSAIRM, which stands for _Dynamical Systems Approach to Immune Response Modeling_ is an R package. Its goal is to let users to explore infectious disease models and topics without having to implement their own models and write code. 
+[DSAIRM has a dedicated website](https://ahgroup.github.io/DSAIRM/). Visit the website and read through the _Get started_ document. 
+
+
+# DSAIRM hands-on
+
+If you haven't done already, load DSAIRM. You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you that you can start using it by typing `dsairmmenu()` into the R console. Do that to start it
+
+```{r, eval=FALSE}
+dsairmmenu()
+```
+
+A menu should open in your browser, from which you can explore different models/apps.
+You can explore DSAIRM briefly, but the main goal for now is to have it up and running. 
+
+
+
+
+
