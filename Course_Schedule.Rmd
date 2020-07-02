@@ -12,24 +12,26 @@ output:
 
 This is the current course schedule for the class. Things might change, so check regularly for updates.
 
-**A note on time zones:** Seattle is in the PT zone. Your instructors are on ET (Andreas) and CT (Paul) times. Some of you are likely in yet other locations and time zones. We hope we can keep things straight. For any times in this course **we plan to use PT/Seattle time as reference.** We also plan to be explicit when posting any time by stating the time zone after. If ever in doubt, please ask for clarification. 
+## Notes
 
-For details on Slack and Zoom use, see the _Communication_ section.
+**Time zones:** Seattle is in the PT zone. Your instructors are in ET (Andreas) and CT (Paul) zones. Some of you are likely in yet other locations and time zones. We hope we can keep things straight. For any times in this course **we plan to use PT/Seattle time as reference.** We also plan to be clear when posting any time by stating the time zone explicitly. If ever in doubt, i.e. if you see us posting a time without specifying the zone, please tell us to clarify. 
+
+For details on Slack and Zoom use, see the __Communication__ section.
 
 Abbreviations used: [DSAIRM = Dynamical Systems Approach to Immune Response Modeling - R package](https://ahgroup.github.io/DSAIRM/). Numbers refer to the number of the app. 
 
 ***
 
-**Preparation for course**
+## Preparation for the course
 
-* Familiarize yourself with this website. Read through all the documents apart from the ones under the _Modules_ tab.
-* Have R/Rstudio up and running and the DSAIRM package installed and working. For details, please go through the materials of Module 1.
+* Familiarize yourself with this website. Start by read through all the documents apart from the ones under the _Modules_ tab.
+* Now go through materials listed under _Module 1_. You should end up with R/Rstudio up and running and the DSAIRM package installed and working. 
 * Read [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/).
 
 ***
 
 
-**Monday 2020-07-20**
+## Monday 2020-07-20
 
 8 - 9 PT (10CT/11ET) - Zoom: Welcome and introduction 
 
@@ -39,7 +41,7 @@ _break_
 
 _break_
 
-11 - 12 PT (1CT/2ET) - Zoom: Introduction to Modeling 
+11 - 12 PT (1CT/2ET) - Zoom: Introduction to Modeling & a few models
 
 12 - 2  PT On your own: DSAIRM/modeling practice. Communication through Slack.  
 
@@ -47,7 +49,7 @@ _break_
 
 ***
 
-**Tuesday 2020-07-21**
+## Tuesday 2020-07-21
 
 8 - 9 PT (10CT/11ET) - Zoom: More Immunology
 
@@ -55,18 +57,18 @@ _break_
 
 9.30 - 10.30 PT (11.30CT/12.30ET) - Zoom: Model uses
 
-_break_
+10.30 - 12 PT: On your own: DSAIRM/modeling practice. Communication through Slack. 
 
-11 - 12 PT (1CT/2ET) - Zoom: More Immunology 
+12 - 1 PT (1CT/2ET) - Zoom: More Immunology
 
-12 - 2 PT On your own: DSAIRM/modeling practice. Communication through Slack. 
+1 - 2 PT
 
 2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&A
 
 
 ***
 
-**Wednesday 2020-07-22**
+## Wednesday 2020-07-22
 
 8 - 9 PT (10CT/11ET) - Zoom: Further modeling topics 
 

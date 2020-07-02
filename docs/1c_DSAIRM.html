@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>Simulation Modeling in Immunology - Course Schedule</title>
+<title>DSAIRM</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -27,6 +30,98 @@
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #2a211c;
+    color: #bdae9d;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #bdae9d;  padding-left: 4px; }
+div.sourceCode
+  { color: #bdae9d; background-color: #2a211c; }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ffff00; } /* Alert */
+code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #44aa43; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #049b0a; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code span.dt { text-decoration: underline; } /* DataType */
+code span.dv { color: #44aa43; } /* DecVal */
+code span.er { color: #ffff00; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #44aa43; } /* Float */
+code span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code span.op { } /* Operator */
+code span.pp { font-weight: bold; } /* Preprocessor */
+code span.sc { color: #049b0a; } /* SpecialChar */
+code span.ss { color: #049b0a; } /* SpecialString */
+code span.st { color: #049b0a; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #049b0a; } /* VerbatimString */
+code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
 <style type="text/css">
@@ -237,6 +332,75 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
 
 </head>
 
@@ -244,6 +408,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -378,62 +552,38 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Simulation Modeling in Immunology - Course Schedule</h1>
+<h1 class="title toc-ignore">DSAIRM</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-01 16:05:01</h4>
+<h4 class="date">2020-06-30 15:28:20</h4>
 
 </div>
 
 
-<p>This is the current course schedule for the class. Things might change, so check regularly for updates.</p>
-<div id="notes" class="section level2">
-<h2>Notes</h2>
-<p><strong>Time zones:</strong> Seattle is in the PT zone. Your instructors are in ET (Andreas) and CT (Paul) zones. Some of you are likely in yet other locations and time zones. We hope we can keep things straight. For any times in this course <strong>we plan to use PT/Seattle time as reference.</strong> We also plan to be clear when posting any time by stating the time zone explicitly. If ever in doubt, i.e. if you see us posting a time without specifying the zone, please tell us to clarify.</p>
-<p>For details on Slack and Zoom use, see the <strong>Communication</strong> section.</p>
-<p>Abbreviations used: <a href="https://ahgroup.github.io/DSAIRM/">DSAIRM = Dynamical Systems Approach to Immune Response Modeling - R package</a>. Numbers refer to the number of the app.</p>
-<hr />
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>This document provides a brief introduction to the DSAIRM package, which we will use in this course.</p>
 </div>
-<div id="preparation-for-the-course" class="section level2">
-<h2>Preparation for the course</h2>
+<div id="learning-objectives" class="section level1">
+<h1>Learning Objectives</h1>
 <ul>
-<li>Familiarize yourself with this website. Start by read through all the documents apart from the ones under the <em>Modules</em> tab.</li>
-<li>Now go through materials listed under <em>Module 1</em>. You should end up with R/Rstudio up and running and the DSAIRM package installed and working.</li>
-<li>Read <a href="https://handelgroup.uga.edu/publication/2020-handel-natrevimm/">Simulation Modelling for Immunologists</a>.</li>
+<li>Know how to run and use the DSAIRM package.</li>
 </ul>
-<hr />
 </div>
-<div id="monday-2020-07-20" class="section level2">
-<h2>Monday 2020-07-20</h2>
-<p>8 - 9 PT (10CT/11ET) - Zoom: Welcome and introduction</p>
-<p><em>break</em></p>
-<p>9.30 - 10.30 PT (11.30CT/12.30ET) - Zoom: Introduction to Immunology</p>
-<p><em>break</em></p>
-<p>11 - 12 PT (1CT/2ET) - Zoom: Introduction to Modeling &amp; a few models</p>
-<p>12 - 2 PT On your own: DSAIRM/modeling practice. Communication through Slack.</p>
-<p>2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&amp;A</p>
-<hr />
+<div id="dsairm-introduction" class="section level1">
+<h1>DSAIRM Introduction</h1>
+<p>DSAIRM, which stands for <em>Dynamical Systems Approach to Immune Response Modeling</em> is an R package. Its goal is to let users to explore infectious disease models and topics without having to implement their own models and write code. <a href="https://ahgroup.github.io/DSAIRM/">DSAIRM has a dedicated website</a>. Visit the website and read through the <em>Get started</em> document.</p>
 </div>
-<div id="tuesday-2020-07-21" class="section level2">
-<h2>Tuesday 2020-07-21</h2>
-<p>8 - 9 PT (10CT/11ET) - Zoom: More Immunology</p>
-<p><em>break</em></p>
-<p>9.30 - 10.30 PT (11.30CT/12.30ET) - Zoom: Model uses</p>
-<p>10.30 - 12 PT: On your own: DSAIRM/modeling practice. Communication through Slack.</p>
-<p>12 - 1 PT (1CT/2ET) - Zoom: More Immunology</p>
-<p>1 - 2 PT</p>
-<p>2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&amp;A</p>
-<hr />
-</div>
-<div id="wednesday-2020-07-22" class="section level2">
-<h2>Wednesday 2020-07-22</h2>
-<p>8 - 9 PT (10CT/11ET) - Zoom: Further modeling topics</p>
-<p>9 - 10 PT On your own: DSAIRM/modeling practice. Communication through Slack.</p>
-<p>10 - 11 PT (12CT/1ET) - Zoom closing session: Q&amp;A, project presentation, wrap-up.</p>
-<hr />
+<div id="dsairm-hands-on" class="section level1">
+<h1>DSAIRM hands-on</h1>
+<p>If you haven’t done already, load DSAIRM. You should see a short message on the screen. Some packages show messages when you load them, and others don’t. In this case, the package tells you that you can start using it by typing <code>dsairmmenu()</code> into the R console. Do that to start it</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">dsairmmenu</span>()</span></code></pre></div>
+<p>A menu should open in your browser, from which you can explore different models/apps. You can explore DSAIRM briefly, but the main goal for now is to have it up and running.</p>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -466,6 +616,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

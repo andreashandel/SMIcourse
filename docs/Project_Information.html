@@ -24,6 +24,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
@@ -387,7 +388,7 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_SMI_Introduction.html">2a. Introduction to Simulation Modeling</a>
+          <a href="./2a_Introduction_to_Modeling.html">2a. Introduction to Simulation Modeling</a>
         </li>
         <li>
           <a href="./2b_Exercises.html">2b. Exercises</a>
@@ -402,6 +403,17 @@ div.tocify {
         </li>
         <li>
           <a href="./3b_Exercises.html">3b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Using Simulation Models</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./4a_Uses_of_Simulation_Models.html">4a. Uses of Simulation Models</a>
+        </li>
+        <li>
+          <a href="./4b_Exercises.html">4b. Exercises</a>
         </li>
       </ul>
     </li>
@@ -450,7 +462,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SMI Course Project Information</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-06-05 14:48:59</h4>
+<h4 class="date">2020-07-01 16:19:24</h4>
 
 </div>
 
@@ -461,8 +473,8 @@ div.tocify {
 </div>
 <div id="project-ideas" class="section level1">
 <h1>Project Ideas</h1>
-<p>You might already have a specific question or system you are interested in modeling, or maybe in this course you got some ideas. If you are new to modeling, it might be difficult to decide what questions simulations models are good for. Some thoughts on this can be found <a href="http://handelgroup.uga.edu/publication/2019-handel-natrevimm/">in this review paper we recently wrote</a>. We discuss 3 major model uses, namely <em>Exploration</em>, <em>Prediction</em> and <em>Fitting</em>.</p>
-<p>Given the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not too suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest focusing on doing an <em>Exploration</em> project.</p>
+<p>You might already have a specific question or system you are interested in modeling, or maybe this course led to ideas. If you are new to modeling, it might be difficult to decide what questions simulations models are good for. Some thoughts on this can be found <a href="http://handelgroup.uga.edu/publication/2020-handel-natrevimm/">in this review paper we recently wrote</a>. We discuss 3 major model uses, namely <em>Exploration</em>, <em>Prediction</em> and <em>Fitting</em>.</p>
+<p>Given the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest that if you want to try a project within the timeframe of the course, focus on doing an <em>Exploration</em> project.</p>
 </div>
 <div id="project-implementation" class="section level1">
 <h1>Project Implementation</h1>
@@ -470,16 +482,15 @@ div.tocify {
 <ul>
 <li><p><strong>Requires no model building and no coding:</strong> Use one of the apps included in DSAIRM, choose parameter values that correspond to the system you are trying to model, then explore the model through the graphical user interface.</p></li>
 <li><p><strong>Requires no model building and a little bit of coding:</strong> Use one of the apps included in DSAIRM. Instead of accessing it through the graphical interface, write a few lines of code that call the simulator functions. See level 2 description in the <a href="https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html">DSAIRM tutorial.</a></p></li>
-<li><p><strong>Requires model building but no coding:</strong> Use the <a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a> R package to build your own model and explore it graphically. Note that <em>modelbuilder</em> is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know in the <em>modelbuilder</em> slack channel.</p></li>
-<li><p><strong>Requires some model building and a coding:</strong> Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the <a href="https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html">DSAIRM tutorial.</a></p></li>
-<li><p><strong>Requires some model building and a coding:</strong> the <a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a> R package to build your own model. Export the model code from <em>modelbuilder</em>, edit further and run the code to answer your question.</p></li>
+<li><p><strong>Requires model building but no coding:</strong> Use the <a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a> R package to build your own model and explore it graphically. Note that <em>modelbuilder</em> is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know in the <em>modelbuilder</em> slack channel. Also, at this stage <em>modelbuilder</em> is not suitable to build very detailed models, so if you use it, keep your model simple.</p></li>
+<li><p><strong>Requires some model building and coding:</strong> Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the <a href="https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html">DSAIRM tutorial.</a></p></li>
+<li><p><strong>Requires some model building and coding:</strong> Use the <a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a> R package to build an initial version of your model. Export the model code from <em>modelbuilder</em>, edit further and run the code to answer your question.</p></li>
 </ul>
 </div>
 <div id="project-logistics" class="section level1">
 <h1>Project Logistics</h1>
-<p>Since this is completely optional, it’s really up to you how to structure your project. You can just play around, you can try to write a formal report/paper, etc. For any questions, feedback, etc., use the Slack channel.</p>
-<p>Given the shortness of time, it’s probably tricky to try to team up with others and do a project as a group, but you are certainly welcome to try and do so.</p>
-<p>If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project.</p>
+<p>Since this is completely optional, it’s really up to you how to structure your project. You can just play around, or you can try to write a formal report/paper. Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group. But but you are certainly welcome to try and do so. You can use the <em>courseproject</em> Slack channel to see if you can find others to team up with.</p>
+<p>If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time in our closing Zoom session for anyone who wants to briefly (5-10min) present their findings. If you want to do that, let us know beforehand.</p>
 </div>
 <div id="project-communications" class="section level1">
 <h1>Project communications</h1>

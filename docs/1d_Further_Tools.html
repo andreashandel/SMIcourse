@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>IDEMA Fall 2020 - Introducing Ourselves</title>
+<title>Further tools</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,6 +24,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
@@ -387,7 +388,7 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_SMI_Introduction.html">2a. Introduction to Simulation Modeling</a>
+          <a href="./2a_Introduction_to_Modeling.html">2a. Introduction to Simulation Modeling</a>
         </li>
         <li>
           <a href="./2b_Exercises.html">2b. Exercises</a>
@@ -402,6 +403,17 @@ div.tocify {
         </li>
         <li>
           <a href="./3b_Exercises.html">3b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Using Simulation Models</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./4a_Uses_of_Simulation_Models.html">4a. Uses of Simulation Models</a>
+        </li>
+        <li>
+          <a href="./4b_Exercises.html">4b. Exercises</a>
         </li>
       </ul>
     </li>
@@ -448,56 +460,28 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">IDEMA Fall 2020 - Introducing Ourselves</h1>
+<h1 class="title toc-ignore">Further tools</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-06-05 11:08:02</h4>
+<h4 class="date">2020-07-01 16:23:28</h4>
 
 </div>
 
 
+<p><strong>This reading is completely optional.</strong></p>
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>The goal of this exercise is to get to know your classmates. You have several ways you can do so, described here.</p>
+<p>This is a very short unit with a few pointers to other tools and resources that might be of interest. We won’t need then in this course, but some of you might decide to give them a try.</p>
+<p>All these readings are from another online course I teach, so there might be some comments that are specific to that course. You can ignore those.</p>
 </div>
-<div id="content" class="section level1">
-<h1>Content</h1>
-<p>No matter how you deliver your introduction (see below), it should have at the minimum the following bits of information:</p>
-<ul>
-<li>Talk a bit about yourself, your background, training, research interests.</li>
-<li>I’d be curious to know the main reason you signed up for this course an what you most hope to learn in this course.</li>
-<li>Mention (at least) one interesting personal fact about you.</li>
-<li>Include a picture of yourself, either in your post or as a link.</li>
-<li>Finally, include a link to a picture/video/website/etc. that has to do with an infectious disease topic that you find cool/interesting/weird/etc. Provide a few explanatory sentences.</li>
-</ul>
+<div id="modelbuilder" class="section level1">
+<h1>modelbuilder</h1>
+<p>The DSAIRM package allows you to explore pre-written models. If you want to modify those models, you will have to get the underlying code and start editing it. This means you’ll have to do some R coding. To allow individuals to build their own models without having to code, we started to develop the <a href="">modelbuilder</a> R package. It is in an early stage, but functional. If interested, you can give it a try and use it to build your own simulation model. You won’t have to code. You will still need to ensure your model makes sense.</p>
 </div>
-<div id="delivery" class="section level1">
-<h1>Delivery</h1>
-<p>You can make and deliver the introduction in multiple ways, as follows. No matter what method you choose, post a message into the <code>introductions</code> Slack channel so people can find your introduction.</p>
-<div id="the-lazy-way" class="section level2">
-<h2>The lazy way</h2>
-<p>Answer the questions above and send it all as a post straight to the <code>introductions</code> Slack channel.</p>
+<div id="github" class="section level1">
+<h1>Github</h1>
 </div>
-<div id="the-multimedia-way" class="section level2">
-<h2>The multimedia way</h2>
-<p>Record a video of yourself talking about the topics mentioned above, and post the video or a link to it to the Slack channel.</p>
-</div>
-<div id="the-geeky-way" class="section level2">
-<h2>The geeky way</h2>
-<p>Create a quick website by following the workflow of the introduction exrecise from my Modern Applied Data Analysis class, <a href="">described here.</a> This requires the use of Github. Note that for our class, there is no Github organization. Instead, create the repository in your own Github account. Everything else should work the same.</p>
-</div>
-<div id="the-inventive-way" class="section level2">
-<h2>The inventive way</h2>
-<p>Find another way to produce an introduction of yourself and share it with the class.</p>
-</div>
-</div>
-<div id="interact" class="section level1">
-<h1>Interact</h1>
-<p>Please freely respond to the introductions posted by your classmates, using Slack.</p>
-</div>
-<div id="make-slack-personal" class="section level1">
-<h1>Make Slack personal</h1>
-<p>Instead of seeing an empty cutout of a person, it’s much nicer if your Slack persona features your picture. To that end, in Slack click on your name, go to ‘edit profile’ and upload an image of yourself. Further adjust your profile as suitable. Note that this only applies to our class workspace. If you use other Slack workspaces, your profile on those won’t be affected.</p>
-<p><em>You need to have your introduction posted by the final date of the module (see syllabus). I encourage you to do it sooner, so we can get to know each other quickly!</em></p>
+<div id="rmarkdown" class="section level1">
+<h1>Rmarkdown</h1>
 </div>
 
 

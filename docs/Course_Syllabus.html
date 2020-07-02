@@ -24,6 +24,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
@@ -387,7 +388,7 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_SMI_Introduction.html">2a. Introduction to Simulation Modeling</a>
+          <a href="./2a_Introduction_to_Modeling.html">2a. Introduction to Simulation Modeling</a>
         </li>
         <li>
           <a href="./2b_Exercises.html">2b. Exercises</a>
@@ -402,6 +403,17 @@ div.tocify {
         </li>
         <li>
           <a href="./3b_Exercises.html">3b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Using Simulation Models</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./4a_Uses_of_Simulation_Models.html">4a. Uses of Simulation Models</a>
+        </li>
+        <li>
+          <a href="./4b_Exercises.html">4b. Exercises</a>
         </li>
       </ul>
     </li>
@@ -450,7 +462,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Simulation Modeling in Immunology – Syllabus</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-06-05 14:49:29</h4>
+<h4 class="date">2020-06-30 19:45:15</h4>
 
 </div>
 
@@ -459,16 +471,16 @@ div.tocify {
 <h2>Course Information</h2>
 <ul>
 <li>Instructors: Paul Thomas and Andreas Handel</li>
-<li>Course Meeting Time and Location: 2020-07-22 - 2020-07-24, online</li>
+<li>Course Meeting Time and Location: 2020-07-20 - 2020-07-22, online</li>
 </ul>
 </div>
 <div id="textbook-and-other-course-material" class="section level2">
 <h2>Textbook and Other Course Material</h2>
-<p>All course materials will be provided, mainly through this website. We will use the R software, which is freely available for download.</p>
+<p>All course materials will be provided on, or linked through this website. We will use the R software, which is freely available for download.</p>
 </div>
 <div id="course-description" class="section level2">
 <h2>Course Description</h2>
-<p>This course provides an introduction to simulation modeling on the within-host, immunology level. You will learn what simulation models are and how they can be used to study pathogen and immune response dynamics within an infected host. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. You do not have to build models or write computer code as part of this course. But you are certainly welcome and encouraged to do so, and we will provide information and resources to go deeper into any of the topics we cover.</p>
+<p>This course provides an introduction to simulation modeling of pathogens and the immune response on the within-host level. You will learn what simulation models are and how they can be used to study pathogen and immune response dynamics within an infected host. This course is an introductory overview course. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. You do not have to build models or write computer code as part of this course. But you are certainly welcome and encouraged to do so, and we will provide information and resources to go deeper into any of the topics we cover.</p>
 </div>
 <div id="grading" class="section level2">
 <h2>Grading</h2>
@@ -476,23 +488,19 @@ div.tocify {
 </div>
 <div id="class-attendance" class="section level2">
 <h2>Class Attendance</h2>
-<p>This class is online. We hope you will attend any synchronous meetings. We expect that you devote the full time to this online class that you would have devoted to it if it had been in-class. In addition, you have the option to start engaging with the material before the class officially starts and of course you can continue to work on it for as long as you want.</p>
+<p>This class is online. We hope you will attend all synchronous events as much as possible. We expect that you devote the full time to this online class that you would have devoted to it if it had been in-class. In addition, you have the option to start engaging with the material before the class officially starts and of course you can continue to work on it for as long as you want.</p>
 </div>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
-<p>We assume you have some general familiarity with basic biology, maybe some immmunology, and some statistical, modeling or coding experience. We understand every student will come with different skillsets. Since this is an introductory course, we try to make things as understandable as possible for anyone, no matter their previous knowledge. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging).</p>
+<p>We assume you have some general familiarity with basic biology, maybe some immunology, and some statistical, modeling or coding experience. We understand every student will come with different skill sets. Since this is an introductory course, we try to make things as understandable as possible for anyone, no matter their previous knowledge. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging).</p>
 </div>
 <div id="getting-help" class="section level2">
 <h2>Getting Help</h2>
-<p>If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the <em>Communication</em> section for more details.</p>
-</div>
-<div id="general-disclaimers" class="section level2">
-<h2>General Disclaimers</h2>
-<p>This syllabus is a general plan, deviations announced to the class by the instructor may be necessary.</p>
+<p>If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the <strong>Communication</strong> section for more details.</p>
 </div>
 <div id="course-outline" class="section level2">
 <h2>Course Outline</h2>
-<p>For an outline of the course, please see the course schedule document.</p>
+<p>For an outline of the course, please see the course <strong>Schedule</strong> document.</p>
 </div>
 <div id="more-details" class="section level2">
 <h2>More Details</h2>

@@ -27,7 +27,7 @@ left:
       - text: "2. Introduction to Simulation Modeling"
         menu:
           - text: "2a. Introduction to Simulation Modeling"
-            href: ./2a_SMI_Introduction.html
+            href: ./2a_Introduction_to_Modeling.html
           - text: "2b. Exercises"
             href: ./2b_Exercises.html
       - text: "3. Introduction to Immunology"
@@ -36,6 +36,12 @@ left:
             href: ./3a_Immunology_Introduction.html
           - text: "3b. Exercises"
             href: ./3b_Exercises.html
+      - text: "4. Using Simulation Models"
+        menu:
+          - text: "4a. Uses of Simulation Models"
+            href: ./4a_Uses_of_Simulation_Models.html
+          - text: "4b. Exercises"
+            href: ./4b_Exercises.html
   - text: "Project"
     href: ./Project_Information.html
   - text: "Communication"

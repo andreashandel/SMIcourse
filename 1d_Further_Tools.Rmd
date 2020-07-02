@@ -1,0 +1,34 @@
+---
+title: Further tools 
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+**This reading is completely optional.**
+
+
+# Overview
+This is a very short unit with a few pointers to other tools and resources that might be of interest. We won't need then in this course, but some of you might decide to give them a try.
+
+
+All these readings are from another online course I teach, so there might be some comments that are specific to that course. You can ignore those.
+
+
+# modelbuilder
+The DSAIRM package allows you to explore pre-written models. If you want to modify those models, you will have to get the underlying code and start editing it. This means you'll have to do some R coding. To allow individuals to build their own models without having to code, we started to develop the [modelbuilder]() R package. It is in an early stage, but functional. If interested, you can give it a try and use it to build your own simulation model. You won't have to code. You will still need to ensure your model makes sense.
+
+
+# Github
+
+
+
+# Rmarkdown
+
+
+
+

@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>R and RStudio</title>
+<title>DSAIDE</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,6 +24,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
@@ -479,7 +480,7 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_SMI_Introduction.html">2a. Introduction to Simulation Modeling</a>
+          <a href="./2a_Introduction_to_Modeling.html">2a. Introduction to Simulation Modeling</a>
         </li>
         <li>
           <a href="./2b_Exercises.html">2b. Exercises</a>
@@ -494,6 +495,17 @@ div.tocify {
         </li>
         <li>
           <a href="./3b_Exercises.html">3b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Using Simulation Models</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./4a_Uses_of_Simulation_Models.html">4a. Uses of Simulation Models</a>
+        </li>
+        <li>
+          <a href="./4b_Exercises.html">4b. Exercises</a>
         </li>
       </ul>
     </li>
@@ -540,7 +552,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">R and RStudio</h1>
+<h1 class="title toc-ignore">DSAIDE</h1>
 <h4 class="author">Andreas Handel</h4>
 <h4 class="date">2020-06-05 11:08:01</h4>
 
@@ -549,64 +561,31 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This is a very quick introduction to R and RStudio, to get you set up and running. We won’t do any coding in this class, but we need R to use the DSAIDE package. R is a very useful tool to be familiar with if you want to get into ID modeling, or if you want to do data analysis. As such, having a bit of familiarity is good.</p>
+<p>This document provides a brief introduction to the DSAIDE package, which we will use a lot in this course.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Know some of the strengths and weaknesses of R.</li>
-<li>Have R and Rstudio up and running on your computer.</li>
-<li>Know how to install and load R packages.</li>
+<li>Know how to run and use the DSAIDE package.</li>
 </ul>
 </div>
-<div id="about-r" class="section level1">
-<h1>About R</h1>
-<p>Like every programming language, R has its advantages and disadvantages. Feel free to do a web search on that topic, and you will encounter tons of people with tons of opinions. Some of the features that are useful to us are:</p>
-<ul>
-<li>R is Open Source, FREE and cross-platform.</li>
-<li>R is a “high-level” programming language, relatively easy to learn (compared to Fortran, C, etc.).</li>
-<li>R comes with many integrated functions.</li>
-<li>R is great for statistics, data analysis, and graphics.</li>
-<li>R is a full programming language and can do a lot of things, including running infectious disease models.</li>
-<li>The R Community is very dynamic, helpful and welcoming.</li>
-<li>Through R packages, it is easy to get lots of state-of-the-art algorithms.</li>
-<li>Documentation and help files for R are generally good.</li>
-</ul>
-<p>While we use R in this course, it is not the only option for building and exploring infectious disease models. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used (e.g., Matlab, Mathematica). Other more general programming languages are suitable too (e.g., C, Fortran, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those languages. In general, knowing some coding is a very useful skill, and I strongly encourage you to learn some programming. The good news is that while all programming languages are somewhat different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. R is a good one to get started with.</p>
+<div id="dsaide-introduction" class="section level1">
+<h1>DSAIDE Introduction</h1>
+<p>DSAIDE, which stands for <em>Dynamical Systems Approach to Infectious Disease Epidemiology</em> is an R package I wrote. The goal is for users to explore infectious disease models and topics without having to implement their own models and write code. <a href="https://ahgroup.github.io/DSAIDE/">DSAIDE has a dedicated website</a>. Visit the website and read through the <em>Get started</em> document. You can skip or skim over the “Level 2” and “Level 3” sections. We won’t use this approach to interact with DSAIDE in the course - though you are of course allowed to do so.</p>
 </div>
-<div id="installing-r-and-rstudio" class="section level1">
-<h1>Installing R and RStudio</h1>
-<ul>
-<li>If you haven’t already, <a href="https://www.r-project.org/">install R first</a>. You can pick any mirror you like. If you already have R installed, make sure it is a fairly recent version, version 3.5 or newer. If yours is older, I suggest you update (install a new R version).</li>
-<li>Once you have R installed, install the free version of <a href="https://www.rstudio.com/products/rstudio/download/">RStudio Desktop</a>. Again, make sure it’s a recent version.</li>
-</ul>
-<p>Installing R and RStudio should be fairly straightforward. If you want detailed instructions <a href="https://rafalab.github.io/dsbook/installing-r-rstudio.html">this reading provides more detailed steps</a>. If things don’t work, ask for help in the <em>R/DSAIDE</em> channel.</p>
-<p>I personally only have experience with Windows, but everything should work on all the standard operating systems (Windows, Mac, and even Linux).</p>
+<div id="dsaide-hands-on" class="section level1">
+<h1>DSAIDE hands-on</h1>
+<p>If you haven’t done already, load DSAIDE. You should see a short message on the screen. Some packages show messages when you load them, and others don’t. In this case, the package tells you that you can start using it by typing <code>dsaidemenu()</code> into the R console. Do that to start it</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">dsaidemenu</span>()</span></code></pre></div>
+<p>A menu should open in your browser, from which you can explore different models/apps.</p>
+<p><strong>Question: In the main menu of the DSAIDE package, what’s the title of the second group of apps?</strong></p>
+<p>You can explore DSAIDE now as much as you want, but you can also close it for now, as we’ll be coming back to it and working through most of the apps as part of the course.</p>
 </div>
-<div id="installing-and-loading-r-packages" class="section level1">
-<h1>Installing and loading R packages</h1>
-<p>Most of the functionality and features in R come in the form of add-on packages. There are tens of thousands of packages available, some big, some small, some well documented, some not. We’ll be focusing on the <code>DSAIDE</code> package in this course. Of course, you are free to install and use any package you come across for any of the assignments.</p>
-<p>The “official” place for packages is the <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN website</a>. If you are interested in packages on a specific topic, the <a href="http://cran.r-project.org/web/views/">CRAN task views</a> provide curated descriptions of packages sorted by topic.</p>
-<p>To install a package from CRAN, go to the R prompt at the bottom left of your RStudio session and type <code>install.packages("PACKAGENAME")</code>. The figure shows an example where I installed a package called <code>learnr</code>. Often, a package needs other packages to work (called dependencies), and they are installed automatically. It usually doesn’t matter if you use a single or double quotation mark around the name of the package. <strong>Note that R cares about capitalization, so you need to get the upper and lower case exactly right. Otherwise, it won’t work.</strong></p>
-<div class="figure" style="text-align: center">
-<img src="media/installpackagesscreenshot.png" alt="Installing an R package. Right-click on the image to enlarge it." width="100%" />
-<p class="caption">
-Installing an R package. Right-click on the image to enlarge it.
-</p>
-</div>
-<p>Try installing a package yourself. Open RStudio. Then go to the R prompt (the <code>&gt;</code> symbol) in the lower-left corner and type</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;DSAIDE&#39;</span>)</span></code></pre></div>
-<p><strong>Question: As you installed the DSAIDE package, which of these packages was also installed: GillespieSSA, adaptivetau, gpDDE, irace? Record the answer. It will likely show up in the quiz.</strong></p>
-<p><em>It is unlikely, but it could be that you already have all packages required by DSAIDE installed. In that case, you won’t see any other packages installed. To see which of the packages above DSAIDE needs (and thus installs if it is not present), type <code>tools::package_dependencies("DSAIDE")</code> into the R console.</em></p>
-<p>In RStudio, you can also install (and update/remove) packages by clicking on the ‘Packages’ tab in the bottom right window.</p>
-<p>It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it’s good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the <code>remotes</code> package and then use the <code>install_github</code> function. We won’t do that now, but it’s quite likely that at one point later in this course we will.</p>
-<p>You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the <code>library()</code> command (an alternative is <code>require()</code> but I recommend <code>library()</code>). For instance to load the <code>DSAIDE</code> package, type</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(<span class="st">&#39;DSAIDE&#39;</span>)</span></code></pre></div>
-<p>You should see a short message on the screen. Some packages show messages when you load them, and others don’t. In this case, the package tells you that you can start using it by typing <code>dsaidemenu()</code> into the R console. You can do that now, or go straight to the next reading, which will talk about DSAIDE in more detail.</p>
-</div>
-<div id="learning-r-studio" class="section level1">
-<h1>Learning R Studio</h1>
-<p>While one can use R and do pretty much every task, including all the ones we cover in this class, without using RStudio, RStudio is very useful, has lots of features that make your R coding life easier and has become pretty much the default integrated development environment (IDE) for R. Since RStudio has lots of features, it takes time to learn them. You don’t really need to know much about RStudio for this course. But if you are interested, a good resource to learn more about RStudio are the <a href="https://resources.rstudio.com/">R Studio Essentials</a> collection of videos.</p>
+<div id="further-materials" class="section level1">
+<h1>Further materials</h1>
+<p><em>These sources cover more or less the same material that you just read, so checking them out is optional.</em></p>
+<p><a href="https://doi.org/10.1371/journal.pcbi.1005642">I published a paper describing the package</a>. The paper is by now somewhat outdated with regards to the details of the package, but it describes the overall idea and context well.</p>
+<p><a href="">Here is a brief video</a> showing how to load and interact with DSAIDE and explaining some of its features.</p>
 </div>
 
 

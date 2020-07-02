@@ -13,15 +13,15 @@ output:
 ## Course Information
 
 * Instructors: Paul Thomas and Andreas Handel
-* Course Meeting Time and Location: 2020-07-22 - 2020-07-24, online
+* Course Meeting Time and Location: 2020-07-20 - 2020-07-22, online
 
 ## Textbook and Other Course Material
 
-All course materials will be provided, mainly through this website. We will use the R software, which is freely available for download. 
+All course materials will be provided on, or linked through this website. We will use the R software, which is freely available for download. 
 
 ## Course Description
 
-This course provides an introduction to simulation modeling on the within-host, immunology level. You will learn what simulation models are and how they can be used to study pathogen and immune response dynamics within an infected host. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. You do not have to build models or write computer code as part of this course. But you are certainly welcome and encouraged to do so, and we will provide information and resources to go deeper into any of the topics we cover.
+This course provides an introduction to simulation modeling of pathogens and the immune response on the within-host level. You will learn what simulation models are and how they can be used to study pathogen and immune response dynamics within an infected host. This course is an introductory overview course. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. You do not have to build models or write computer code as part of this course. But you are certainly welcome and encouraged to do so, and we will provide information and resources to go deeper into any of the topics we cover.
 
 
 ## Grading
@@ -31,26 +31,22 @@ This course has no grades. You will get a certificate of completion at the end.
 
 ## Class Attendance
 
-This class is online. We hope you will attend any synchronous meetings. We expect that you devote the full time to this online class that you would have devoted to it if it had been in-class. In addition, you have the option to start engaging with the material before the class officially starts and of course you can continue to work on it for as long as you want. 
+This class is online. We hope you will attend all synchronous events as much as possible. We expect that you devote the full time to this online class that you would have devoted to it if it had been in-class. In addition, you have the option to start engaging with the material before the class officially starts and of course you can continue to work on it for as long as you want. 
 
 
 ## Prerequisites
 
-We assume you have some general familiarity with basic biology, maybe some immmunology, and some statistical, modeling or coding experience. We understand every student will come with different skillsets. Since this is an introductory course, we try to make things as understandable as possible for anyone, no matter their previous knowledge. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging). 
+We assume you have some general familiarity with basic biology, maybe some immunology, and some statistical, modeling or coding experience. We understand every student will come with different skill sets. Since this is an introductory course, we try to make things as understandable as possible for anyone, no matter their previous knowledge. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging). 
 
 
 ## Getting Help
 
-If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the _Communication_ section for more details.
+If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the __Communication__ section for more details.
 
-
-## General Disclaimers
-
-This syllabus is a general plan, deviations announced to the class by the instructor may be necessary.
 
 ## Course Outline
 
-For an outline of the course, please see the course schedule document. 
+For an outline of the course, please see the course __Schedule__ document. 
 
 ## More Details
 

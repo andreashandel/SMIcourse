@@ -17,10 +17,9 @@ This document contains suggestions for a possible, completely optional class pro
 
 # Project Ideas
 
-You might already have a specific question or system you are interested in modeling, or maybe in this course you got some ideas. If you are new to modeling, it might be difficult to decide what questions simulations models are good for. Some thoughts on this can be found [in this review paper we recently wrote](http://handelgroup.uga.edu/publication/2019-handel-natrevimm/). We discuss 3 major model uses, namely _Exploration_, _Prediction_ and _Fitting_.
+You might already have a specific question or system you are interested in modeling, or maybe this course led to ideas. If you are new to modeling, it might be difficult to decide what questions simulations models are good for. Some thoughts on this can be found [in this review paper we recently wrote](http://handelgroup.uga.edu/publication/2020-handel-natrevimm/). We discuss 3 major model uses, namely _Exploration_, _Prediction_ and _Fitting_.
 
-Given the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not too suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest focusing on doing an _Exploration_ project.  
-
+Given the shortness of time and the complexity of the approach, doing something that involves fitting data to models is maybe not suitable, unless you already have good R coding and model fitting experience (e.g. fitting statistical/phenomenological models). I suggest that if you want to try a project within the timeframe of the course, focus on doing an _Exploration_ project.  
 
 
 
@@ -33,20 +32,17 @@ Here are some general pointers on how you could go about doing a project, depend
 
 * **Requires no model building and a little bit of coding:** Use one of the apps included in DSAIRM. Instead of accessing it through the graphical interface, write a few lines of code that call the simulator functions. See level 2 description in the [DSAIRM tutorial.](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html) 
 
-* **Requires model building but no coding:** Use the [modelbuilder](https://ahgroup.github.io/modelbuilder/) R package to build your own model and explore it graphically. Note that _modelbuilder_ is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know in the _modelbuilder_ slack channel.
+* **Requires model building but no coding:** Use the [modelbuilder](https://ahgroup.github.io/modelbuilder/) R package to build your own model and explore it graphically. Note that _modelbuilder_ is in early stages of development. See the package website for more details. It should work, but you might encounter bugs. If so, let us know in the _modelbuilder_ slack channel. Also, at this stage _modelbuilder_ is not suitable to build very detailed models, so if you use it, keep your model simple.
 
-* **Requires some model building and a coding:** Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the [DSAIRM tutorial.](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html) 
+* **Requires some model building and coding:** Use one of the apps included in DSAIRM. Get the code for the model you are interested in, modify it to fit your system. Then run it to analyze your system and answer your question. See level 3 description in the [DSAIRM tutorial.](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html) 
 
-* **Requires some model building and a coding:** the [modelbuilder](https://ahgroup.github.io/modelbuilder/) R package to build your own model. Export the model code from _modelbuilder_, edit further and run the code to answer your question. 
-
+* **Requires some model building and coding:** Use the [modelbuilder](https://ahgroup.github.io/modelbuilder/) R package to build an initial version of your model. Export the model code from _modelbuilder_, edit further and run the code to answer your question. 
 
 
 # Project Logistics
-Since this is completely optional, it's really up to you how to structure your project. You can just play around, you can try to write a formal report/paper, etc. For any questions, feedback, etc., use the Slack channel. 
+Since this is completely optional, it's really up to you how to structure your project. You can just play around, or you can try to write a formal report/paper. Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group. But but you are certainly welcome to try and do so. You can use the _courseproject_ Slack channel to see if you can find others to team up with.
 
-Given the shortness of time, it's probably tricky to try to team up with others and do a project as a group, but you are certainly welcome to try and do so.
-
-If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project.
+If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time in our closing Zoom session for anyone who wants to briefly (5-10min) present their findings. If you want to do that, let us know beforehand.
 
 
 # Project communications 
