@@ -22,13 +22,12 @@ Abbreviations used: [DSAIRM = Dynamical Systems Approach to Immune Response Mode
 
 ***
 
-## Preparation for the course
+
+## Before course start
 
 * Familiarize yourself with this website. Start by read through all the documents apart from the ones under the _Modules_ tab.
 * Now go through materials listed under _Module 1_. You should end up with R/Rstudio up and running and the DSAIRM package installed and working. 
 * Read [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/).
-
-***
 
 
 ## Monday 2020-07-20
@@ -46,6 +45,8 @@ _break_
 12 - 2  PT On your own: DSAIRM/modeling practice. Communication through Slack.  
 
 2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&A
+
+Rest of day on your own: DSAIRM/modeling practice. Communication through Slack.  
 
 ***
 
@@ -65,6 +66,7 @@ _break_
 
 2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&A
 
+Rest of day on your own: DSAIRM/modeling practice. Communication through Slack.  
 
 ***
 
@@ -78,4 +80,10 @@ _break_
 
 ***
 
+## After course end
+
+* This course website will remain online. 
+* DSAIRM and modelbuilder packages will continue to be available.
+* Zoom sessions will be posted by us or SISMID. You should be notified.
+* We will keep the Slack workspace open until at least end of July (but might not check regularly). Feel free to keep using it. If you want to continue communications with us or fellow classmates beyond the course, we suggest you switch to other means (e.g. email) after the end of July.
 

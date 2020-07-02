@@ -45,5 +45,5 @@ Since this is completely optional, it's really up to you how to structure your p
 If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time in our closing Zoom session for anyone who wants to briefly (5-10min) present their findings. If you want to do that, let us know beforehand.
 
 
-# Project communications 
+# Project Communications 
 Any general communication and asking of questions regarding this project should happen in the _courseproject_ channel. Of course, if you decide to work with others on a project, you are welcome to communicate with your project group members in any other way you like.
