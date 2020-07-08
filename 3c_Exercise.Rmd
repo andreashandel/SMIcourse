@@ -23,7 +23,9 @@ We recommend that no matter what your level is, you should at least briefly expl
 
 The easiest way to learn about these models is by using the graphical interface of DSAIRM. 
 
-Explore the models listed in the __The Basic__ section of DSAIRM. Go through all the tabs at the bottom of each app. __The Model__ and __What to do__ are the most important sections. If you are completely new to these kinds of models, work through all the listed tasks to get an idea of how these models work.
+Explore the models listed in the __The Basic__ section of DSAIRM. You will find a model that describes a simple extracellular (bacteria) infection and one that describes a simple intracellular (virus) infection. A third model shows a more complicated version of a virus infection which includes several components of the immune response.
+
+For each of the apps/models, go through all the tabs at the bottom of each app. __The Model__ and __What to do__ are the most important sections. If you are completely new to these kinds of models, work through all the listed tasks to get an idea of how these models work.
 
 
 # Intermediate I

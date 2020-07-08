@@ -16,20 +16,11 @@ library(emo)
 
 
 # Overview
-This module describes some of the uncertainties that can affect outputs obtained from simulation models.
+This document describes some of the uncertainties that can affect outputs obtained from simulation models.
 
 # Learning Objectives
-* Know how different aspects of the model building and running process affect outcomes.
+* Know how different aspects of the model building and running process affeect outcomes.
 * Be familiar with approaches that allow one to quantify certain types of uncertainty.
-
-# Main sources of model uncertainty
-
-There are a few 
-
-The hardest
-
-
-Each of these are described in more detail in separate documents in this module.
 
 
 # Slides
