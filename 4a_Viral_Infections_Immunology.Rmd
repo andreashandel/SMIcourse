@@ -1,0 +1,39 @@
+---
+title: SMI 2020 - Viral Infections and Immunology
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides materials that discuss a few important viral pathogens and the immune response to those pathogens.
+
+
+
+# Influenza
+
+
+# HIV
+
+
+# HCV
+
+
+# Coronaviruses
+
+
+
+# Further materials
+
+_These sources cover more or less the same material that you just read, so checking them out is optional._
+
+
+

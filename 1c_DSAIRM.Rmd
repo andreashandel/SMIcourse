@@ -26,14 +26,18 @@ DSAIRM, which stands for _Dynamical Systems Approach to Immune Response Modeling
 
 # DSAIRM hands-on
 
-If you haven't done already, load DSAIRM. You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you that you can start using it by typing `dsairmmenu()` into the R console. Do that to start it
+I assume you have installed DSAIRM as described in the previous reading. If you haven't done already, load DSAIRM. You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you that you can start using it by typing `dsairmmenu()` into the R console. Do that to start it
 
 ```{r, eval=FALSE}
 dsairmmenu()
 ```
 
 A menu should open in your browser, from which you can explore different models/apps.
-You can explore DSAIRM briefly, but the main goal for now is to have it up and running. 
+Explore DSAIRM briefly, just to make sure things seem to work ok. The main goal for now is to have it up and running. If you encounter any problems, let us know on Slack.
+
+# Browser-based DSAIRM
+
+While it is best to install and use DSAIRM as an R package, there is also an option to run it through your browser from a shiny server. This option is described on the DSAIRM website. If you have problems with your installed version of DSAIRM, using it through the browser is an option, but I still recommend you try to get it working locally.
 
 
 

@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>IDEMA Course Glossary</title>
+<title>SMI Course Glossary</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -297,41 +297,65 @@ $(document).ready(function () {
         <li>
           <a href="./1d_Further_Tools.html">1d. Further Tools</a>
         </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./1e_Exercises.html">1e. Exercises</a>
+          <a href="./2a_Immunology_Introduction.html">2a. Introduction to Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_Introduction_to_Modeling.html">2a. Introduction to Simulation Modeling</a>
+          <a href="./2a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./2b_Exercises.html">2b. Exercises</a>
+          <a href="./3b_Simple_Models.html">3b. A few simple models</a>
+        </li>
+        <li>
+          <a href="./3c_Exercises.html">3c. Exercises</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Viral Infections and Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./3a_Immunology_Introduction.html">3a. Introduction to Immunology</a>
-        </li>
-        <li>
-          <a href="./3b_Exercises.html">3b. Exercises</a>
+          <a href="./4a_Viral_Infections_Immunology.html">4a. Viral Infections and Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Using Simulation Models</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">5. Using Simulation Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./4a_Uses_of_Simulation_Models.html">4a. Uses of Simulation Models</a>
+          <a href="./5a_Uses_of_Simulation_Models.html">5a. Uses of Simulation Models</a>
         </li>
         <li>
-          <a href="./4b_Exercises.html">4b. Exercises</a>
+          <a href="./5b_Exercises.html">5b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">6. Extracellular Infections and Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./6a_Extracellular_Infections_Immunology.html">6a. Extracellular Infections and Immunology</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">7. What influences model results</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./7a_What_influences_model_results.html">7a. What influences model results</a>
+        </li>
+        <li>
+          <a href="./7b_Exercises.html">7b. Exercises</a>
         </li>
       </ul>
     </li>
@@ -378,24 +402,44 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">IDEMA Course Glossary</h1>
+<h1 class="title toc-ignore">SMI Course Glossary</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-06-05 11:08:01</h4>
+<h4 class="date">2020-07-03 11:35:40</h4>
 
 </div>
 
 
-<p><strong>This page is work in progress.</strong></p>
-<p>As in any field, there are lots of technical terms related to Infectious Disease Epidemiology and Modeling. I try to explain them whenever they show up first. However, I figured it might also be useful to have one central place for quick reference. Terms are ordered alphabetically. This is how I define them, others might have different definitions - and so might I in the future, I try to change/update my understanding of things every so often 😁.</p>
-<p>Note that in general, there is no regulatory terminology agency, so everyone can use these words to mean whatever they want. While some are fairly well defined, other terms are often used and abused in ways outside the definitions I provide. Always look carefully at what is described to decide what exactly is going on.</p>
-<p>This list is and will likely forever remain incomplete. If you think there is a specific term missing that should be listed and explained here, please let me know.</p>
+<p>As in any field, there are lots of technical terms related to Modeling and Immunology. We try to explain them whenever they show up first. However, we figured it might also be useful to have one central place for quick reference. Terms are ordered alphabetically. This is how we define them, others might have slighlty different definitions.</p>
+<p>This list is and will likely forever remain a work in progress and incomplete. If you think there is a specific term missing that should be listed and explained here, please let us know.</p>
 <hr />
-<p><strong>Mechanistic Modeling:</strong> Building and using models that explicitly incorporate mechanisms and processes of the system under study to understand <em>how</em> things interact and lead to specific outcomes. Many models in the hard sciences are of this type. A common way to formulate such models is with differential equations.</p>
-<p><strong>Parameter:</strong></p>
-<p><strong>Reproductive Number:</strong> The expected number of new infected and infectious individuals, created by one individual (of the same type). Also known as <strong>reproductive/reproduction rate</strong> (bad terminology, it’s not a rate.)</p>
+<div id="modeling-related-terms" class="section level2">
+<h2>Modeling related terms</h2>
+<p><strong>Agent Based Model (ABM):</strong> Also called individual-based models (IBM). A model in which individuals/agents are explicitly modeled. Agents can be entities such as hosts, virions, bacteria, cells, etc. Models are usually stochastic and have spatial structure (see also NetLogo).</p>
+<p><strong>AIC:</strong> An Information Criterion (often also called Akaike Information Criterion). A statistical measure that allows one to compare the goodness of fit of multiple models. Other quantities, such as BIC, DIC, Likelihood ratio, etc. can also be used for model selection.</p>
+<p><strong>Compartment:</strong> Corresponds usually to a variable in a model, tracks the number of some variable in a certain stage. For instance the compartment/variable of cells in the infected state. Compartments track total numbers of a quantity, as opposed to agent-based model, where each unit is tracked individually (e.g. each infected cell is being modeled, instead of just modeling the compartment of the total number of infected cells).</p>
+<p><strong>Delay differential equation (DDE):</strong> A differential equation (or more often, a set of differential equations) that describe the dynamics of one or multiple quantities and allow for delayed actions. Example: The influx of new cells into a system could depend on the number of cells several hours/days ago.</p>
+<p><strong>Discrete time model:</strong> A mathematical model in which one or multiple variables are updated in discrete time-steps. Contrast this with differential equation models, which implement continuous-time dynamics.</p>
+<p><strong>Deterministic:</strong> A system that – for a given set of initial conditions and parameters – produces always the same dynamics/outcome</p>
+<p><strong>Dynamic model:</strong> A model that tracks how entities change as a function of time.</p>
+<p><strong>Fitting/Inference:</strong> The rigorous, statistical comparison of a (mechanistic or phenomenological) model with data. This is used to test hypotheses and estimate parameters.</p>
+<p><strong>Initial condition:</strong> The state of the system (i.e. the values of the different variables of a system) at the beginning (usually at the start of the infection, or at the start of treatment, etc.). Needs to be specified to allow simulating a model.</p>
+<p><strong>Mechanistic model:</strong> A model that explicitly describes processes/mechanisms of a system, either in terms of mathematical equations or computer instructions.</p>
+<p><strong>Parameter:</strong> A quantity of a model that is usually considered fixed. For instance the life-span of an infected cell is a parameter. Parameter values are needed to fully specify a system. They can be obtained from experimental data, either through reading the literature or through fitting of models to data.</p>
+<p><strong>Phenomenological model:</strong> A model that captures correlations between certain quantities without invoking specific mechanisms. Most statistical models fall into this category.</p>
+<p><strong>Ordinary differential equation (ODE):</strong> A differential equation (or more often, a set of differential equations) that describe the continuous-time dynamics of one or multiple quantities/variables. The left-hand side of the equation specifies the quantity/variable; the instantaneous change is specified on the right-hand side of the equation.</p>
+<p><strong>Quantitative model:</strong> A mathematical or computational description of some system of interest.</p>
+<p><strong>R:</strong> Freely available programming language that allows for relatively easy and convenient implementation of a large number of statistical and scientific research projects.</p>
+<p><strong>Spatial model:</strong> A model that in some way explicitly accounts for spatial structure. Most ABM are spatial models, compartmental models can include spatial features.</p>
+<p><strong>Statistical Learning:</strong> A term that seems to become more widely used in recent years. While some people distinguish this term from <strong>Statistics</strong> and consider it a sub-field, the two terms are often used interchangably.</p>
 <p><strong>Statistics:</strong> The basic/classical machinery for data analysis. Depending on the type of data, many different approaches have been developed (parametric vs. non-parametric methods, longitudinal analysis, time-series analysis, and many more). Models tend to be simple and interpretable, the goal is to understand how inputs (predictors) relate to outcomes. Statistics was developed when data was sparse, computers didn’t exist, and mainly scientists interested in a deep understanding of their data used it. Because of this, statistical models tend to be simple and work well on small datasets.</p>
-<p><strong>Statistical Learning:</strong> A term that seems to become more widely used in recent years. While some people distinguish this term from <strong>Statistics</strong> and consider it a sub-field (see e.g. Chapter 1 of <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/"><em>Introduction to Statistical Learning</em></a>), the two terms are often used interchangably.</p>
-<p><strong>Variable:</strong> Any quantity that we consider to change (i.e. be variable). Almost always the change is over time. Contrast that to <strong>Parameter</strong>.</p>
+<p><strong>Stochastic:</strong> A system that can produce varying dynamics/outcomes when simulated multiple times, even for a given set of initial conditions and parameters.</p>
+<p><strong>Uncertainty/Sensitivity analysis:</strong> An approach in modeling that helps one to understand how uncertain model outcomes are, given uncertainty in the inputs. It also allows one to figure out how much of the outcome uncertainty can be attributed to specific inputs. Inputs are often parameters, but don’t have to be.</p>
+<p><strong>Variable:</strong> Any quantity that we consider to change (i.e. be variable). Almost always the change is over time. This change is tracked with some equation or model (e.g. an ODE, DDE, ABM). Contrast that to <strong>Parameter</strong>.</p>
+<p><strong>Mechanistic Modeling:</strong> Building and using models that explicitly incorporate mechanisms and processes of the system under study to understand <em>how</em> things interact and lead to specific outcomes. Many models in the hard sciences are of this type. A common way to formulate such models is with differential equations.</p>
+</div>
+<div id="immunology-related-terms" class="section level2">
+<h2>Immunology related terms</h2>
+</div>
 
 
 

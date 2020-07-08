@@ -1,0 +1,37 @@
+---
+title: SMI 2020 - Extracellular Infections and Immunology
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides materials that discuss a few important extracellular (bacteria and larger) pathogens and the immune response to those pathogens.
+
+
+
+# Tuberculosis
+
+
+# Malaria
+
+
+# Helminths
+
+
+
+
+# Further materials
+
+_These sources cover more or less the same material that you just read, so checking them out is optional._
+
+
+

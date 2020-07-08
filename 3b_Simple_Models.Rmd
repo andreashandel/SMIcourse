@@ -1,0 +1,33 @@
+---
+title: A few simple models 
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides an introduction to a few basic models that describe within-host infection dynamics.
+
+# Learning Objectives
+* Be familiar with a few basic within-host models.
+
+
+# Slides
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+
+
+
+
+
+# Further materials
+

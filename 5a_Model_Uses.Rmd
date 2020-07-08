@@ -1,0 +1,35 @@
+---
+title: Uses of Simulation Models
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document describes different uses for simulation models.
+
+# Learning Objectives
+* Know what simulation models can be used for.
+* Be able to differentiate between model use types.
+* Know about advantages and disadvantages of different model use types.
+
+
+# Slides
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+
+
+
+
+
+# Further materials
+

@@ -12,7 +12,7 @@ output:
 
 
 # Overview
-This is a very quick introduction to R and RStudio, to get you set up and running. We won't do any coding in this class, but we need R to use the DSAIDE package. R is a very useful tool to be familiar with if you want to get into ID modeling, or if you want to do data analysis. As such, having a bit of familiarity is good.
+This is a very quick introduction to R and RStudio, to get you set up and running. We won't go deep into coding in this course, but we need R to use the DSAIRM package. R is a very useful tool to be familiar with if you want to get into modeling, or if you want to do data analysis. As such, having a bit of familiarity is good.
 
 # Learning Objectives
 * Know some of the strengths and weaknesses of R.
@@ -38,12 +38,12 @@ While we use R in this course, it is not the only option for building and explor
 * If you haven't already, [install R first](https://www.r-project.org/). You can pick any mirror you like. If you already have R installed, make sure it is a fairly recent version, version 3.5 or newer. If yours is older, I suggest you update (install a new R version).
 * Once you have R installed, install the free version of [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/). Again, make sure it's a recent version.
 
-Installing R and RStudio should be fairly straightforward. If you want detailed instructions [this reading provides more detailed steps](https://rafalab.github.io/dsbook/installing-r-rstudio.html). If things don't work, ask for help in the _R/DSAIDE_ channel.
+Installing R and RStudio should be fairly straightforward. Everything should work on all the standard operating systems (Windows, Mac, and even Linux). If you want detailed instructions [this reading provides more detailed steps](https://rafalab.github.io/dsbook/installing-r-rstudio.html). If things don't work, ask for help on Slack.
 
-I personally only have experience with Windows, but everything should work on all the standard operating systems (Windows, Mac, and even Linux).
+
 
 # Installing and loading R packages
-Most of the functionality and features in R come in the form of add-on packages. There are tens of thousands of packages available, some big, some small, some well documented, some not. We'll be focusing on the `DSAIDE` package in this course. Of course, you are free to install and use any package you come across for any of the assignments.
+Most of the functionality and features in R come in the form of add-on packages. There are tens of thousands of packages available, some big, some small, some well documented, some not. We'll be focusing on the `DSAIRM` package in this course. Of course, you are free to install and use any package you come across and want to try.
 
 The "official" place for packages is the [CRAN website](https://cran.r-project.org/web/packages/available_packages_by_name.html). If you are interested in packages on a specific topic, the [CRAN task views](http://cran.r-project.org/web/views/) provide curated descriptions of packages sorted by topic. 
 
@@ -59,25 +59,20 @@ knitr::include_graphics("./media/installpackagesscreenshot.png")
 Try installing a package yourself. Open RStudio. Then go to the R prompt (the `>` symbol) in the lower-left corner and type
 
 ```{r packageinstall, eval = FALSE}
-install.packages('DSAIDE')
+install.packages('DSAIRM')
 ```
-
-__Question: As you installed the DSAIDE package, which of these packages was also installed: GillespieSSA, adaptivetau, gpDDE, irace? Record the answer. It will likely show up in the quiz.__ 
-
-*It is unlikely, but it could be that you already have all packages required by DSAIDE installed. In that case, you won't see any other packages installed. To see which of the packages above DSAIDE needs (and thus installs if it is not present), type `tools::package_dependencies("DSAIDE")` into the R console.*
 
 In RStudio, you can also install (and update/remove) packages by clicking on the 'Packages' tab in the bottom right window. 
 
-It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it's good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the `remotes` package and then use the `install_github` function. We won't do that now, but it's quite likely that at one point later in this course we will.
+It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it's good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the `remotes` package and then use the `install_github` function. We won't do that now, but it's quite likely that at one point you might want to install packages that way.
 
-
-You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the `library()` command (an alternative is `require()` but I recommend `library()`). For instance to load the `DSAIDE` package, type
+You only need to install a package once, unless you upgrade/re-install R. Once installed, you still need to load the package before you can use it. That has to happen every time you start a new R session. You do that using the `library()` command (an alternative is `require()` but I recommend `library()`). For instance to load the `DSAIRM` package, type
 
 ```{r, eval=FALSE}
-library('DSAIDE')
+library('DSAIRM')
 ```
 
-You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you that you can start using it by typing `dsaidemenu()` into the R console. You can do that now, or go straight to the next reading, which will talk about DSAIDE in more detail.
+You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you that you can start using it by typing `dsairmmenu()` into the R console. You can do that now, or go straight to the next reading, which will talk about DSAIRM in more detail.
 
 # Learning R Studio
-While one can use R and do pretty much every task, including all the ones we cover in this class, without using RStudio, RStudio is very useful, has lots of features that make your R coding life easier and has become pretty much the default integrated development environment (IDE) for R. Since RStudio has lots of features, it takes time to learn them. You don't really need to know much about RStudio for this course. But if you are interested, a good resource to learn more about RStudio are the [R Studio Essentials](https://resources.rstudio.com/) collection of videos. 
+While one can use R and do pretty much every task, including all the ones we cover in this course, without using RStudio, RStudio is very useful, has lots of features that make your R coding life easier and has become pretty much the default integrated development environment (IDE) for R. Since RStudio has lots of features, it takes time to learn them. You don't really need to know much about RStudio for this course. But if you are interested, a good resource to learn more about RStudio are the [R Studio Essentials](https://resources.rstudio.com/) collection of videos. 

@@ -379,41 +379,65 @@ div.tocify {
         <li>
           <a href="./1d_Further_Tools.html">1d. Further Tools</a>
         </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./1e_Exercises.html">1e. Exercises</a>
+          <a href="./2a_Immunology_Introduction.html">2a. Introduction to Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_Introduction_to_Modeling.html">2a. Introduction to Simulation Modeling</a>
+          <a href="./2a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./2b_Exercises.html">2b. Exercises</a>
+          <a href="./3b_Simple_Models.html">3b. A few simple models</a>
+        </li>
+        <li>
+          <a href="./3c_Exercises.html">3c. Exercises</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Viral Infections and Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./3a_Immunology_Introduction.html">3a. Introduction to Immunology</a>
-        </li>
-        <li>
-          <a href="./3b_Exercises.html">3b. Exercises</a>
+          <a href="./4a_Viral_Infections_Immunology.html">4a. Viral Infections and Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Using Simulation Models</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">5. Using Simulation Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./4a_Uses_of_Simulation_Models.html">4a. Uses of Simulation Models</a>
+          <a href="./5a_Uses_of_Simulation_Models.html">5a. Uses of Simulation Models</a>
         </li>
         <li>
-          <a href="./4b_Exercises.html">4b. Exercises</a>
+          <a href="./5b_Exercises.html">5b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">6. Extracellular Infections and Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./6a_Extracellular_Infections_Immunology.html">6a. Extracellular Infections and Immunology</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">7. What influences model results</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./7a_What_influences_model_results.html">7a. What influences model results</a>
+        </li>
+        <li>
+          <a href="./7b_Exercises.html">7b. Exercises</a>
         </li>
       </ul>
     </li>
@@ -462,7 +486,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Further tools</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-01 16:23:28</h4>
+<h4 class="date">2020-07-07 10:16:53</h4>
 
 </div>
 
@@ -470,18 +494,19 @@ div.tocify {
 <p><strong>This reading is completely optional.</strong></p>
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This is a very short unit with a few pointers to other tools and resources that might be of interest. We won’t need then in this course, but some of you might decide to give them a try.</p>
-<p>All these readings are from another online course I teach, so there might be some comments that are specific to that course. You can ignore those.</p>
+<p>This is a very short unit with a few pointers to other tools and resources that might be of interest. We won’t need them in this course, but some of you might decide to give them a try.</p>
 </div>
 <div id="modelbuilder" class="section level1">
 <h1>modelbuilder</h1>
-<p>The DSAIRM package allows you to explore pre-written models. If you want to modify those models, you will have to get the underlying code and start editing it. This means you’ll have to do some R coding. To allow individuals to build their own models without having to code, we started to develop the <a href="">modelbuilder</a> R package. It is in an early stage, but functional. If interested, you can give it a try and use it to build your own simulation model. You won’t have to code. You will still need to ensure your model makes sense.</p>
+<p>The DSAIRM package allows you to explore pre-written models. If you want to modify those models, you will have to get the underlying code and start editing it. This means you’ll have to do some R coding. To allow individuals to build their own models without having to code, we started to develop the <a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a> R package. It is in an early stage, but functional. If interested, you can give it a try and use it to build your own simulation model. You won’t have to code. You will still need to ensure your model makes sense. <em>modelbuilder</em> is not yet on CRAN, so you will have to install it from Github. The <a href="https://ahgroup.github.io/modelbuilder/"><em>modelbuilder</em> website</a> explains how.</p>
 </div>
 <div id="github" class="section level1">
 <h1>Github</h1>
+<p>Github is a very useful platform for working on projects, both those that mainly focus on coding and other types (e.g. data analysis, paper writing). Or hosting course materials, like the whole website for this course. It takes time to learn Github and we don’t have the time in this course. But it might be of interest. If you are interested, check out <a href="https://andreashandel.github.io/MADAcourse/1d_Github.html">this introduction</a> which I wrote for another online course I teach (and of course, feel free to browser through the whole course website if you have any interest in data analysis).</p>
 </div>
 <div id="rmarkdown" class="section level1">
 <h1>Rmarkdown</h1>
+<p>Rmarkdown and its many variants (bookdown, blogdown, etc.) have become very powerful and versatile tools that let you write reports, papers, slides, websites (like this one), etc. all using a fairly easy format. I am currently using Rmarkdown for almost everything I write. For a brief introduction on Rmarkdown and the general concept of reproducible research (and how Rmarkdown fits into that), see e.g. <a href="https://andreashandel.github.io/MADAcourse/1e_ToolsforReproducibility.html">this introduction</a>, which comes from the same data analysis course as the Github writeup.</p>
 </div>
 
 

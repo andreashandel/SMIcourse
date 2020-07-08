@@ -25,8 +25,8 @@ Abbreviations used: [DSAIRM = Dynamical Systems Approach to Immune Response Mode
 
 ## Before course start
 
-* Familiarize yourself with this website. Start by read through all the documents apart from the ones under the _Modules_ tab.
-* Now go through materials listed under _Module 1_. You should end up with R/Rstudio up and running and the DSAIRM package installed and working. 
+* Familiarize yourself with this website. Read through all pages apart from the ones under the _Modules_ tab.
+* Go through the materials listed under _Module 1_. You should end up with R/Rstudio up and running and the DSAIRM package installed and working. 
 * Read [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/).
 
 
@@ -42,11 +42,11 @@ _break_
 
 11 - 12 PT (1CT/2ET) - Zoom: Introduction to Modeling 
 
-12 - 2  PT On your own: DSAIRM/modeling practice. Communication through Slack.  
+12 - 2 PT - On your own: DSAIRM/modeling practice. Communication through Slack.  
 
 2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&A
 
-Rest of day on your own: DSAIRM/modeling practice. Communication through Slack.  
+Rest of day - On your own: DSAIRM/modeling practice. Communication through Slack.  
 
 ***
 
@@ -56,25 +56,23 @@ Rest of day on your own: DSAIRM/modeling practice. Communication through Slack.
 
 _break_
 
-9.30 - 10.30 PT (11.30CT/12.30ET) - Zoom: Model uses
+9.30 - 10.30 PT (11.30CT/12.30ET) - Zoom: How to use models
 
-10.30 - 12 PT: On your own: DSAIRM/modeling practice. Communication through Slack. 
+10.30 - 12 PT - On your own: DSAIRM/modeling practice. Communication through Slack. 
 
 12 - 1 PT (1CT/2ET) - Zoom: Extracellular Infections and Immunology
 
-1 - 2 PT (1CT/2ET) - Zoom: Extracellular Infections and Immunology
+1 - 2 PT (1CT/2ET) - Zoom: What influences model results
 
 2 - 2.30 PT (4CT/5ET) - Zoom: Discussion, Q&A
 
-Rest of day on your own: DSAIRM/modeling practice. Communication through Slack.  
+Rest of day - On your own: DSAIRM/modeling practice. Communication through Slack.  
 
 ***
 
 ## Wednesday 2020-07-22
 
-8 - 9 PT (10CT/11ET) - Zoom: Further modeling topics 
-
-9 - 10 PT On your own: DSAIRM/modeling practice. Communication through Slack. 
+8 - 10 PT (10CT/11ET) - Zoom: Further topics based upon request and/or time for modeling practice.
 
 10 - 11 PT (12CT/1ET) - Zoom closing session: Q&A, project presentation, wrap-up.
 
@@ -84,6 +82,6 @@ Rest of day on your own: DSAIRM/modeling practice. Communication through Slack.
 
 * This course website will remain online. 
 * DSAIRM and modelbuilder packages will continue to be available.
-* Zoom sessions will be posted by us or SISMID. You should be notified.
+* Zoom sessions will be recorded and posted by us or SISMID. You should be notified.
 * We will keep the Slack workspace open until at least end of July (but might not check regularly). Feel free to keep using it. If you want to continue communications with us or fellow classmates beyond the course, we suggest you switch to other means (e.g. email) after the end of July.
 

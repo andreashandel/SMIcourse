@@ -22,26 +22,38 @@ left:
             href: ./1c_DSAIRM.html
           - text: "1d. Further Tools"
             href: ./1d_Further_Tools.html
-          - text: "1e. Exercises"
-            href: ./1e_Exercises.html
-      - text: "2. Introduction to Simulation Modeling"
+      - text: "2. Introduction to Immunology"
         menu:
-          - text: "2a. Introduction to Simulation Modeling"
+          - text: "2a. Introduction to Immunology"
+            href: ./2a_Immunology_Introduction.html
+      - text: "3. Introduction to Simulation Modeling"
+        menu:
+          - text: "3a. Introduction to Simulation Modeling"
             href: ./2a_Introduction_to_Modeling.html
-          - text: "2b. Exercises"
-            href: ./2b_Exercises.html
-      - text: "3. Introduction to Immunology"
+          - text: "3b. A few simple models"
+            href: ./3b_Simple_Models.html
+          - text: "3c. Exercises"
+            href: ./3c_Exercises.html
+      - text: "4. Viral Infections and Immunology"
         menu:
-          - text: "3a. Introduction to Immunology"
-            href: ./3a_Immunology_Introduction.html
-          - text: "3b. Exercises"
-            href: ./3b_Exercises.html
-      - text: "4. Using Simulation Models"
+          - text: "4a. Viral Infections and Immunology"
+            href: ./4a_Viral_Infections_Immunology.html
+      - text: "5. Using Simulation Models"
         menu:
-          - text: "4a. Uses of Simulation Models"
-            href: ./4a_Uses_of_Simulation_Models.html
-          - text: "4b. Exercises"
-            href: ./4b_Exercises.html
+          - text: "5a. Uses of Simulation Models"
+            href: ./5a_Uses_of_Simulation_Models.html
+          - text: "5b. Exercises"
+            href: ./5b_Exercises.html
+      - text: "6. Extracellular Infections and Immunology"
+        menu:
+          - text: "6a. Extracellular Infections and Immunology"
+            href: ./6a_Extracellular_Infections_Immunology.html
+      - text: "7. What influences model results"
+        menu:
+          - text: "7a. What influences model results"
+            href: ./7a_What_influences_model_results.html
+          - text: "7b. Exercises"
+            href: ./7b_Exercises.html
   - text: "Project"
     href: ./Project_Information.html
   - text: "Communication"
