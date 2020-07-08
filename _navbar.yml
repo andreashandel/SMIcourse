@@ -52,8 +52,14 @@ left:
         menu:
           - text: "7a. What influences model results"
             href: ./7a_What_influences_model_results.html
-          - text: "7b. Exercises"
-            href: ./7b_Exercises.html
+          - text: "7b. Structural Uncertainty"
+            href: ./7b_Structural_Uncertainty.html
+          - text: "7c. Parameter Uncertainty"
+            href: ./7c_Parameter_Uncertainty.html
+          - text: "7d. Model Stochasticity"
+            href: ./7d_Model_Stochasticity.html
+          - text: "7e. Exercises"
+            href: ./7e_Exercises.html
   - text: "Project"
     href: ./Project_Information.html
   - text: "Communication"
