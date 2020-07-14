@@ -17,35 +17,35 @@ output:
 library(emo)
 ```
 
-To distinguish clearly which external resources are directly related to the course and which are not, I decided to have two resource pages. The _Course Resources_ page lists materials directly related to and used/mentioned in the course. This page lists a lot of other resources that might not be used or mentioned explicitly in the course, but that might be useful and interesting. Everything listed here is of course related to the course topic, i.e. infectious disease epidemiology (and related areas, e.g. ecology/evolution), with a focus on a model-based perspective. For even more materials, see the links to various lists by others at the end of this document.
+To distinguish clearly which external resources are directly related to the course and which are not, we decided to have two resource pages. The _Course Resources_ page lists materials directly related to and used/mentioned in the course. This page lists other resources that might not be used or mentioned explicitly in the course, but that might be useful and interesting. 
 
 Apart from the books, most other materials described below are (should be) freely available online. For better or for worse, a lot of the resources I list below are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If any link does not work and you can't access the materials for some reason, let me know so I can update this document.
 
+_Let me know if you find other relevant and good resources that you think could be listed here._
 
-# Books
-* [Modeling Infectious Diseases]() 
+
+# Within-host simulation modeling books
+
+_There are not a whole lot of textbooks teaching simulation modeling that are both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling._
+
+
+* Nowak and May (2001). "Virus Dynamics: Mathematical Principles of Immunology and Virology." Oxford University Press.  
+* Wodarz (2007). "Killer Cell Dynamics - Mathematical and Computational Approaches to Immunology." New York: Springer. 
+* Esteban A. Hernandez-Vargas (2019). "Modeling and Control of Infectious Diseases in the Host", Academic Press.
+
+
+
+# Immunology books
+
+* Janeway
 
 
 # Journal articles
 
+* Perelson (2002). “Modelling Viral and Immune System Dynamics.” Nature Reviews Immunology.
+* Antia et al (2005). “The role of models in understanding CD8+ T-cell memory.” Nature Reviews Immunology.
 
 
-# Online courses
-* [Data science for economists](https://github.com/uo-ec607/lectures)
-
-
-# Hands-on/interactive resources
-
-* [Swirl](http://swirlstats.com) is a package that teaches R inside R. Especially beginner students have found it to be a good start since it provides very encouraging feedback. The downside is that all code writing happens interactively in the console, which is not the way one should write `real` code. It's still worth checking out if you want to get some more direct, hands-on R practice.
-
-
-
-# Podcasts
-* 
-
-
-# Videos
-To be filled
 
 
 # Lists and other sources
@@ -53,4 +53,3 @@ To be filled
 * I created lists related to R and Data Analysis (as well as other topics). [You can find all resource lists here](https://andreashandel.github.io/research-and-teaching-resources/). (These lists are works in progress, and some are better/more useful than others. Feel free to send me links/resources to include).
 
 
-_Obviously, there is no way my list is exhaustive. Let me know if you find other relevant and good sources._

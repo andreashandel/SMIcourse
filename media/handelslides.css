@@ -5,7 +5,9 @@
 
 .small { font-size: 70% }
 
-
+slides > slide:not(.nobackground):after {
+  content: '';
+}
 
 /* Remove slide numbering */
 .remark-slide-number {

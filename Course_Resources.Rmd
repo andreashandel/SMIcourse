@@ -37,6 +37,7 @@ All materials described below are (should be) freely available online. If you ca
 
 * [Dynamical Systems Approach to Immune Response Modeling (DSAIRM)](https://ahgroup.github.io/DSAIRM/). The R package was written for this course and allows you to engage in hands-on explorations of the different topics we will cover.
 
+* [modelbuilder](https://ahgroup.github.io/modelbuilder/). An R package that allows you to build and analyze your own models without having to write code. This is optional, we won't formally use it in the course but you might want to explore it on your own. Note that the package is work in progress (feel free to contribute `r emo::ji('smiley')`).
 
 
 

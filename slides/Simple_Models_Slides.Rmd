@@ -3,10 +3,11 @@ title: "A few simple within-host models"
 author: "[Andreas Handel](https://www.andreashandel.com)"
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-bibliography: ./media/references.bib
+bibliography: ../media/references.bib
 output: 
   ioslides_presentation:
-        self_contained: true
+      self_contained: true
+      css: "../media/handelslides.css"
 ---
 
 
@@ -228,7 +229,7 @@ $$
 * Diagrams specify a model somewhat, but not completely. The diagram below could be implemented as ODEs (shown) or discrete time or stochastic models.
 
 ```{r bacteriadiagram,  fig.cap='',  echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics("./media/bacteriadiagram.png")
+knitr::include_graphics("../media/bacteriadiagram.png")
 ```
 
 
@@ -268,7 +269,7 @@ $$
 ## A simple virus infection model
 
 ```{r virusdiagram,  out.width = '70%', echo=FALSE, fig.align='center'}
-knitr::include_graphics("./media/chronicvirusmodel.png")
+knitr::include_graphics("../media/chronicvirusmodel.png")
 ```
 
 $$
@@ -282,7 +283,7 @@ $$
 ## A simple virus infection model
 
 ```{r virusmodels,  fig.cap='Dynamics of simple viral infection models. A) acute infection. B) chronic infection.', out.width = '80%', fig.align='center', echo=FALSE}
-knitr::include_graphics("./media/virusmodels.png")
+knitr::include_graphics("../media/virusmodels.png")
 ```
 
 
@@ -315,7 +316,7 @@ Can you spot the differences?
 <div style="float: left; width: 50%;">
 
 ```{r extendedvirus,  fig.cap='',  echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics("./media/extendedvirusmodel.png")
+knitr::include_graphics("../media/extendedvirusmodel.png")
 ```
 
 $$
@@ -330,7 +331,7 @@ $$
 
 <div style="float: right; width: 50%;">
 ```{r envdiagram,  fig.cap='',  echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics("./media/simpleenvironmentalmodel.png")
+knitr::include_graphics("../media/simpleenvironmentalmodel.png")
 ```
 \begin{aligned}
 \dot S & =  m - nS - bSE \\
@@ -360,7 +361,7 @@ knitr::include_graphics("./media/simpleenvironmentalmodel.png")
 
 ## Model Diagram
 ```{r VirusIR,  echo=FALSE, out.width="90%", fig.align='center'}
-knitr::include_graphics("./media/virusandIRmodel.png")
+knitr::include_graphics("../media/virusandIRmodel.png")
 ```
 
 
