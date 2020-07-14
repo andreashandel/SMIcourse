@@ -57,7 +57,8 @@ img {
 }
 
 
-/* Change color of reguler text and h2
+/* Change color of regular text and h2
+also change spacing between heading and main text
 -------------------- */
 slides > slide {
 	color: black;
@@ -65,7 +66,9 @@ slides > slide {
 
 h2 {
 	color: #123c66;  /* dark blue */
+	margin-bottom: -30px;
 }
+
 
 /* Turn off page count in footer */
 slides > slide:not(.nobackground):after {
@@ -77,7 +80,7 @@ slides > slide:not(.nobackground):after {
 -------------------- */
 p {
 	margin-right: 0;
-}
+
 
 
 article
@@ -142,11 +145,10 @@ iframe {
 	font-size: 50%;
 }
 
-
 .small { font-size: 70% }
 
 
-/* Increase vertical spacing for lists */
+/* Change vertical spacing for lists */
 li:not(:last-child) {
     margin-bottom: 5px;
 }
