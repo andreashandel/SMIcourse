@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>What influences model results</title>
+<title>Structural Uncertainty</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -493,30 +493,79 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">What influences model results</h1>
+<h1 class="title toc-ignore">Structural Uncertainty</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-07 12:38:41</h4>
+<h4 class="date">2020-07-08 17:44:23</h4>
 
 </div>
 
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document describes some of the uncertainties that can affect outputs obtained from simulation models.</p>
+<p>This document describes the idea of structural uncertainty, the fact that every model is a simplified version of reality and the way such simplifications are implemented can impact results.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Know how different aspects of the model building and running process affeect outcomes.</li>
-<li>Be familiar with approaches that allow one to quantify certain types of uncertainty.</li>
+<li>Be familiar with the idea of structural uncertainty.</li>
+<li>Know how to explore the impact of structural uncertainty.</li>
 </ul>
+<div id="structural-uncertainty" class="section level2">
+<h2>Structural Uncertainty</h2>
+<ul>
+<li>Models are simplifications and abstractions of the real world.</li>
+<li>Specific assumptions lead to different models.</li>
+<li>Every model is ‘wrong’ in some sense, but some might be useful.</li>
+<li>We need to decide which variables and processes to include and which to exclude.</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="media/mapfigure.png" alt="Which one is the right model of Georgia?" width="100%" />
+<p class="caption">
+Which one is the right model of Georgia?
+</p>
 </div>
-<div id="slides" class="section level1">
-<h1>Slides</h1>
-<p>We will discuss this topic in one of the zoom sessions. The slides for that session <a href="">can be found here.</a></p>
+<hr />
+</div>
+</div>
+<div id="structural-uncertainty-1" class="section level1">
+<h1>Structural Uncertainty</h1>
+<ul>
+<li>Include age or not?</li>
+<li>Allow for co-infection or not?</li>
+<li>Include treatment or not?</li>
+<li>Once we have decided on that, we need to decide how to model each process.
+<ul>
+<li>What type of model? (ODE, IBM, etc.)</li>
+<li>How to implement each process?</li>
+</ul></li>
+</ul>
+<p>Growth: Exponential or Linear or Saturating?</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dot{B} &amp; = g B(1-\frac{B}{B_{max}}) - d_B B - kBI\\
+\dot{I} &amp; = r BI - d_I I \\
+\\
+\dot{B} &amp; = g - d_B B - kBI\\
+\dot{I} &amp; = r BI - d_I I \\
+\end{aligned}
+\]</span></p>
+</div>
+<div id="structural-uncertainty---example-2" class="section level1">
+<h1>Structural Uncertainty - Example 2</h1>
+<p>Dobrovolny et al compared different influenza models and assessed how they matched experimental data.</p>
+<div class="figure" style="text-align: center">
+<img src="media/dobrovolny.png" alt="Top: models, bottom: data" width="90%" />
+<p class="caption">
+Top: models, bottom: data
+</p>
+</div>
+<p>More details: Dobrovolny et al (2013) PLoS One. <em>Assessing Mathematical Models of Influenza Infections Using Features of the Immune Response</em>.</p>
 </div>
 <div id="further-materials" class="section level1">
 <h1>Further materials</h1>
+<ul>
+<li>The <em>Model variant exploration</em> app in DSAIRM explores the impact of different model formulations.</li>
+</ul>
 </div>
 
 

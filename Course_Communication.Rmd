@@ -22,20 +22,22 @@ library(emo)
 
 The main mode of communication will be through Slack. You should have gotten an email invite to the Slack workspace for this class.
 
+**Note that SISMID set up a Slack workspace for the whole summer institute, with a channel for each Module. We decided that it's easier and more flexible if we have a separate workspace for this module. Thus, you might get invitations to 2 workspaces, the general SISMID one (called sismidworkspace) and the one for this module (called smi-course-2020). Join both. If you have not gotten an email invite to the Slack workspace SMI-Course-2020 by Sunday night, please let us know, either through the SISMID Slack channel or by email, so we can make sure everyone is part of the workspace for our course.**
+
 We will use Slack to send announcements, instructions how to join the Zoom calls, and any other important course communications.
 
-Note that SISMID set up a Slack workspace for the whole summer institute, with a channel for each Module. We decided that it's easier and more flexible if we have a separate workspace for this module. Thus, you might get invitations to 2 workspaces, the general SISMID one (called sismidworkspace) and the one for this module (called smi-course-2020). Join both.
-
 If you are unfamiliar with Slack, it is essentially a chat/discussion tool. Within the main workspace for this class, you will find different channels. That's the Slack name for a discussion forum. The names and descriptions of the different channels should be self-explanatory. You can also use Slack to send one or more individuals direct messages. 
-We will use Slack for all class related communication. Check regularly. 
+We will use Slack for all class related communication. During the coding sessions, we will be on Slack to answer questions.
 
-Use the Slack channels widely to ask questions, to answer others' questions, to notify us things that are unclear/wrong, to post links to interesting resources, etc. Hopefully we can use Slack to capture some of the in-class interactions that we can't have in an online course, and build a _community of learners_ where you help and support each other. So please engage with each other. 
+Use the Slack channels widely to ask questions, to answer your classmates' questions, to notify us of things that are unclear/wrong, to post links to interesting resources, etc. Hopefully we can use Slack to capture some of the in-class interactions that we can't have in an online course, and build a _community of learners_ where you help and support each other. So please engage with each other and help each other. 
+
+**We have a lot of people in this course, which will make it hard for us to keep up with all questions, thus it will be very helpful if you can help answer each others' questions.**  
 
 It's better if you use Slack instead of email to ask questions. The reason is that if you have a question, it is likely that others have it too. By asking and answering online, everyone can see it. That said, there might be instances where the question only relates to you. In such cases, feel free to use email or send a direct message on Slack. 
 
 
 # Synchronous communication
 
-We will have several synchronous meetings through Zoom. Dates and times for Zoom meetings are listed in the _Schedule_ document. Those are subject to change. Any changes will be announced in the _announcement_  Slack channel. Also check that channel for information on how to join the Zoom meetings.
+We will have several synchronous lecture and discussion type meetings through Zoom. Dates and times for Zoom meetings are listed in the _Schedule_ document. Those are subject to change. Any changes will be announced in the _announcement_  Slack channel. Also check that channel for information on how to join the Zoom meetings.
 
 

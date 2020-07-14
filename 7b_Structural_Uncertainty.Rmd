@@ -1,5 +1,5 @@
 ---
-title: What influences model results
+title: Structural Uncertainty
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -16,17 +16,63 @@ library(emo)
 
 
 # Overview
-This document describes some of the uncertainties that can affect outputs obtained from simulation models.
+This document describes the idea of structural uncertainty, the fact that every model is a simplified version of reality and the way such simplifications are implemented can impact results.
 
 # Learning Objectives
-* Know how different aspects of the model building and running process affeect outcomes.
-* Be familiar with approaches that allow one to quantify certain types of uncertainty.
+* Be familiar with the idea of structural uncertainty.
+* Know how to explore the impact of structural uncertainty.
 
 
-# Slides
-We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+
+## Structural Uncertainty
+* Models are simplifications and abstractions of the real world.
+* Specific assumptions lead to different models.
+* Every model is 'wrong' in some sense, but some might be useful.
+* We need to decide which variables and processes to include and which to exclude.
+
+```{r mapfigure, echo=FALSE, fig.cap="Which one is the right model of Georgia?", out.width="100%", fig.align='center'}
+knitr::include_graphics("./media/mapfigure.png")
+```
+
+
+
+---
+# Structural Uncertainty
+  * Include age or not?
+  * Allow for co-infection or not?
+  * Include treatment or not?
+* Once we have decided on that, we need to decide how to model each process.
+  * What type of model? (ODE, IBM, etc.)
+  * How to implement each process?
+
+
+Growth: Exponential or Linear or Saturating?
+
+$$
+\begin{aligned}
+\dot{B} & = g B(1-\frac{B}{B_{max}}) - d_B B - kBI\\
+\dot{I} & = r BI - d_I I \\
+\\
+\dot{B} & = g - d_B B - kBI\\
+\dot{I} & = r BI - d_I I \\
+\end{aligned}
+$$
+
+
+
+
+# Structural Uncertainty - Example 2
+Dobrovolny et al compared different influenza models and assessed how they matched experimental data.
+
+```{r dobrovolny, echo=FALSE, fig.cap='Top: models, bottom: data', out.width = '90%', fig.align='center'}
+knitr::include_graphics("./media/dobrovolny.png")
+```
+
+More details: Dobrovolny et al (2013) PLoS One. _Assessing Mathematical Models of Influenza Infections Using Features of the Immune Response_.
+
 
 
 
 # Further materials
+* The _Model variant exploration_ app in DSAIRM explores the impact of different model formulations.
 

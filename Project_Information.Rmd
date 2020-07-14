@@ -40,7 +40,7 @@ Here are some general pointers on how you could go about doing a project, depend
 
 
 # Project Logistics
-Since this is completely optional, it's really up to you how to structure your project. You can just play around, or you can try to write a formal report/paper. Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group. But but you are certainly welcome to try and do so. You can use the _courseproject_ Slack channel to see if you can find others to team up with.
+To repeat, this is completely optional, so if you don't have the time or interest, you can just focus on learning the course material and not try your own project. If you do try, it is completely up to you how to structure your project. You can just play around, or you can try to write a formal report/paper. Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group, but you are certainly welcome to try and do so. You can use the _courseproject_ Slack channel to see if you can find others to team up with.
 
 If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time in our closing Zoom session for anyone who wants to briefly (5-10min) present their findings. If you want to do that, let us know beforehand.
 
