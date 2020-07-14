@@ -12,39 +12,25 @@ output:
 
 
 
-## A simple process/simulation model
-* We'll start with a very simple model, a population of individuals (humans or animals or pathogens) that grow or die.
+## A simple simulation model
+* We'll start with a very simple model, a population of entities (pathogens/immune cells/humans/animals) that grow or die.
 * We'll implement the model as a discrete time equation, given by:
 
 $$
 P_{t+dt} = P_t + dt ( g P_t - d_P P_t )
 $$
-$P_t$ are the number of people/pathogens in the population at time $t$, $dt$ is some time step, $g$ is the growth/birth rate and $d_P$ is the death rate.
 
-* What processes exactly does this model describe 'translated into words'?
+* $P_t$ are the number of pathogens in the population at current time $t$, $dt$ is some time step and $P_{t+dt}$ is the number of pathogens in the future after that time step has been taken.
+* The processes/mechanisms modeled are growth at rate $g$ and death at rate $d_P$.
 
-## A simple process/simulation model
-* We'll start with a very simple model, a population of individuals (humans or animals or pathogens) that grow or die.
-* We'll implement the model as a discrete time equation, given by:
 
-$$
-P_{t+dt} = P_t + dt ( g P_t - d_P P_t )
-$$
-$P_t$ are the number of people/pathogens in the population at time $t$, $dt$ is some time step, $g$ is the growth/birth rate and $d_P$ is the death rate.
-
+## A simple simulation model
+* If we started with 100 individuals (pathogens) at time t=0, had a growth rate of 12 and death rate of 2 (per some time unit, e.g. days or weeks or years), and took time steps of $dt=1$, how many individual would we have after 1,2,3... time units?
 * Why do we multiply by the time step, _dt_?
 
-## A simple process/simulation model
-* We'll start with a very simple model, a population of individuals (humans or animals or pathogens) that grow or die.
-* We'll implement the model as a discrete time equation, given by:
-
 $$
 P_{t+dt} = P_t + dt ( g P_t - d_P P_t )
 $$
-$P_t$ are the number of people/pathogens in the population at time $t$, $dt$ is some time step, $g$ is the growth/birth rate and $d_P$ is the death rate.
-
-* If we started with 100 people/pathogens at time t=0, had a growth rate of 12 and death rate of 2 (per year or day), and took time steps of 1 year (or day), how many individual would we have after 1,2,3... years/days?
-
 
 ## A simple simulation model - variant 1
 Original:
@@ -154,14 +140,17 @@ How can we extend the model to get growth that levels off as we reach some high 
 $$
 \dot{P}  = gP(1-\frac{P}{P_{max}}) - d_P P
 $$
-We changed the birth process from exponential/unlimited growth to saturating growth.
+
+* We changed the birth process from exponential/unlimited growth to saturating growth. $P_{max}$ is the level of $P$ at which the growth term is zero. 
+* If $P > P_{max}$, the growth term is negative. 
+* The population settles down at a level where the growth balances the decay, i.e. when $gP(1-\frac{P}{P_{max}}) = d_P P$.
 
 ## Adding a second variable
 
 * A single variable model is 'boring'.
 * The interesting stuff happens if we have multiple compartments/variables that interact.
 * Let's introduce a second variable.
-* Let's assume that _P_ is a population of some animal or some bacteria, which gets attacked and consumed by some predator, e.g. another animal or the immune system. We'll pick the letter _H_ for the predator (any label is fine). 
+* Let's assume that _P_ is a population of some bacteria (but could also be some animal), which gets attacked and consumed by some predator, e.g. the immune system or another animal. We'll pick the letter _H_ for the predator (any label is fine). 
 
 
 ## Adding a second variable
@@ -181,6 +170,7 @@ $$
 \dot{H} & = ?
 \end{aligned}
 $$
+
 * The more _P_ there is, the more the predator will grow, e.g. by eating _P_ or by receiving growth signals. 
 * What term could we write down for the growth dynamics of _H_?
 * Finally, _H_ individuals have some life-span after which they die. How can we model this?
@@ -226,40 +216,26 @@ $$
 ## Graphical model representation
 
 * It is important to go back and forth between words, diagrams, equations.
-* Diagrams specify a model somewhat, but not completely. The diagram below could be implemented as ODEs (shown) or discrete time or stochastic models.
+* Diagrams specify a model somewhat, but not completely. The diagram below could be implemented as ODEs or discrete time or stochastic models.
 
-```{r bacteriadiagram,  fig.cap='',  echo=FALSE, out.width = "100%", fig.align='center'}
+```{r bacteriadiagram,  fig.cap='',  echo=FALSE, out.width = "80%", fig.align='center'}
 knitr::include_graphics("../media/bacteriadiagram.png")
 ```
 
 
-$$
-\begin{aligned}
-\dot{B} & = g B(1-\frac{B}{B_{max}}) - d_B B - kBI\\
-\dot{I} & = r BI - d_I I
-\end{aligned}
-$$
-
 
 ## Model exploration
-* We could mathematically analyze the model behavior with 'pencil and paper' (or some software, e.g. Mathematica/Maple/Maxima). This only works for simple models. 
+<div style="float: left; width: 50%;">
+* We could analyze the model behavior with 'pencil and paper' (or some software, e.g. Mathematica/Maxima). This only works for simple models. 
 * We could analyze the model behavior by simulating it.
 * To simulate, we need to implement the model on a computer, specify starting (initial) conditions for all variables and values for all model parameters.
+</div>
 
-$$
-\begin{aligned}
-\dot{P} & = g_P P(1-\frac{P}{P_{max}}) - d_P P - kPH\\
-\dot{H} & = g_H P H - d_H H
-\end{aligned}
-$$
-$$
-\begin{aligned}
-\dot{B} & = g B(1-\frac{B}{B_{max}}) - d_B B - kBI\\
-\dot{I} & = r BI - d_I I
-\end{aligned}
-$$
-
-* The _Basic Bacteria Model_ app in DSAIRM allows you to analyze this model graphically.
+<div style="float: right; width: 50%;">
+```{r nribacteria,  out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("../media/nri_review_fig3.png")
+```
+</div>
 
 
 
@@ -268,23 +244,27 @@ $$
 
 ## A simple virus infection model
 
-```{r virusdiagram,  out.width = '70%', echo=FALSE, fig.align='center'}
-knitr::include_graphics("../media/chronicvirusmodel.png")
+```{r nrivirus,  out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("../media/nri_review_fig2a.png")
 ```
 
-$$
-\begin{aligned}
-\textrm{Uninfected Cells} \qquad \dot{U} & = n -d_U U - bUV \\
-\textrm{Infected Cells} \qquad \dot{I} & =  bUV - d_I I \\     
-\textrm{Virus} \qquad  \dot{V} & =  pI - d_V V -  bg UV 
-\end{aligned}
-$$
 
 ## A simple virus infection model
 
-```{r virusmodels,  fig.cap='Dynamics of simple viral infection models. A) acute infection. B) chronic infection.', out.width = '80%', fig.align='center', echo=FALSE}
-knitr::include_graphics("../media/virusmodels.png")
+<div style="float: left; width: 50%;">
+```{r nrivirus2,  out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("../media/nri_review_fig2a.png")
 ```
+</div>
+
+<div style="float: right; width: 50%;">
+```{r nrivirus3,  out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("../media/nri_review_fig2b.png")
+```
+</div>
+
+
+
 
 
 ## Notation comment
@@ -308,39 +288,6 @@ $$
 $$
 
 
-## Matching models
-
-Can you spot the differences?
-
-
-<div style="float: left; width: 50%;">
-
-```{r extendedvirus,  fig.cap='',  echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics("../media/extendedvirusmodel.png")
-```
-
-$$
-\begin{aligned}
-\dot{U} & =  m - d_U U - bUV \\
-\dot{I} & =  bUV - d_I I - n I \\     
-\dot{D} & =  d_I I \\     
-\dot{V} & =  pI - d_V V -  gb UV 
-\end{aligned}
-$$
-</div>
-
-<div style="float: right; width: 50%;">
-```{r envdiagram,  fig.cap='',  echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics("../media/simpleenvironmentalmodel.png")
-```
-\begin{aligned}
-\dot S & =  m - nS - bSE \\
-\dot I &  = bSE - gI - nI \\
-\dot R &  = gI - nR \\
-\dot E &  = pI - c E - kbSE \\
-\end{aligned}
-</div>
-
 
 # A larger virus infection model
 
@@ -348,15 +295,7 @@ knitr::include_graphics("../media/simpleenvironmentalmodel.png")
 ## Virus and Immune Response Model
 * The immune response is incredibly complex, we still don't know how to model it in much detail.
 * We can nevertheless build and explore models that are a (hopefully) good balance between realism and abstraction.
-* We'll consider a virus infection model that includes the following components/variables:
-
-* **U** - uninfected cells 
-* **I** - infected cells
-* **V** - (free) virus
-* **F** - innate immune response
-* **T** - CD8 T-cells
-* **B** - B-cells
-* **A** - Antibodies
+* Let's look at a virus model that contains uninfected cells (**U**), infected cells (**I**), virus (**V**),  an innate immune response (**F**), CD8 T-cells (**T**), B-cells (**B**) and Antibodies (**A**).
 
 
 ## Model Diagram
@@ -385,7 +324,7 @@ $$
 
 DSAIRM package:
 
-* _Basic Bacterium Model_ app.
+* _Basic Bacteria Model_ app.
 * _Basic Virus Model_ app. 
 * _Virus and Immune Response_ app.
 

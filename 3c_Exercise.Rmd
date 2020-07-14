@@ -13,7 +13,7 @@ output:
 
 # Overview
 
-For this module, the idea is to explore and play around with the models you learned about in this module. 
+For the exercise portion of this module, you can explore and play around with the basic models you learned about. 
 There are different ways you can do that, based on your level of comfort with both R code and models of that type. The different options are described below.
 
 We recommend that no matter what your level is, you should at least briefly explore the models through the graphical interface and read the documentation for several of the models to get an idea of the overall setup of the package.

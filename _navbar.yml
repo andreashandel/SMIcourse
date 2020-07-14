@@ -29,7 +29,7 @@ left:
       - text: "3. Introduction to Simulation Modeling"
         menu:
           - text: "3a. Introduction to Simulation Modeling"
-            href: ./2a_Introduction_to_Modeling.html
+            href: ./3a_Introduction_to_Modeling.html
           - text: "3b. A few simple models"
             href: ./3b_Simple_Models.html
           - text: "3c. Exercises"

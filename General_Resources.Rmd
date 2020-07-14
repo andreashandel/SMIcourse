@@ -26,25 +26,26 @@ _Let me know if you find other relevant and good resources that you think could 
 
 # Within-host simulation modeling books
 
-_There are not a whole lot of textbooks teaching simulation modeling that are both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling._
+_There are not many textbooks teaching simulation modeling that are both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling._
 
 
 * Nowak and May (2001). "Virus Dynamics: Mathematical Principles of Immunology and Virology." Oxford University Press.  
 * Wodarz (2007). "Killer Cell Dynamics - Mathematical and Computational Approaches to Immunology." New York: Springer. 
 * Esteban A. Hernandez-Vargas (2019). "Modeling and Control of Infectious Diseases in the Host", Academic Press.
 
-
-
 # Immunology books
 
 * Janeway
 
+# Other books
+
+The types of simulation models we discuss in this course are common in other areas of science. The study of infectious diseases on the population level (i.e. epidemiology/ecology/evolution) has a long history of using these kinds of models. There are a number of good resources dedicated to models on the population level. Most of the ideas and concepts apply directly to the within-host level. For a list of resources with a focus on population-level infectious diseases and modeling, check out the _Resources_ sections of my online course [Infectious Disease Epidemiology
+- A model-based approach (IDEMA)](https://andreashandel.github.io/IDEMAcourse/). Note that the overall course website is currently under construction and there are likely parts that don't work.
 
 # Journal articles
 
 * Perelson (2002). “Modelling Viral and Immune System Dynamics.” Nature Reviews Immunology.
 * Antia et al (2005). “The role of models in understanding CD8+ T-cell memory.” Nature Reviews Immunology.
-
 
 
 

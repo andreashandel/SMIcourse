@@ -25,9 +25,12 @@ This document describes different uses for simulation models.
 
 
 # Slides
-We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Model_Uses_Slides.html)
 
 
+# Reading
+
+* Our recent review [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/) provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven't done yet, please read the paper. 
 
 
 

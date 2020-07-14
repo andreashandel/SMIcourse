@@ -21,13 +21,14 @@ This document provides an introduction to a few basic models that describe withi
 # Learning Objectives
 * Be familiar with a few basic within-host models.
 
-
 # Slides
-We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Simple_Models_Slides.html)
 
 
-
-
+# Reading
+* Our recent review [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/) discusses those simple models. 
 
 # Further materials
+* The paper [Modelling Viral and Immune System Dynamics](https://www.nature.com/articles/nri700) by Alan Perelson is another nice introduction focusing on virus models and explaining a few different models.  
+* The paper [The role of models in understanding CD8+ T-cell memory](https://www.nature.com/articles/nri1550) by Antia et al. introduces a few simple models for T-cell dynamics.
 
