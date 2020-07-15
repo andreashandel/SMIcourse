@@ -26,16 +26,18 @@ _Let me know if you find other relevant and good resources that you think could 
 
 # Within-host simulation modeling books
 
-_There are not many textbooks teaching simulation modeling that are both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling._
+_There isn't really a textbook that teaches simulation modeling which is both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling and might be suitable for some learners._
 
+* [Nowak and May (2001). "Virus Dynamics: Mathematical Principles of Immunology and Virology."](https://amzn.to/3fwonRj) - Mostly a collection of work done by the authors, published in book form. Somewhat outdated and quite expensive. Probably not worth buying unless you find it somewhere cheap, you can instead look for their original papers. 
+* [Wodarz (2007). "Killer Cell Dynamics - Mathematical and Computational Approaches to Immunology."](https://amzn.to/2WjJQFS) - a nice overview of some work by the author and others on modeling T-cells. A bit outdated and kinda expensive. I would first check it out from the library before deciding if you want to buy it.  
+* [Esteban A. Hernandez-Vargas (2019). "Modeling and Control of Infectious Diseases in the Host"](https://amzn.to/2Ooth7j) - The most comprehensive of the books in terms of topic coverage. Technically advanced, mainly suitable for individuals with strong quantitative backgrounds (engineering, physics, math, etc.) who want to learn about within-host modeling. 
 
-* Nowak and May (2001). "Virus Dynamics: Mathematical Principles of Immunology and Virology." Oxford University Press.  
-* Wodarz (2007). "Killer Cell Dynamics - Mathematical and Computational Approaches to Immunology." New York: Springer. 
-* Esteban A. Hernandez-Vargas (2019). "Modeling and Control of Infectious Diseases in the Host", Academic Press.
 
 # Immunology books
 
-* Janeway
+* [How the Immune System works](https://amzn.to/3ev68dO) - a nice introduction to the immune system, focusing on the big picture. Good for those who are new to immunology.
+* [Janeway's Immunobiology](https://amzn.to/2Wlmsrr) - a very comprehensive immunology textbook.
+
 
 # Other books
 

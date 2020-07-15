@@ -60,6 +60,14 @@ left:
             href: ./7d_Model_Stochasticity.html
           - text: "7e. Exercises"
             href: ./7e_Exercises.html
+      - text: "8. How to build and assess models"
+        menu:
+          - text: "8a. Model building and assessment overview"
+            href: ./8a_Model_Building_Assessment.html
+          - text: "8b. How to build good models"
+            href: ./8b_Building_Models.html
+          - text: "8c. Assessing published models"
+            href: ./8c_Assessing_Models.html
   - text: "Project"
     href: ./Project_Information.html
   - text: "Communication"

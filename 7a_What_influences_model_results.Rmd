@@ -22,18 +22,9 @@ This module describes some of the uncertainties that can affect outputs obtained
 * Know how different aspects of the model building and running process affect outcomes.
 * Be familiar with approaches that allow one to quantify certain types of uncertainty.
 
-# Main sources of model uncertainty
-
-There are a few 
-
-The hardest
-
-
-Each of these are described in more detail in separate documents in this module.
-
 
 # Slides
-We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Model_Uses_Slides.html)
 
 
 
