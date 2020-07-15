@@ -16,7 +16,7 @@ library(emo)
 
 Welcome to the website **Simulation Modeling in Immunology (SMI).** 
 
-This website is the main resource for the course/module called [Infectious Diseases, Immunology and Within-Host Models](https://www.biostat.washington.edu/suminst/sismid2020/modules/MD2010), which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). The course is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html). 
+This website is the main resource for the course/module called [Infectious Diseases, Immunology and Within-Host Models](https://si.biostat.washington.edu/suminst/sismid2020/modules/MD2010), which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). The course is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html). 
 
 We plan to keep this website continuously online, with updates happening every time we teach the course again - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
 

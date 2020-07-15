@@ -32,8 +32,10 @@ left:
             href: ./3a_Introduction_to_Modeling.html
           - text: "3b. A few simple models"
             href: ./3b_Simple_Models.html
-          - text: "3c. Exercises"
-            href: ./3c_Exercises.html
+          - text: "3c. Types of simulation models"
+            href: ./3c_Model_Types.html
+          - text: "3d. Exercises"
+            href: ./3d_Exercises.html
       - text: "4. Viral Infections and Immunology"
         menu:
           - text: "4a. Viral Infections and Immunology"

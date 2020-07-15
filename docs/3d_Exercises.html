@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>Model Uses - Exercises</title>
+<title>Introduction to Modeling - Exercises</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -399,7 +399,10 @@ div.tocify {
           <a href="./3b_Simple_Models.html">3b. A few simple models</a>
         </li>
         <li>
-          <a href="./3c_Exercises.html">3c. Exercises</a>
+          <a href="./3c_Model_Types.html">3c. Types of simulation models</a>
+        </li>
+        <li>
+          <a href="./3d_Exercises.html">3d. Exercises</a>
         </li>
       </ul>
     </li>
@@ -507,30 +510,35 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Model Uses - Exercises</h1>
+<h1 class="title toc-ignore">Introduction to Modeling - Exercises</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-14 16:58:59</h4>
+<h4 class="date">2020-07-14 16:49:45</h4>
 
 </div>
 
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>For the exercise portion of this module, you can explore and play around with the models in the <em>Model use examples</em> section of DSAIRM.</p>
+<p>For the exercise portion of this module, you can explore and play around with the basic models you learned about. There are different ways you can do that, based on your level of comfort with both R code and models of that type. The different options are described below.</p>
+<p>We recommend that no matter what your level is, you should at least briefly explore the models through the graphical interface and read the documentation for several of the models to get an idea of the overall setup of the package.</p>
 </div>
-<div id="start" class="section level1">
-<h1>Start</h1>
-<p>We recommend that no matter what your level is, you should at least briefly explore the models, read the documentation and attempt the suggested tasks by using the graphical interface of DSAIRM.</p>
+<div id="beginner" class="section level1">
+<h1>Beginner</h1>
+<p>The easiest way to learn about these models is by using the graphical interface of DSAIRM.</p>
+<p>Explore the models listed in the <strong>The Basic</strong> section of DSAIRM. You will find a model that describes a simple extracellular (bacteria) infection and one that describes a simple intracellular (virus) infection. A third model shows a more complicated version of a virus infection which includes several components of the immune response.</p>
+<p>For each of the apps/models, go through all the tabs at the bottom of each app. <strong>The Model</strong> and <strong>What to do</strong> are the most important sections. If you are completely new to these kinds of models, work through all the listed tasks to get an idea of how these models work.</p>
 </div>
-<div id="continue" class="section level1">
-<h1>Continue</h1>
-<p>Once you explored the models, you can go in several directions. Here are some suggestions:</p>
-<ul>
-<li>If you want to learn more about fitting, you can go through the models in the <em>Model fitting</em> section.</li>
-<li>If you want to try your hand at doing some exploration/prediction, you can for instance take the <em>Virus and immune response</em> model and write a bit of code using the <em>Level 2</em> approach described in the <a href="https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html">DSAIRM tutorial</a> to loop over some model parameter and plot it.</li>
-<li>If you want to build your own model, you can do that using one of the DSAIRM models and modify it (see <em>Level 3</em> in the tutorial), then loop over some parameters for exploration/prediction. If none of the DSAIRM models are good starting points, you can also build one using <em>modelbuilder</em> and then write a bit of code to loop over a parameter (or use the parameter scan option in the <em>modelbuilder</em> analyze tab).</li>
-<li>If you have some expertise fitting models to data, you could try to use some dataset you have, take the code for one of the fitting apps, and adjust the code and model to work with your data. Warning: That is challenging/advanced territory.</li>
-</ul>
+<div id="intermediate-i" class="section level1">
+<h1>Intermediate I</h1>
+<p>If you are not yet comfortable building your own models, but have some R coding familiarity, this might be a good option for you. If you want to have a bit more flexibility and are ok writing some R code, you can explore the models using the <em>Level 2</em> approach described in the <a href="https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html">DSAIRM tutorial</a>. You can still work through the tasks for each app, or do a more free exploration. In this version, you write your own little pieces of code to call the simulation models and explore the results. See the <em>Level 2</em> description in the DSAIRM tutorial for more.</p>
+</div>
+<div id="intermediate-ii" class="section level1">
+<h1>Intermediate II</h1>
+<p>If you have some familiarity with models of this type and want to go beyond the DSAIRM models, but are not comfortable writing R code, you can try to build your own model using the <a href="https://ahgroup.github.io/modelbuilder/"><em>modelbuilder</em></a> package. Using that package, you can build and explore your own models. It might be easiest to start with one of the provided example models and modify to your own needs.</p>
+</div>
+<div id="advanced" class="section level1">
+<h1>Advanced</h1>
+<p>If you have some familiarity with both simulation models and R coding, you have several options. You can start with a DSAIRM model, download its code and modify it to fit your own needs. An example of this approach is described under <em>Level 3</em> in the DSAIRM tutorial. Another approach is to start with a model in <a href="https://ahgroup.github.io/modelbuilder/"><em>modelbuilder</em></a>. You can build the basic model graphically, then export the code for it, and then run/explore the model or make further modifications to the code. Note that this is a “one way” approach. Once you exported code and make modifications, you (currently) can’t load it back into <em>modelbuilder</em>.</p>
 </div>
 <div id="getting-help" class="section level1">
 <h1>Getting help</h1>
