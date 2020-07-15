@@ -27,6 +27,10 @@ This module describes some of the uncertainties that can affect outputs obtained
 We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Model_Uses_Slides.html)
 
 
+# Reading
+The other units in this module provide further information on specific topics. Note that there is some overlap between the slides and the reading.
+
 
 # Further materials
 
+Some of the other readings in this module have further pointers to additional material.

@@ -16,3 +16,91 @@ library(emo)
 
 
 
+## Uncertainty in model results
+
+* Model results have different sources of uncertainty attached to them.
+* Not all types of uncertainty are always explicitly acknowledged. 
+* That's true not only for mathematical/computer models.
+
+## Structural Uncertainty
+* Models are simplifications and abstractions of the real world.
+* Specific assumptions lead to different models.
+* Every model is 'wrong' in some sense, but some might be useful.
+* We need to decide which variables and processes to include and which to exclude.
+
+```{r mapfigure, echo=FALSE, fig.cap="", out.width="80%", fig.align='center'}
+knitr::include_graphics("../media/nri_review_modeldetail.png")
+```
+
+
+## Structural Uncertainty
+* Include certain variables/components not? 
+* How to formulate mechanisms/processes?
+* What type of model? (ODE, IBM, etc.)
+
+
+## Example variants of specific processes
+Exponential or Linear growth? 
+Mass-action or saturating killing?
+
+$$
+\begin{aligned}
+\dot{B} & = g B - d_B B - kBI\\
+\dot{I} & = r BI - d_I I \\
+\\
+\dot{B} & = g  - d_B B - \frac{kBI}{I+s}\\
+\dot{I} & = r BI - d_I I \\
+\end{aligned}
+$$
+
+
+
+## Structural Uncertainty Example 
+Dobrovolny et al. (2013 PLoS One) compared different influenza models and assessed how they matched experimental data.
+
+```{r dobrovolny, echo=FALSE, fig.cap='Top: models, bottom: data', out.width = '90%', fig.align='center'}
+knitr::include_graphics("../media/dobrovolny.png")
+```
+
+
+## Structural Uncertainty - Summary
+* The biggest source of variability in outcomes.
+* No systematic way to deal with it.
+* Often discussed/addressed the least. Comparison of results across models is rare.
+* Topical example: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
+
+## Structural Uncertainty - Practice
+
+* The _Model variant exploration_ app in DSAIRM explores the impact of different model formulations.
+
+
+
+
+## An Analogy
+
+
+## Different assumptions for important mechanisms
+* Should we include B-cells or T-cells or both?
+* Do we need to include innate response components, if yes which?
+* How do the different components/variables interact?
+
+## Different assumptions for important mechanisms
+$$\dot U =n - d_U U - bVU - k_1FU $$
+$$\dot I = bVU - d_II - k_2FI - k_4 A I $$
+$$\dot V = \frac{pI}{1+k_3 F} - d_VV - bVU - k_6AV$$
+$$\dot F = p_F - d_F F + f_1  V (F_{max} - F) $$
+$$\dot A = a_1 F A + a_2\frac{V}{V+h_V}F  $$
+
+
+## Different variants of specific terms
+* Interaction: Mass-action or saturating
+* Growth: Exponential or Linear or Saturating?
+
+## Different variants of specific terms
+$$\dot U =n - d_U U - bVU $$
+$$\dot I = bVU - d_II  - k_4 A I - k_5 \frac{A I}{A+s_A}$$
+$$\dot V = \frac{pI}{1+k_3 F} - d_VV - bVU - k_6AV$$
+$$\dot F = p_F - d_F F + f_1  V (F_{max} - F) + f_2  \frac{V}{V+s_V} F$$
+$$\dot A = a_1 F A + a_2\frac{V}{V+h_V}F + a_3  \frac{F  V}{ F  V + h_V}  A $$
+
+

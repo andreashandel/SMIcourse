@@ -26,11 +26,11 @@ We will go over an introduction to modeling in one of the zoom sessions. The sli
 
 # Reading
 
-* Our recent review [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/) provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven't done yet, please read the paper. 
+Our recent review [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/) provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven't done yet, please read the paper. 
 
-* The other units in this module provide further information on specific topics.
+The other units in this module provide further information on specific topics. Note that there is some overlap between the slides and the reading.
 
 
 # Further materials
 
-* See the _Resources_ section for some additional materials, including a few textbooks, that cover within-host modeling.
+See the _Resources_ section for some additional materials, including a few textbooks, that cover within-host modeling. Some of the other readings in this module also have further pointers to additional material.

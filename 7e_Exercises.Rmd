@@ -13,32 +13,24 @@ output:
 
 # Overview
 
-For this module, the idea is to explore several models to get further understanding of the way model inputs affect outcomes.
-
-There are different ways you can do that, based on your level of comfort with both R code and models of that type. The different options are described below.
+For the exercise portion of this module, you can explore and play around with the models in the _What influences model results_ section of DSAIRM. 
 
 
+# Start
 
-# Beginner
-
-The easiest way to learn about these models is by using the graphical interface of DSAIRM. 
-
-Explore the models listed in the __What influences model results__ section of DSAIRM. Go through all the tabs at the bottom of each app. __The Model__ and __What to do__ are the most important sections. If you are completely new to these kinds of models, work through all the listed tasks to get an idea of how these models work.
+We recommend that no matter what your level is, you should at least briefly explore the models, read the documentation and attempt the suggested tasks by using the graphical interface of DSAIRM. 
 
 
-# Intermediate I
+# Continue
 
-If you are not yet comfortable building your own models, but have some R coding familiarity, this might be a good option for you. If you want to have a bit more flexibility and are ok writing some R code, you can explore the models using the _Level 2_ approach described in the [DSAIRM tutorial](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html). You can still work through the tasks for each app, or do a more free exploration. In this version, you write your own little pieces of code to call the simulation models and explore the results. See the _Level 2_ description in the DSAIRM tutorial for more. 
+Once you explored the models, you can go in several directions, similar to the approaches suggested previously. 
 
+If you want to further explore structural differences and how they impact model results, you could build several new alternative models (or a single one where you turn on/off parameters), either by editing some of the DSAIRM simulation functions (_Level 3_ approach) or by using the _modelbuilder_ package. 
 
-# Intermediate II
+If you want to explore stochastic models further, there is another app in DSAIRM, called _Influenza Antivirals and Drug Resistance_ which explores the use of stochastic models further. The _modelbuilder_ package also lets you build and analyze stochastic models, as well as export stochastic model code for further exploration. 
 
-If you have some familiarity with models of this type and want to go beyond the DSAIRM models, but are not comfortable writing R code, you can try to build your own model using the [_modelbuilder_](https://ahgroup.github.io/modelbuilder/) package. Using that package, you can build and explore your own models. It might be easiest to start with one of the provided example models and modify to your own needs.
+If you want to explore the uncertainty and sensitivity analysis topic further, you will need to get the code for that DSAIRM and modify the code. You can modify the code to call different underlying model functions, including new ones you might have built with _modelbuilder_, but you will need to modify the code that does the U/S analysis to match any new underlying model.  
 
-
-# Advanced
-
-If you have some familiarity with both simulation models and R coding, you have several options. You can start with a DSAIRM model, download its code and modify it to fit your own needs. An example of this approach is described under _Level 3_ in the DSAIRM tutorial. Another approach is to start with a model in [_modelbuilder_](https://ahgroup.github.io/modelbuilder/). You can build the basic model graphically, then export the code for it, and then run/explore the model or make further modifications to the code. Note that this is a "one way" approach. Once you exported code and make modifications, you (currently) can't load it back into _modelbuilder_. 
 
 # Getting help
 

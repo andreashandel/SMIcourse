@@ -1,5 +1,5 @@
 ---
-title: What influences model results
+title: Uncertainty and Sensitivity Analysis
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -16,17 +16,59 @@ library(emo)
 
 
 # Overview
-This document describes some of the uncertainties that can affect outputs obtained from simulation models.
+This document describes the idea of parameter uncertainty and the method of uncertainty and sensitivity analysis in some more detail.
 
 # Learning Objectives
-* Know how different aspects of the model building and running process affeect outcomes.
-* Be familiar with approaches that allow one to quantify certain types of uncertainty.
+* Understand what the problem of parameter uncertainty is.
+* Know how what a uncertainty and sensitivity analysis is and how to implement one.
 
 
-# Slides
-We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.]()
+# The problem of parameter uncertainty
+
+We discussed before that to run a model, one needs values for the model parameters. Those are not always well known. Often we can get reasonable ranges from the literature, but not exact values. If a model only has a few parameters, one can potentially explore model outcomes over the range of plausible values for all those parameters. We discussed this approach under the _Model Exploration_ topic. However, if a model becomes large and has many parameters, that is not feasible anymore. Also, we might often only be interested in one or a few of the model parameters and how they affect some outcome. We need to take into account uncertainty in the other parameters, but we might not want to explore this in detail. In other situations, we might want to use our model to make predictions, taking into account uncertainty in the model inputs (parameters, as well as initial conditions). 
+
+
+As an example for a large model, we consider a model of TB infection, published in [@wigginton01]. The model has a total of 12 equations/compartments tracking the bacteria and different components of the immune response, and a total of 66 model parameters. The figure below shows the diagram for one of the cytokine component of the immune response included in the model, the table shows the parameters for this component. 
+
+```{r tbexample1,  echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("../images/tbfig2.png")
+```
+
+
+```{r tbeq1,  echo=FALSE, out.width="90%", fig.align='center'}
+knitr::include_graphics("../images/tbfig5.png")
+```
+
+It is clear that one cannot do a systematic exploration of all 66 parameters. One can then instead turn to an approach called uncertainty & sensitivity (U/S) analysis. 
+
+# Uncertainty & Sensitivity Analysis
+
+The idea for U/S analysis is rather straightforward. Instead of giving each parameter a single value, specify distributions between reasonable values. Then draw samples from these parameter distributions and run the model for those samples. Record the outcomes of interest for each parameter sample, then plot the distribution of outcomes.
+
+The uncertainty analysis part answers the question: Given uncertainty in the inputs, how much uncertainty is there in the outputs/results? This is achieved by plotting the distribution of outcomes (e.g. using a boxplot). The sensitivity analysis part answers the question: How much do individual inputs contribute to the uncertainty in outputs/results? This can be addressed with for instance a scatter plot with one of the parameters on the x-axis and the outcome in the y-axis. Other ways are described below.
 
 
 
-# Further materials
+# Doing Uncertainty & Sensitivity Analysis
+First, you need to determine distributions for each parameter. If you are confident about the value for certain parameters, you can fix them. If you only have reasonable upper and lower bounds but no further information, you can assume a uniform distribution. Peaked distributions (e.g. gamma or log-normal) are also useful if you have a good idea of the mean of the paramter but want to allow for some spread. It turns out that in practice, the exact shape of the distribution usually matters little. And of course the choice of the distribution is subjective (like choosing a prior in Bayesian statistics). So make sure to provide reasonable scientific justification for the choices of your parameter ranges.
 
+Once you have the ranges, you draw a certain number of samples for the set of model parameters, which can also include initial conditions for your variables, those can be treated as parameters for the purpose of U/S analysis. The naive way is to draw random samples, however that does not lead to very good coverage of the parameter space. Grid sampling, where you divide distributions of parameters into bins and sample from each, will ensure comprehensive coverage of the parameter space, but requires a lot of samples. A method called Latin Hypercube Samling (LHS) can perform sampling that covers the parameter space fairly efficiently even with a fairly low number of samples. The R package `lhs` has functions for that. 
+
+Once you have your samples, you run the simulation model for each sample and record the outcomes of interest. You will then get distributions of N outcomes, where N is your sample size. To assess overall uncertainty in model results, given uncertainty in input parameters, you can look at boxplots, like this one
+
+
+```{r uncertainty,  echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("../images/uncertainty.png")
+```
+
+If you want to know how individual parameters affect outcomes, you can look at scatterplots, like this one
+
+
+```{r sensitivity,  echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("../images/sensitivity.png")
+```
+
+If the scatterplot shows a monotone relation, you can summarize it with a single number, e.g. a correlation coefficient (a regression coefficient is possible too). Correlation Coefficients (CC) indicate how correlated a given output is with a given input. CC are between -1 and 1. Large CC means strong (negative) correlation, CC $\approx 0$ means no correlation. Since of the kinds of models we explore, the impact of parameter changes on the outcomes is often nonlinear, linear correlation coefficients (the standard Pearson correlation) is often not the best measure. Rank CC (such as Spearman's or Kendall's CC) are usually more suitable. Partial Rank Correlation Coefficients (PRCC) are even better since we change multiple inputs/parameters at the same time and we are interested in the relation between a single parameter and the outcome, while taking into account changes in the other parameters.
+
+## US Analysis Example
+To learn more about U/S analysis and explore it yourself, see The "Parameter Uncertainty" app in DSAIRM.
