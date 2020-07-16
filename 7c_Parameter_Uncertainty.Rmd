@@ -31,12 +31,12 @@ We discussed before that to run a model, one needs values for the model paramete
 As an example for a large model, we consider a model of TB infection, published in [@wigginton01]. The model has a total of 12 equations/compartments tracking the bacteria and different components of the immune response, and a total of 66 model parameters. The figure below shows the diagram for one of the cytokine component of the immune response included in the model, the table shows the parameters for this component. 
 
 ```{r tbexample1,  echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("../images/tbfig2.png")
+knitr::include_graphics("./media/tbfig2.png")
 ```
 
 
 ```{r tbeq1,  echo=FALSE, out.width="90%", fig.align='center'}
-knitr::include_graphics("../images/tbfig5.png")
+knitr::include_graphics("./media/tbfig5.png")
 ```
 
 It is clear that one cannot do a systematic exploration of all 66 parameters. One can then instead turn to an approach called uncertainty & sensitivity (U/S) analysis. 
@@ -58,14 +58,14 @@ Once you have your samples, you run the simulation model for each sample and rec
 
 
 ```{r uncertainty,  echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("../images/uncertainty.png")
+knitr::include_graphics("./media/uncertainty.png")
 ```
 
 If you want to know how individual parameters affect outcomes, you can look at scatterplots, like this one
 
 
 ```{r sensitivity,  echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("../images/sensitivity.png")
+knitr::include_graphics("./media/sensitivity.png")
 ```
 
 If the scatterplot shows a monotone relation, you can summarize it with a single number, e.g. a correlation coefficient (a regression coefficient is possible too). Correlation Coefficients (CC) indicate how correlated a given output is with a given input. CC are between -1 and 1. Large CC means strong (negative) correlation, CC $\approx 0$ means no correlation. Since of the kinds of models we explore, the impact of parameter changes on the outcomes is often nonlinear, linear correlation coefficients (the standard Pearson correlation) is often not the best measure. Rank CC (such as Spearman's or Kendall's CC) are usually more suitable. Partial Rank Correlation Coefficients (PRCC) are even better since we change multiple inputs/parameters at the same time and we are interested in the relation between a single parameter and the outcome, while taking into account changes in the other parameters.

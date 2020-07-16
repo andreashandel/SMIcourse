@@ -11,8 +11,6 @@ output:
 library(emo)
 ```
 
-**This website is under construction. As long as you see this message, expect things to not really work `r emo::ji('smiley')`.**
-
 
 Welcome to the website **Simulation Modeling in Immunology (SMI).** 
 
@@ -21,7 +19,19 @@ This website is the main resource for the course/module called [Infectious Disea
 We plan to keep this website continuously online, with updates happening every time we teach the course again - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
 
 
-# Notes
+# Important Notes
+
+**1. This website is not fully ready yet. As long as you see this message, expect some things to not be fully available/working. Everything should be up and running by Monday morning.**
+
+**2. The binaries for the new version of the DSAIRM package (version 0.8.6) might not be fully available on CRAN yet. If you install from CRAN (using the `install.packages` command) and your version of DSAIRM is not 0.8.6, please install from Github. To do so, first install the `remotes` package with `install.package('remotes')`, then install from Github with `remotes::install_github('ahgroup/DSAIRM')`.**
+
+**3. We will record all Zoom sessions. They will be made available to you. We would also like to post them publicly to this website. If you have concerns about that, please let us know. Otherwise we assume you are ok with us posting those recordings.**
+
+```{r, include = FALSE}
+#**3. Everyone should have received an invite to the SMI-2020-course Slack workspace. If you haven't let me (Andreas) know.**
+```
+
+# More Notes
 
 We hope this is not too confusing, but we call every unit in our course a _Module_. So this course is a SISMID module, but in our terminology, we call this whole "thing" the _course_ or _class_, and use _module_ for individual segments, which are further divided into _units_.
 
