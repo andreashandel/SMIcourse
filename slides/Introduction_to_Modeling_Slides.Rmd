@@ -4,7 +4,7 @@ subtitle: "for within-host infections"
 author: "[Andreas Handel](https://www.andreashandel.com)"
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-bibliography: ../media/references.bib
+bibliography: ../media/SMICourse.bib
 output: 
   ioslides_presentation:
       self_contained: true
@@ -241,13 +241,13 @@ The same types of simulation models are often used on both scales.
 
 * 1766 - Bernoulli “An attempt at a new analysis of the mortality
 caused by smallpox and of the advantages of inoculation to
-prevent it” (see Bernoulli & Blower 2004 Rev Med Vir)
-* 1911 – Ross “The Prevention of Malaria”
-* 1920s – Lotka & Volterra “Predator-Prey Models”
-* 1926/27 - McKendrick & Kermack “Epidemic/outbreak models”
+prevent it�? (see Bernoulli & Blower 2004 Rev Med Vir)
+* 1911 – Ross “The Prevention of Malaria�?
+* 1920s – Lotka & Volterra “Predator-Prey Models�?
+* 1926/27 - McKendrick & Kermack “Epidemic/outbreak models�?
 * 1970s/80s – Anderson & May
 * Lot’s of activity since then
-* See also Bacaër 2011 “A Short History of Mathematical Population Dynamics”
+* See also Bacaër 2011 “A Short History of Mathematical Population Dynamics�?
 
 
 ## Within-host modeling history

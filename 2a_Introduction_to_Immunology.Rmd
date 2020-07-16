@@ -2,7 +2,7 @@
 title: SMI 2020 - Introduction to Immunology
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
-#bibliography: ../media/references.bib
+#bibliography: ../media/SMICourse.bib
 output: 
   html_document:
     toc_depth: 3

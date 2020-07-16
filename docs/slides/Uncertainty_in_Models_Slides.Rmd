@@ -3,7 +3,7 @@ title: "What influences model results"
 author: "[Andreas Handel](https://www.andreashandel.com)"
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-bibliography: ../media/references.bib
+bibliography: ../media/SMICourse.bib
 output: 
   ioslides_presentation:
       self_contained: true

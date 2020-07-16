@@ -4,7 +4,7 @@ subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-#bibliography: ../media/references.bib
+#bibliography: ../media/SMICourse.bib
 output: 
   html_document:
     toc_depth: 3
@@ -46,8 +46,8 @@ The types of simulation models we discuss in this course are common in other are
 
 # Journal articles
 
-* Perelson (2002). “Modelling Viral and Immune System Dynamics.” Nature Reviews Immunology.
-* Antia et al (2005). “The role of models in understanding CD8+ T-cell memory.” Nature Reviews Immunology.
+* Perelson (2002). “Modelling Viral and Immune System Dynamics.�? Nature Reviews Immunology.
+* Antia et al (2005). “The role of models in understanding CD8+ T-cell memory.�? Nature Reviews Immunology.
 
 
 

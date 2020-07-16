@@ -3,7 +3,7 @@ title: SMI Course Glossary
 subtitle: ""
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-#bibliography: ../media/references.bib
+#bibliography: ../media/SMICourse.bib
 output: 
   html_document:
     toc: FALSE
@@ -75,9 +75,9 @@ __Mechanistic Modeling:__ Building and using models that explicitly incorporate 
 
 ## Immunology related terms
 
-_Partly adapted from “An Interpretative Introduction to the Immune System” by Steven Hofmeyr in Design Principles for the Immune System and Other Distributed Autonomous Systems ed. Segel and Cohen._
+_Partly adapted from “An Interpretative Introduction to the Immune System�? by Steven Hofmeyr in Design Principles for the Immune System and Other Distributed Autonomous Systems ed. Segel and Cohen._
 
-__Adaptive immune system:__	That part of the immune system that uses antigen receptors and adapts or “learns” to recognize specific antigens, and retains a memory of those antigens to enhance future responses
+__Adaptive immune system:__	That part of the immune system that uses antigen receptors and adapts or “learns�? to recognize specific antigens, and retains a memory of those antigens to enhance future responses
 
 __Affinity maturation:__	Darwinian process of variation and selection that occurs to B cell receptors in lymph nodes and spleen, leading to the evolution of B cell populations better adapted to recognize specific epitopes
 
@@ -101,13 +101,13 @@ __Central tolerance:__	Process of tolerizing immature T cells in the thymus
 
 __Chemokines:__	Soluble signal molecules that direct cell trafficking
 
-__Class I MHC:__	MHC, which occurs in almost all cells, that primarily presents (in an “MHC/peptide complex”) peptides generated in the cell’s interior
+__Class I MHC:__	MHC, which occurs in almost all cells, that primarily presents (in an “MHC/peptide complex�?) peptides generated in the cell’s interior
 
 __Class II MHC:__	MHC, which only occurs in certain cells of the immune system or when particular cells are activated that mostly presents fragments of proteins that are bound to the cell surface or that have been ingested
 
 __Clonal deletion:__	Process whereby immature T cells that strongly recognize a self antigen in the thymus die by apoptosis
 
-__Cluster of Differentiation (CD):__	System of nomenclature for classifying cell surface proteins on white blood cells, usually identified by monoclonal antibodies—over 350 “CD antigens” are currently described
+__Cluster of Differentiation (CD):__	System of nomenclature for classifying cell surface proteins on white blood cells, usually identified by monoclonal antibodies—over 350 “CD antigens�? are currently described
 
 __Complement:__	Molecules that participate in the immune response by binding to bound antibodies or certain microbial products, often culminating in cell or pathogen permeabilization
 
@@ -175,7 +175,7 @@ __Pharmacodynamics:__	The study of the physiological effects of drugs on the bod
 
 __Plasma cells:__	Activated B cells that secrete antibodies
 
-__Plaque Forming Units (PFU):__	A measure of viral titer, performed by observing the localized growth of individual viruses which lyse their target cells creating a “plaque”. 
+__Plaque Forming Units (PFU):__	A measure of viral titer, performed by observing the localized growth of individual viruses which lyse their target cells creating a “plaque�?. 
 
 __Positive selection:__	The stimulation and maturation in the thymus of T cells with sufficient affinity to antigens presented by self MHC; T cells that do not undergo positive selection in the thymus die by apoptosis
 
