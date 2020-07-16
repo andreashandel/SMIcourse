@@ -396,13 +396,16 @@ div.tocify {
           <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./3b_Simple_Models.html">3b. A few simple models</a>
+          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
         </li>
         <li>
-          <a href="./3c_Model_Types.html">3c. Types of simulation models</a>
+          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
         </li>
         <li>
-          <a href="./3d_Exercises.html">3d. Exercises</a>
+          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+        </li>
+        <li>
+          <a href="./3e_Exercises.html">3e. Exercises</a>
         </li>
       </ul>
     </li>
@@ -512,7 +515,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Uses of Simulation Models</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-14 16:48:11</h4>
+<h4 class="date">2020-07-16 14:52:25</h4>
 
 </div>
 
@@ -535,12 +538,24 @@ div.tocify {
 </div>
 <div id="reading" class="section level1">
 <h1>Reading</h1>
-<ul>
-<li>Our recent review <a href="https://handelgroup.uga.edu/publication/2020-handel-natrevimm/">Simulation Modelling for Immunologists</a> provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven’t done yet, please read the paper.</li>
-</ul>
+<div id="exploringunderstanding" class="section level2">
+<h2>Exploring/Understanding</h2>
+<p>At the early stages of trying to gain a fairly basic understanding of the behavior of a system, one can build simple mechanistic models and explore how interactions between model components (and thus components of the real system) impact observed patterns. Using models in this way provides a quick and cheap way to gain some intuition of how a system functions. For understanding purposes, one generally tries to keep models simple.</p>
+</div>
+<div id="predictionwhat-if" class="section level2">
+<h2>Prediction/what-if</h2>
+<p>Once we have gained some general understanding of the system under study and know enough about the system to be able to build models that provide reasonable approximations of the real system, we can use those models to perform <em>in silico experiments</em>. We can make predictions what might happen to the system if we changed some of its parts. For instance in a model that includes some cytokine, we could test what would happen if we administered a drug that suppressed this cytokine. This allows us to make predictions that can be tested with further experiments. These <em>in silico</em> approaches are much faster, cheaper and have no ethical problems, compared to real experiments. Of course the major caveat with any model result is that it is only useful insofar as the model properly captures the important features of the real system. The more a model is used to make predictions and these predictions tested with data, the more reliable it becomes.</p>
+</div>
+<div id="fittinginference" class="section level2">
+<h2>Fitting/inference</h2>
+<p>The previous two ways of using a model can be considered <em>data free</em>. What we mean by that is that while models should obviously be built based on the best information about the system, and model parameters need to come from experiments or other data sources, once the model is built it can be run and analyzed without further need for data. Comparing model predictions with data, as described in the previous paragraph, is a first step toward using data together with models. If one makes the model-data comparison in a rigorous statistical manner, one reaches the area of model fitting (inference). Here, one tries to fit a specific mechanistic model to available data in a rigorous statistical manner (using various approaches such as frequentist, likelihood or bayesian methods). Fitting allows one to discriminate between different postulated mechanisms (hypotheses), which are translated into different models and fitting determines which model is better at explaining the observed data. Further, model fitting provides estimates for model parameters. Often, such parameters have a directly interpretable biological meaning (e.g. the rate of virus production by infected cells) and are thus of interest on their own.</p>
+</div>
 </div>
 <div id="further-materials" class="section level1">
 <h1>Further materials</h1>
+<ul>
+<li>Our recent review <a href="https://handelgroup.uga.edu/publication/2020-handel-natrevimm/">Simulation Modelling for Immunologists</a> provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven’t done yet, please read the paper.</li>
+</ul>
 </div>
 
 

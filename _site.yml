@@ -1,4 +1,4 @@
-name: "IDEMA Course"
+name: "SMI Course"
 output_dir: 'docs'
 output:
   html_document:

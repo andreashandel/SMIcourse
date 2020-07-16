@@ -396,13 +396,16 @@ div.tocify {
           <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./3b_Simple_Models.html">3b. A few simple models</a>
+          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
         </li>
         <li>
-          <a href="./3c_Model_Types.html">3c. Types of simulation models</a>
+          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
         </li>
         <li>
-          <a href="./3d_Exercises.html">3d. Exercises</a>
+          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+        </li>
+        <li>
+          <a href="./3e_Exercises.html">3e. Exercises</a>
         </li>
       </ul>
     </li>
@@ -512,7 +515,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Stochastic Models</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-16 13:23:25</h4>
+<h4 class="date">2020-07-16 13:48:03</h4>
 
 </div>
 
@@ -592,9 +595,6 @@ div.tocify {
 <p>Implementing stochastic compartmental models on the computer comes with two hurdles. The first one is that writing the code that simulates a stochastic model and does all the random sampling to get the stochastic transitions right can be technically challenging. The second is that if the numbers in a system become even mildly large (e.g. over 1000s of cells or virions), simulation of a model becomes very slow. Fortunately, there are good approximations that allow execution of stochastic models at a reasonably fast speed. One of those approximations is implemented in the <code>adaptivetau</code> package in R. This package provides an interface in which you can specify the model (i.e. the transitions and the propensities) and the package runs the simulation for you. Therefore, working with stochastic compartmental models has become almost as easy as working with ODE models in R. It still takes computationally longer since you now need to run the model multiple times to get a distribution of outcomes, while a deterministic model only needs to be run once.</p>
 <p>If you want to see how this code looks like, look at the apps in DSAIRM that include a stochastic model. You can also build a model and export the stochastic code in <em>modelbuilder.</em></p>
 <p>Stochastic models can often be a useful alternative for specific questions. They do take longer to execute, so running large stochastic models would be rather time consuming. It is also still fairly hard to fit data to stochastic models. The <code>pomp</code> package in R has lots of functionality that allow for fairly sophisticated and efficient fitting of stochastic compartmental models. However, it is still technically more challenging and takes longer to run than fitting deterministic models.</p>
-</div>
-<div id="further-materials" class="section level1">
-<h1>Further materials</h1>
 </div>
 
 

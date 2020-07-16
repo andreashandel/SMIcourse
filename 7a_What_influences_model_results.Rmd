@@ -24,7 +24,7 @@ This module describes some of the uncertainties that can affect outputs obtained
 
 
 # Slides
-We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Model_Uses_Slides.html)
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Uncertainty_in_Models_Slides.html)
 
 
 # Reading

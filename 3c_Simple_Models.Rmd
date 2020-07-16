@@ -1,0 +1,157 @@
+---
+title: A few simple models 
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+bibliography: ./media/references.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides an introduction to a few basic models that describe within-host infection dynamics.
+
+# Learning Objectives
+* Be familiar with a few basic within-host models.
+
+# Slides
+We will discuss this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Simple_Models_Slides.html)
+
+
+# Reading
+
+_This material overlaps with the slides._
+
+
+# A very simple compartmental model
+
+Consider a single population of entities (pathogens/immune cells/humans/animals) that grow or die. We want to model this population. We'll implement the model as a discrete time equation, given by:
+
+$$
+P_{t+dt} = P_t + dt ( g P_t - d_P P_t )
+$$
+
+$P_t$ are the number of pathogens in the population at current time $t$, $dt$ is some time step and $P_{t+dt}$ is the number of pathogens in the future after that time step has been taken. The processes/mechanisms modeled are growth at rate $g$ and death at rate $d_P$.
+
+Try to "simulate" the model for yourself, either in our head or with pencil or paper. Assume we start with $B_0=100$ bacteria at t=0, go in steps of hours ($dt=1h$) and birth rate is g=4 per hour and death is d=2 per hour. How many bacteria are there after 1,2,3... hours?
+
+
+
+## Adding the immune response 
+The model above is the simplest possible model, tracking only a single population. Things get more interesting once there are multiple, interacting components. We can extend our model by including an equation for the immune response. A very simple model for the dynamics of bacteria and the immune response can be formulated as the following 2 differential equation model (Figure \@ref(fig:bacteriadiagram) shows the corresponding diagram):
+
+$$
+\begin{aligned}
+\textrm{Bacteria} \qquad \dot{B} & = gB(1-\frac{B}{B_{max}}) - d_B B - kBI \\
+\textrm{Immune Response} \qquad \dot{I} & =  rBI - d_I I     
+\end{aligned}
+$$
+In this model, some initial population of bacteria grow at rate $g$, which saturates as they approach some carrying capacity $B_{max}$. The bacteria also die at some fixed rate $d_B$ and are additionally cleared by the immune response at rate $k$. The immune response is modeled in a very abstract way with a single equation. As such it doesn't represent any specific biological component, but can instead be considered as the "total strength of the response". The immune response is induced and has a per-capita growth proportional to the presence of bacteria at rate $r$, and a death/decay rate of $d_I$. Note that as for the virus model, many alternative formulations are possible and the most appropriate one will depend on the specific system and question one wants to study. The model above is a minimal model useful as a conceptual starting point. The model is a type of predator-prey model, which have been heavily studied in ecology. Here, the bacteria are the prey and the immune response is the predator.
+
+```{r bacteriadiagram,  fig.cap='Schematic for the simple bacteria model. Solid lines indicate in- and out-flows, dashed lines indicate interactions.', echo=FALSE}
+knitr::include_graphics("./media/bacteriadiagram.png")
+```
+
+
+Simulating the dynamics of this model for some parameter choices leads to dynamics as shown in Figure \@ref(fig:bacteriamodel)
+
+```{r bacteriamodel,  fig.cap='Dynamics of the simple bacteria model. Note that the oscillations seen in both bacteria load and immune response are rarely observed in actual infections, suggesting that this simple model might not be fully suitable to describe any real infection process.', echo=FALSE}
+knitr::include_graphics("./media/bacteriamodel.png")
+```
+
+Despite the simplicity of this model, one can obtain rather interesting outcomes. You can explore this model further with DSAIRM.
+
+
+
+## Simple viral infection model
+A simple model that can capture the basic pattern of an acute viral infection is one that does not include the immune response. The model only considers uninfected and infected cells, as well as free virus. Uninfected cells, $U$, become infected by free virus, $V$, at rate $b$. Infected cells, $I$,  produce virus at rate $p$ and die at rate $d_I$. 
+
+Free virus infects cells at rate $b^{'}$, and is cleared due by the immune response and other mechanisms (e.g. mechanical transport) at rate $d_V$. The parameter $g$ is there to account for different experimental units (PFU or similar vs number of cells) and make sure all units are consistent (it is always good to check that each term in your model, both on the left and right side, has the same units). For an acute infection, one usually ignores growth and death of uninfected target cells [@beauchemin11; @smith11]. This model can be illustrated graphically showing variables/compartments and all possible processes (Figure \@ref(fig:virusdiagram) A). Formulated as a set of ordinary differential equations, the model is given by
+
+$$
+\begin{aligned}
+\textrm{Uninfected Cells} \qquad \dot{U} & = - bUV \\
+\textrm{Infected Cells} \qquad \dot{I} & =  bUV - d_I I \\     
+\textrm{Virus} \qquad  \dot{V} & =  pI - d_V V -  gb UV 
+\end{aligned}
+$$
+The dynamics obtained from such a model is a single acute infection (Figure \@ref(fig:virusmodels)A.)
+
+
+
+To describe a chronic virus infection, the model needs to include resource replenishment in the form of an influx of uninfected cells. To prevent unlimited growth of uninfected cells in the absence of an infection, natural cell death also needs to be included. One can also include natural death of infected cells, though if this rate of death is small compared to infection-induced death, it could be ignored. With these additional processes in place, the flow chart illustrating the model is shown in Figure \@ref(fig:virusdiagram)B, the differential equations for the model are given by
+$$
+\begin{aligned}
+\textrm{Uninfected Cells} \qquad \dot{U} & = n - bUV -mU \\
+\textrm{Infected Cells} \qquad \dot{I} & =  bUV - d_I I - mI\\     
+\textrm{Virus} \qquad  \dot{V} & =  pI - d_V V -  b^{'} UV
+\end{aligned}
+$$
+with _n_ and _m_ representing natural birth/production and death of cells. The dynamics obtained from such a model now allows for a steady state, representing a chronic infection (Figure \@ref(fig:virusmodels)B.)
+
+
+```{r virusdiagram,  fig.cap='Diagram for the simple viral infection models. A) acute infection. B) chronic infection. Parameters are defined and explained in the text.', echo=FALSE}
+knitr::include_graphics("./media/virusdiagram.png")
+```
+
+
+```{r virusmodels,  fig.cap='Dynamics of simple viral infection models. A) acute infection. B) chronic infection.', out.width = '80%', echo=FALSE}
+knitr::include_graphics("./media/virusmodels.png")
+```
+
+
+
+
+
+## Modeling the immune response
+The simple bacteria infection model above included a single equation for the immune response, the virus dynamics model did not include the immune response at all. Obviously, in most infections, the immune response plays an important role and thus will need to be considered. The immune response is very complex, with many different entities (cells, cytokines, etc.) interacting in complicated ways. As such, being able to model the immune response in full detail is not possible. The modeler will have to decide which components are important for a given scenario and question and include those, while still trying to keep the model at a manageable level of complexity (see further comments on that point below). Even including only a few immune response components quickly leads to fairy complex models. We illustrate this by including a few immune response components into the acute virus infection model. Specifically, we will add one equation to model the innate immune response, two equations for B-cells and antibodies, and one equation for CD8 T-cells.
+
+The model works as follows. Uninfected cells, $U$, become infected by free virus, $V$, at rate $b$. Infected cells, $I$,  produce virus at rate $p$ and die at rate $d_I$. Free virus infects cells at rate $b^{'}$, is cleared by antibodies at rate $k^{'}_{A}$ or removed due to other mechanisms (e.g. mechanical transport) at rate $d_V$. Note that $b^{'}$ and $k^{'}_{A}$ differ from parameters $b$ and $k_{A}$ to account for experimental units (PFU for virus and titer for antibody). 
+A (generic/abstract) innate response, $F$, is assumed to be produced and decays at rates $p_F$ and $d_F$ in the absence of an infection. Presence of virus leads to an increase in the innate response, with growth saturating at a maximum rate $g_F$. The maximum level the innate response can reach is given by the parameter $F_{\textrm{max}}$. The action of the innate response is twofold. First, it can directly counteract the virus by, for instance, reducing virus production rate of infected cells. In our model, the strength of production suppression is determined by the parameter $s_F$. The second action of the innate response is to induce the adaptive response. 
+The dynamics of activated B cells is modeled as increasing in a sigmoidal manner dependent on both the amount of virus (antigen) and innate response present, with a maximum at rate $g_B$. Again, since we are focusing on the short-term dynamics of the system, B-cell decay is ignored. In the absence of an infection, B-cells are set to an arbitrary level of 1. B-cells produce antibodies at rate $r_A$. Antibodies decay naturally at rate $d_A$ and bind to and remove free virus at rate $k_A$. 
+Finally, T-cells are induced proportional to virus/antigen at rate $a$ and then grow exponentially at rate $g_T$. Those T-cells kill infected cells at rate $k_T$.
+
+
+$$
+\begin{aligned}
+\textrm{Uninfected cells} \qquad \dot{U} & = - bUV \\
+\textrm{Infected cells} \qquad \dot{I} & =  bUV - d_I I -k_T T I\\     
+\textrm{Virus} \qquad  \dot{V} & =  \frac{p}{1+s_F F}I - d_V V - k^{'}_{A}AV -  b^{'} UV\\ 
+\textrm{Innate response} \qquad \dot{F} & = p_F - d_F F +  \frac{V}{V+h_V} g_F (F_{max} - F)  \\
+\textrm{B cells} \qquad \dot{B} & =  \frac{F V}{FV+h_F} g_B B  \\
+\textrm{Antibodies} \qquad \dot{A} & =   r_A B  - d_A A  - k_{A}AV \\
+\textrm{T-cells} \qquad  \dot{T} & = aV + g_T T
+\end{aligned}
+$$
+
+
+
+Simulating the dynamics of this model for some parameter choices leads to dynamics as shown in Figure \@ref(fig:immunemodel).
+
+```{r immunemodel,  fig.cap='Dynamics of the model with innate and adaptive immunity for one choice of parameters.', echo=FALSE}
+knitr::include_graphics("./media/immunemodel.png")
+```
+
+Note that different parameter choices lead to different dynamics. Parameters should be chosen based on what is known about the system. Bigger models tend to have more parameters, each of which needs to be specified. For systems that are not too well studied, obtaining reliable parameter estimates can be a challenge.
+
+While the model is still fairly abstract, it is arguably more realistic comapred to the virus infection model without the immune response. The downside is that this model is more complex. The trade-offs of model simplicity versus complexity are further discussed below. Also note that there are many different ways one could map the detailed dynamics of the immune response into a set of equations. The above example is one way of doing it, but by no means the only one. It is up to the modeler, based on their understanding of the biology of the system, to decide how to implement the model. An interesting discussion and evaluation of different models that were used to simulate influenza infections can be found in [@dobrovolny13].
+
+
+# Practice
+
+You can further explore these models using DSAIRM.
+
+
+# Further materials
+* Our recent review [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/) discusses those simple models. 
+
+* The paper [Modelling Viral and Immune System Dynamics](https://www.nature.com/articles/nri700) by Alan Perelson is another nice introduction focusing on virus models and explaining a few different models.  
+* The paper [The role of models in understanding CD8+ T-cell memory](https://www.nature.com/articles/nri1550) by Antia et al. introduces a few simple models for T-cell dynamics.
+

@@ -69,6 +69,3 @@ If you want to see how this code looks like, look at the apps in DSAIRM that inc
 Stochastic models can often be a useful alternative for specific questions. They do take longer to execute, so running large stochastic models would be rather time consuming. It is also still fairly hard to fit data to stochastic models. The `pomp` package in R has lots of functionality that allow for fairly sophisticated and efficient fitting of stochastic compartmental models. However, it is still technically more challenging and takes longer to run than fitting deterministic models.
 
 
-
-# Further materials
-

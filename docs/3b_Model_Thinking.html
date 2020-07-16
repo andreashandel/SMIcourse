@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Andreas Handel" />
+
+
+<title>Model and Systems Thinking</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link rel="icon" type="image/png" href="media/SMIlogo.png" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="SMIstyle.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h2 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h3 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h4 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h5 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h6 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SMI Course</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    General Information
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./Course_Syllabus.html">Syllabus</a>
+    </li>
+    <li>
+      <a href="./Course_Schedule.html">Schedule</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Modules
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">1. Coures and Tools Introduction</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
+        </li>
+        <li>
+          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
+        </li>
+        <li>
+          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
+        </li>
+        <li>
+          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./2a_Introduction_to_Immunology.html">2a. Introduction to Immunology</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
+        </li>
+        <li>
+          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
+        </li>
+        <li>
+          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
+        </li>
+        <li>
+          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+        </li>
+        <li>
+          <a href="./3e_Exercises.html">3e. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Viral Infections and Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./4a_Viral_Infections_Immunology.html">4a. Viral Infections and Immunology</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">5. Using Simulation Models</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./5a_Uses_of_Simulation_Models.html">5a. Uses of Simulation Models</a>
+        </li>
+        <li>
+          <a href="./5b_Exercises.html">5b. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">6. Extracellular Infections and Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./6a_Extracellular_Infections_Immunology.html">6a. Extracellular Infections and Immunology</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">7. What influences model results</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./7a_What_influences_model_results.html">7a. What influences model results</a>
+        </li>
+        <li>
+          <a href="./7b_Structural_Uncertainty.html">7b. Structural Uncertainty</a>
+        </li>
+        <li>
+          <a href="./7c_Parameter_Uncertainty.html">7c. Parameter Uncertainty</a>
+        </li>
+        <li>
+          <a href="./7d_Model_Stochasticity.html">7d. Model Stochasticity</a>
+        </li>
+        <li>
+          <a href="./7e_Exercises.html">7e. Exercises</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">8. How to build and assess models</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./8a_Model_Building_Assessment.html">8a. Model building and assessment overview</a>
+        </li>
+        <li>
+          <a href="./8b_Building_Models.html">8b. How to build good models</a>
+        </li>
+        <li>
+          <a href="./8c_Assessing_Models.html">8c. Assessing published models</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="./Project_Information.html">Project</a>
+</li>
+<li>
+  <a href="./Course_Communication.html">Communication</a>
+</li>
+<li>
+  <a href="./Course_Glossary.html">Glossary</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./Course_Resources.html">Course Resources</a>
+    </li>
+    <li>
+      <a href="./General_Resources.html">General Resources</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/andreashandel/SMIcourse">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Model and Systems Thinking</h1>
+<h4 class="author">Andreas Handel</h4>
+<h4 class="date">2020-07-16 15:41:27</h4>
+
+</div>
+
+
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>Here we discuss briefly the overall idea of taking a model perspective, sometimes also called interchangeably a <em>systems</em> perspective, and how it is applied to immune response modeling.</p>
+</div>
+<div id="learning-objectives" class="section level1">
+<h1>Learning Objectives</h1>
+<ul>
+<li>Understand the basic ideas of complex systems and systems thinking/modeling</li>
+<li>Assess strength and weaknesses of different modeling approaches</li>
+<li>Know the difference between phenomenological and mechanistic models</li>
+</ul>
+</div>
+<div id="systems-or-model-thinking" class="section level1">
+<h1>Systems or Model Thinking</h1>
+<p>The scientific approach that has generally been the most successful in the past was to break down a system into its components and study the components one at a time. Usually referred to as the <em>reductionistic approach</em>. This approach to understanding the world is still very powerful and useful.</p>
+<p>A complementary approach, which has seen increased use, is to look at “the whole” system at once, instead of each component at a time. Using the whole system approach can provide insights that might not be obtained by the purely reductionist approach. Looking at the whole system at once is often referred to as <em>systems thinking/approach</em>.</p>
+<p>The term <em>systems thinking</em> or <em>systems approach</em> or similar such terminology has become popular in various fields during the last few decades. It is not a very clearly defined term, but in general, a <em>systems</em> perspective looks at multiple - often many - components that interact with each other in potentially complicated ways. Since models are an indispensable tool to study system of interacting components, the term <em>model thinking</em> is also sometimes used. More generally a systems perspective and the use of models generally go together.</p>
+<p>In the context of within-host infection and immunology, the system is the complex interactions of pathogen, host, and possibly environment, that determine the process and outcome of an infection. Since infections unfold over time, we usually want to study the <em>dynamics</em> of our system. This leads us to a <em>dynamical systems perspective</em>. Specific types of models, called <em>mechanistic models</em> are especially well suited to describe dynamical systems and are therefore the primary choice for the study of complex dynamical systems. We describe them next.</p>
+</div>
+<div id="models" class="section level1">
+<h1>Models</h1>
+<p>Models are everywhere in science. Models can be conceptual (e.g. graphs or charts), experimental model systems (e.g. a specific mouse strain in immunology) or take the form of mathematical/computer models. The terms ‘model’ and ‘modeling’ are widely used and have no clearly defined meaning. We start by defining and distinguishing between 2 broad categories of models and then focus in the following on one of them.</p>
+<p>Once we take the systems perspective, we have to deal with many components that interact in potentially complicated ways. Making study and analysis complicated, especially if we are trying to gain insights into the causal and mechanistic connections between some quantity (exposure) and some outcome. When taking a systems approach, it is therefore often not enough to have a conceptual model alone. While a conceptual approach often allows some qualitative understanding, it is somewhat limiting. It is for instance almost impossible to gain a good <em>quantitative</em> understanding how changes in certain conditions and components of a system lead to changes in outcomes of interest by relying on conceptual approaches alone. If we want to go beyond qualitative and move toward a quantitative understanding, we need mathematical/computational models. There are many different types of models one can implement. The following categorizes and defines two major types of modeling approaches. In this couse, we will focus on the second type of models.</p>
+<div id="phenomenological-models" class="section level2">
+<h2>Phenomenological Models</h2>
+<p>A huge class of models consists of what we usually refer to as statistical models. In the context of this discussion, I prefer to label them <em>phenomenological</em> models, but that terminology is rarely used. The idea behind the phenomenological approach is to build a parsimonious mathematical or computational model and use statistical approaches to compare the model with the data and to determine if there are any patterns in the data.</p>
+<p>For instance, a linear regression model investigates if there is a pattern/correlation between some input(s) and output(s) of interest that can be well approximated by a linear function. More complicated statistical models exist, some go by the name of <em>machine learning methods</em>. All of these models try to determine if there are patterns between inputs and outputs of interest in the data. Statistical methodology can then be used to determine if any observed pattern is “real” or might be due to chance. The simple t-test is an example.</p>
+<p>These phenomenological models do not try to describe the mechanisms by which patterns might arise. For instance, if we find that the number of T-cells at the peak of an infection correlates linearly with the number of epitope-specific naive T-cells, we can’t conclude for certain that the precursor number of T-cells is the cause of different peak T-cells (though it is a reasonable assumption). We also do not know what processes and mechanisms lead from naive T-cells to activated T-cells.</p>
+<p>This non-mechanistic, phebomenological approach is both a strength and a weakness. With this approach, we can find patterns (e.g. correlations) in data without having to be able to postulate mechanistically how those patterns arise. On the flip side, these phenomenological models also provide little insight regarding potential mechanisms. If we want to explicitly study mechanisms and processes using models, we need to use <em>mechanistic</em> models, described next.</p>
+</div>
+<div id="mechanistic-models" class="section level2">
+<h2>Mechanistic Models</h2>
+<p>As the name suggests, mechanistic models try to explicitly model the mechanisms leading to observed patterns for a given systen under study. Usually, the models are a highly simplified - but done well, still very powerful - abstraction of the system under study. The advantage of these kinds of models is that they potentially provide mechanistic insights, leading to a better and deeper understanding of the system. The main disadvantage is that we already need to know (or at least assume) a good bit about how the components interact for us to be able to build such a model. If we don’t know enough to even postulate potential mechanisms underlying the observed data, we can’t build a mechanistic model.</p>
+<p>Mechanistic models are generally evaluated with computer simulations, thus in this course we mostly refer to them as simulation models. While this terminology is a bit fuzzy (e.g. complex statistical/phenomenological models often also rely on simluations), for the purpose of this course all our models are mechanistic simulation models and we use either term.</p>
+<p>Both phenomenological and mechanistic models are useful tools with distinct advantages and disadvantages. Deciding which one to use depends on the question and study system. Here, we will focus our discussion on mechanistic models. Since the most common type of mechanistic model in the context of within-host modeling are ordinary differential equation based models, we will focus on those, with a brief mention of other mechanistic modeling approaches.</p>
+</div>
+</div>
+<div id="history-of-mechanistic-within-host-models" class="section level1">
+<h1>History of mechanistic within-host models</h1>
+<p>Early mechanistic models for the immune response, with a focus on B-cells, were developed in the 70s (see e.g. <span class="citation">(<span class="citeproc-not-found" data-reference-id="bell70"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="bell71"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="bell71a"><strong>???</strong></span>)</span>). An early, semi-mechanistic model to describe influenza infections was developed in <span class="citation">(<span class="citeproc-not-found" data-reference-id="larson76"><strong>???</strong></span>)</span>. The use of such mechanistic models to study infection and immune responses dynamics continued to slowly increase during the 70s and 80s, and really took off in the 90s. Mechanistic models played an important role in understanding HIV infection dynamics and treatment <span class="citation">(<span class="citeproc-not-found" data-reference-id="ho95"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="perelson96"><strong>???</strong></span>)</span>, and have since been applied to many other infectious diseases such as HCV <span class="citation">(<span class="citeproc-not-found" data-reference-id="neumann98"><strong>???</strong></span>)</span>, malaria <span class="citation">(<span class="citeproc-not-found" data-reference-id="mideo08c"><strong>???</strong></span>)</span>, tuberculosis <span class="citation">(<span class="citeproc-not-found" data-reference-id="kirschner05"><strong>???</strong></span>)</span> and many others.</p>
+</div>
+<div id="further-resources" class="section level1">
+<h1>Further Resources</h1>
+<ul>
+<li>The paper “Why Model?” by Joshua Epstein <span class="citation">(Epstein 2008)</span> provides a nice, short discussion of the purposes of models. Other general introductory discussions of systems thinking and model use are <span class="citation">(May 2004; Chubb and Jacobsen 2010; Garnett et al. 2011; Basu and Andrews 2013; Gunawardena 2014; Homer and Hirsch 2006; Peters 2014; Sterman 2006)</span>.</li>
+</ul>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-basu13">
+<p>Basu, Sanjay, and Jason Andrews. 2013. “Complexity in Mathematical Models of Public Health Policies: A Guide for Consumers of Models.” <em>PLoS Medicine</em> 10 (10): e1001540. <a href="https://doi.org/10.1371/journal.pmed.1001540">https://doi.org/10.1371/journal.pmed.1001540</a>.</p>
+</div>
+<div id="ref-chubb10">
+<p>Chubb, Mikayla C., and Kathryn H. Jacobsen. 2010. “Mathematical Modeling and the Epidemiological Research Process.” <em>European Journal of Epidemiology</em> 25 (1): 13–19. <a href="https://doi.org/10.1007/s10654-009-9397-9">https://doi.org/10.1007/s10654-009-9397-9</a>.</p>
+</div>
+<div id="ref-epstein08">
+<p>Epstein, Joshua M. 2008. “Why Model?” <em>Journal of Artificial Societies and Social Simulation</em> 11 (4): 12.</p>
+</div>
+<div id="ref-garnett11">
+<p>Garnett, Geoffrey P., Simon Cousens, Timothy B. Hallett, Richard Steketee, and Neff Walker. 2011. “Mathematical Models in the Evaluation of Health Programmes.” <em>The Lancet</em> 378 (9790): 515–25.</p>
+</div>
+<div id="ref-gunawardena14">
+<p>Gunawardena, Jeremy. 2014. “Models in Biology:‘Accurate Descriptions of Our Pathetic Thinking’.” <em>BMC Biology</em> 12 (1): 29.</p>
+</div>
+<div id="ref-homer06">
+<p>Homer, Jack B., and Gary B. Hirsch. 2006. “System Dynamics Modeling for Public Health: Background and Opportunities.” <em>American Journal of Public Health</em> 96 (3): 452–58.</p>
+</div>
+<div id="ref-may04">
+<p>May, R. M. 2004. “Uses and Abuses of Mathematics in Biology.” <em>Science</em> 303 (5659): 790–93. <a href="https://doi.org/10.1126/science.1094442">https://doi.org/10.1126/science.1094442</a>.</p>
+</div>
+<div id="ref-peters14">
+<p>Peters, David H. 2014. “The Application of Systems Thinking in Health: Why Use Systems Thinking?” <em>Health Research Policy and Systems</em> 12 (1): 51.</p>
+</div>
+<div id="ref-sterman06">
+<p>Sterman, John D. 2006. “Learning from Evidence in a Complex World.” <em>American Journal of Public Health</em> 96 (3): 505–14.</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
