@@ -16,7 +16,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -24,11 +24,27 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
 
 
 
@@ -59,7 +75,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="SMIstyle.css" type="text/css" />
+<link rel="stylesheet" href="media\SMICourse_style.css" type="text/css" />
 
 
 
@@ -94,33 +110,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 52px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .dropdown-submenu {
   position: relative;
@@ -515,7 +531,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Model and Systems Thinking</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-16 16:03:13</h4>
+<h4 class="date">2020-07-17 11:05:42</h4>
 
 </div>
 
@@ -559,7 +575,7 @@ div.tocify {
 </div>
 <div id="history-of-mechanistic-within-host-models" class="section level1">
 <h1>History of mechanistic within-host models</h1>
-<p>Early mechanistic models for the immune response, with a focus on B-cells, were developed in the 70s (see e.g. <span class="citation">(<span class="citeproc-not-found" data-reference-id="bell70"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="bell71"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="bell71a"><strong>???</strong></span>)</span>). An early, semi-mechanistic model to describe influenza infections was developed in <span class="citation">(<span class="citeproc-not-found" data-reference-id="larson76"><strong>???</strong></span>)</span>. The use of such mechanistic models to study infection and immune responses dynamics continued to slowly increase during the 70s and 80s, and really took off in the 90s. Mechanistic models played an important role in understanding HIV infection dynamics and treatment <span class="citation">(<span class="citeproc-not-found" data-reference-id="ho95"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="perelson96"><strong>???</strong></span>)</span>, and have since been applied to many other infectious diseases such as HCV <span class="citation">(<span class="citeproc-not-found" data-reference-id="neumann98"><strong>???</strong></span>)</span>, malaria <span class="citation">(<span class="citeproc-not-found" data-reference-id="mideo08c"><strong>???</strong></span>)</span>, tuberculosis <span class="citation">(<span class="citeproc-not-found" data-reference-id="kirschner05"><strong>???</strong></span>)</span> and many others.</p>
+<p>Early mechanistic models for the immune response, with a focus on B-cells, were developed in the 70s (see e.g. <span class="citation">(Bell 1970, 1971a, 1971b)</span>). An early, semi-mechanistic model to describe influenza infections was developed in <span class="citation">(Larson et al. 1976)</span>. The use of such mechanistic models to study infection and immune responses dynamics continued to slowly increase during the 70s and 80s, and really took off in the 90s. Mechanistic models played an important role in understanding HIV infection dynamics and treatment <span class="citation">(Ho et al. 1995; Perelson et al. 1996)</span>, and have since been applied to many other infectious diseases such as HCV <span class="citation">(Neumann et al. 1998)</span>, malaria <span class="citation">(Mideo, Day, and Read 2008)</span>, tuberculosis <span class="citation">(Wigginton and Kirschner 2001)</span> and many others.</p>
 </div>
 <div id="further-resources" class="section level1">
 <h1>Further Resources</h1>
@@ -573,6 +589,15 @@ div.tocify {
 <div id="ref-basu13">
 <p>Basu, Sanjay, and Jason Andrews. 2013. “Complexity in Mathematical Models of Public Health Policies: A Guide for Consumers of Models.” <em>PLoS Medicine</em> 10 (10): e1001540. <a href="https://doi.org/10.1371/journal.pmed.1001540">https://doi.org/10.1371/journal.pmed.1001540</a>.</p>
 </div>
+<div id="ref-bell70">
+<p>Bell, George I. 1970. “Mathematical Model of Clonal Selection and Antibody Production.” <em>Journal of Theoretical Biology</em> 29 (2): 191–232.</p>
+</div>
+<div id="ref-bell71">
+<p>———. 1971a. “Mathematical Model of Clonal Selection and Antibody Production. II.” <em>Journal of Theoretical Biology</em> 33 (2): 339–78.</p>
+</div>
+<div id="ref-bell71a">
+<p>———. 1971b. “Mathematical Model of Clonal Selection and Antibody Production III. The Cellular Basis of Immunological Paralysis.” <em>Journal of Theoretical Biology</em> 33 (2): 379–98.</p>
+</div>
 <div id="ref-chubb10">
 <p>Chubb, Mikayla C., and Kathryn H. Jacobsen. 2010. “Mathematical Modeling and the Epidemiological Research Process.” <em>European Journal of Epidemiology</em> 25 (1): 13–19. <a href="https://doi.org/10.1007/s10654-009-9397-9">https://doi.org/10.1007/s10654-009-9397-9</a>.</p>
 </div>
@@ -585,17 +610,35 @@ div.tocify {
 <div id="ref-gunawardena14">
 <p>Gunawardena, Jeremy. 2014. “Models in Biology:‘Accurate Descriptions of Our Pathetic Thinking’.” <em>BMC Biology</em> 12 (1): 29.</p>
 </div>
+<div id="ref-ho95">
+<p>Ho, D. D., A. U. Neumann, A. S. Perelson, W. Chen, J. M. Leonard, and M. Markowitz. 1995. “Rapid Turnover of Plasma Virions and CD4 Lymphocytes in HIV-1 Infection.” <em>Nature</em> 373 (6510): 123–26. <a href="https://doi.org/10.1038/373123a0">https://doi.org/10.1038/373123a0</a>.</p>
+</div>
 <div id="ref-homer06">
 <p>Homer, Jack B., and Gary B. Hirsch. 2006. “System Dynamics Modeling for Public Health: Background and Opportunities.” <em>American Journal of Public Health</em> 96 (3): 452–58.</p>
 </div>
+<div id="ref-larson76">
+<p>Larson, E. W., J. W. Dominik, A. H. Rowberg, and G. A. Higbee. 1976. “Influenza Virus Population Dynamics in the Respiratory Tract of Experimentally Infected Mice.” <em>Infect Immun</em> 13 (2): 438–47.</p>
+</div>
 <div id="ref-may04">
 <p>May, R. M. 2004. “Uses and Abuses of Mathematics in Biology.” <em>Science</em> 303 (5659): 790–93. <a href="https://doi.org/10.1126/science.1094442">https://doi.org/10.1126/science.1094442</a>.</p>
+</div>
+<div id="ref-mideo08c">
+<p>Mideo, Nicole, Troy Day, and Andrew F Read. 2008. “Modelling Malaria Pathogenesis.” <em>Cell Microbiol</em> 10 (10): 1947–55. <a href="https://doi.org/10.1111/j.1462-5822.2008.01208.x">https://doi.org/10.1111/j.1462-5822.2008.01208.x</a>.</p>
+</div>
+<div id="ref-neumann98">
+<p>Neumann, A. U., N. P. Lam, H. Dahari, D. R. Gretch, T. E. Wiley, T. J. Layden, and A. S. Perelson. 1998. “Hepatitis C Viral Dynamics in Vivo and the Antiviral Efficacy of Interferon-Alpha Therapy.” <em>Science</em> 282 (5386): 103–7.</p>
+</div>
+<div id="ref-perelson96">
+<p>Perelson, A. S., A. U. Neumann, M. Markowitz, J. M. Leonard, and D. D. Ho. 1996. “HIV-1 Dynamics in Vivo: Virion Clearance Rate, Infected Cell Life-Span, and Viral Generation Time.” <em>Science</em> 271 (5255): 1582–6.</p>
 </div>
 <div id="ref-peters14">
 <p>Peters, David H. 2014. “The Application of Systems Thinking in Health: Why Use Systems Thinking?” <em>Health Research Policy and Systems</em> 12 (1): 51.</p>
 </div>
 <div id="ref-sterman06">
 <p>Sterman, John D. 2006. “Learning from Evidence in a Complex World.” <em>American Journal of Public Health</em> 96 (3): 505–14.</p>
+</div>
+<div id="ref-wigginton01">
+<p>Wigginton, J. E., and D. Kirschner. 2001. “A Model to Predict Cell-Mediated Immune Regulatory Mechanisms During Human Infection with Mycobacterium Tuberculosis.” <em>J Immunol</em> 166 (3): 1951–67.</p>
 </div>
 </div>
 </div>

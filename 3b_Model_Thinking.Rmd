@@ -66,7 +66,7 @@ Both phenomenological and mechanistic models are useful tools with distinct adva
 # History of mechanistic within-host models
 Early mechanistic models for the immune response, with a focus on B-cells, were developed in the 70s (see e.g. [@bell70; @bell71; @bell71a]). 
 An early, semi-mechanistic model to describe influenza infections was developed in [@larson76].
-The use of such mechanistic models to study infection and immune responses dynamics continued to slowly increase during the 70s and 80s, and really took off in the 90s. Mechanistic models played an important role in understanding HIV infection dynamics and treatment [@ho95; @perelson96], and have since been applied to many other infectious diseases such as HCV [@neumann98], malaria [@mideo08c], tuberculosis [@kirschner05] and many others.
+The use of such mechanistic models to study infection and immune responses dynamics continued to slowly increase during the 70s and 80s, and really took off in the 90s. Mechanistic models played an important role in understanding HIV infection dynamics and treatment [@ho95; @perelson96], and have since been applied to many other infectious diseases such as HCV [@neumann98], malaria [@mideo08c], tuberculosis [@wigginton01] and many others.
 
 
 

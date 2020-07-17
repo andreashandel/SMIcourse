@@ -16,7 +16,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -24,11 +24,27 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" href="media/SMIlogo.png" />
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
 
 
 
@@ -59,7 +75,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="SMIstyle.css" type="text/css" />
+<link rel="stylesheet" href="media\SMICourse_style.css" type="text/css" />
 
 
 
@@ -94,33 +110,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 52px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .dropdown-submenu {
   position: relative;
@@ -515,7 +531,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SMI Course Project Information</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-16 16:03:13</h4>
+<h4 class="date">2020-07-17 10:48:44</h4>
 
 </div>
 
@@ -544,6 +560,11 @@ div.tocify {
 <h1>Project Logistics</h1>
 <p>To repeat, this is completely optional, so if you don’t have the time or interest, you can just focus on learning the course material and not try your own project. If you do try, it is completely up to you how to structure your project. You can just play around, or you can try to write a formal report/paper. Given the shortness of time, it might be tricky to try and form teams with others and do a project as a group, but you are certainly welcome to try and do so. You can use the <em>courseproject</em> Slack channel to see if you can find others to team up with.</p>
 <p>If you get results from your project that you think are worth sharing, let everyone know on Slack. We will be happy to provide feedback and comments at any stage of your project. If any projects advance enough and have enough results that it is worth sharing with the group, we plan to allow some time in our closing Zoom session for anyone who wants to briefly (5-10min) present their findings. If you want to do that, let us know beforehand.</p>
+<p>If you are up for the challenge, here are two specific outcomes/products you could aim for.</p>
+<ol style="list-style-type: decimal">
+<li><p>Build a new model in <em>modelbuilder</em>, explore it either through modelbuilder or on your own and write some report (I suggest using RMarkdown for that but you can use anything) about what you did and found. I’m starting to build a library of models that could be included in <em>modelbuilder</em> and used by others. So if you end up with a nice, well documented and suitable model, I would love to include it in <em>modelbuilder</em> for others to use or build on. You would of course be credited as model contributor.</p></li>
+<li><p>I’m always looking to include more apps into <em>DSAIRM</em>. You could try to build a new model (using one of the existing <code>_simulate..._</code> functions and adjusting it), together with documentation. For the documentation, this would need to be written as Rmd file. <a href="https://raw.githubusercontent.com/ahgroup/DSAIRM/master/inst/appinformation/basicbacteria_documentation.Rmd">Here is an example of the Rmd file for the basic bacteria model that you can look at and use as template</a>. You can ignore the <code>R</code> code and just replace the existing text with text for your model/app. The <em>The MOdel</em> and <em>What to do</em> sections are the most important ones. If suitable, I’d love to include your app into DSAIRM. You’d of course be listed as package contributor.</p></li>
+</ol>
 </div>
 <div id="project-communications" class="section level1">
 <h1>Project Communications</h1>

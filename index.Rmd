@@ -62,15 +62,16 @@ Start by looking over the __Syllabus__ and __Schedule__ documents, then __Commun
 
 This course was developed and is maintained by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html).
 
-```{r, results = "asis", echo = FALSE, message = FALSE, include=FALSE, eval=FALSE}
-# set include and eval to TRUE if I want to turn that on
+**We welcome contributions in the form of feedback, suggestion for edits/additions, etc. You can either tell us or you can even contribute directly through a GitHub pull request.** (If you don't know what a GitHub pull request is and how you can do that, see the GitHub specific instructions [here](https://andreashandel.github.io/MADAcourse/Exercise_Tidyverse.html). You can ignore the part that talks about the `tidyverse`. You might also want to check out [this brief GitHub introduction](https://andreashandel.github.io/MADAcourse/1d_Github.html)).
+
+```{r, results = "asis", echo = FALSE, message = FALSE, warning=FALSE}
 #the following code snipped is taken from Hadley's R4DS intro page
 library(dplyr)
-contributors <- readr::read_csv("contributors.csv", col_types = list())
+contributors <- readr::read_csv("SMICoursecontributors.csv", col_types = list())
 contributors <- contributors %>% 
   mutate(
-    link = glue::glue("[\\@{login}](https://github.com/{login})"),
-    desc = ifelse(is.na(name), link, glue::glue("{name} ({link})"))
+    link = glue::glue("[\\@{GithubID}](https://github.com/{GithubID})"),
+    desc = ifelse(is.na(LastName), link, glue::glue("{FirstName} {LastName} ({link})"))
   )
 cat("The following individuals have contributed to improving the course:\n")
 cat(paste0(contributors$desc, collapse = ", "))

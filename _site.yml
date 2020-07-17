@@ -2,12 +2,12 @@ name: "SMI Course"
 output_dir: 'docs'
 output:
   html_document:
-    theme: spacelab
-    highlight: espresso
+    theme: flatly
+    highlight: default
     toc: true
     toc_depth: 2
     toc_float: 
       collapsed: false
     includes:
       in_header: include_head.html
-    css: SMIstyle.css
+    css: ./media/SMICourse_style.css

@@ -46,8 +46,8 @@ The types of simulation models we discuss in this course are common in other are
 
 # Journal articles
 
-* Perelson (2002). â€œModelling Viral and Immune System Dynamics.â€? Nature Reviews Immunology.
-* Antia et al (2005). â€œThe role of models in understanding CD8+ T-cell memory.â€? Nature Reviews Immunology.
+* Perelson (2002). Modelling Viral and Immune System Dynamics. Nature Reviews Immunology.
+* Antia et al (2005). The role of models in understanding CD8+ T-cell memory. Nature Reviews Immunology.
 
 
 
