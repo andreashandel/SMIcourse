@@ -16,24 +16,10 @@ library(emo)
 # Overview
 This document provides materials that discuss a few important viral pathogens and the immune response to those pathogens.
 
+# Learning Objectives
+* Describe the basic features of all virus life cycles
+* Distinguish the “big picture” unique aspects of HCV, influenza virus, and coronavirus
+* Define how in vitro experiments can be used to predict in vivo virus biology
 
-
-# Influenza
-
-
-# HIV
-
-
-# HCV
-
-
-# Coronaviruses
-
-
-
-# Further materials
-
-_These sources cover more or less the same material that you just read, so checking them out is optional._
-
-
-
+# Slides
+We will go over this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Viral_Infections_and_Immunology_Slides.pdf)

@@ -16,22 +16,16 @@ library(emo)
 # Overview
 This document provides materials to give you a (VERY!) brief introduction to immunology.
 
+# Learning Objectives
+* Understand the major effector arms of the immune system
+*  Describe the variation in pathogen “lifestyles” that must be handled by the immune response
+* Distinguish innate and adaptive immunity
+* Discuss the postulates of the clonal selection hypothesis and their subsequent validation
+
+# Slides
+We will go over an introduction to modeling in one of the zoom sessions. The slides for that session [can be found here.](./slides/Introduction_to_Immunology_Slides.pdf)
 
 
-# Innate Immunity
-
-
-
-# Adaptive Immunity
-
-## B-cells
-
-## T-cells
-
-
-# Further materials
-
-_These sources cover more or less the same material that you just read, so checking them out is optional._
 
 
 

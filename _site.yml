@@ -10,4 +10,4 @@ output:
       collapsed: false
     includes:
       in_header: include_head.html
-    css: ./media/SMICourse_style.css
+    css: /media/SMICourse_style.css

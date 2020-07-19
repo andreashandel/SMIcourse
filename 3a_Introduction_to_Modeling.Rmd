@@ -24,10 +24,10 @@ This module provides a brief introduction to simulation modeling.
 # Slides
 We will go over an introduction to modeling in one of the zoom sessions. The slides for that session [can be found here.](./slides/Introduction_to_Modeling_Slides.html)
 
+
 # Reading
 
-
-
+The other units in this model cover specific topics in some more detail.
 
 
 # Further materials
