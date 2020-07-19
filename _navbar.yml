@@ -48,7 +48,7 @@ left:
             href: ./5a_Uses_of_Simulation_Models.html
           - text: "5b. Exercises"
             href: ./5b_Exercises.html
-      - text: "6. Extracellular Infections and Immunology"
+      - text: "6. Complex Pathogen Life cycles and Immunology"
         menu:
           - text: "6a. Complex Pathogen Life cycles and Immunology"
             href: ./6a_Complex_Pathogens_Immunology.html
