@@ -219,7 +219,7 @@ $$
 * Diagrams specify a model somewhat, but not completely. The diagram below could be implemented as ODEs or discrete time or stochastic models.
 
 ```{r bacteriadiagram,  fig.cap='',  echo=FALSE, out.width = "80%", fig.align='center'}
-knitr::include_graphics("../media/bacteriadiagram.png")
+knitr::include_graphics("../media/nri_review_fig3a.png")
 ```
 
 
@@ -251,17 +251,9 @@ knitr::include_graphics("../media/nri_review_fig2a.png")
 
 ## A simple virus infection model
 
-<div style="float: left; width: 50%;">
-```{r nrivirus2,  out.width = '100%', echo=FALSE, fig.align='center'}
-knitr::include_graphics("../media/nri_review_fig2a.png")
+```{r nrivirus2,  out.width = '70%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("../media/nri_review_fig2.png")
 ```
-</div>
-
-<div style="float: right; width: 50%;">
-```{r nrivirus3,  out.width = '100%', echo=FALSE, fig.align='center'}
-knitr::include_graphics("../media/nri_review_fig2b.png")
-```
-</div>
 
 
 
