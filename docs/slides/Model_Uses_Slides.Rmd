@@ -184,33 +184,29 @@ knitr::include_graphics("../media/xkcd-when_you_assume.png")
 
 # Model fitting
 
-## Fitting models to data 
-
+## Model fittig
 * We build models based on what we assume/know goes on in a specific system.
-* We can use models to explore systems and make specific predictions.
-* This can be done in the absence of data.
-* Adding data to the mix allows us to do more. If we have the right data, we can fit models to it.
-
-```{r experiments,  echo=FALSE, fig.cap='', out.width = '80%', fig.align='center'}
-knitr::include_graphics("../media/phd_dataisorare.gif")
-```
-
-## Model-based predictions
+* We can use models to explore and make predictions.
 * At some point, we need to bring our model results in contact with data to see how our model performs.
 * Ideally, the whole process is iterative.  
 
-```{r modelusefig5,  echo=FALSE, fig.cap='', out.width = '80%', fig.align='center'}
+```{r modelusefig5,  echo=FALSE, fig.cap='', out.width = '60%', fig.align='center'}
 knitr::include_graphics("../media/nri_review_fig1.png")
 ```
 
-## Model testing/validation
-The same process of going from models to data happens in all of science, just often without the explicit use of mathematical models: 
 
-1. have (specify) assumptions about system (i.e. a **conceptual model**)
-2. generate hypotheses/predictions based on implicit/conceptual model
+## Model testing/validation
+The process of going from models to data happens in all of science, often without the explicit use of mathematical models: 
+
+1. make assumptions about system (i.e. a **conceptual model**)
+2. generate hypotheses/predictions based on conceptual model
 3. collect data (e.g. experiment)
 4. compare hypotheses/predictions to data 
 5. repeat
+
+```{r experiments,  echo=FALSE, fig.cap='', out.width = '70%', fig.align='center'}
+knitr::include_graphics("../media/phd_dataisorare.gif")
+```
 
 
 ## Hypothesis testing with non-mechanistic models

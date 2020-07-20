@@ -28,14 +28,14 @@ We will go over an introduction to immunology in one of the zoom sessions. The s
 # Videos
 The recordings of the lecture are available online, broken into two segments. 
 
-The first segment covers innate immunity.
+In the first segment, Paul covers innate immunity.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z3c4ZSmuTR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
-The second segment covers adaptive immunity.
+In the second segment, he covers adaptive immunity.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d6IKOL-utNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

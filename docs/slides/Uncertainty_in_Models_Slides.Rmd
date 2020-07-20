@@ -24,7 +24,7 @@ output:
 * Every model is 'wrong' in some sense, but some might be useful.
 * We need to decide which variables and processes to include and which to exclude.
 
-```{r mapfigure, echo=FALSE, fig.cap="", out.width="80%", fig.align='center'}
+```{r mapfigure, echo=FALSE, fig.cap="", out.width="90%", fig.align='center'}
 knitr::include_graphics("../media/nri_review_modeldetail.png")
 ```
 
@@ -44,7 +44,7 @@ $$
 \dot{B} & = g B - d_B B - kBI\\
 \dot{I} & = r BI - d_I I \\
 \\
-\dot{B} & = g  - d_B B - \frac{kBI}{I+s}\\
+\dot{B} & = g  - d_B B - k\frac{B}{B+s}I\\
 \dot{I} & = r BI - d_I I \\
 \end{aligned}
 $$
@@ -54,7 +54,7 @@ $$
 ## Structural Uncertainty Example 
 Dobrovolny et al. (2013 PLoS One) compared different influenza models and assessed how they matched experimental data.
 
-```{r dobrovolny, echo=FALSE, fig.cap='Top: models, bottom: data', out.width = '90%', fig.align='center'}
+```{r dobrovolny, echo=FALSE, fig.cap='Top: models, bottom: data', out.width = '100%', fig.align='center'}
 knitr::include_graphics("../media/dobrovolny.png")
 ```
 
@@ -133,6 +133,16 @@ knitr::include_graphics("../media/paramdistribution.jpg")
 knitr::include_graphics("../media/lhsfigure.jpg")
 ```
 
+## Uncertainty Analysis
+* Sample over parameters, record outcomes for each sample.
+* Show the uncertainty in outcomes due to uncertainty in parameters with e.g. a boxplot
+
+```{r uncertainty,  echo=FALSE, out.width="40%", fig.align='center'}
+knitr::include_graphics("../media/uncertainty.png")
+```
+
+Example of a boxplot for some U/S analysis. For different intervention strategies (along the x-axis), samples are run and some outcome is recorded. 
+
 
 ## Sensitivity Analysis
 * Uncertainty analysis tells us how uncertainty in inputs affects uncertainty in outputs.
@@ -169,11 +179,6 @@ knitr::include_graphics("../media/pandemicusanalysis2.jpg")
 * Deterministic models (both continuous and discrete-time) give you the same result for a set of parameters and starting conditions no matter how often you run them.
 * Real systems are stochastic/random, which means they have some inherent variability.
 * The words Stochasticity, Randomness, Noise, Variability are often used interchangably.
-
-```{r lhssample,  echo=FALSE, out.width="100%", fig.align='center', fig.cap='Hoare et al 2008 TBMM'}
-knitr::include_graphics("../media/lhsfigure.jpg")
-```
-
 
 ## Sources of Stochasticity
 * Random (external) noise (e.g. measurement error).
