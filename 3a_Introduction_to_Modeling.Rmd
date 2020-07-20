@@ -24,8 +24,9 @@ This module provides a brief introduction to simulation modeling.
 # Slides
 We will go over an introduction to modeling in one of the zoom sessions. 
 There are two sets of slides. 
-The first one giving a general introduction to modeling [can be found here.](./slides/Introduction_to_Modeling_Slides.html)
-The second one which discusses a few simple models [can be found here.](./slides/Simple_Models_Slides.html)
+The first one giving a general introduction to modeling. You can get the slides here [as html](./slides/Introduction_to_Modeling_Slides.html) or [as pdf.](./slides/Introduction_to_Modeling_Slides.pdf)
+
+The second one which discusses a few simple models. You can get the slides here [as html](./slides/Simple_Models_Slides.html) or [as pdf.](./slides/Simple_Models_Slides.pdf)
 
 
 # Reading
