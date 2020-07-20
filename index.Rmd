@@ -21,9 +21,9 @@ We plan to keep this website continuously online, with updates happening every t
 
 # Important Notes
 
-**1. This website is not fully ready yet. As long as you see this message, expect some things to not be fully available/working. Everything should be up and running by Monday morning.**
+**1. The website should now be functional. We'll likely keep adding material throughout the course, so check often. If you see anything not working, let us know or fix it yourself `r emo::ji('smiley')` (see under _Contribute_ below).**
 
-**2. The binaries for the new version of the DSAIRM package (version 0.8.6) might not be fully available on CRAN yet. If you install from CRAN (using the `install.packages` command) and your version of DSAIRM is not 0.8.6, please install from Github. To do so, first install the `remotes` package with `install.package('remotes')`, then install from Github with `remotes::install_github('ahgroup/DSAIRM')`.**
+**2. DSAIRM version 0.8.6 should be available on CRAN. I've learned that this version doesn't work for at least one student. So far I can't reproduce the error. If DSAIRM fails for you, please let me know on Slack (with the error you are getting). You can in the meantime use the online version: https://shiny.ovpr.uga.edu/DSAIRM/ As soon as I can fix it, you can install from Github. To do so, first install the `remotes` package with `install.package('remotes')`, then install from Github with `remotes::install_github('ahgroup/DSAIRM')`.**
 
 **3. We will record all Zoom sessions. They will be made available to you. We would also like to post them publicly to this website. If you have concerns about that, please let us know. Otherwise we assume you are ok with us posting those recordings.**
 

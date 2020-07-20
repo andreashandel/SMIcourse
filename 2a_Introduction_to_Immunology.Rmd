@@ -23,7 +23,7 @@ This document provides materials to give you a (VERY!) brief introduction to imm
 * Discuss the postulates of the clonal selection hypothesis and their subsequent validation
 
 # Slides
-We will go over an introduction to modeling in one of the zoom sessions. The slides for that session [can be found here.](./slides/Introduction_to_Immunology_Slides.pdf)
+We will go over an introduction to immunology in one of the zoom sessions. The slides for that session [can be found here.](./slides/Introduction_to_Immunology_Slides.pdf)
 
 
 

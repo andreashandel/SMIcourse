@@ -37,14 +37,14 @@ knitr::include_graphics("../media/cartoon_rats.jpg")
 
 
 ## Observational studies
+
 * Widely used in Public Health and other areas (e.g. Medicine, Sociology, Geology).
 * Not as powerful as experimental studies.
 * Often the only option.
 
-```{r obsstudies,  echo=FALSE, fig.cap='(c) Jim Borgman', out.width = '70%', fig.align='center'}
+```{r obsstudies,  echo=FALSE, fig.cap='Jim Borgman', out.width = '70%', fig.align='center'}
 knitr::include_graphics("../media/studies-produce-random-results.png")
 ```
-
 
 
 ## Simulation/modeling studies
@@ -100,7 +100,7 @@ knitr::include_graphics("../media/xkcd-curve_fitting.png")
 
 ## Non-mechanistic model example
 
-```{r phenomodel1,  fig.cap="Wu et al 2019 Nature Communications.", echo=FALSE, out.width = '60%', fig.align='center'}
+```{r phenomodel1,  fig.cap="Wu et al 2019 Nature Communications.", echo=FALSE, out.width = '70%', fig.align='center'}
 knitr::include_graphics("../media/wu_natcomm.png")
 ```
 
@@ -136,7 +136,10 @@ knitr::include_graphics("../media/xkcd-machine_learning.png")
 <div style="float: left; width: 50%;">
 * We formulate explicit mechanisms/processes driving the system  dynamics.
 * This is done using mathematical equations (often ordinary differential equations), or computer rules.
-* Also called _systems dynamics models_ or _(micro)simulation models_.
+* Also called __systems/dynamic(al)/ (micro)simulation/process/ mathematical/ODE/... models__.
+
+
+
 </div>
 
 <div style="float: right; width: 50%;">
@@ -149,10 +152,26 @@ knitr::include_graphics("../media/nri_review_fig3.png")
 
 ## Mechanistic model example 
 
-```{r predictexample2,  fig.cap='Handel & Antia 2009 J Vir', echo=FALSE, out.width = '80%', fig.align='center'}
+<div style="float: left; width: 40%;">
+
+$$
+\begin{aligned}
+\dot V & = rV-kVT^*\\
+\dot P & = fV - dP \\
+\dot T & = -aPT \\
+\dot T^* & = aPT + gT^*
+\end{aligned}
+$$
+</div>
+
+<div style="float: right; width: 60%;">
+
+
+```{r predictexample2,  fig.cap='Handel & Antia 2008 J Vir', echo=FALSE, out.width = '100%', fig.align='center'}
 knitr::include_graphics("../media/handel_jvir.png")
 ```
 
+</div>
 
 
 
@@ -191,8 +210,7 @@ knitr::include_graphics("../media/nri_review_fig3a.png")
 
 
 ## Simulation models
-* We will focus on a specific class of mathematical/computational models, namely __mechanistic simulation models.__
-* Those models are also called _dynamical systems models_ or _process models_ or _ODE models_ or _mathematical models_ or _models_ or ...
+* We will focus on __mechanistic simulation models.__
 * The hallmark of such models is that they explicitly (generally in a simplified manner) model processes occuring in a system. 
 
 
@@ -211,7 +229,7 @@ knitr::include_graphics("../media/ns_useofpredictions.gif")
 
 ## Real-world examples
 Using a TB model to explore/predict cytokine-based interventions (Wigginton and Kirschner, 2001 J Imm).
-```{r kirschnertb,  echo=FALSE, fig.cap='', out.width = '50%', fig.align='center'}
+```{r kirschnertb,  echo=FALSE, fig.cap='', out.width = '80%', fig.align='center'}
 knitr::include_graphics("../media/tbkirschner.png")
 ```
 
@@ -239,15 +257,15 @@ The same types of simulation models are often used on both scales.
 
 ## Population level modeling history
 
-* 1766 - Bernoulli “An attempt at a new analysis of the mortality
+* 1766 - Bernoulli "An attempt at a new analysis of the mortality
 caused by smallpox and of the advantages of inoculation to
-prevent it�? (see Bernoulli & Blower 2004 Rev Med Vir)
-* 1911 – Ross “The Prevention of Malaria�?
-* 1920s – Lotka & Volterra “Predator-Prey Models�?
-* 1926/27 - McKendrick & Kermack “Epidemic/outbreak models�?
+prevent it" (see Bernoulli & Blower 2004 Rev Med Vir)
+* 1911 – Ross "The Prevention of Malaria"
+* 1920s – Lotka & Volterra "Predator-Prey Models"
+* 1926/27 - McKendrick & Kermack "Epidemic/outbreak models"
 * 1970s/80s – Anderson & May
 * Lot’s of activity since then
-* See also Bacaër 2011 “A Short History of Mathematical Population Dynamics�?
+* See also Bacaër 2011 "A Short History of Mathematical Population Dynamics"
 
 
 ## Within-host modeling history
