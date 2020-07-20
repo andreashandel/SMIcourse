@@ -16,12 +16,11 @@ library(emo)
 
 
 # Overview
-This document describes different uses for simulation models.
+This document describes how to use simulation models to explore systems.
 
 # Learning Objectives
-* Know what simulation models can be used for.
-* Be able to differentiate between model use types.
-* Know about advantages and disadvantages of different model use types.
+* Know when and why to use simulation models for system exploration.
+* Be able to implement simple model exploration simulations.
 
 
 
@@ -30,7 +29,9 @@ At the early stages of trying to gain a fairly basic understanding of the behavi
 
 
 
-## How to use models for exploration
+# How to use models for exploration
+At the very first stage, as you are building your model, you will run it and look at the behavior of some, ideally all, model components (your variables). This will produce time-series plots, i.e. you will plot the behavior of the model components as a function of time. Doing so is vital to test your model, debug your code, and make sure everything is working as expected. Once you are confident your model and code work as expected, you can move on to the actual analysis and exploration of your system. This can also be done with time-series plots. Let's say you want to know how the model behaves for a set of parameters you consider most reasonable. You set the model parameters to those values, run the model, and report your results. If you want to explore scenarios, e.g. by having some parameter turned off (set to zero) and then turned on, 
+
 * So far, we looked at the dynamics (time-series) of our models for specific parameter values.
 * Often, we are not mainly interested in the time series, but instead some more specific quantity, e.g. pathogen peak, AUC, virus load at steady state, etc.
 * We usually want to to know how such outcome(s) of interest vary with some parameter(s).
