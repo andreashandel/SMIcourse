@@ -46,8 +46,14 @@ left:
         menu:
           - text: "5a. Uses of Simulation Models"
             href: ./5a_Uses_of_Simulation_Models.html
-          - text: "5b. Exercises"
-            href: ./5b_Exercises.html
+          - text: "5b. Models for Exploration"
+            href: ./5b_Models_for_Exploration.html
+          - text: "5c. Models for Prediction"
+            href: ./5c_Models_for_Prediction.html
+          - text: "5d. Models for Fitting"
+            href: ./5d_Model_Fitting.html
+          - text: "5e. Exercises"
+            href: ./5e_Exercises.html
       - text: "6. Complex Pathogen Life cycles and Immunology"
         menu:
           - text: "6a. Complex Pathogen Life cycles and Immunology"

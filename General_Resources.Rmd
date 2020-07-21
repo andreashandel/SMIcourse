@@ -37,6 +37,8 @@ _There isn't really a textbook that teaches simulation modeling which is both co
 
 * [How the Immune System works](https://amzn.to/3ev68dO) - a nice introduction to the immune system, focusing on the big picture. Good for those who are new to immunology.
 * [Janeway's Immunobiology](https://amzn.to/2Wlmsrr) - a very comprehensive immunology textbook.
+* [Basic Immunology](https://amzn.to/30yjXmJ) - another comprehensive immunology textbook.
+
 
 
 # Other books

@@ -440,7 +440,16 @@ div.tocify {
           <a href="./5a_Uses_of_Simulation_Models.html">5a. Uses of Simulation Models</a>
         </li>
         <li>
-          <a href="./5b_Exercises.html">5b. Exercises</a>
+          <a href="./5b_Models_for_Exploration.html">5b. Models for Exploration</a>
+        </li>
+        <li>
+          <a href="./5c_Models_for_Prediction.html">5c. Models for Prediction</a>
+        </li>
+        <li>
+          <a href="./5d_Model_Fitting.html">5d. Models for Fitting</a>
+        </li>
+        <li>
+          <a href="./5e_Exercises.html">5e. Exercises</a>
         </li>
       </ul>
     </li>
@@ -531,7 +540,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Uses of Simulation Models</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-07-20 19:37:24</h4>
+<h4 class="date">2020-07-21 08:08:22</h4>
 
 </div>
 
@@ -554,18 +563,14 @@ div.tocify {
 </div>
 <div id="reading" class="section level1">
 <h1>Reading</h1>
-<div id="exploringunderstanding" class="section level2">
-<h2>Exploring/Understanding</h2>
-<p>At the early stages of trying to gain a fairly basic understanding of the behavior of a system, one can build simple mechanistic models and explore how interactions between model components (and thus components of the real system) impact observed patterns. Using models in this way provides a quick and cheap way to gain some intuition of how a system functions. For understanding purposes, one generally tries to keep models simple.</p>
+<p>Simulation models can be used for different purposes. One way to conceptualize such different uses is shown in this figure.</p>
+<div class="figure" style="text-align: center">
+<img src="media/nri_review_fig1.png" alt="Handel et al. 2020 Nat Rev Imm" width="80%" />
+<p class="caption">
+Handel et al. 2020 Nat Rev Imm
+</p>
 </div>
-<div id="predictionwhat-if" class="section level2">
-<h2>Prediction/what-if</h2>
-<p>Once we have gained some general understanding of the system under study and know enough about the system to be able to build models that provide reasonable approximations of the real system, we can use those models to perform <em>in silico experiments</em>. We can make predictions what might happen to the system if we changed some of its parts. For instance in a model that includes some cytokine, we could test what would happen if we administered a drug that suppressed this cytokine. This allows us to make predictions that can be tested with further experiments. These <em>in silico</em> approaches are much faster, cheaper and have no ethical problems, compared to real experiments. Of course the major caveat with any model result is that it is only useful insofar as the model properly captures the important features of the real system. The more a model is used to make predictions and these predictions tested with data, the more reliable it becomes.</p>
-</div>
-<div id="fittinginference" class="section level2">
-<h2>Fitting/inference</h2>
-<p>The previous two ways of using a model can be considered <em>data free</em>. What we mean by that is that while models should obviously be built based on the best information about the system, and model parameters need to come from experiments or other data sources, once the model is built it can be run and analyzed without further need for data. Comparing model predictions with data, as described in the previous paragraph, is a first step toward using data together with models. If one makes the model-data comparison in a rigorous statistical manner, one reaches the area of model fitting (inference). Here, one tries to fit a specific mechanistic model to available data in a rigorous statistical manner (using various approaches such as frequentist, likelihood or bayesian methods). Fitting allows one to discriminate between different postulated mechanisms (hypotheses), which are translated into different models and fitting determines which model is better at explaining the observed data. Further, model fitting provides estimates for model parameters. Often, such parameters have a directly interpretable biological meaning (e.g. the rate of virus production by infected cells) and are thus of interest on their own.</p>
-</div>
+<p>The other units in this module provide more details on each of the different types of model use shown in the figure.</p>
 </div>
 <div id="further-materials" class="section level1">
 <h1>Further materials</h1>

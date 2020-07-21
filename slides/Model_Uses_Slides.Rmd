@@ -184,7 +184,7 @@ knitr::include_graphics("../media/xkcd-when_you_assume.png")
 
 # Model fitting
 
-## Model fittig
+## Model fitting
 * We build models based on what we assume/know goes on in a specific system.
 * We can use models to explore and make predictions.
 * At some point, we need to bring our model results in contact with data to see how our model performs.
