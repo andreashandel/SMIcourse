@@ -33,17 +33,20 @@ The recordings of the lecture are broken into three segments.
 The first segment discusses how model structure impacts outcomes.
 
 <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RW-ZgTVT1fE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
 The second segment discusses parameter uncertainty and how to assess its impact.
 
 <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xgPmDrz6uNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 The third segment discusses model stochasticity.
 
 <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qfzeMYPr454" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
