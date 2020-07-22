@@ -1,0 +1,32 @@
+---
+title: SMI 2020 - Host Genetics and Immunity
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides links to slides and video recording for a short lecture discussing the role of host genetics on immune responses.
+
+# Slides
+The slides for that session [can be found here.](./slides/Host_Genetics_Immunity_Slides.pdf)
+
+
+# Videos
+The recordings of the lecture are embedded below.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kQAz4XfFdjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+

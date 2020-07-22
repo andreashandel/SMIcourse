@@ -1,0 +1,32 @@
+---
+title: SMI 2020 - DSAIRM Code Exploration
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides a link to the video recording in which we looked at some of the DSAIRM code.
+
+# Slides
+No slides exist for this unit.
+
+
+# Videos
+The recording is embedded below.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BNy2D4mxn_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+

@@ -3,11 +3,16 @@ title: "A brief introduction to multi-scale models"
 author: "[Andreas Handel](https://www.andreashandel.com)"
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-bibliography: ../media/SMICourse.bib
 output: 
   ioslides_presentation:
-      self_contained: true
-      css: "../media/handelslides.css"
+    self_contained: true
+    css: "../media/handelslides.css"
+    keep_md: false
+    transition: faster
+    fig_caption: true
+    mathjax: default
+    includes:
+bibliography: ../media/SMICourse.bib
 ---
 
 
@@ -17,9 +22,16 @@ output:
 * Building models that connect scales can allow one to answer new questions.
 
 
-## Ways to modelg interactions across scales
+```{r modelusefig6,  echo=FALSE, fig.cap='', out.width = '90%', fig.align='center'}
+knitr::include_graphics("../media/multiscale_fig.png")
+```
+
+
+## Ways to model interactions across scales
 * Static: A within-host model is analyzed/simulated. Results are being fed into a between-host model, which is subsequently being run.
-* Dynamic: A within-host model is being simulated inside a between-host model. Requires and ABM for the between-host model, each agent has its own infection model running [].
+* Dynamic: A within-host model is being simulated inside a between-host model. Requires an ABM for the between-host model, each agent has its own infection model running.
+
+
 
 
 
@@ -38,7 +50,8 @@ $$
 $$
 
 ## Between-host model
-At the population level, we'll look at the standard SIR model, with compartments being susceptible, infected and infectious, and recovered. To avoid confusion, we give all the parameters on the population level model Greek letters.
+* At the population level, we'll look at the standard SIR model, with compartments being susceptible, infected and infectious, and recovered. 
+* To avoid confusion, we give all the parameters on the population level model Greek letters.
 
 $$
 \begin{aligned}
@@ -50,8 +63,7 @@ $$
 
 
 ## Linking models
-
-The two models might be linked in various ways. For instance it would be reasonable to assume that the rate of infection on the population level depends on within-host virus load. To keep it simple, we can assume a linear relation, i.e. $\beta = kV$, with $k$ some parameter.
+* Assume transmission rate is linked to virus load, e.g. $\beta = kV$, with $k$ some parameter.
 
 $$
 \begin{aligned}
@@ -65,31 +77,65 @@ Now the between-host model is connected to the within-host model through the var
 
 
 ## Computing virus load
-* For a chronic infection model, we can compute $V$ at steady state as function of model parameters. Doing so leads to $V = \frac{bnp-bd_Ign-d_Id_Ud_V}{bd_Id_V}$. 
-* Thus we now have a model whereby changes in the within-host parameters impact the between-host dynamics.
-* A similar model could be made that computes total virus load for an acute infection, and assumes this to be proportional to $\beta$ [@handel2014].
+* For a chronic infection model, we can compute $V$ at steady state as function of model parameters. $$V = \frac{n(p-d_Ig)}{d_Id_V}-\frac{d_U}{b}$$ 
+* Changes in the within-host parameters now impact the between-host dynamics.
+* A similar model could be made that computes total virus load for an acute infection, and assumes this to be proportional to $\beta$ [@handel13].
 
 ## Another way to link models
-Instead (or in addition) to assuming a link through $\beta$, we could link the rate of recovery to virus load. E.g we could assume that the duration of the infectious period, $1/\gamma$ is over when $V$ in the within host model  
+* We could also assume that the duration of the infectious period, $1/\gamma$ is determined by the time $V$ in the within host model drops below a certain level.
+* To investigate this:
+  - Set within-host model parameters. Run model. Determine time at which $V<1$ from time-series. 
+  - Use that time as $1/\gamma$ in the between-host model.
+* This approach could be done static (compartmental), or dynamic (ABM).
 
 ## Using the linked models to answer a question 
-
-How do fitness on the within-host level and fitness on the between-host level compete? Fitness is a difficult concept to define and there is no single right way. An often-used approach is by looking at the reproductive number, which is the average number of new entities (new virus particles, new infected hosts) produced by one of them (one virion, one new infected host). Note that this can be an indirect process, e.g. a virion produces more virions by infecting a cell. 
-
-We won't go into the details of how R0 is derived, just state that for the two models above, we have $R_w=\frac{bU_0p}{d_I(d_V + gbU_0)}$ for the within-host fitness of the virus and $R_b = \frac{bS_0}{g+m}$ for the between-host fitness.
-
-
-# Example question
+* We could now answer questions such as: Does increased virus infection (parameter $b$) lead to more spread on the population level? If we assume link through $\beta$ and/or $\gamma$.
+* For a chronic infection, we can see it from the equation: $$V = \frac{n(p-d_Ig)}{d_Id_V}-\frac{d_U}{b}$$ 
+* For an acute infection, we would need to run simulations.
 
 
+## Closing the loop
+* So far, we assumed that the lower scale (within-host) affects the higher scale (between-host).
+* One could also consider the population level dynamics to impact the within-host level. E.g. if we had a new (flu) strain spreading on the population level which can partially avoid pre-existing immunity, it might impact the within-host dynamics.
+* It gets complicated. One either needs to break down the pieces and look at them individually, or put them all in one large simulation.
 
 
-If the between-host parameters are independent of the within-host parameters, a virus can maximize its overall fitness by independently increasing $R_w$ and $R_b$. There 
-But parameters are unlikely to be independent. What possible connections can you think of? 
+## Example 1
+Does low-temperature environmental persistence versus high-temperature within-host persistence pose a potential trade-off for avian influenza [@handel13; @handel14]?
+
+Connect a within-host model and a population level model. Explore how different decay rates at different temperatures affect overall virus fitness.
+
+```{r aivfig,  echo=FALSE, fig.cap='', fig.show = "hold", out.width = "45%", fig.align = "default"}
+knitr::include_graphics("../media/handel14prsb_fig3.png")
+knitr::include_graphics("../media/handel14prsb_fig4.png")
+```
+
+
+## Example 2
+How does drug resistance emergence within an HIV infected individual impact the population level dynamics [@saenz2013]?
+
+* Virus infection within-host model with drug sensitive and resistant strain and drug treatment.
+* The epi model parameters for infection duration and transmission rate are linked to virus load.
+
+
+```{r saenzfig,  echo=FALSE, fig.cap='Infected cases for different levels of treatment (color) and without (left) and with (right) within-host drug resistance.', fig.align = "center", out.width = "70%"}
+knitr::include_graphics("../media/saenz13epidemics.png")
+```
 
 
 
-# Closing the loop
+## Example 3
+A fully dynamic multi-scale model for influenza [@lukens2014].
+
+```{r lukensfig,  echo=FALSE, fig.cap='', fig.align = "center"}
+knitr::include_graphics("../media/lukens14bmcph.jpg")
+```
 
 
-# References
+## Further reading 
+These review papers can provide a good further introduction to the topic:
+[@childs2019; @garira2017; @mideo2008a; @murillo13; @handel15]
+
+
+## References {#verysmall}
+

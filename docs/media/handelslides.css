@@ -3,6 +3,45 @@
 -------------------------------------------------------------------------------- */
 
 
+
+#mytextbox
+{
+	border: 10px solid #cfd7e0; 
+	color: black;  
+	font-weight: normal;
+}
+
+#bigfont
+{
+	font-size: 300%;
+	font-weight: bold;
+}
+
+#myimage
+{
+	max-height: 10%;
+}
+
+#verysmall
+{
+	font-size: 50%;
+}
+
+.verysmall
+{
+	font-size: 50%;
+}
+
+
+.small { font-size: 70% }
+
+
+.smallfont pre {
+    font-size: 50%;
+}
+
+
+
 /* Remove slide numbering if using xaringan */
 .remark-slide-number {
   display: none;
@@ -80,15 +119,8 @@ slides > slide:not(.nobackground):after {
 -------------------- */
 p {
 	margin-right: 0;
-
-
-
-article
-{
-	color: black;
-	margin-right: 0;
-	height: 100%;
 }
+
 
 /* My additions
 -------------------- */
@@ -121,31 +153,6 @@ iframe {
 	margin-left: auto;
     margin-right: auto;
 }
-
-#mytextbox
-{
-	border: 10px solid #cfd7e0; 
-	color: black;  
-	font-weight: normal;
-}
-
-#bigfont
-{
-	font-size: 300%;
-	font-weight: bold;
-}
-
-#myimage
-{
-	max-height: 10%;
-}
-
-#verysmall
-{
-	font-size: 50%;
-}
-
-.small { font-size: 70% }
 
 
 /* Change vertical spacing for lists */

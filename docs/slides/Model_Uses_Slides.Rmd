@@ -3,11 +3,16 @@ title: "How to use simulation models"
 author: "[Andreas Handel](https://www.andreashandel.com)"
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
-bibliography: ../media/SMICourse.bib
 output: 
   ioslides_presentation:
-      self_contained: true
-      css: "../media/handelslides.css"
+    self_contained: true
+    css: "../media/handelslides.css"
+    keep_md: false
+    transition: faster
+    fig_caption: true
+    mathjax: default
+    includes:
+bibliography: ../media/SMICourse.bib
 ---
 
 

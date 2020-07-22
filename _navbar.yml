@@ -78,6 +78,14 @@ left:
             href: ./8b_Building_Models.html
           - text: "8c. Assessing published models"
             href: ./8c_Assessing_Models.html
+      - text: "9. Various Topics"
+        menu:
+          - text: "9a. Host Genetics and Immunity"
+            href: ./9a_Host_Genetics_Immunity.html
+          - text: "9b. Multiscale Models"
+            href: ./9b_Multiscale_Models.html
+          - text: "9c. DSAIRM code exploration"
+            href: ./9c_DSAIRM_Code_Exploration.html
   - text: "Project"
     href: ./Project_Information.html
   - text: "Communication"
