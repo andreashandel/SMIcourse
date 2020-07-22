@@ -1,0 +1,95 @@
+---
+title: "A brief introduction to multi-scale models"
+author: "[Andreas Handel](https://www.andreashandel.com)"
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+bibliography: ../media/SMICourse.bib
+output: 
+  ioslides_presentation:
+      self_contained: true
+      css: "../media/handelslides.css"
+---
+
+
+
+## Introduction 
+* Infectious diseases operate on different temporal and spatial scales. 
+* Building models that connect scales can allow one to answer new questions.
+
+
+## Ways to modelg interactions across scales
+* Static: A within-host model is analyzed/simulated. Results are being fed into a between-host model, which is subsequently being run.
+* Dynamic: A within-host model is being simulated inside a between-host model. Requires and ABM for the between-host model, each agent has its own infection model running [].
+
+
+
+## Simple example model
+It is easiest to discuss multi-scale models in the context of an example. Let's consider spread of an acute viral infection (e.g. influenza) at the within-host and the population level. 
+
+## Within-host model
+At the within host level, we can start with the basic virus model.
+
+$$
+\begin{aligned}
+\dot{U} & =  n - d_UU - bUV \\
+\dot{I} & =  bUV - d_I I \\     
+\dot{V} & =  pI - d_V V -  gb UV \\
+\end{aligned}
+$$
+
+## Between-host model
+At the population level, we'll look at the standard SIR model, with compartments being susceptible, infected and infectious, and recovered. To avoid confusion, we give all the parameters on the population level model Greek letters.
+
+$$
+\begin{aligned}
+\dot S & = \nu - \beta SI - \mu S  \\ 
+\dot I & = \beta S I - \gamma I - \mu I \\
+\dot R & = \gamma I  - \mu R  \\
+\end{aligned}
+$$
+
+
+## Linking models
+
+The two models might be linked in various ways. For instance it would be reasonable to assume that the rate of infection on the population level depends on within-host virus load. To keep it simple, we can assume a linear relation, i.e. $\beta = kV$, with $k$ some parameter.
+
+$$
+\begin{aligned}
+\dot S & = \nu - {\bf kV} SI - \mu S  \\ 
+\dot I & = {\bf kV} S I - \gamma I - \mu I \\
+\dot R & = \gamma I  - \mu R  \\
+\end{aligned}
+$$
+
+Now the between-host model is connected to the within-host model through the variable $V$. 
+
+
+## Computing virus load
+* For a chronic infection model, we can compute $V$ at steady state as function of model parameters. Doing so leads to $V = \frac{bnp-bd_Ign-d_Id_Ud_V}{bd_Id_V}$. 
+* Thus we now have a model whereby changes in the within-host parameters impact the between-host dynamics.
+* A similar model could be made that computes total virus load for an acute infection, and assumes this to be proportional to $\beta$ [@handel2014].
+
+## Another way to link models
+Instead (or in addition) to assuming a link through $\beta$, we could link the rate of recovery to virus load. E.g we could assume that the duration of the infectious period, $1/\gamma$ is over when $V$ in the within host model  
+
+## Using the linked models to answer a question 
+
+How do fitness on the within-host level and fitness on the between-host level compete? Fitness is a difficult concept to define and there is no single right way. An often-used approach is by looking at the reproductive number, which is the average number of new entities (new virus particles, new infected hosts) produced by one of them (one virion, one new infected host). Note that this can be an indirect process, e.g. a virion produces more virions by infecting a cell. 
+
+We won't go into the details of how R0 is derived, just state that for the two models above, we have $R_w=\frac{bU_0p}{d_I(d_V + gbU_0)}$ for the within-host fitness of the virus and $R_b = \frac{bS_0}{g+m}$ for the between-host fitness.
+
+
+# Example question
+
+
+
+
+If the between-host parameters are independent of the within-host parameters, a virus can maximize its overall fitness by independently increasing $R_w$ and $R_b$. There 
+But parameters are unlikely to be independent. What possible connections can you think of? 
+
+
+
+# Closing the loop
+
+
+# References

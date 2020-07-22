@@ -23,3 +23,23 @@ This document provides materials that discuss a few important viral pathogens an
 
 # Slides
 We will go over this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Viral_Infections_and_Immunology_Slides.pdf)
+
+
+# Videos
+The recordings of the lecture are broken into two segments. 
+
+In the first segment, Paul covers HCV.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5pqHBtwcpKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+In the second segment, he covers influenza.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C3o8wQeXLJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+

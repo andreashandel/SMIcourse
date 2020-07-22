@@ -261,7 +261,7 @@ $$
 
 ## Model fits
 
-```{r flufit,  fig.cap='',  echo=FALSE, out.width = "80%" , fig.align='center'}
+```{r flufit,  fig.cap='',  echo=FALSE, out.width = "75%" , fig.align='center'}
 knitr::include_graphics("../media/nri_review_fig4b.png")
 ```
 

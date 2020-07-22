@@ -24,5 +24,20 @@ This document provides materials that discuss a few important larger pathogens, 
 # Slides
 We will go over this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Complex_Pathogens_Immunology_Slides.pdf)
 
+# Videos
+The recordings of the lecture are broken into two segments. 
+
+In the first segment, Paul covers Malaria.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DJnoV2vV6Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+In the second segment, he covers Tuberculosis.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vka6fqSmXYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 

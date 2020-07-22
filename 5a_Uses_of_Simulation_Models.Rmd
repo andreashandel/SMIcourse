@@ -16,7 +16,11 @@ library(emo)
 
 
 # Overview
-This document describes different uses for simulation models.
+Simulation models can be used for different purposes. One way to conceptualize such different uses is shown in this figure.
+
+```{r modelusefig33,  echo=FALSE, fig.cap='Handel et al. 2020 Nat Rev Imm', out.width = '80%', fig.align='center'}
+knitr::include_graphics("./media/nri_review_fig1.png")
+```
 
 # Learning Objectives
 * Know what simulation models can be used for.
@@ -27,15 +31,32 @@ This document describes different uses for simulation models.
 # Slides
 We will discuss this topic in one of the zoom sessions. You can get the slides here [as html](./slides/Model_Uses_Slides.html) or [as pdf.](./slides/Model_Uses_Slides.pdf)
 
+# Videos
+
+The recordings of the lecture are broken into three segments. 
+
+The first segment discusses use of models for exploration.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZASXPGfm_9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+The second segment discusses use of models for prediction.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PgSI29dqmRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+The third segment discusses fitting models to data.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1MSpAu8ZFXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
 
 # Reading
-
-Simulation models can be used for different purposes. One way to conceptualize such different uses is shown in this figure.
-
-
-```{r modelusefig33,  echo=FALSE, fig.cap='Handel et al. 2020 Nat Rev Imm', out.width = '80%', fig.align='center'}
-knitr::include_graphics("./media/nri_review_fig1.png")
-```
 
 
 The other units in this module provide more details on each of the different types of model use shown in the figure.

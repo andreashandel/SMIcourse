@@ -72,11 +72,11 @@ Rest of day - On your own: Go through module 7 content, practice as described in
 
 ## Wednesday 2020-07-22
 
-8 - 9 PT (10CT/11ET) - Zoom: Further topics based upon request. 
+8 - 9 PT (10CT/11ET) - On your own: modeling practice.
 
-9 - 10 PT (11CT/12ET) - On your own: modeling practice.
+9 - 10.30 PT (11CT/12ET) - Zoom: Further topics based on request, final Q&A and wrap-up. 
 
-10 - 11 PT (12CT/1ET) - Zoom closing session: Q&A, project presentation, wrap-up.
+Rest of day - On your own: Continued modeling practice. Communication through Slack.  
 
 ***
 
@@ -91,6 +91,5 @@ Go through module 8 content.
 
 * This course website will remain online. 
 * DSAIRM and modelbuilder packages will continue to be available.
-* Zoom sessions will be recorded and posted by us or SISMID. You should be notified.
-* We will keep the Slack workspace open until at least end of July (but might not check regularly). Feel free to keep using it. If you want to continue communications with us or fellow classmates beyond the course, we suggest you switch to other means (e.g. email) after the end of July.
+* We will keep the Slack workspace open for at least several more weeks (but might be slower to respond). Feel free to keep using it. I'll post a note to the Slack workspace before I shut it down. If you want to continue communications with us or fellow classmates after that, we suggest you switch to other means (e.g. email).
 
