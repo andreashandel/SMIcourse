@@ -1,7 +1,8 @@
 name: "SMIcourse"
 title: "SMI Course"
 logo:
-    image: ./media/SMIlogo.png
+    image: media/SMIlogo.png
+    href: https://andreashandel.github.io/SMIcourse/
 type: inverse
 left:
   - text: "General Information"
