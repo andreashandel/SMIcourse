@@ -11,6 +11,7 @@ output:
 library(emo)
 ```
 
+Last update/recompile: `r Sys.time()`
 
 Welcome to the website **Simulation Modeling in Immunology (SMI).** 
 
