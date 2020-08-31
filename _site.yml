@@ -1,6 +1,6 @@
 name: "SMI Course"
 output_dir: "docs"
-exclude: ["auxiliary", "media", "references", "slides", "*.csv"]
+exclude: ["auxiliary", "*.csv"]
 output:
   html_document:
     theme: flatly
