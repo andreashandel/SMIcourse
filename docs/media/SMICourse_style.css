@@ -66,16 +66,6 @@ div.puzzle {
   background-image: url("./media/yourturn.png");
 }
 
-div.fyi {
- background-image: url("./media/fyi.png");
-}
-
-div.demo {
-  background-image: url("./media/livecode.png");
-}
-
-
-
 
 /* -----------another set of customized divs------------- */
 /* this one is adapted from  */
