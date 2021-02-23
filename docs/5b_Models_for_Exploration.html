@@ -14,6 +14,7 @@
 
 <title>Using Models for Exploration</title>
 
+<script src="site_libs/header-attrs-2.6.4/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -28,7 +29,16 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="icon" type="image/png" href="media/SMIlogo.png" />
+<link rel="icon" type="image/png" href="media/smi_logo.png" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -75,7 +85,30 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="media\SMICourse_style.css" type="text/css" />
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="media/SMICourse_style.css" type="text/css" />
 
 
 
@@ -539,7 +572,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/andreashandel/SMIcourse">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa-github"></span>
      
   </a>
 </li>
@@ -554,7 +587,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Using Models for Exploration</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-08-06 16:56:02</h4>
+<h4 class="date">2020-12-16 12:43:37</h4>
 
 </div>
 
@@ -604,16 +637,16 @@ div.tocify {
 <p>Model exploration should be, and inevitably is, always be part of your workflow. Even if your eventual goal is to use your model to fit data or to make predictions, you will always be exploring the model and its behavior to some extent. If you are studying a new system or a system for which not too much data is available, a project that focuses solely on model exploration can be warranted and useful. If you study a system for which you have data, you can do a combination of fitting and exploring the models. Finally, if after enough exploration you decide that your model is a reasonable representation of a real system, you can use it to make predictions. In any case, model exploration is an important part of your project. If you skip this step or don’t do it in enough detail, you might end up with a model that makes no biological sense and thus any results obtained from the model are meaningless.</p>
 </div>
 <div id="references" class="section level1 unnumbered">
-<h1>References</h1>
-<div id="refs" class="references">
-<div id="ref-antia96">
-<p>Antia, R, J C Koella, and V Perrot. 1996. “Models of the Within-Host Dynamics of Persistent Mycobacterial Infections.” <em>Proceedings. Biological Sciences</em> 263 (1368): 257–63. <a href="https://doi.org/10.1098/rspb.1996.0040">https://doi.org/10.1098/rspb.1996.0040</a>.</p>
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-antia96" class="csl-entry">
+Antia, R, J C Koella, and V Perrot. 1996. <span>“Models of the Within-Host Dynamics of Persistent Mycobacterial Infections.”</span> <em>Proceedings. Biological Sciences</em> 263 (1368): 257–63. <a href="https://doi.org/10.1098/rspb.1996.0040">https://doi.org/10.1098/rspb.1996.0040</a>.
 </div>
-<div id="ref-handel14a">
-<p>Handel, Andreas, Victoria Akin, Sergei S Pilyugin, Veronika Zarnitsyna, and Rustom Antia. 2014. “How Sticky Should a Virus Be? The Impact of Virus Binding and Release on Transmission Fitness Using Influenza as an Example.” <em>Journal of the Royal Society, Interface</em> 11 (92): 20131083. <a href="https://doi.org/10.1098/rsif.2013.1083">https://doi.org/10.1098/rsif.2013.1083</a>.</p>
+<div id="ref-handel14a" class="csl-entry">
+Handel, Andreas, Victoria Akin, Sergei S Pilyugin, Veronika Zarnitsyna, and Rustom Antia. 2014. <span>“How Sticky Should a Virus Be? <span>The</span> Impact of Virus Binding and Release on Transmission Fitness Using Influenza as an Example.”</span> <em>Journal of the Royal Society, Interface</em> 11 (92): 20131083. <a href="https://doi.org/10.1098/rsif.2013.1083">https://doi.org/10.1098/rsif.2013.1083</a>.
 </div>
-<div id="ref-mcqueen2008">
-<p>McQueen, Philip G., and F. Ellis McKenzie. 2008. “Host Control of Malaria Infections: Constraints on Immune and Erythropoeitic Response Kinetics.” <em>PLOS Computational Biology</em> 4 (8): e1000149. <a href="https://doi.org/10.1371/journal.pcbi.1000149">https://doi.org/10.1371/journal.pcbi.1000149</a>.</p>
+<div id="ref-mcqueen2008" class="csl-entry">
+McQueen, Philip G., and F. Ellis McKenzie. 2008. <span>“Host <span>Control</span> of <span>Malaria Infections</span>: <span>Constraints</span> on <span>Immune</span> and <span>Erythropoeitic Response Kinetics</span>.”</span> <em>PLOS Computational Biology</em> 4 (8): e1000149. <a href="https://doi.org/10.1371/journal.pcbi.1000149">https://doi.org/10.1371/journal.pcbi.1000149</a>.
 </div>
 </div>
 </div>
@@ -629,7 +662,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

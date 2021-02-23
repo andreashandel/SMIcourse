@@ -14,6 +14,7 @@
 
 <title>Uses of Simulation Models</title>
 
+<script src="site_libs/header-attrs-2.6.4/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -28,7 +29,16 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="icon" type="image/png" href="media/SMIlogo.png" />
+<link rel="icon" type="image/png" href="media/smi_logo.png" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -75,7 +85,8 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="media\SMICourse_style.css" type="text/css" />
+
+<link rel="stylesheet" href="media/SMICourse_style.css" type="text/css" />
 
 
 
@@ -539,7 +550,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/andreashandel/SMIcourse">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa-github"></span>
      
   </a>
 </li>
@@ -554,7 +565,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Uses of Simulation Models</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-08-06 16:56:02</h4>
+<h4 class="date">2020-12-16 12:43:37</h4>
 
 </div>
 
@@ -622,7 +633,7 @@ Handel et al. 2020 Nat Rev Imm
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

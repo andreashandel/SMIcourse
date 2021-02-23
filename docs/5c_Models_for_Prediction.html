@@ -14,6 +14,7 @@
 
 <title>Using Models for Prediction</title>
 
+<script src="site_libs/header-attrs-2.6.4/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -28,7 +29,16 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="icon" type="image/png" href="media/SMIlogo.png" />
+<link rel="icon" type="image/png" href="media/smi_logo.png" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -75,7 +85,30 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="media\SMICourse_style.css" type="text/css" />
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="media/SMICourse_style.css" type="text/css" />
 
 
 
@@ -539,7 +572,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/andreashandel/SMIcourse">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa-github"></span>
      
   </a>
 </li>
@@ -554,7 +587,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Using Models for Prediction</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-08-06 16:56:02</h4>
+<h4 class="date">2020-12-16 12:43:37</h4>
 
 </div>
 
@@ -598,15 +631,15 @@ div.tocify {
 </div>
 <div id="when-to-use-models-for-prediction" class="section level1">
 <h1>When to use models for prediction</h1>
-<p>To make predictions, you need to believe that your model captures the actual dynamics of the real system you are interested in, at least the parts that are important for the question you are trying to answer. This usually happens after models have been built, explored and tested (validated) with data. Once you, or others in your area of research, have gone through this iterative process of model building/testing/validating/adjusting often enough that there is some confidence the model captures the main features of the real system, the model might be ready to be used to make predictions. The kinds of predictions you want to make also affect the point at which you think your model is “ready”. If you want to make qualitative or semi-quantitative predictions, your model needs to be less refined and detailed than if you wanted to make quantitative predictions.</p>
+<p>To make predictions, you need to believe that your model captures the actual dynamics of the real system you are interested in, at least the parts that are important for the question you are trying to answer. This usually happens after models have been built, explored and tested (validated) with data. Once you, or others in your area of research, have gone through this iterative process of model building/testing/validating/adjusting often enough that there is some confidence the model captures the main features of the real system, the model might be ready to be used to make predictions. The kinds of predictions you want to make also affect the point at which you think your model is “ready.” If you want to make qualitative or semi-quantitative predictions, your model needs to be less refined and detailed than if you wanted to make quantitative predictions.</p>
 <p>If your model is fairly simple, it is best to stick with qualitative and semi-quantitative predictions. If you want to make precise and detailed predictions, it generally requires very detailed (complex) models. Detailed models are ‘data hungry’ and often the data are not available. They are also difficult to write and analyze. As such, models that are detailed enough for quantitative predictions are usually not advisable at the beginning of working on a specific system. Once you have a lot of experience with the system and your models and are fairly confident that the model is realistic approximation, you might be able to make quantitative predictions. If you do so, you also need to take into account uncertainty in outputs, a topic we’ll discuss later.</p>
 <p>Of course the major caveat with any model result is that it is only useful insofar as the model properly captures the important features of the real system. <strong>All models makes simplifying assumptions. Thus, predictions are only reliable if the underlying model is a good approximation of the real system.</strong> The more a model is used to make predictions and these predictions tested with data, the more reliable it becomes.</p>
 </div>
 <div id="references" class="section level1 unnumbered">
-<h1>References</h1>
-<div id="refs" class="references">
-<div id="ref-wigginton01">
-<p>Wigginton, J. E., and D. Kirschner. 2001. “A Model to Predict Cell-Mediated Immune Regulatory Mechanisms During Human Infection with Mycobacterium Tuberculosis.” <em>J Immunol</em> 166 (3): 1951–67.</p>
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-wigginton01" class="csl-entry">
+Wigginton, J. E., and D. Kirschner. 2001. <span>“A Model to Predict Cell-Mediated Immune Regulatory Mechanisms During Human Infection with <span>Mycobacterium</span> Tuberculosis.”</span> <em>J Immunol</em> 166 (3): 1951–67.
 </div>
 </div>
 </div>
@@ -622,7 +655,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
