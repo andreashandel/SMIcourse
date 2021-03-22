@@ -1,7 +1,9 @@
 ---
 title: Course Communications
-subtitle: ""
 author: Andreas Handel
+output:
+  distill::distill_article:
+    toc: false
 ---
 
 

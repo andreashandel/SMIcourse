@@ -1,5 +1,9 @@
 ---
 title: SMI Course Glossary
+author: Andreas Handel
+output:
+  distill::distill_article:
+    toc: false
 ---
 
 

@@ -1,13 +1,9 @@
 ---
 title: Simulation Modeling in Immunology - Course Schedule
-subtitle: ""
 author: Andreas Handel
-institute: "University of Georgia"
-date: "`r file.mtime(knitr::current_input())`"
-#bibliography: ../media/SMICourse.bib
-output: 
-  html_document:
-    toc: FALSE
+output:
+  distill::distill_article:
+    toc: false
 ---
 
 This is the current course schedule for the class. Things might change, so check regularly for updates.

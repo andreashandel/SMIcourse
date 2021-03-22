@@ -2,9 +2,6 @@
 title: Structural Uncertainty
 subtitle: ""
 author: Andreas Handel
-institute: "University of Georgia"
-date: "`r file.mtime(knitr::current_input())`"
-bibliography: ./media/SMICourse.bib
 output:
   distill::distill_article:
     toc: true
