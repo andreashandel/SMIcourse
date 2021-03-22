@@ -4,10 +4,12 @@ description: |
   An online course covering the use of simulation modeling in immunology.
 output_dir: "docs"
 output: distill::distill_article
+theme: media/SMICourse_style.css
 navbar:
   logo:
     image: media/smi_logo.png
     href: https://andreashandel.github.io/SMIcourse/
+  search: true
   left:
     - text: "General Information"
       menu:
