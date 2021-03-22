@@ -27,8 +27,10 @@ navbar:
           href: ./1c_DSAIRM.html
         - text: "1d. Further Tools"
           href: ./1d_Further_Tools.html
-        - text: "2a. Introduction to Immunology"
-          href: ./2a_Introduction_to_Immunology.html
+        - text: "2. Introduction to Immunology"
+          menu:
+            - text: "2a. Introduction to Immunology"
+              href: ./2a_Introduction_to_Immunology.html
         - text: "3a. Introduction to Simulation Modeling"
           href: ./3a_Introduction_to_Modeling.html
         - text: "3b. Model Thinking"
