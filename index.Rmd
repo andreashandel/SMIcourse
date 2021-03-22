@@ -1,8 +1,8 @@
 ---
 title: "Simulation Modeling in Immunology"
-output: 
-  html_document:
-    toc: FALSE
+description: |
+  An online course covering the use of simulation modeling in immunology.
+site: distill::distill_website
 ---
 
 ```{r, include = FALSE}

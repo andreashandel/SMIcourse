@@ -3,8 +3,6 @@ title: SMI Course Project Information
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
-date: "`r file.mtime(knitr::current_input())`"
-#bibliography: ../media/SMICourse.bib
 output: 
   html_document:
     toc_depth: 3

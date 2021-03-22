@@ -14,22 +14,35 @@
 
 <title>Overview of different model types</title>
 
-<script src="site_libs/header-attrs-2.6.4/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<!--radix_placeholder_navigation_in_header-->
+<!--/radix_placeholder_navigation_in_header-->
+<!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+<style type="text/css">
+body {
+  padding-top: 60px;
+}
+</style>
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\pandoc\header-attrs.js"></script>
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\jquery\jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link rel="icon" type="image/png" href="media/smi_logo.png" />
+<link href="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\bootstrap\css\bootstrap.min.css" rel="stylesheet" />
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\bootstrap\js\bootstrap.min.js"></script>
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\bootstrap\shim\html5shiv.min.js"></script>
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\bootstrap\shim\respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\navigation-1.1\tabsets.js"></script>
+<link href="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\highlightjs\default.css" rel="stylesheet" />
+<script src="C:\Users\Andreas\Documents\R\win-library\4.0\rmarkdown\rmd\h\highlightjs\highlight.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,11 +54,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -58,32 +66,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 <style type="text/css">
 /* for pandoc --citeproc since 2.11 */
@@ -108,7 +90,6 @@ div.csl-indent {
 }
 </style>
 
-<link rel="stylesheet" href="media/SMICourse_style.css" type="text/css" />
 
 
 
@@ -117,10 +98,6 @@ div.csl-indent {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -137,96 +114,12 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
+pre code {
+  padding: 0;
 }
 </style>
 
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
 
 <!-- tabsets -->
 
@@ -236,7 +129,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -289,75 +181,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
-
-
 
 </head>
 
@@ -367,227 +190,19 @@ div.tocify {
 <div class="container-fluid main-container">
 
 
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
 
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
 
-
-
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">SMI Course</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    General Information
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Course_Syllabus.html">Syllabus</a>
-    </li>
-    <li>
-      <a href="./Course_Schedule.html">Schedule</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Modules
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">1. Coures and Tools Introduction</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
-        </li>
-        <li>
-          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
-        </li>
-        <li>
-          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
-        </li>
-        <li>
-          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./2a_Introduction_to_Immunology.html">2a. Introduction to Immunology</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
-        </li>
-        <li>
-          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
-        </li>
-        <li>
-          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
-        </li>
-        <li>
-          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
-        </li>
-        <li>
-          <a href="./3e_Exercises.html">3e. Exercises</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Viral Infections and Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./4a_Viral_Infections_Immunology.html">4a. Viral Infections and Immunology</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">5. Using Simulation Models</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./5a_Uses_of_Simulation_Models.html">5a. Uses of Simulation Models</a>
-        </li>
-        <li>
-          <a href="./5b_Models_for_Exploration.html">5b. Models for Exploration</a>
-        </li>
-        <li>
-          <a href="./5c_Models_for_Prediction.html">5c. Models for Prediction</a>
-        </li>
-        <li>
-          <a href="./5d_Model_Fitting.html">5d. Models for Fitting</a>
-        </li>
-        <li>
-          <a href="./5e_Exercises.html">5e. Exercises</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">6. Complex Pathogen Life cycles and Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./6a_Complex_Pathogens_Immunology.html">6a. Complex Pathogen Life cycles and Immunology</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">7. What influences model results</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./7a_What_influences_model_results.html">7a. What influences model results</a>
-        </li>
-        <li>
-          <a href="./7b_Structural_Uncertainty.html">7b. Structural Uncertainty</a>
-        </li>
-        <li>
-          <a href="./7c_Parameter_Uncertainty.html">7c. Parameter Uncertainty</a>
-        </li>
-        <li>
-          <a href="./7d_Model_Stochasticity.html">7d. Model Stochasticity</a>
-        </li>
-        <li>
-          <a href="./7e_Exercises.html">7e. Exercises</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">8. How to build and assess models</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./8a_Model_Building_Assessment.html">8a. Model building and assessment overview</a>
-        </li>
-        <li>
-          <a href="./8b_Building_Models.html">8b. How to build good models</a>
-        </li>
-        <li>
-          <a href="./8c_Assessing_Models.html">8c. Assessing published models</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">9. Various Topics</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./9a_Host_Genetics_Immunity.html">9a. Host Genetics and Immunity</a>
-        </li>
-        <li>
-          <a href="./9b_Multiscale_Models.html">9b. Multiscale Models</a>
-        </li>
-        <li>
-          <a href="./9c_DSAIRM_Code_Exploration.html">9c. DSAIRM code exploration</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="./Project_Information.html">Project</a>
-</li>
-<li>
-  <a href="./Course_Communication.html">Communication</a>
-</li>
-<li>
-  <a href="./Course_Glossary.html">Glossary</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Resources
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Course_Resources.html">Course Resources</a>
-    </li>
-    <li>
-      <a href="./General_Resources.html">General Resources</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://github.com/andreashandel/SMIcourse">
-    <span class="fab fa-github"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
 <h1 class="title toc-ignore">Overview of different model types</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2020-12-16 12:43:37</h4>
+<h4 class="date">2021-03-21 12:16:23</h4>
 
 </div>
 
@@ -625,7 +240,7 @@ div.tocify {
 <h1>Compartmental versus Agent/Individual based models</h1>
 <p><strong>Compartmental models</strong> are models in which the units we want to track (variables, e.g. bacteria and immune response) are treated as homogeneous groups (compartments), and one only tracks population numbers/sizes. This is the simplest type of model. Sometimes one can perform analytic computations, it is often easy to implement and run on a computer. Also, most available data comes in the form of total numbers (e.g. virus load, levels of a specific cytokine), thus compartmental models are natural choices for fitting to data. Because of their simplicity, compartmental models are often the best starting point. However, the assumption that each unit (e.g. each cell) is the same (homogeneous) and interacts with other entities of the system in a <em>well-mixed</em> manner (like gas molecules bumping into each other randomly in a container) is clearly wrong. It is often a reasonable approximation, and thus compartmental models are still the most widely used. However, for certain questions or systems, this approximation might not be appropriate and thus other model types are needed.</p>
 <div class="figure" style="text-align: center">
-<img src="media/nri_review_fig3.png" alt="Example of a compartmental model." width="70%" />
+<img src="./media/nri_review_fig3.png" alt="Example of a compartmental model." width="70%" />
 <p class="caption">
 Example of a compartmental model.
 </p>
@@ -633,7 +248,7 @@ Example of a compartmental model.
 <p><strong>Agent/Individual based models (ABM/IBM)</strong> track every unit/agent/individual instead of just total numbers. Thus, instead of just keeping track of total virus load, every virion is individually modeled and its actions tracked. Such models allow (almost) no mathematical analysis and tend to be harder to implement and run on a computer. Often, IBM tend to include a lot of details of the system under study. This means the model has many parameters and is “data hungry,” i.e. one needs to know values for those parameters to be able to run the model. Due to the fact that each individual unit needs to be tracked, such models take long to run on a computer. Further, most data does not come in the form of individual level data, thus fitting such models to data is more difficult. A good feature of IBM is that while they tend to be difficult to build and run, they are often conceptually easy to understand. One simply specifies all processes that one wants to include and implements them in the form of computer code. Because IBM are more detailed, they can potentially the most realistic models. For systems where we have a lot of information and we want detailed predictions, IBM might be good options.</p>
 <p>In general, it is useful to start with a simple model if the system/question is new, even if the eventual goal is to move to an IBM. While one can write IBM in <code>R</code>, it is not that well suited due to speed limitations. Dedicated software exists for IBM, or modelers often use general purpose languages such as C.</p>
 <div class="figure" style="text-align: center">
-<img src="media/netlogo.png" alt="Example of a simple IBM model showing uninfected cells (green), infected cells (red) and virus (blue)." width="70%" />
+<img src="./media/netlogo.png" alt="Example of a simple IBM model showing uninfected cells (green), infected cells (red) and virus (blue)." width="70%" />
 <p class="caption">
 Example of a simple IBM model showing uninfected cells (green), infected cells (red) and virus (blue).
 </p>
@@ -697,10 +312,12 @@ Wearing, Helen J, Pejman Rohani, and Matt J Keeling. 2005. <span>“Appropriate 
 </div>
 </div>
 
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
 
 
-</div>
-</div>
 
 </div>
 
@@ -726,39 +343,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
