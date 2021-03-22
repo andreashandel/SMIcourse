@@ -1,0 +1,94 @@
+name: "SMIcourse"
+title: "Simulation Modeling in Immunology"
+description: |
+  An online course covering the use of simulation modeling in immunology.
+output_dir: "docs"
+output: distill::distill_article
+theme: media/SMICourse_style.css
+navbar:
+  logo:
+    image: media/smi_logo.png
+    href: https://andreashandel.github.io/SMIcourse/
+  search: true
+  left:
+    - text: "General Information"
+      menu:
+        - text: "Syllabus"
+          href: ./Course_Syllabus.html
+        - text: "Schedule"
+          href: ./Course_Schedule.html
+    - text: "Modules"
+      menu:
+        - text: "1a. Course introduction"
+          href: ./1a_Course_Introduction.html
+        - text: "1b. R and Rstudio"
+          href: ./1b_R_and_RStudio.html
+        - text: "1c. DSAIRM"
+          href: ./1c_DSAIRM.html
+        - text: "1d. Further Tools"
+          href: ./1d_Further_Tools.html
+        - text: "2. Introduction to Immunology"
+          menu:
+            - text: "2a. Introduction to Immunology"
+              href: ./2a_Introduction_to_Immunology.html
+        - text: "3a. Introduction to Simulation Modeling"
+          href: ./3a_Introduction_to_Modeling.html
+        - text: "3b. Model Thinking"
+          href: ./3b_Model_Thinking.html
+        - text: "3c. A few simple models"
+          href: ./3c_Simple_Models.html
+        - text: "3d. Types of simulation models"
+          href: ./3d_Model_Types.html
+        - text: "3e. Exercises"
+          href: ./3e_Exercises.html
+        - text: "4a. Viral Infections and Immunology"
+          href: ./4a_Viral_Infections_Immunology.html
+        - text: "5a. Uses of Simulation Models"
+          href: ./5a_Uses_of_Simulation_Models.html
+        - text: "5b. Models for Exploration"
+          href: ./5b_Models_for_Exploration.html
+        - text: "5c. Models for Prediction"
+          href: ./5c_Models_for_Prediction.html
+        - text: "5d. Models for Fitting"
+          href: ./5d_Model_Fitting.html
+        - text: "5e. Exercises"
+          href: ./5e_Exercises.html
+        - text: "6a. Complex Pathogen Life cycles and Immunology"
+          href: ./6a_Complex_Pathogens_Immunology.html
+        - text: "7a. What influences model results"
+          href: ./7a_What_influences_model_results.html
+        - text: "7b. Structural Uncertainty"
+          href: ./7b_Structural_Uncertainty.html
+        - text: "7c. Parameter Uncertainty"
+          href: ./7c_Parameter_Uncertainty.html
+        - text: "7d. Model Stochasticity"
+          href: ./7d_Model_Stochasticity.html
+        - text: "7e. Exercises"
+          href: ./7e_Exercises.html
+        - text: "8a. Model building and assessment overview"
+          href: ./8a_Model_Building_Assessment.html
+        - text: "8b. How to build good models"
+          href: ./8b_Building_Models.html
+        - text: "8c. Assessing published models"
+          href: ./8c_Assessing_Models.html
+        - text: "9a. Host Genetics and Immunity"
+          href: ./9a_Host_Genetics_Immunity.html
+        - text: "9b. Multiscale Models"
+          href: ./9b_Multiscale_Models.html
+        - text: "9c. DSAIRM code exploration"
+          href: ./9c_DSAIRM_Code_Exploration.html
+    - text: "Project"
+      href: ./Project_Information.html
+    - text: "Communication"
+      href: ./Course_Communication.html
+    - text: "Glossary"
+      href: ./Course_Glossary.html
+    - text: "Resources"
+      menu:
+         - text: "Course Resources"
+           href: ./Course_Resources.html
+         - text: "General Resources"
+           href: ./General_Resources.html
+  right:
+    - icon: fab fa-github
+      href: https://github.com/andreashandel/SMIcourse
