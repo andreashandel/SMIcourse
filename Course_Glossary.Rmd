@@ -1,12 +1,5 @@
 ---
 title: SMI Course Glossary
-subtitle: ""
-institute: "University of Georgia"
-date: "`r file.mtime(knitr::current_input())`"
-#bibliography: ../media/SMICourse.bib
-output: 
-  html_document:
-    toc: FALSE
 ---
 
 
