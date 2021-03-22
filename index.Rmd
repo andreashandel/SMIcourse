@@ -12,10 +12,6 @@ library(emo)
 ```
 
 
-```{r layout="l-body-outset"}
-knitr::include_graphics("media/smi_logo.png")
-```
-
 <!-- Some trickery to get the logo to show. Seems to not work with distill. 
 
 <script>
