@@ -23,6 +23,7 @@ library(emo)
 
 -->
 
+MENUS NOT WORKING ON DISTILL SITE
 
 Last update/recompile: `r Sys.time()`
 
