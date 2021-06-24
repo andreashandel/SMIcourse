@@ -20,7 +20,7 @@ library(emo)
 
 # Overview
 
-This page lists resources that we consider potentially useful for further learning immunology and modeling. 
+This page lists resources that are potentially useful for further learning immunology and modeling. 
 
 Apart from the books, most materials described below are (should be) freely available online. For better or for worse, a lot of the resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If any link does not work and you can't access the materials for some reason, or you got some other good resources that we don't list, please let us know.
 
@@ -52,12 +52,15 @@ The types of simulation models we discuss here are common in other areas of scie
 
 # Software
 
-* [Dynamical Systems Approach to Immune Response Modeling (DSAIRM)](https://ahgroup.github.io/DSAIRM/). The R package was written for this course and allows you to engage in hands-on explorations of the different topics we will cover.
+* [Dynamical Systems Approach to Immune Response Modeling (DSAIRM)](https://ahgroup.github.io/DSAIRM/). This is an R package we wrote to teach within-host modeling through hands-on explorations of models. No coding is required.
 
-* [modelbuilder](https://ahgroup.github.io/modelbuilder/). An R package that allows you to build and analyze your own models without having to write code. This is optional, we won't formally use it in the course but you might want to explore it on your own. Note that the package is work in progress (feel free to contribute `r emo::ji('smiley')`).
+* [modelbuilder](https://ahgroup.github.io/modelbuilder/). This is another R package we are working on. It allows you to build and analyze your own models without having to write code. Note that the package is work in progress, and while it should work, it might be buggy.
 
-* [SIMMUNE]().
+* [SIMMUNE](https://www.niaid.nih.gov/research/simmune-project). This is a freely available software package which allows building and analysis of fairly complex models.
 
+* [COPASI](http://copasi.org/). Another freely available software tool that can be used for within-host modeling.
+
+Many other general software tools (some commercial, some free) can be used to build and run models of the type discussed on this page. Examples are Matlab, Berkeley Madonna, STELLA, Phython, Julia, and any other general purpose programming language. Those require different levels of coding abilities.
 
 
 # Papers
@@ -71,11 +74,9 @@ The types of simulation models we discuss here are common in other areas of scie
 
 ## Journal articles
 
-* 
+* [A software package for immunologists to learn simulation modeling](). This is a paper we wrote describing the [DSAIRM package](https://ahgroup.github.io/DSAIRM/). It's not as detailed as the documentation you can find on the DSAIRM package website, but includes some general thoughts on the motivation for the package.
 
 
-## Lists and other sources
+## Other sources
 
-* I created lists related to R and Data Analysis (as well as other topics). [You can find all resource lists here](https://andreashandel.github.io/research-and-teaching-resources/). (These lists are works in progress, and some are better/more useful than others. Feel free to send me links/resources to include).
-
-
+to come
