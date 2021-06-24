@@ -1,0 +1,81 @@
+---
+title: SMI Resources
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+```{r, echo = FALSE}
+#just so I can use emoticons
+#devtools::install_github("hadley/emo")
+library(emo)
+```
+
+
+# Overview
+
+This page lists resources that we consider potentially useful for further learning immunology and modeling. 
+
+Apart from the books, most materials described below are (should be) freely available online. For better or for worse, a lot of the resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If any link does not work and you can't access the materials for some reason, or you got some other good resources that we don't list, please let us know.
+
+
+# Books
+
+## Within-host simulation modeling books
+
+_There isn't really a textbook that teaches simulation modeling which is both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling and might be suitable for some learners._
+
+* [Nowak and May (2001). "Virus Dynamics: Mathematical Principles of Immunology and Virology."](https://amzn.to/3fwonRj) - Mostly a collection of work done by the authors, published in book form. Somewhat outdated and quite expensive. Probably not worth buying unless you find it somewhere cheap, you can instead look for their original papers. 
+* [Wodarz (2007). "Killer Cell Dynamics - Mathematical and Computational Approaches to Immunology."](https://amzn.to/2WjJQFS) - a nice overview of some work by the author and others on modeling T-cells. A bit outdated and kinda expensive. I would first check it out from the library before deciding if you want to buy it.  
+* [Esteban A. Hernandez-Vargas (2019). "Modeling and Control of Infectious Diseases in the Host"](https://amzn.to/2Ooth7j) - The most comprehensive of the books in terms of topic coverage. Technically advanced, mainly suitable for individuals with strong quantitative backgrounds (engineering, physics, math, etc.) who want to learn about within-host modeling. 
+
+
+## Immunology books
+
+* [How the Immune System works](https://amzn.to/3ev68dO) - a nice introduction to the immune system, focusing on the big picture. Good for those who are new to immunology.
+* [Janeway's Immunobiology](https://amzn.to/2Wlmsrr) - a very comprehensive immunology textbook.
+* [Basic Immunology](https://amzn.to/30yjXmJ) - another comprehensive immunology textbook.
+
+
+
+## Other books
+
+The types of simulation models we discuss here are common in other areas of science. The study of infectious diseases on the population level (i.e. epidemiology/ecology/evolution) has a long history of using these kinds of models. There are a number of good resources dedicated to models on the population level. Most of the ideas and concepts apply directly to the within-host level. For a list of resources with a focus on population-level infectious diseases and modeling, check out the _Resources_ sections of the online course [Infectious Disease Epidemiology - A model-based approach (IDEMA)](https://andreashandel.github.io/IDEMAcourse/). 
+
+
+
+# Software
+
+* [Dynamical Systems Approach to Immune Response Modeling (DSAIRM)](https://ahgroup.github.io/DSAIRM/). The R package was written for this course and allows you to engage in hands-on explorations of the different topics we will cover.
+
+* [modelbuilder](https://ahgroup.github.io/modelbuilder/). An R package that allows you to build and analyze your own models without having to write code. This is optional, we won't formally use it in the course but you might want to explore it on your own. Note that the package is work in progress (feel free to contribute `r emo::ji('smiley')`).
+
+* [SIMMUNE]().
+
+
+
+# Papers
+
+## Review Papers
+
+* [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/). A review/introduction we wrote on the topic. You will see a lot of overlap between that paper and the SMI materials. 
+* The paper [Modelling Viral and Immune System Dynamics](https://www.nature.com/articles/nri700) by Alan Perelson is another nice introduction focusing on virus models and explaining a few different models. 
+* The paper [The role of models in understanding CD8+ T-cell memory](https://www.nature.com/articles/nri1550) by Antia et al. introduces a few simple models for T-cell dynamics.
+
+
+## Journal articles
+
+* 
+
+
+## Lists and other sources
+
+* I created lists related to R and Data Analysis (as well as other topics). [You can find all resource lists here](https://andreashandel.github.io/research-and-teaching-resources/). (These lists are works in progress, and some are better/more useful than others. Feel free to send me links/resources to include).
+
+

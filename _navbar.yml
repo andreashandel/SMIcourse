@@ -1,16 +1,12 @@
-name: "SMIcourse"
-title: "SMI Course"
+name: "Simulation Modeling in Immunology (SMI)"
+title: "Simulation Modeling in Immunology (SMI)"
 logo:
     image: media/SMIlogo.png
     href: https://andreashandel.github.io/SMIcourse/
 type: inverse
 left:
   - text: "General Information"
-    menu:
-      - text: "Syllabus"
-        href: ./Course_Syllabus.html
-      - text: "Schedule"
-        href: ./Course_Schedule.html
+    href: ./Overview.html
   - text: "Modules"
     menu:
       - text: "1. Coures and Tools Introduction"
@@ -87,18 +83,10 @@ left:
             href: ./9b_Multiscale_Models.html
           - text: "9c. DSAIRM code exploration"
             href: ./9c_DSAIRM_Code_Exploration.html
-  - text: "Project"
-    href: ./Project_Information.html
-  - text: "Communication"
-    href: ./Course_Communication.html
   - text: "Glossary"
-    href: ./Course_Glossary.html
+    href: ./Glossary.html
   - text: "Resources"
-    menu:
-       - text: "Course Resources"
-         href: ./Course_Resources.html
-       - text: "General Resources"
-         href: ./General_Resources.html
+    href: ./Resources.html
 right:
   - icon: fab fa-github
     href: https://github.com/andreashandel/SMIcourse

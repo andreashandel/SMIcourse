@@ -1,5 +1,5 @@
 ---
-title: "Simulation Modeling in Immunology"
+title: "Simulation Modeling in Immunology (SMI)"
 output: 
   html_document:
     toc: FALSE
@@ -25,37 +25,28 @@ Last update/recompile: `r Sys.time()`
 
 Welcome to the website **Simulation Modeling in Immunology (SMI).** 
 
-This website is the main resource for the course/module called [Infectious Diseases, Immunology and Within-Host Models](https://si.biostat.washington.edu/suminst/sismid2020/modules/MD2010), which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). The course is taught by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html). 
+This website is a repository of materials covering infectious diseases and immunology, with a focus on modeling.
 
-We plan to keep this website continuously online, with updates happening every time we teach the course again - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
-
-
-# Notes
-
-We hope this is not too confusing, but we call every unit in our course a _Module_. So this course is a SISMID module, but in our terminology, we call this whole "thing" the _course_ or _class_, and use _module_ for individual segments, which are further divided into _units_.
-
-By default, all links open in the current tab. You'll likely want external ones to open in a separate tab or window. To do so, you can (with most browsers) hold the `Ctrl` button when clicking, or do a right-click and select `open in new tab/window`.
+This resource was developed and is maintained mainly by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html) (see below for further contributors). 
+We use the materials on this website as part of our annual course _Infectious Diseases, Immunology and Within-Host Models_ which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). We also use the materials for other workshops we occasionally teach in this topic. 
+We keep this website continuously online, with updates happening every time we teach a course - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
 
 
 # Website content
 
-The __General Information__ section provides a  __Syllabus__ and a __Schedule__. 
+The __General Information__ section provides a very brief overview.
 
-
-The majority of the content is listed under the __Modules__ heading. Each module has several units in a drop-down/pop-out menu. Go through them in the listed order.
-
-You have the opportunity to do an optional project. Instructions and detailed information for this are given in the __Project__ section.
-
-The __Communication__ section provides information on how course communications are planned to happen.
-
-The __Resources__ section contains a listing of external materials. The _Course Resources_ page lists materials used in this course. The _General Resources_ page lists additional materials that are relevant to the course topic and might be of interest. 
+The __Modules__ section and subsection contains the bulk of the content. Each module covers a specific topic and generally has several units in a drop-down/pop-out menu. 
+Those units consist of a mix of videos, write-ups and exercises. It is generally recommended to go through them in the listed order.
 
 The __Glossary__ section provides a (work in progress) glossary with definitions of technical terms.
 
+The __Resources__ section contains a listing of external materials that might be of interest for further learning of the topics covered on this site. 
 
-# Getting started
 
-Start by looking over the __Syllabus__ and __Schedule__ documents, then __Communication__ and __Resources__. After that, start with the __Module 1__ content in the given order. 
+# Notes
+
+By default, all links open in the current tab. You'll likely want external ones to open in a separate tab or window. To do so, you can (with most browsers) hold the `Ctrl` button when clicking, or do a right-click and select `open in new tab/window`.
 
 
 # Contribute

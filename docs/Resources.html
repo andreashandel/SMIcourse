@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>Simulation Modeling in Immunology – Syllabus</title>
+<title>SMI Resources</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -324,24 +324,12 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">SMI Course</a>
+      <a class="navbar-brand" href="index.html">Simulation Modeling in Immunology (SMI)</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    General Information
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Course_Syllabus.html">Syllabus</a>
-    </li>
-    <li>
-      <a href="./Course_Schedule.html">Schedule</a>
-    </li>
-  </ul>
+        <li>
+  <a href="./Overview.html">General Information</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -482,28 +470,10 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="./Project_Information.html">Project</a>
+  <a href="./Glossary.html">Glossary</a>
 </li>
 <li>
-  <a href="./Course_Communication.html">Communication</a>
-</li>
-<li>
-  <a href="./Course_Glossary.html">Glossary</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Resources
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="./Course_Resources.html">Course Resources</a>
-    </li>
-    <li>
-      <a href="./General_Resources.html">General Resources</a>
-    </li>
-  </ul>
+  <a href="./Resources.html">Resources</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -522,51 +492,73 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Simulation Modeling in Immunology – Syllabus</h1>
+<h1 class="title toc-ignore">SMI Resources</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2021-03-31 18:28:03</h4>
+<h4 class="date">2021-06-24 10:12:23</h4>
 
 </div>
 
 
-<div id="course-information" class="section level2">
-<h2>Course Information</h2>
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>This page lists resources that we consider potentially useful for further learning immunology and modeling.</p>
+<p>Apart from the books, most materials described below are (should be) freely available online. For better or for worse, a lot of the resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If any link does not work and you can’t access the materials for some reason, or you got some other good resources that we don’t list, please let us know.</p>
+</div>
+<div id="books" class="section level1">
+<h1>Books</h1>
+<div id="within-host-simulation-modeling-books" class="section level2">
+<h2>Within-host simulation modeling books</h2>
+<p><em>There isn’t really a textbook that teaches simulation modeling which is both comprehensive and suitable for beginners. The following books cover some aspects of within-host modeling and might be suitable for some learners.</em></p>
 <ul>
-<li>Instructors: Paul Thomas and Andreas Handel</li>
-<li>Course Meeting Time and Location: 2020-07-20 - 2020-07-22, online</li>
+<li><a href="https://amzn.to/3fwonRj">Nowak and May (2001). “Virus Dynamics: Mathematical Principles of Immunology and Virology.”</a> - Mostly a collection of work done by the authors, published in book form. Somewhat outdated and quite expensive. Probably not worth buying unless you find it somewhere cheap, you can instead look for their original papers.</li>
+<li><a href="https://amzn.to/2WjJQFS">Wodarz (2007). “Killer Cell Dynamics - Mathematical and Computational Approaches to Immunology.”</a> - a nice overview of some work by the author and others on modeling T-cells. A bit outdated and kinda expensive. I would first check it out from the library before deciding if you want to buy it.<br />
+</li>
+<li><a href="https://amzn.to/2Ooth7j">Esteban A. Hernandez-Vargas (2019). “Modeling and Control of Infectious Diseases in the Host”</a> - The most comprehensive of the books in terms of topic coverage. Technically advanced, mainly suitable for individuals with strong quantitative backgrounds (engineering, physics, math, etc.) who want to learn about within-host modeling.</li>
 </ul>
 </div>
-<div id="textbook-and-other-course-material" class="section level2">
-<h2>Textbook and Other Course Material</h2>
-<p>All course materials will be provided on, or linked through this website. We will use the R software, which is freely available for download.</p>
+<div id="immunology-books" class="section level2">
+<h2>Immunology books</h2>
+<ul>
+<li><a href="https://amzn.to/3ev68dO">How the Immune System works</a> - a nice introduction to the immune system, focusing on the big picture. Good for those who are new to immunology.</li>
+<li><a href="https://amzn.to/2Wlmsrr">Janeway’s Immunobiology</a> - a very comprehensive immunology textbook.</li>
+<li><a href="https://amzn.to/30yjXmJ">Basic Immunology</a> - another comprehensive immunology textbook.</li>
+</ul>
 </div>
-<div id="course-description" class="section level2">
-<h2>Course Description</h2>
-<p>This course provides an introduction to simulation modeling of pathogens and the immune response on the within-host level. You will learn what simulation models are and how they can be used to study pathogen and immune response dynamics within an infected host. This course is an introductory overview course. Due to time limitations, we we will not be able to go very deep into either the biology/immunology side of things or the modeling/coding side of things. You do not have to build models or write computer code as part of this course. But you are certainly welcome and encouraged to do so, and we will provide information and resources to go deeper into any of the topics we cover.</p>
+<div id="other-books" class="section level2">
+<h2>Other books</h2>
+<p>The types of simulation models we discuss here are common in other areas of science. The study of infectious diseases on the population level (i.e. epidemiology/ecology/evolution) has a long history of using these kinds of models. There are a number of good resources dedicated to models on the population level. Most of the ideas and concepts apply directly to the within-host level. For a list of resources with a focus on population-level infectious diseases and modeling, check out the <em>Resources</em> sections of the online course <a href="https://andreashandel.github.io/IDEMAcourse/">Infectious Disease Epidemiology - A model-based approach (IDEMA)</a>.</p>
 </div>
-<div id="grading" class="section level2">
-<h2>Grading</h2>
-<p>This course has no grades. You will get a certificate of completion at the end.</p>
 </div>
-<div id="class-attendance" class="section level2">
-<h2>Class Attendance</h2>
-<p>This class is online. We hope you will attend all synchronous events as much as possible. We expect that you devote the full time to this online class that you would have devoted to it if it had been in-class. In addition, you have the option to start engaging with the material before the class officially starts and of course you can continue to work on it for as long as you want.</p>
+<div id="software" class="section level1">
+<h1>Software</h1>
+<ul>
+<li><p><a href="https://ahgroup.github.io/DSAIRM/">Dynamical Systems Approach to Immune Response Modeling (DSAIRM)</a>. The R package was written for this course and allows you to engage in hands-on explorations of the different topics we will cover.</p></li>
+<li><p><a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a>. An R package that allows you to build and analyze your own models without having to write code. This is optional, we won’t formally use it in the course but you might want to explore it on your own. Note that the package is work in progress (feel free to contribute 😃).</p></li>
+<li><p><a href="">SIMMUNE</a>.</p></li>
+</ul>
 </div>
-<div id="prerequisites" class="section level2">
-<h2>Prerequisites</h2>
-<p>We assume you have some general familiarity with basic biology, maybe some immunology, and some statistical, modeling or coding experience. We understand every student will come with different skill sets. Since this is an introductory course, we try to make things as understandable as possible for anyone, no matter their previous knowledge. That means that some of the material might be too basic for you, will others will be new to you (and likely challenging).</p>
+<div id="papers" class="section level1">
+<h1>Papers</h1>
+<div id="review-papers" class="section level2">
+<h2>Review Papers</h2>
+<ul>
+<li><a href="https://handelgroup.uga.edu/publication/2020-handel-natrevimm/">Simulation Modelling for Immunologists</a>. A review/introduction we wrote on the topic. You will see a lot of overlap between that paper and the SMI materials.</li>
+<li>The paper <a href="https://www.nature.com/articles/nri700">Modelling Viral and Immune System Dynamics</a> by Alan Perelson is another nice introduction focusing on virus models and explaining a few different models.</li>
+<li>The paper <a href="https://www.nature.com/articles/nri1550">The role of models in understanding CD8+ T-cell memory</a> by Antia et al. introduces a few simple models for T-cell dynamics.</li>
+</ul>
 </div>
-<div id="getting-help" class="section level2">
-<h2>Getting Help</h2>
-<p>If you have questions about any aspect of the course, please do not hesitate to ask for help. The course materials describe in detail the ways you can ask for help. See the <strong>Communication</strong> section for more details.</p>
+<div id="journal-articles" class="section level2">
+<h2>Journal articles</h2>
+<ul>
+<li></li>
+</ul>
 </div>
-<div id="course-outline" class="section level2">
-<h2>Course Outline</h2>
-<p>For an outline of the course, please see the course <strong>Schedule</strong> document.</p>
+<div id="lists-and-other-sources" class="section level2">
+<h2>Lists and other sources</h2>
+<ul>
+<li>I created lists related to R and Data Analysis (as well as other topics). <a href="https://andreashandel.github.io/research-and-teaching-resources/">You can find all resource lists here</a>. (These lists are works in progress, and some are better/more useful than others. Feel free to send me links/resources to include).</li>
+</ul>
 </div>
-<div id="more-details" class="section level2">
-<h2>More Details</h2>
-<p>The introductory unit of this course contains all the logistic details you need to know.</p>
 </div>
 
 
