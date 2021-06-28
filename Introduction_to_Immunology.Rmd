@@ -1,5 +1,5 @@
 ---
-title: SMI 2020 - Introduction to Immunology
+title: Introduction to Immunology
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -22,11 +22,9 @@ This document provides materials to give you a (VERY!) brief introduction to imm
 * Distinguish innate and adaptive immunity
 * Discuss the postulates of the clonal selection hypothesis and their subsequent validation
 
-# Slides
-We will go over an introduction to immunology in one of the zoom sessions. The slides for that session [can be found here.](./slides/Introduction_to_Immunology_Slides.pdf)
 
 # Videos
-The recordings of the lecture are broken into two segments. 
+These videos are lecture recordings from SISMID 2020. They are broken into two segments. 
 
 In the first segment, Paul covers innate immunity.
 
@@ -42,5 +40,7 @@ In the second segment, he covers adaptive immunity.
 </p>
 
 
+# Slides
+The slides for these presentations [can be found here.](./slides/Introduction_to_Immunology_Slides.pdf)
 
 

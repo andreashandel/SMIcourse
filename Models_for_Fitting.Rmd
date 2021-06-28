@@ -30,6 +30,19 @@ If you have the right kind of data available, it is possible to fit a model to d
 An important difference to phenomenological models is that when fitting mechanistic models you explicitly have mechanisms in your model which can represent different hypotheses about your system. Fitting to data allows you to discriminate between different postulated mechanisms (hypotheses), which are translated into different models and fitting determines which model is better at explaining the observed data. Further, model fitting provides estimates for model parameters. Often, such parameters have a directly interpretable biological meaning (e.g. the rate of virus production by infected cells) and are thus of interest on their own.
 
 
+
+# Recording
+This video discusses use of models for data fitting and inference.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1MSpAu8ZFXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Slides that go with the recording can be found here [as html](./slides/Model_Uses_Slides.html) or [as pdf.](./slides/Model_Uses_Slides.pdf). These also contain the slides for the other model use units.
+
+
+
+
 # How to fit models to data
 First you need to assess the data you have. Since the simulation model produces time-series, having time-series data is best. It is also possible to fit models to data that is measured at only a single time point, e.g. antibody levels at the end of an infection. In general, you will not have data for all of the components in the model. You might for instance only have viral load data, but no data on uninfected and infected cells. In general, more data, and especially more data for different components of your model is better. The more data you have, the more model parameters you might be able to reliably estimate and thus the more complex a model you can justify. If you don't have much data, it is often not possible to estimate many parameters. Trying to do so will lead to overfitting and unreliable results.
 

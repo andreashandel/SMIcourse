@@ -1,0 +1,23 @@
+---
+title: Tool Setup - Overview
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+# Introduction
+
+Together with the materials (videos and readings) on this website, we make use of software to teach the topic.
+
+Specifically, we wrote an R package called Dynamical Systems Approach to Immune Response Modeling (DSAIRM), which we assume you'll be using to learn the material.
+
+The other units in this module will provide quick explanations on how to install and set up all required software.
+
+

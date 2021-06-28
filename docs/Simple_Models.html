@@ -351,7 +351,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="./Overview.html">General Information</a>
+  <a href="./Overview.html">Overview</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -361,47 +361,47 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">1. Coures and Tools Introduction</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
+          <a href="./Tool_Setup_Overview.html">Tool Setup Overview</a>
         </li>
         <li>
-          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
+          <a href="./R_and_RStudio.html">R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
+          <a href="./DSAIRM.html">DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
+          <a href="./Further_Tools.html">Further Tools</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_Introduction_to_Immunology.html">2a. Introduction to Immunology</a>
+          <a href=".Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
+          <a href="./Introduction_to_Modeling.html">Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
+          <a href="./Model_Thinking.html">Model Thinking</a>
         </li>
         <li>
-          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
+          <a href="./Simple_Models.html">A few simple models</a>
         </li>
         <li>
-          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+          <a href="./Model_Types.html">Types of simulation models</a>
         </li>
         <li>
-          <a href="./3e_Exercises.html">3e. Exercises</a>
+          <a href="./Intro_Modeling_Exercises.html">Exercises</a>
         </li>
       </ul>
     </li>
@@ -581,7 +581,7 @@ Pvec[1] = P0 #enter the starting value
 #run the model by stepping forward in time
 for (i in 1:(length(time)-1)) {Pvec[i+1]=Pvec[i]+dt*(g*Pvec[i]-dP*Pvec[i])}
 plot(time,Pvec,log=&quot;y&quot;)</code></pre>
-<p><img src="3c_Simple_Models_files/figure-html/simplemodelcode-1.png" width="672" /></p>
+<p><img src="Simple_Models_files/figure-html/simplemodelcode-1.png" width="672" /></p>
 <p>I added comments to the code so it’s hopefully clear what is happening. That is always a good idea! In my opinion, at least 50% of code should be comments. Your collaborators and your future self will thank you. It might seem excessive when you start with simple code, but it soon gets complex and without comments you will have no idea what you did if you look at your own code a few weeks later, let alone someone else’s.</p>
 <p>Try different values for <span class="math inline">\(g\)</span> and <span class="math inline">\(d_P\)</span> and look at the different patterns you can get. You should find that only 3 patterns are possible. If <span class="math inline">\(g&lt;d_P\)</span>, <span class="math inline">\(P\)</span> will go to zero from its starting value. That’s a reasonable biological behavior. If <span class="math inline">\(g=d_P\)</span>, <span class="math inline">\(P\)</span> will stay at its starting value. That’s somewhat reasonable, however in the real world, things are never exactly equal, so this model behaviour is not very robust. If <span class="math inline">\(g&gt;d_P\)</span> you will see that <span class="math inline">\(P\)</span> grows exponentially forever. While exponential growth is reasonable and often seen, it does not go on forever. Eventually, something slows down the growth. Usually, it is some resource limitation (no more food, no more space, etc.). To make the model more realistic, let’s implement such saturating growth.</p>
 </div>

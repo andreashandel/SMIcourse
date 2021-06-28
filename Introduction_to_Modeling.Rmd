@@ -21,16 +21,10 @@ This module provides a brief introduction to simulation modeling.
 # Learning Objectives
 * Know what simulation modeling is.
 
-# Slides
-We will go over an introduction to modeling in one of the zoom sessions. 
-There are two sets of slides. 
-The first one giving a general introduction to modeling. You can get the slides here [as html](./slides/Introduction_to_Modeling_Slides.html) or [as pdf.](./slides/Introduction_to_Modeling_Slides.pdf)
-
-The second one which discusses a few simple models. You can get the slides here [as html](./slides/Simple_Models_Slides.html) or [as pdf.](./slides/Simple_Models_Slides.pdf)
 
 # Videos
 
-The recordings of the lecture are available online, broken into two segments. 
+These videos are lecture recordings from SISMID 2020. They are broken into two segments. 
 
 The first segment provides a general introduction to simulation modeling.
 
@@ -39,12 +33,16 @@ The first segment provides a general introduction to simulation modeling.
 </p>
 
 
-The second segment goes in detail over a few very simple models.
+The second segment discusses a few very simple models.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sIYiFAfMH08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
+# Slides
+You can get the slides for the first lecture here [as html](./slides/Introduction_to_Modeling_Slides.html) or [as pdf.](./slides/Introduction_to_Modeling_Slides.pdf)
+
+For the second lecture, you can get the slides here [as html](./slides/Simple_Models_Slides.html) or [as pdf.](./slides/Simple_Models_Slides.pdf)
 
 
 

@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Andreas Handel" />
 
 
-<title>SMI 2020 - Introduction to Immunology</title>
+<title>Introduction to Modeling</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -328,7 +329,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="./Overview.html">General Information</a>
+  <a href="./Overview.html">Overview</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -338,47 +339,47 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">1. Coures and Tools Introduction</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
+          <a href="./Tool_Setup_Overview.html">Tool Setup Overview</a>
         </li>
         <li>
-          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
+          <a href="./R_and_RStudio.html">R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
+          <a href="./DSAIRM.html">DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
+          <a href="./Further_Tools.html">Further Tools</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_Introduction_to_Immunology.html">2a. Introduction to Immunology</a>
+          <a href=".Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
+          <a href="./Introduction_to_Modeling.html">Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
+          <a href="./Model_Thinking.html">Model Thinking</a>
         </li>
         <li>
-          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
+          <a href="./Simple_Models.html">A few simple models</a>
         </li>
         <li>
-          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+          <a href="./Model_Types.html">Types of simulation models</a>
         </li>
         <li>
-          <a href="./3e_Exercises.html">3e. Exercises</a>
+          <a href="./Intro_Modeling_Exercises.html">Exercises</a>
         </li>
       </ul>
     </li>
@@ -491,7 +492,8 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">SMI 2020 - Introduction to Immunology</h1>
+<h1 class="title toc-ignore">Introduction to Modeling</h1>
+<h4 class="author">Andreas Handel</h4>
 <h4 class="date">2021-03-31 20:11:01</h4>
 
 </div>
@@ -499,34 +501,41 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document provides materials to give you a (VERY!) brief introduction to immunology.</p>
+<p>This module provides a brief introduction to simulation modeling.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Understand the major effector arms of the immune system</li>
-<li>Describe the variation in pathogen “lifestyles” that must be handled by the immune response</li>
-<li>Distinguish innate and adaptive immunity</li>
-<li>Discuss the postulates of the clonal selection hypothesis and their subsequent validation</li>
+<li>Know what simulation modeling is.</li>
 </ul>
 </div>
 <div id="slides" class="section level1">
 <h1>Slides</h1>
-<p>We will go over an introduction to immunology in one of the zoom sessions. The slides for that session <a href="./slides/Introduction_to_Immunology_Slides.pdf">can be found here.</a></p>
+<p>We will go over an introduction to modeling in one of the zoom sessions. There are two sets of slides. The first one giving a general introduction to modeling. You can get the slides here <a href="./slides/Introduction_to_Modeling_Slides.html">as html</a> or <a href="./slides/Introduction_to_Modeling_Slides.pdf">as pdf.</a></p>
+<p>The second one which discusses a few simple models. You can get the slides here <a href="./slides/Simple_Models_Slides.html">as html</a> or <a href="./slides/Simple_Models_Slides.pdf">as pdf.</a></p>
 </div>
 <div id="videos" class="section level1">
 <h1>Videos</h1>
-<p>The recordings of the lecture are broken into two segments.</p>
-<p>In the first segment, Paul covers innate immunity.</p>
+<p>The recordings of the lecture are available online, broken into two segments.</p>
+<p>The first segment provides a general introduction to simulation modeling.</p>
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z3c4ZSmuTR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BxSSU-uHjUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
-<p>In the second segment, he covers adaptive immunity.</p>
+<p>The second segment goes in detail over a few very simple models.</p>
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d6IKOL-utNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sIYiFAfMH08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
+</div>
+<div id="reading" class="section level1">
+<h1>Reading</h1>
+<p>The other units in this module cover specific topics in some more detail.</p>
+</div>
+<div id="further-materials" class="section level1">
+<h1>Further materials</h1>
+<p>Our recent review <a href="https://handelgroup.uga.edu/publication/2020-handel-natrevimm/">Simulation Modelling for Immunologists</a> provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven’t done yet, please read the paper.</p>
+<p>See the <em>Resources</em> section for some additional materials, including a few textbooks, that cover within-host modeling. Some of the other readings in this module also have further pointers to additional material.</p>
 </div>
 
 

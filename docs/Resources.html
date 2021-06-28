@@ -329,7 +329,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="./Overview.html">General Information</a>
+  <a href="./Overview.html">Overview</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -339,47 +339,47 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">1. Coures and Tools Introduction</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
+          <a href="./Tool_Setup_Overview.html">Tool Setup Overview</a>
         </li>
         <li>
-          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
+          <a href="./R_and_RStudio.html">R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
+          <a href="./DSAIRM.html">DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
+          <a href="./Further_Tools.html">Further Tools</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_Introduction_to_Immunology.html">2a. Introduction to Immunology</a>
+          <a href=".Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
+          <a href="./Introduction_to_Modeling.html">Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
+          <a href="./Model_Thinking.html">Model Thinking</a>
         </li>
         <li>
-          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
+          <a href="./Simple_Models.html">A few simple models</a>
         </li>
         <li>
-          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+          <a href="./Model_Types.html">Types of simulation models</a>
         </li>
         <li>
-          <a href="./3e_Exercises.html">3e. Exercises</a>
+          <a href="./Intro_Modeling_Exercises.html">Exercises</a>
         </li>
       </ul>
     </li>
@@ -494,14 +494,14 @@ div.tocify {
 
 <h1 class="title toc-ignore">SMI Resources</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2021-06-24 10:12:23</h4>
+<h4 class="date">2021-06-25 11:17:36</h4>
 
 </div>
 
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This page lists resources that we consider potentially useful for further learning immunology and modeling.</p>
+<p>This page lists resources that are potentially useful for further learning immunology and modeling.</p>
 <p>Apart from the books, most materials described below are (should be) freely available online. For better or for worse, a lot of the resources are dynamic and ever changing. That means occasionally links might not work, sites go offline, chapters in online books get re-arranged, etc. If any link does not work and you can’t access the materials for some reason, or you got some other good resources that we don’t list, please let us know.</p>
 </div>
 <div id="books" class="section level1">
@@ -532,10 +532,12 @@ div.tocify {
 <div id="software" class="section level1">
 <h1>Software</h1>
 <ul>
-<li><p><a href="https://ahgroup.github.io/DSAIRM/">Dynamical Systems Approach to Immune Response Modeling (DSAIRM)</a>. The R package was written for this course and allows you to engage in hands-on explorations of the different topics we will cover.</p></li>
-<li><p><a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a>. An R package that allows you to build and analyze your own models without having to write code. This is optional, we won’t formally use it in the course but you might want to explore it on your own. Note that the package is work in progress (feel free to contribute 😃).</p></li>
-<li><p><a href="">SIMMUNE</a>.</p></li>
+<li><p><a href="https://ahgroup.github.io/DSAIRM/">Dynamical Systems Approach to Immune Response Modeling (DSAIRM)</a>. This is an R package we wrote to teach within-host modeling through hands-on explorations of models. No coding is required.</p></li>
+<li><p><a href="https://ahgroup.github.io/modelbuilder/">modelbuilder</a>. This is another R package we are working on. It allows you to build and analyze your own models without having to write code. Note that the package is work in progress, and while it should work, it might be buggy.</p></li>
+<li><p><a href="https://www.niaid.nih.gov/research/simmune-project">SIMMUNE</a>. This is a freely available software package which allows building and analysis of fairly complex models.</p></li>
+<li><p><a href="http://copasi.org/">COPASI</a>. Another freely available software tool that can be used for within-host modeling.</p></li>
 </ul>
+<p>Many other general software tools (some commercial, some free) can be used to build and run models of the type discussed on this page. Examples are Matlab, Berkeley Madonna, STELLA, Phython, Julia, and any other general purpose programming language. Those require different levels of coding abilities.</p>
 </div>
 <div id="papers" class="section level1">
 <h1>Papers</h1>
@@ -550,14 +552,12 @@ div.tocify {
 <div id="journal-articles" class="section level2">
 <h2>Journal articles</h2>
 <ul>
-<li></li>
+<li><a href="">A software package for immunologists to learn simulation modeling</a>. This is a paper we wrote describing the <a href="https://ahgroup.github.io/DSAIRM/">DSAIRM package</a>. It’s not as detailed as the documentation you can find on the DSAIRM package website, but includes some general thoughts on the motivation for the package.</li>
 </ul>
 </div>
-<div id="lists-and-other-sources" class="section level2">
-<h2>Lists and other sources</h2>
-<ul>
-<li>I created lists related to R and Data Analysis (as well as other topics). <a href="https://andreashandel.github.io/research-and-teaching-resources/">You can find all resource lists here</a>. (These lists are works in progress, and some are better/more useful than others. Feel free to send me links/resources to include).</li>
-</ul>
+<div id="other-sources" class="section level2">
+<h2>Other sources</h2>
+<p>to come</p>
 </div>
 </div>
 

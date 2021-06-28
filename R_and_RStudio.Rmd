@@ -12,7 +12,7 @@ output:
 
 
 # Overview
-This is a very quick introduction to R and RStudio, to get you set up and running. We won't go deep into coding in this course, but we need R to use the DSAIRM package. R is a very useful tool to be familiar with if you want to get into modeling, or if you want to do data analysis. As such, having a bit of familiarity is good.
+This is a very quick introduction to R and RStudio, to get you set up and running. We won't go deep into coding, but we need R to use the DSAIRM package. R is a very useful tool to be familiar with if you want to get into modeling, or if you want to do data analysis. As such, having a bit of familiarity is good.
 
 # Learning Objectives
 * Know some of the strengths and weaknesses of R.
@@ -31,7 +31,7 @@ Like every programming language, R has its advantages and disadvantages. Feel fr
 * Through R packages, it is easy to get lots of state-of-the-art algorithms.
 * Documentation and help files for R are generally good.
 
-While we use R in this course, it is not the only option for building and exploring infectious disease models. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used (e.g., Matlab, Mathematica). Other more general programming languages are suitable too (e.g., C, Fortran, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those languages. In general, knowing some coding is a very useful skill, and I strongly encourage you to learn some programming. The good news is that while all programming languages are somewhat different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. R is a good one to get started with.
+While we use R, it is not the only option for building and exploring infectious disease models. Maybe the most similar to R, and widely used, is Python, which is also free. There is also commercial software that can be used (e.g., Matlab, Mathematica). Other more general programming languages are suitable too (e.g., C, Fortran, Java, Julia). Depending on your future needs or jobs, you might have to learn one or several of those languages. In general, knowing some coding is a very useful skill, and I strongly encourage you to learn some programming. The good news is that while all programming languages are somewhat different, they all share general ways of thinking and structuring code. So once you understand a specific concept (e.g., variables, loops, branching statements or functions), it applies to all those languages. Thus, learning a new programming language is much easier once you already know one. R is a good one to get started with.
 
   
 # Installing R and RStudio 

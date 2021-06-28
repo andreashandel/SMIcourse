@@ -28,16 +28,15 @@ Welcome to the website **Simulation Modeling in Immunology (SMI).**
 This website is a repository of materials covering infectious diseases and immunology, with a focus on modeling.
 
 This resource was developed and is maintained mainly by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html) (see below for further contributors). 
-We use the materials on this website as part of our annual course _Infectious Diseases, Immunology and Within-Host Models_ which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). We also use the materials for other workshops we occasionally teach in this topic. 
+We use some of the materials on this website for our annual course _Infectious Diseases, Immunology and Within-Host Models_ which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). We also use the materials for other workshops we occasionally teach on this topic. 
 We keep this website continuously online, with updates happening every time we teach a course - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
 
 
 # Website content
 
-The __General Information__ section provides a very brief overview.
+The __Overview__ section provides a very brief overview.
 
-The __Modules__ section and subsection contains the bulk of the content. Each module covers a specific topic and generally has several units in a drop-down/pop-out menu. 
-Those units consist of a mix of videos, write-ups and exercises. It is generally recommended to go through them in the listed order.
+The __Modules__ section and subsection contains the bulk of the content. Each module covers a specific topic and generally has several units in a drop-down/pop-out menu. Those units consist of a mix of videos, write-ups and exercises. It is generally recommended to go through them in the listed order.
 
 The __Glossary__ section provides a (work in progress) glossary with definitions of technical terms.
 

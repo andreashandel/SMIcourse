@@ -28,6 +28,16 @@ This document describes how to use simulation models to explore systems.
 At the early stages of trying to gain a fairly basic understanding of the behavior of a system, one can build models and explore how interactions between model components (and thus components of the real system) impact observed patterns. Using models in this way provides a quick and cheap way to gain some intuition of how a system functions. For understanding purposes, one generally tries to keep models simple.
 
 
+# Recording
+This video discusses use of models for exploration.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZASXPGfm_9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Slides that go with the recording can be found here [as html](./slides/Model_Uses_Slides.html) or [as pdf.](./slides/Model_Uses_Slides.pdf). These also contain the slides for the other model use units.
+
+
 
 # How to use models for exploration
 As you are building your model, you will run it and look at the behavior of some, ideally all, model components (your variables). This will produce time-series plots, i.e. you will plot the behavior of the model components as a function of time. Doing so is vital to test your model, debug your code, and make sure everything is working as expected. 

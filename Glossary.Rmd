@@ -1,5 +1,5 @@
 ---
-title: SMI Course Glossary
+title: SMI Glossary
 subtitle: ""
 institute: "University of Georgia"
 date: "`r file.mtime(knitr::current_input())`"
@@ -18,7 +18,7 @@ library(emo)
 ```
 
 As in any field, there are lots of technical terms related to Modeling and Immunology. 
-We try to explain them whenever they show up first. However, we figured it might also be useful to have one central place for quick reference. Terms are ordered alphabetically. This is how we define them, others might have slighlty different definitions.
+We try to explain them whenever they show up first. However, we figured it might also be useful to have one central place for quick reference. Terms are ordered alphabetically. This is how we define them, others might have slightly different definitions.
 
 This list is and will likely forever remain a work in progress and incomplete. If you think there is a specific term missing that should be listed and explained here, please let us know.
 
@@ -74,8 +74,6 @@ __Mechanistic Modeling:__ Building and using models that explicitly incorporate 
 
 
 ## Immunology related terms
-
-_Partly adapted from “An Interpretative Introduction to the Immune System??? by Steven Hofmeyr in Design Principles for the Immune System and Other Distributed Autonomous Systems ed. Segel and Cohen._
 
 __Adaptive immune system:__	That part of the immune system that uses antigen receptors and adapts or “learns??? to recognize specific antigens, and retains a memory of those antigens to enhance future responses
 

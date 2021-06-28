@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>Introduction to Modeling - Exercises</title>
+<title>DSAIRM</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -329,7 +329,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="./Overview.html">General Information</a>
+  <a href="./Overview.html">Overview</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -339,47 +339,47 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">1. Coures and Tools Introduction</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./1a_Course_Introduction.html">1a. Course introduction</a>
+          <a href="./Tool_Setup_Overview.html">Tool Setup Overview</a>
         </li>
         <li>
-          <a href="./1b_R_and_RStudio.html">1b. R and Rstudio</a>
+          <a href="./R_and_RStudio.html">R and Rstudio</a>
         </li>
         <li>
-          <a href="./1c_DSAIRM.html">1c. DSAIRM</a>
+          <a href="./DSAIRM.html">DSAIRM</a>
         </li>
         <li>
-          <a href="./1d_Further_Tools.html">1d. Further Tools</a>
+          <a href="./Further_Tools.html">Further Tools</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">2. Introduction to Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./2a_Introduction_to_Immunology.html">2a. Introduction to Immunology</a>
+          <a href=".Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3. Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./3a_Introduction_to_Modeling.html">3a. Introduction to Simulation Modeling</a>
+          <a href="./Introduction_to_Modeling.html">Introduction to Simulation Modeling</a>
         </li>
         <li>
-          <a href="./3b_Model_Thinking.html">3b. Model Thinking</a>
+          <a href="./Model_Thinking.html">Model Thinking</a>
         </li>
         <li>
-          <a href="./3c_Simple_Models.html">3c. A few simple models</a>
+          <a href="./Simple_Models.html">A few simple models</a>
         </li>
         <li>
-          <a href="./3d_Model_Types.html">3d. Types of simulation models</a>
+          <a href="./Model_Types.html">Types of simulation models</a>
         </li>
         <li>
-          <a href="./3e_Exercises.html">3e. Exercises</a>
+          <a href="./Intro_Modeling_Exercises.html">Exercises</a>
         </li>
       </ul>
     </li>
@@ -492,7 +492,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Introduction to Modeling - Exercises</h1>
+<h1 class="title toc-ignore">DSAIRM</h1>
 <h4 class="author">Andreas Handel</h4>
 <h4 class="date">2021-03-31 20:11:01</h4>
 
@@ -501,30 +501,27 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>For the exercise portion of this module, you can explore and play around with the basic models you learned about. There are different ways you can do that, based on your level of comfort with both R code and models of that type. The different options are described below.</p>
-<p>We recommend that no matter what your level is, you should at least briefly explore the models through the graphical interface and read the documentation for several of the models to get an idea of the overall setup of the package.</p>
+<p>This document provides a brief introduction to the DSAIRM package, which we will use in this course.</p>
 </div>
-<div id="beginner" class="section level1">
-<h1>Beginner</h1>
-<p>The easiest way to learn about these models is by using the graphical interface of DSAIRM.</p>
-<p>Explore the models listed in the <strong>The Basic</strong> section of DSAIRM. You will find a model that describes a simple extracellular (bacteria) infection and one that describes a simple intracellular (virus) infection. A third model shows a more complicated version of a virus infection which includes several components of the immune response.</p>
-<p>For each of the apps/models, go through all the tabs at the bottom of each app. <strong>The Model</strong> and <strong>What to do</strong> are the most important sections. If you are completely new to these kinds of models, work through all the listed tasks to get an idea of how these models work.</p>
+<div id="learning-objectives" class="section level1">
+<h1>Learning Objectives</h1>
+<ul>
+<li>Know how to run and use the DSAIRM package.</li>
+</ul>
 </div>
-<div id="intermediate-i" class="section level1">
-<h1>Intermediate I</h1>
-<p>If you are not yet comfortable building your own models, but have some R coding familiarity, this might be a good option for you. If you want to have a bit more flexibility and are ok writing some R code, you can explore the models using the <em>Level 2</em> approach described in the <a href="https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html">DSAIRM tutorial</a>. You can still work through the tasks for each app, or do a more free exploration. In this version, you write your own little pieces of code to call the simulation models and explore the results. See the <em>Level 2</em> description in the DSAIRM tutorial for more.</p>
+<div id="dsairm-introduction" class="section level1">
+<h1>DSAIRM Introduction</h1>
+<p>DSAIRM, which stands for <em>Dynamical Systems Approach to Immune Response Modeling</em> is an R package. Its goal is to let users to explore infectious disease models and topics without having to implement their own models and write code. <a href="https://ahgroup.github.io/DSAIRM/">DSAIRM has a dedicated website</a>. Visit the website and read through the <em>Get started</em> document.</p>
 </div>
-<div id="intermediate-ii" class="section level1">
-<h1>Intermediate II</h1>
-<p>If you have some familiarity with models of this type and want to go beyond the DSAIRM models, but are not comfortable writing R code, you can try to build your own model using the <a href="https://ahgroup.github.io/modelbuilder/"><em>modelbuilder</em></a> package. Using that package, you can build and explore your own models. It might be easiest to start with one of the provided example models and modify to your own needs.</p>
+<div id="dsairm-hands-on" class="section level1">
+<h1>DSAIRM hands-on</h1>
+<p>I assume you have installed DSAIRM as described in the previous reading. If you haven’t done already, load DSAIRM. You should see a short message on the screen. Some packages show messages when you load them, and others don’t. In this case, the package tells you that you can start using it by typing <code>dsairmmenu()</code> into the R console. Do that to start it</p>
+<pre class="r"><code>dsairmmenu()</code></pre>
+<p>A menu should open in your browser, from which you can explore different models/apps. Explore DSAIRM briefly, just to make sure things seem to work ok. The main goal for now is to have it up and running. If you encounter any problems, let us know on Slack.</p>
 </div>
-<div id="advanced" class="section level1">
-<h1>Advanced</h1>
-<p>If you have some familiarity with both simulation models and R coding, you have several options. You can start with a DSAIRM model, download its code and modify it to fit your own needs. An example of this approach is described under <em>Level 3</em> in the DSAIRM tutorial. Another approach is to start with a model in <a href="https://ahgroup.github.io/modelbuilder/"><em>modelbuilder</em></a>. You can build the basic model graphically, then export the code for it, and then run/explore the model or make further modifications to the code. Note that this is a “one way” approach. Once you exported code and make modifications, you (currently) can’t load it back into <em>modelbuilder</em>.</p>
-</div>
-<div id="getting-help" class="section level1">
-<h1>Getting help</h1>
-<p>If at any point you are stuck, something is unclear, you want to discuss, etc. use our Slack Workspace.</p>
+<div id="browser-based-dsairm" class="section level1">
+<h1>Browser-based DSAIRM</h1>
+<p>While it is best to install and use DSAIRM as an R package, there is also an option to run it through your browser from a shiny server. This option is described on the DSAIRM website. If you have problems with your installed version of DSAIRM, using it through the browser is an option, but I still recommend you try to get it working locally.</p>
 </div>
 
 

@@ -1,5 +1,5 @@
 ---
-title: SMI 2020 - Viral Infections and Immunology
+title: Viral Infections and Immunology
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -21,9 +21,6 @@ This document provides materials that discuss a few important viral pathogens an
 * Distinguish the “big picture” unique aspects of HCV, influenza virus, and coronavirus
 * Define how in vitro experiments can be used to predict in vivo virus biology
 
-# Slides
-We will go over this topic in one of the zoom sessions. The slides for that session [can be found here.](./slides/Viral_Infections_and_Immunology_Slides.pdf)
-
 
 # Videos
 The recordings of the lecture are broken into two segments. 
@@ -42,5 +39,7 @@ In the second segment, he covers influenza.
 </p>
 
 
+# Slides
+The slides for the recordings [can be found here.](./slides/Viral_Infections_and_Immunology_Slides.pdf)
 
 
