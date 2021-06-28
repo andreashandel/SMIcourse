@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>Uncertainty and Sensitivity Analysis</title>
+<title>What influences model results</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -423,47 +423,47 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">7. What influences model results</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./7a_What_influences_model_results.html">7a. What influences model results</a>
+          <a href="./What_influences_model_results.html">What influences model results</a>
         </li>
         <li>
-          <a href="./7b_Structural_Uncertainty.html">7b. Structural Uncertainty</a>
+          <a href="./Structural_Uncertainty.html">Structural Uncertainty</a>
         </li>
         <li>
-          <a href="./7c_Parameter_Uncertainty.html">7c. Parameter Uncertainty</a>
+          <a href="./Parameter_Uncertainty.html">Parameter Uncertainty</a>
         </li>
         <li>
-          <a href="./7d_Model_Stochasticity.html">7d. Model Stochasticity</a>
+          <a href="./Model_Stochasticity.html">Model Stochasticity</a>
         </li>
         <li>
-          <a href="./7e_Exercises.html">7e. Exercises</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">8. How to build and assess models</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./8a_Model_Building_Assessment.html">8a. Model building and assessment overview</a>
-        </li>
-        <li>
-          <a href="./8b_Building_Models.html">8b. How to build good models</a>
-        </li>
-        <li>
-          <a href="./8c_Assessing_Models.html">8c. Assessing published models</a>
+          <a href="./Exercises.html">Exercises</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">9. Various Topics</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">How to build and assess models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./9a_Host_Genetics_Immunity.html">9a. Host Genetics and Immunity</a>
+          <a href="./Model_Building_Assessment.html">Model building and assessment overview</a>
         </li>
         <li>
-          <a href="./9b_Multiscale_Models.html">9b. Multiscale Models</a>
+          <a href="./Building_Models.html">How to build good models</a>
         </li>
         <li>
-          <a href="./9c_DSAIRM_Code_Exploration.html">9c. DSAIRM code exploration</a>
+          <a href="./Assessing_Models.html">Assessing published models</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./Host_Genetics_Immunity.html">Host Genetics and Immunity</a>
+        </li>
+        <li>
+          <a href="./Multiscale_Models.html">Multiscale Models</a>
+        </li>
+        <li>
+          <a href="./DSAIRM_Code_Exploration.html">DSAIRM code exploration</a>
         </li>
       </ul>
     </li>
@@ -492,7 +492,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Uncertainty and Sensitivity Analysis</h1>
+<h1 class="title toc-ignore">What influences model results</h1>
 <h4 class="author">Andreas Handel</h4>
 <h4 class="date">2021-03-31 20:11:01</h4>
 
@@ -501,59 +501,45 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document describes how uncertainties in model parameters lead to uncertainties in model outcomes and how one can evaluate the impact of parameter changes on outcomes using uncertainty and sensitivity analysis.</p>
+<p>This module describes some of the uncertainties that can affect outputs obtained from simulation models.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Appreciate the impact of parameter uncertainty on model results</li>
-<li>Understand how to sample parameters from different distributions</li>
-<li>Know the idea behind Latin Hypercube sampling</li>
-<li>Understand what uncertainty analysis is</li>
-<li>Understand the idea of sensitivity analysis</li>
+<li>Know how different aspects of the model building and running process affect outcomes.</li>
+<li>Be familiar with approaches that allow one to quantify certain types of uncertainty.</li>
 </ul>
 </div>
-<div id="the-problem-of-parameter-uncertainty" class="section level1">
-<h1>The problem of parameter uncertainty</h1>
-<p>We discussed before that to run a model, one needs values for the model parameters. Those are not always well known. Often we can get reasonable ranges from the literature, but not exact values. If a model only has a few parameters, one can potentially explore model outcomes over the range of plausible values for all those parameters. We discussed this approach under the <em>Model Exploration</em> topic. However, if a model becomes large and has many parameters, that is not feasible anymore. Also, we might often only be interested in one or a few of the model parameters and how they affect some outcome. We need to take into account uncertainty in the other parameters, but we might not want to explore this in detail. In other situations, we might want to use our model to make predictions, taking into account uncertainty in the model inputs (parameters, as well as initial conditions).</p>
-<p>As an example for a large model, we consider a model of TB infection, published in <span class="citation">[@wigginton01]</span>. The model has a total of 12 equations/compartments tracking the bacteria and different components of the immune response, and a total of 66 model parameters. The figure below shows the diagram for one of the cytokine component of the immune response included in the model, the table shows the parameters for this component.</p>
-<p><img src="media/tbfig2.png" width="70%" style="display: block; margin: auto;" /></p>
-<p><img src="media/tbfig5.png" width="90%" style="display: block; margin: auto;" /></p>
-<p>It is clear that one cannot do a systematic exploration of all 66 parameters. One can then instead turn to an approach called uncertainty &amp; sensitivity (U/S) analysis.</p>
+<div id="slides" class="section level1">
+<h1>Slides</h1>
+<p>We will discuss this topic in one of the zoom sessions. You can get the slides here <a href="./slides/Uncertainty_in_Models_Slides.html">as html</a> or <a href="./slides/Uncertainty_in_Models_Slides.pdf">as pdf.</a></p>
 </div>
-<div id="uncertainty-sensitivity-analysis" class="section level1">
-<h1>Uncertainty &amp; Sensitivity Analysis</h1>
-<p>The idea for U/S analysis is rather straightforward. Instead of giving each parameter a single value, you specify distributions between reasonable values. Then draw samples from these parameter distributions and run the model for those samples. Record the outcomes of interest for each parameter sample, then plot the distribution of outcomes.</p>
-<p>The uncertainty analysis part answers the question: Given uncertainty in the inputs, how much uncertainty is there in the outputs/results? This is achieved by plotting the distribution of outcomes (e.g. using a boxplot). The sensitivity analysis part answers the question: How much do individual inputs contribute to the uncertainty in outputs/results? This can be addressed with for instance a scatter plot with one of the parameters on the x-axis and the outcome in the y-axis. Other ways are described below.</p>
+<div id="videos" class="section level1">
+<h1>Videos</h1>
+<p>The recordings of the lecture are broken into three segments.</p>
+<p>The first segment discusses how model structure impacts outcomes.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RW-ZgTVT1fE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+<p>The second segment discusses parameter uncertainty and how to assess its impact.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xgPmDrz6uNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+<p>The third segment discusses model stochasticity.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qfzeMYPr454" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
 </div>
-<div id="specifying-parameter-ranges" class="section level1">
-<h1>Specifying parameter ranges</h1>
-<p>First, you need to determine distributions for each parameter. If you are confident about the value for certain parameters, you can fix them. If you only have reasonable upper and lower bounds but no further information, you can assume a uniform distribution. We can almost always set bounds even if we know very little about a system. Assume we want to model the death rate of some cell type (e.g. NK cells) in humans. We might not know anything, but we can still be fairly confident that their lifespan is at least 1 second and less than 100 years. That’s of course a wide range and we should and usually can narrow ranges further, based on biological knowledge of a given system.</p>
-<p>Peaked distributions are also useful if you have a good idea of the mean of the parameter but want to allow for some spread. Normal distributions are not ideal since they allow negative values, which usually doesn’t make sense for our parameters. The gamma distribution is a better idea, since it allows positive values. Log-normal are also useful, or beta-distributions if your parameter is bound between 0 and 1.</p>
-<p>It turns out that in practice, the exact shape of the distribution usually matters little and uniform distributions for all parameters are easy and usually fine (they tend to be conservative since they allow equal probability across the whole range of reasonable values). Of course the choice of the distribution is subjective (like choosing a prior in Bayesian statistics). So make sure to provide reasonable scientific justification for the choices of your parameter ranges.</p>
+<div id="reading" class="section level1">
+<h1>Reading</h1>
+<p>The other units in this module provide further information on specific topics. Note that there is some overlap between the slides and the reading.</p>
 </div>
-<div id="sampling-parameters" class="section level1">
-<h1>Sampling parameters</h1>
-<p>Once you have the ranges, you draw a certain number of samples for the set of model parameters, which can also include initial conditions for your variables, those can be treated as parameters for the purpose of U/S analysis. The naive way is to draw random samples, however that does not lead to very good coverage of the parameter space. Grid sampling, where you divide distributions of parameters into bins and sample from each, will ensure comprehensive coverage of the parameter space, but requires a lot of samples. A method called Latin Hypercube Sampling (LHS) can perform sampling that covers the parameter space fairly efficiently even with a fairly low number of samples. For more technical details, see e.g. <span class="citation">[@saltelli2004]</span>. The R package <code>lhs</code> has functions for that.</p>
-</div>
-<div id="evaluating-outcome-uncertainty" class="section level1">
-<h1>Evaluating outcome uncertainty</h1>
-<p>Once we specify the ranges for each parameter, the sampling method, and the number of samples, the simulation draws that many samples, runs the model for each sample, and records outcomes of interest. While the underlying dynamical model returns a time-series for each sample, we are usually not interested in the full time-series. Instead, we are interested in some summary quantity. For instance, we might be interested in the maximum/peak pathogen level during an infection. We can run the simulation for multiple samples and record the outcome of interest for each parameter sample/simulation. The most basic question we can then ask is “how does uncertainty in the parameters lead to uncertainty in our outcomes of interest”. This can be graphically represented with a boxplot.</p>
-<p>The figure below shows an example of a boxplot for some U/S analysis. For different intervention strategies (along the x-axis), samples are run and some outcome is recorded.</p>
-<p><img src="media/uncertainty.png" width="70%" style="display: block; margin: auto;" /></p>
-</div>
-<div id="evaluating-outcome-sensitivity-to-specific-parameters" class="section level1">
-<h1>Evaluating outcome sensitivity to specific parameters</h1>
-<p>If you want to know how individual parameters affect outcomes, you can plot that parameter on the x-axis and the outcome of interest on the y-axis, leading to a scatterplot, like this one.</p>
-<p><img src="media/sensitivity.png" width="70%" style="display: block; margin: auto;" /></p>
-<p>If the scatterplot shows a monotone relation, you can summarize it with a single number, e.g. a correlation coefficient (a regression coefficient is possible too). Correlation Coefficients (CC) indicate how correlated a given output is with a given input. CC are between -1 and 1. Large CC means strong (negative) correlation, CC <span class="math inline">\(\approx 0\)</span> means no correlation. Since of the kinds of models we explore, the impact of parameter changes on the outcomes is often nonlinear, linear correlation coefficients (the standard Pearson correlation) is often not the best measure. Rank CC (such as Spearman’s or Kendall’s CC) are usually more suitable. Partial Rank Correlation Coefficients (PRCC) are even better since we change multiple inputs/parameters at the same time and we are interested in the relation between a single parameter and the outcome, while taking into account changes in the other parameters.</p>
-</div>
-<div id="practice" class="section level1">
-<h1>Practice</h1>
-<p>To learn more about U/S analysis and explore it yourself, see The “Parameter Uncertainty” app in DSAIRM.</p>
-</div>
-<div id="references" class="section level1">
-<h1>References</h1>
+<div id="further-materials" class="section level1">
+<h1>Further materials</h1>
+<p>Some of the other readings in this module have further pointers to additional material.</p>
 </div>
 
 

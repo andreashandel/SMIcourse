@@ -57,32 +57,32 @@ left:
             href: ./Complex_Pathogens_Immunology.html
       - text: "7. What influences model results"
         menu:
-          - text: "7a. What influences model results"
-            href: ./7a_What_influences_model_results.html
-          - text: "7b. Structural Uncertainty"
-            href: ./7b_Structural_Uncertainty.html
-          - text: "7c. Parameter Uncertainty"
-            href: ./7c_Parameter_Uncertainty.html
-          - text: "7d. Model Stochasticity"
-            href: ./7d_Model_Stochasticity.html
-          - text: "7e. Exercises"
-            href: ./7e_Exercises.html
-      - text: "8. How to build and assess models"
+          - text: "What influences model results"
+            href: ./What_influences_model_results.html
+          - text: "Structural Uncertainty"
+            href: ./Structural_Uncertainty.html
+          - text: "Parameter Uncertainty"
+            href: ./Parameter_Uncertainty.html
+          - text: "Model Stochasticity"
+            href: ./Model_Stochasticity.html
+          - text: "Exercises"
+            href: ./Exercises.html
+      - text: "How to build and assess models"
         menu:
-          - text: "8a. Model building and assessment overview"
-            href: ./8a_Model_Building_Assessment.html
-          - text: "8b. How to build good models"
-            href: ./8b_Building_Models.html
-          - text: "8c. Assessing published models"
-            href: ./8c_Assessing_Models.html
-      - text: "9. Various Topics"
+          - text: "Model building and assessment overview"
+            href: ./Model_Building_Assessment.html
+          - text: "How to build good models"
+            href: ./Building_Models.html
+          - text: "Assessing published models"
+            href: ./Assessing_Models.html
+      - text: "Various Topics"
         menu:
-          - text: "9a. Host Genetics and Immunity"
-            href: ./9a_Host_Genetics_Immunity.html
-          - text: "9b. Multiscale Models"
-            href: ./9b_Multiscale_Models.html
-          - text: "9c. DSAIRM code exploration"
-            href: ./9c_DSAIRM_Code_Exploration.html
+          - text: "Host Genetics and Immunity"
+            href: ./Host_Genetics_Immunity.html
+          - text: "Multiscale Models"
+            href: ./Multiscale_Models.html
+          - text: "DSAIRM code exploration"
+            href: ./DSAIRM_Code_Exploration.html
   - text: "Glossary"
     href: ./Glossary.html
   - text: "Resources"
