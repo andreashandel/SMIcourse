@@ -22,7 +22,7 @@ left:
       - text: "Introduction to Immunology"
         menu:
           - text: "Introduction to Immunology"
-            href: .Introduction_to_Immunology.html
+            href: ./Introduction_to_Immunology.html
       - text: "Introduction to Simulation Modeling"
         menu:
           - text: "Introduction to Simulation Modeling"
@@ -35,10 +35,10 @@ left:
             href: ./Model_Types.html
           - text: "Exercises"
             href: ./Intro_Modeling_Exercises.html
-      - text: "4. Viral Infections and Immunology"
+      - text: "Viral Infections and Immunology"
         menu:
           - text: "Viral Infections and Immunology"
-            href: .Viral_Infections_Immunology.html
+            href: ./Viral_Infections_Immunology.html
       - text: "Using Simulation Models"
         menu:
           - text: "Uses of Simulation Models"

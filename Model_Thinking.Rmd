@@ -71,7 +71,8 @@ The use of such mechanistic models to study infection and immune responses dynam
 
 
 # Further Resources
-* The paper "Why Model?" by Joshua Epstein [@epstein08] provides a nice, short discussion of the purposes of models. Other general introductory discussions of systems thinking and model use are [@may04; @chubb10; @garnett11; @basu13; @gunawardena14; @homer06; @peters14; @sterman06].
+
+The paper "Why Model?" by Joshua Epstein [@epstein08] provides a nice, short discussion of the purposes of models. Other general introductory discussions of systems thinking and model use are [@may04; @chubb10; @garnett11; @basu13; @gunawardena14; @homer06; @peters14; @sterman06].
 
 
 # References

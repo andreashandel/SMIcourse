@@ -9,10 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Andreas Handel" />
 
 
-<title>Using Models for Prediction</title>
+<title>SMI 2020 - Complex Pathogen Life cycles and Immunology</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -63,28 +62,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-/* for pandoc --citeproc since 2.11 */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="media/SMICourse_style.css" type="text/css" />
 
@@ -361,10 +338,10 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool Setup</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Software Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./Tool_Setup_Overview.html">Tool Setup Overview</a>
+          <a href="./Software_Setup_Overview.html">Software Setup Overview</a>
         </li>
         <li>
           <a href="./R_and_RStudio.html">R and Rstudio</a>
@@ -381,7 +358,7 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href=".Introduction_to_Immunology.html">Introduction to Immunology</a>
+          <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
@@ -406,38 +383,38 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">4. Viral Infections and Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Viral Infections and Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./4a_Viral_Infections_Immunology.html">4a. Viral Infections and Immunology</a>
+          <a href="./Viral_Infections_Immunology.html">Viral Infections and Immunology</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">5. Using Simulation Models</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Using Simulation Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./5a_Uses_of_Simulation_Models.html">5a. Uses of Simulation Models</a>
+          <a href="./Uses_of_Simulation_Models.html">Uses of Simulation Models</a>
         </li>
         <li>
-          <a href="./5b_Models_for_Exploration.html">5b. Models for Exploration</a>
+          <a href="./Models_for_Exploration.html">Models for Exploration</a>
         </li>
         <li>
-          <a href="./5c_Models_for_Prediction.html">5c. Models for Prediction</a>
+          <a href="./_Models_for_Prediction.html">Models for Prediction</a>
         </li>
         <li>
-          <a href="./5d_Model_Fitting.html">5d. Models for Fitting</a>
+          <a href="./Model_Fitting.html">Models for Fitting</a>
         </li>
         <li>
-          <a href="./5e_Exercises.html">5e. Exercises</a>
+          <a href="./Model_Use_Exercises.html">Exercises</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">6. Complex Pathogen Life cycles and Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complex Pathogen Life cycles and Immunology</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./6a_Complex_Pathogens_Immunology.html">6a. Complex Pathogen Life cycles and Immunology</a>
+          <a href="./Complex_Pathogens_Immunology.html">Complex Pathogen Life cycles and Immunology</a>
         </li>
       </ul>
     </li>
@@ -514,8 +491,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Using Models for Prediction</h1>
-<h4 class="author">Andreas Handel</h4>
+<h1 class="title toc-ignore">SMI 2020 - Complex Pathogen Life cycles and Immunology</h1>
 <h4 class="date">2021-03-31 20:11:01</h4>
 
 </div>
@@ -523,54 +499,33 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document describes how to use simulation models to make predictions.</p>
+<p>This document provides materials that discuss a few important larger pathogens, specifically TB and Malaria, and the immune response to those pathogens.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Know when and why to use simulation models for prediction.</li>
+<li>Understand the unique features of malaria and TB biology and their consequences for infection</li>
+<li>Compare and contrast immune effector mechanisms in acute vs. chronic infection settings</li>
+<li>Discuss aspects of pathogen biology that promote chronic infection or immune failure</li>
 </ul>
 </div>
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<p>If you have a model that you think is a reasonable approximation of a real system, you can use the model to make predictions. Conceptually, this works the same as using the model for exploration. The only difference is that while for exploration, you interpret your model findings as preliminary, hypothesis generating and subject to further confirmation, in a predictive use of a model you assume that the results from the model can be trusted enough to say something definite, and potentially make decisions, about a real system.</p>
+<div id="slides" class="section level1">
+<h1>Slides</h1>
+<p>We will go over this topic in one of the zoom sessions. The slides for that session <a href="./slides/Complex_Pathogens_Immunology_Slides.pdf">can be found here.</a></p>
 </div>
-<div id="how-to-use-models-for-prediction" class="section level1">
-<h1>How to use models for prediction</h1>
-<p>Once you have gained some general understanding of the system under study and know enough about the system to be able to build models that provide reasonable approximations of the real system, we can use those models to perform <em>in silico experiments</em>. You can make predictions what might happen to the system if we changed some of its parts. For instance in a model that includes some cytokine, you could test what would happen if we administered a drug that suppressed this cytokine. This allows you to make predictions that can be tested with further experiments. These <em>in silico</em> approaches are much faster, cheaper and have no ethical problems, compared to real experiments.</p>
-<p>It can be useful to think of predictions as being of the following different types: * <strong>Qualitative:</strong> Try to predict shape/direction of an outcome (similar to the ‘exploration’ model use). * <strong>Semi-quantitative:</strong> Try to predict the approximate or relative size of an outcome. * <strong>Quantitative:</strong> Try to predict (with confidence intervals) the magnitude of an outcome.</p>
-<p>The type of prediction you want to make affect the realism and precision you need in your model. If you want to make qualitative or semi-quantitative predictions, your model needs to be less refined and detailed than if you wanted to make quantitative predictions.</p>
-<p>As an example, assume you have a model that includes both components of the innate response and CD8 T-cells. You want to predict if a change in innate immune activation will lead to more overall cell killing by T-cells. If you are interested in a qualitative/semi-quantitative prediction that tells you if increased innate activation will lead to more T-cell killing or not, and how the overall shape of that relation looks like, a less detailed and precise model might be enough to make useful predictions. If instead you want to predict by what fraction T-cell killing changes if you increase the innate activation by 50%, you need a more precise model. Generally, in my opinion models in immunology are suitable for the first type of prediction, but most are not quite detailed and realistic enough to make quantitative predictions.</p>
-</div>
-<div id="model-prediction-examples" class="section level1">
-<h1>Model prediction examples</h1>
-<p>Assume we think that the very simple basic bacteria model is a good approximation for a real system we are interested in (that’s unlikely for any real system, but let’s just pretend for now). The model is given by these equations</p>
-<p><span class="math display">\[
-\begin{aligned}
-\dot{B} &amp; = g B(1-\frac{B}{B_{max}}) - d_B B - kBI\\
-\dot{I} &amp; = r BI - d_I I
-\end{aligned}
-\]</span></p>
-<p>We want to predict the peak burden of bacteria if we were able to increase the induction of the immune response (parameter <span class="math inline">\(r\)</span>), e.g. by giving a drug. We’ll follow the same approach as for model exploration, namely we run the model for different values of <span class="math inline">\(r\)</span>, compute the peak of <span class="math inline">\(B\)</span> from the time-series for each <span class="math inline">\(r\)</span> value, and then plot the results, shown in this figure</p>
-<p><img src="media/nri_review_fig4a.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>The only difference to the model exploration approach is that now we interpret the results as actual predictions instead of suggested findings that need to be further explored.</p>
-<p>The following example from <span class="citation">(Wigginton and Kirschner 2001)</span> shows a model for TB infections. The model was used to predict infection outcomes if certain cytokines were to be depleted.</p>
-<p><img src="media/tbkirschner.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>Depending on the confidence we have in this model, we can consider the results as definite/predictive and thus actionable (i.e. we might go ahead and try to design a drug based on these model findings), or we might interpret these findings as preliminary and requiring further confirmation (exploration of model). Note that this is an example of a qualitative/semi-quantitative use of the model, the figure shows the overall pattern obtained, the authors did not try to interpret the results in a quantitative sense (e.g. IL-10 depletion leads to a X% drop in bacteria).</p>
-</div>
-<div id="when-to-use-models-for-prediction" class="section level1">
-<h1>When to use models for prediction</h1>
-<p>To make predictions, you need to believe that your model captures the actual dynamics of the real system you are interested in, at least the parts that are important for the question you are trying to answer. This usually happens after models have been built, explored and tested (validated) with data. Once you, or others in your area of research, have gone through this iterative process of model building/testing/validating/adjusting often enough that there is some confidence the model captures the main features of the real system, the model might be ready to be used to make predictions. The kinds of predictions you want to make also affect the point at which you think your model is “ready.” If you want to make qualitative or semi-quantitative predictions, your model needs to be less refined and detailed than if you wanted to make quantitative predictions.</p>
-<p>If your model is fairly simple, it is best to stick with qualitative and semi-quantitative predictions. If you want to make precise and detailed predictions, it generally requires very detailed (complex) models. Detailed models are ‘data hungry’ and often the data are not available. They are also difficult to write and analyze. As such, models that are detailed enough for quantitative predictions are usually not advisable at the beginning of working on a specific system. Once you have a lot of experience with the system and your models and are fairly confident that the model is realistic approximation, you might be able to make quantitative predictions. If you do so, you also need to take into account uncertainty in outputs, a topic we’ll discuss later.</p>
-<p>Of course the major caveat with any model result is that it is only useful insofar as the model properly captures the important features of the real system. <strong>All models makes simplifying assumptions. Thus, predictions are only reliable if the underlying model is a good approximation of the real system.</strong> The more a model is used to make predictions and these predictions tested with data, the more reliable it becomes.</p>
-</div>
-<div id="references" class="section level1 unnumbered">
-<h1 class="unnumbered">References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-wigginton01" class="csl-entry">
-Wigginton, J. E., and D. Kirschner. 2001. <span>“A Model to Predict Cell-Mediated Immune Regulatory Mechanisms During Human Infection with <span>Mycobacterium</span> Tuberculosis.”</span> <em>J Immunol</em> 166 (3): 1951–67.
-</div>
-</div>
+<div id="videos" class="section level1">
+<h1>Videos</h1>
+<p>The recordings of the lecture are broken into two segments.</p>
+<p>In the first segment, Paul covers Malaria.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DJnoV2vV6Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+<p>In the second segment, he covers Tuberculosis.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vka6fqSmXYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
 </div>
 
 
