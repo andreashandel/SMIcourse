@@ -24,6 +24,16 @@ This document provides a very brief overview of the idea that models are approxi
 * Be familiar with approaches that can be used to investigate the impact of different modeling choices
 
 
+# Recording
+This video discusses how model structure impacts outcomes.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RW-ZgTVT1fE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
+
+
 # The need for simplification and abstraction
 
 Every model (computer/mathematical models, a mouse model, and experimental setup) contains some abstraction/simplification to the real world. This applies to small extent even to settings like clinical trials. In those settings, one tries to get close to what would happen (for e.g. a drug or vaccine) in the real world, however the trial setup is still a simplified version of the real world. For computer and simulation models, abstractions are often very strong. This is both a great advantage and disadvantage of such models. One needs to be clear that any choice of simplification when moving from the real system to a model means making assumptions that can influence the outcome.

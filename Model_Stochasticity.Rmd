@@ -26,6 +26,16 @@ This document provides a brief introduction to stochastic models.
 * Understand how stochasticity affects model results 
 
 
+# Recording
+This video discusses model stochasticity.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qfzeMYPr454" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
+
+
 # Introduction 
 
 Deterministic models (both continuous and discrete-time) give you the same result for a set of parameters and starting conditions no matter how often you run them. There is no randomness present. Biological systems are never deterministic. There is always some amount of randomness or noise present. Models that allow for such randomness are called stochastic models. Note that the terminology for stochastic models is not too well defined. The words Stochasticity, Randomness, Noise are sometimes differentiated, and sometimes used interchangeably. Here we take a somewhat cavalier approach to terminology and use these terms somewhat flexibly.

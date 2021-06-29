@@ -48,7 +48,7 @@ left:
           - text: "Models for Prediction"
             href: ./Models_for_Prediction.html
           - text: "Models for Fitting"
-            href: ./Model_Fitting.html
+            href: ./Models_for_Fitting.html
           - text: "Exercises"
             href: ./Model_Use_Exercises.html
       - text: "Complex Pathogen Life cycles and Immunology"

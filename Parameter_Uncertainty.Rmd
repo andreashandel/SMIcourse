@@ -1,5 +1,5 @@
 ---
-title: Uncertainty and Sensitivity Analysis
+title: Parameter Uncertainty and Uncertainty and Sensitivity Analysis
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -25,6 +25,16 @@ This document describes how uncertainties in model parameters lead to uncertaint
 * Know the idea behind Latin Hypercube sampling
 * Understand what uncertainty analysis is
 * Understand the idea of sensitivity analysis
+
+
+# Recording
+This video discusses parameter uncertainty and how to assess its impact.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xgPmDrz6uNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
 
 
 
