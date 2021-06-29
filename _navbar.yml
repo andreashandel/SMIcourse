@@ -46,7 +46,7 @@ left:
           - text: "Models for Exploration"
             href: ./Models_for_Exploration.html
           - text: "Models for Prediction"
-            href: ./_Models_for_Prediction.html
+            href: ./Models_for_Prediction.html
           - text: "Models for Fitting"
             href: ./Model_Fitting.html
           - text: "Exercises"
@@ -55,7 +55,7 @@ left:
         menu:
           - text: "Complex Pathogen Life cycles and Immunology"
             href: ./Complex_Pathogens_Immunology.html
-      - text: "7. What influences model results"
+      - text: "What influences model results"
         menu:
           - text: "What influences model results"
             href: ./What_influences_model_results.html

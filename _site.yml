@@ -3,7 +3,7 @@ output_dir: "docs"
 exclude: ["auxiliary", "*.csv"]
 output:
   html_document:
-    theme: flatly
+    theme: lumen
     highlight: default
     toc: true
     toc_depth: 2
