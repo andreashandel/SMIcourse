@@ -66,7 +66,7 @@ left:
           - text: "Model Stochasticity"
             href: ./Model_Stochasticity.html
           - text: "Exercises"
-            href: ./Exercises.html
+            href: ./Model_Variability_Exercises.html
       - text: "How to build and assess models"
         menu:
           - text: "Model building and assessment overview"
