@@ -31,6 +31,8 @@ left:
             href: ./Model_Thinking.html
           - text: "A few simple models"
             href: ./Simple_Models.html
+          - text: "Steady States"
+            href: ./Steady_States.html
           - text: "Types of simulation models"
             href: ./Model_Types.html
           - text: "Exercises"

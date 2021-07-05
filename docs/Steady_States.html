@@ -12,7 +12,7 @@
 <meta name="author" content="Andreas Handel" />
 
 
-<title>Using Models for Fitting to Data</title>
+<title>Steady States</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -495,103 +495,125 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Using Models for Fitting to Data</h1>
+<h1 class="title toc-ignore">Steady States</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2021-06-28 17:32:02</h4>
+<h4 class="date">2021-07-02 11:48:28</h4>
 
 </div>
 
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document describes how to use simulation models and fit them to data.</p>
+<p>This document provides an introduction to steady states and how to compute them.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Know when and why to use simulation models for fitting.</li>
+<li>Be familiar with steady states.</li>
+<li>Know how to compute steady states.</li>
 </ul>
 </div>
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<p>You can use models for exploration and prediction without the need of data that is specifically matched to your model.</p>
-<p>If you have the right kind of data available, it is possible to fit a model to data in a rigorous statistical manner (perform inference). Pretty much all the machinery that can be applied to phenomenological models such as linear/logistic regression or any other non-mechanistic model can be applied to mechanistic models. That means you can do fitting using frequentist, likelihood or bayesian methods, and any other useful statistical methodology.</p>
-<p>An important difference to phenomenological models is that when fitting mechanistic models you explicitly have mechanisms in your model which can represent different hypotheses about your system. Fitting to data allows you to discriminate between different postulated mechanisms (hypotheses), which are translated into different models and fitting determines which model is better at explaining the observed data. Further, model fitting provides estimates for model parameters. Often, such parameters have a directly interpretable biological meaning (e.g. the rate of virus production by infected cells) and are thus of interest on their own.</p>
-</div>
-<div id="recording" class="section level1">
-<h1>Recording</h1>
-<p>This video discusses use of models for data fitting and inference.</p>
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1MSpAu8ZFXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</p>
-<p>Slides that go with the recording can be found here <a href="./slides/Model_Uses_Slides.html">as html</a> or <a href="./slides/Model_Uses_Slides.pdf">as pdf.</a>. These also contain the slides for the other model use units.</p>
-</div>
-<div id="how-to-fit-models-to-data" class="section level1">
-<h1>How to fit models to data</h1>
-<p>First you need to assess the data you have. Since the simulation model produces time-series, having time-series data is best. It is also possible to fit models to data that is measured at only a single time point, e.g. antibody levels at the end of an infection. In general, you will not have data for all of the components in the model. You might for instance only have viral load data, but no data on uninfected and infected cells. In general, more data, and especially more data for different components of your model is better. The more data you have, the more model parameters you might be able to reliably estimate and thus the more complex a model you can justify. If you don’t have much data, it is often not possible to estimate many parameters. Trying to do so will lead to overfitting and unreliable results.</p>
-<div id="matching-model-and-data" class="section level2">
-<h2>Matching model and data</h2>
-<p>Once you have investigated your data and built a model such that some of the data can be mapped to the model, you can implement the fitting. The way this works is that you choose starting values for the parameters you want to fit. You run the model, then you compare the time-series of the model predictions to your data. This comparison can be done in different ways. The simplest and most common approach is to minimize the sum of square differences.</p>
-<p>As an example, assume you have viral load data for different time points as data. Your model has a variable for virus that matches that data. For any choice of model parameters, you can then compare the model predicted virus load <span class="math inline">\(Vm_t\)</span> with the data <span class="math inline">\(Vd_t\)</span> by computing the sum of square errors between data and model for all data points, i.e.</p>
+<div id="reading" class="section level1">
+<h1>Reading</h1>
+<p>Often (but not always), biological systems can settle into an approximately steady state, where the numbers of the quantities being tracked barely change. An example for this is HIV during the chronic phase. While there are still large numbers of virions produced each day, and Cd4 T-cells are being generated and destroyed, the overall balance between virus and T-cells reaches a state that is fairly constant over short time spans (of course over years, there is a slow decline of T-cells, which if untreated eventually leads to AIDS).</p>
+<p>If one has a model for such a system, one can often compute this steady state mathematically. This works for simple models. Once the models get more complex, doing the math gets hard or impossible. It is however always possible to run the simulation long enough until the system has settled down to the steady state - provided the system/model has such a steady state. Not all systems/models do. For instance during an acute infection, the pathogen grows, then declines, without ever reaching a steady level (other than absence of pathogen, which can be considered a steady state). Similarly, in some systems there might be continuous cycles of increase and decrease without ever settling down.</p>
+<p>Below, we assume a steady state exists and look at a few simple models introduced earlier to show how the steady state can be computed and interpreted.</p>
+<div id="the-one-compartment-model" class="section level2">
+<h2>The one-compartment model</h2>
+<p>Recall the one-compartment model that tracked some population of entities (pathogens/immune cells/humans/animals) that grow or die, and that included saturating growth. The discrete-time version of the model was</p>
 <p><span class="math display">\[
-SSR= \sum_t (Vm_t - Vd_t)^2
-\]</span> where <span class="math inline">\(Vm_t\)</span> is the virus load (usually done in log units) predicted from the model simulation at days <span class="math inline">\(t=1..8\)</span> and <span class="math inline">\(Vd_t\)</span> is the data, reported in those same units and on those time points.</p>
-<p>Your fitting routine then varies model parameters, for each new set of model parameters it runs the simulation, determines predicted viral load from the model, and computes the <span class="math inline">\(SSR\)</span>. This is repeated in a way to try and get the model predictions as close as possible to the data. Once the fitting routine has found a set of parameters that produces and SSR that can’t be further reduced by additional parameter adjustment, you have found the best fit.</p>
-<p>While minimizing the sum of square difference between data and model prediction is a very common approach, it is not the only one. A more flexible formulation of the problem is to define a likelihood function, which is a mathematical object that compares the difference between model and data and has its maximum for the model settings that most closely describe the data. Under certain assumptions, maximizing the likelihood and minimizing the sum of squares are the same problem. Further details on this are beyond the basic introduction we want to provide here.</p>
-<p>In general, with enough data, one could fit/estimate every parameter in the model and the initial conditions. However, quite often there is not enough data available. Depending on the data and model complexity, some parameters might have to be kept fixed based on outside biological knowledge. Testing to see if your model can properly estimate the parameters you are interested in is an important part of the fitting approach. One of the DSAIRM apps walks you through that.</p>
+P_{t+dt} = P_t + dt ( g P_t(1-\frac{P_t}{P_{max}}) - d_P P_t )
+\]</span></p>
+<p>the continous-time, ODE version was</p>
+<p><span class="math display">\[
+\dot P  = gP(1-\frac{P}{P_{max}}) - d_P P
+\]</span></p>
+<p>If the system is in a steady state, it means the variables do not change. Translated to the model, it means in the first model that <span class="math inline">\(P_{t+dt} = P_t\)</span> or equivalently for the ODE model <span class="math inline">\(\dot P = 0\)</span>.</p>
+<p>This turns the dynamic differential- or difference-equation model into a simple algebraic equation. We can then often (at least for simple models) solve for the model variables and get an equation that shows the values of the variables at steady state only as function of model parameters. Let’s do that for the ODE model. Starting with</p>
+<p><span class="math display">\[
+0  = gP(1-\frac{P}{P_{max}}) - d_P P
+\]</span></p>
+<p>we can rewrite as</p>
+<p><span class="math display">\[
+gP(1-\frac{P}{P_{max}}) = d_P P
+\]</span> now divide by <span class="math inline">\(P\)</span> and <span class="math inline">\(g\)</span> on both sides to get</p>
+<p><span class="math display">\[
+(1-\frac{P}{P_{max}}) = \frac{d_P}{g}
+\]</span></p>
+<p>next a bit of subtraction and addition to isolate the <span class="math inline">\(P\)</span></p>
+<p><span class="math display">\[
+\frac{P}{P_{max}} = 1 - \frac{d_P}{g}
+\]</span> and finally multiply by <span class="math inline">\(P_{max}\)</span> to obtain <span class="math inline">\(P\)</span> at steady state as a function of model parameters.</p>
+<p><span class="math display">\[
+P = P_{max}(1 - \frac{d_P}{g})
+\]</span></p>
+<p>This equation tells us how <span class="math inline">\(P\)</span> at steady state depends on the parameters. We can see that as the carrying capacity <span class="math inline">\(P_{max}\)</span> increases, so does the steady state value of <span class="math inline">\(P\)</span>. We can also see that if the death rate of the bacteria is higher than the growth rate (<span class="math inline">\(d_P&gt;g\)</span>) then (1 - ) and thus <span class="math inline">\(P\)</span> becomes negative. A negative number of <span class="math inline">\(P\)</span> obviously makes no biological sense. It is an indication that if death exceeds maximum growth, there can’t be a steady state. All of these findings make sense and we can get them straight from the equation, without having to run simulations. Unfortunately, once models become larger, doing it with the computer is often the only option.</p>
+<p>For completeness, let’s go through the same process for the discrete-time model. With <span class="math inline">\(P_{t+dt} = P_t\)</span> we get</p>
+<p><span class="math display">\[
+0 = dt ( g P_t(1-\frac{P_t}{P_{max}}) - d_P P_t )
+\]</span></p>
+<p>Once you divide by <span class="math inline">\(dt\)</span>, the equation is the same as above, thus you find the same steady state. Note that since parameters in discrete-time and continuous-time models can have slightly different biological interpretations (namely rate versus per-timestep change), you should always compute the steady state for your specific model.</p>
 </div>
-<div id="computer-routines-for-fitting" class="section level2">
-<h2>Computer routines for fitting</h2>
-<p>A computer routine does the minimization of the sum of squares. Many such routines, generally referred to as <em>optimizers</em>, exist. For simple problems, e.g., fitting a linear regression model to data, any of the standard routines work fine. For the kind of minimization problem we face here, which involves a differential equation, it often makes a difference what numerical optimizer routine one uses. <code>R</code> has several packages for that purpose. In this app, we make use of the optimizer algorithms called <em>COBYLA</em>, <em>Nelder-Mead</em> and <em>Subplex</em> from the the <code>nloptr</code> package. This package provides access to a large number of optimizers and is a good choice for many optimization/fitting tasks. For more information , see the help files for the <code>nloptr</code> package and especially the <a href="https://nlopt.readthedocs.io/">nlopt website</a>. For any problem that involves fitting ODE models to data, it is often important to try different numerical routines and different starting points to ensure results are consistent.</p>
-</div>
-</div>
-<div id="model-fitting-example" class="section level1">
-<h1>Model fitting example</h1>
-<p>Assume we have a drug for an acute viral infection (say neuraminidase inhibitors for influenza) and we have two competing hypotheses. Hypothesis one is that the mechanism of drug action is to reduce infection rate of uninfected cells. Hypothesis two is that the mechanism of drug action is to reduce virion production rate by infected cells. (Of course we could also have hypotheses 3 and 4 that neither or both mechanisms occur, we ignore that for this example.)</p>
-<p>To investigate this question, we need data from infected hosts (humans or animals) in the presence or absence of the drug. We can then build models that incorporate the different mechanisms as specified by our hypotheses and fit the models to the data. The better-fitting model can then be interpreted as the mechanism/hypothesis that has more support from the data.</p>
-<p>Here are two models for the two hypotheses. The first model has the mechanism of drug reducing infection rate at strength <span class="math inline">\(f\)</span>.</p>
+<div id="basic-bacteria-model" class="section level2">
+<h2>Basic Bacteria model</h2>
+<p>Let’s go through the process again, this time for a model with two variables, namely the basic bacteria model you encountered previously. We’ll only look at the ODE formulation here, you can work your way through the discrete-time version as an exercise.</p>
+<p>Here is the model again:</p>
 <p><span class="math display">\[
 \begin{aligned}
-\dot{U} &amp; =  - b{\bf(1-f)}UV \\
-\dot{I} &amp; =  b{\bf(1-f)}UV - d_I I \\     
-\dot{V} &amp; =  pI - d_V V -  gb{\bf(1-f)} UV \\
+\textrm{Bacteria} \qquad \dot{B} &amp; = gB(1-\frac{B}{B_{max}}) - d_B B - kBI \\
+\textrm{Immune Response} \qquad \dot{I} &amp; =  rBI - d_I I     
 \end{aligned}
-\]</span></p>
-<p>The second model incorporates the mechanism of drug reducing virus production by infected cells at strength <span class="math inline">\(e\)</span>.</p>
+\]</span> A steady-state condition means the variables do not change, thus the left-hand side of the model becomes 0 and we get</p>
 <p><span class="math display">\[
 \begin{aligned}
-\dot{U} &amp; =  - bUV \\
-\dot{I} &amp; =  bUV - d_I I \\     
-\dot{V} &amp; =  p{\bf (1-e)}I - d_V V -  gb UV \\
+0 &amp; = gB(1-\frac{B}{B_{max}}) - d_B B - kBI \\
+0 &amp; =  rBI - d_I I     
+\end{aligned}
+\]</span> Now we go through the same process of solving these equations until we have <span class="math inline">\(B\)</span> and <span class="math inline">\(I\)</span> on the left side, and some combination of parameters on the right side.</p>
+<div class="note">
+<p>If you recall from your math classes, what we are doing is solving N algebraic equations with N unknowns. You might remember that this doesn’t always work, sometimes there is no or no unique solution. We ignore that for now, and only focus on the steady state at which both bacteria and immune response are present (and which exists for this model). But it’s important to keep in mind the possibility of multiple or no solutions, especially when your models get larger and you can only explore them by simulation.</p>
+</div>
+<p>We start by solving the bottom equation, which is easy. We divide by <span class="math inline">\(I\)</span>, move the <span class="math inline">\(d_I\)</span> term to the other side and then divide by <span class="math inline">\(r\)</span> to get</p>
+<p><span class="math display">\[
+B = \frac{d_I}{r}
+\]</span></p>
+<p>From this equation, you can immediately determine how the steady state level of bacteria depends on model parameters. Maybe surprisingly, the steady state value for the bacterial <strong>only</strong> depends on the rate of growth and death of the immune response, not any bacteria-related parameters. This shows that even for simple systems, some of the results might not be easy to intuit (and why we need models to study those systems 😄.</p>
+<p>Getting <span class="math inline">\(I\)</span> from the first equation takes a few more steps. First we re-arrange to get</p>
+<p><span class="math display">\[
+gB(1-\frac{B}{B_{max}}) = d_B B + kBI 
+\]</span></p>
+<p>Now, divide by <span class="math inline">\(B\)</span> and reshuffle such that we only have <span class="math inline">\(I\)</span> by itself.</p>
+<p><span class="math display">\[
+\frac{g(1-\frac{B}{B_{max}}) - d_B}{k} =  I 
+\]</span> Finally, we insert the result for <span class="math inline">\(B\)</span> we got above and clean up a bit</p>
+<p><span class="math display">\[
+I = \frac{ r B_{max} (g-d_B) - d_I g}{k r B_{max}} 
+\]</span></p>
+<p>While this expression is a bit more complex, you can still see how various model parameters influence the steady state value of <span class="math inline">\(I\)</span>.</p>
+</div>
+<div id="basic-virus-model" class="section level2">
+<h2>Basic Virus model</h2>
+<p>Let’s do it for one more model, the basic virus model. Without birth and death of uninfected cells, we can only get a single outbreak and no steady state at which both virus and cells are in an equilibrium. Thus, we include those processes in our model, which is then given as follows.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\textrm{Uninfected cells} \qquad \dot U &amp; = n - d_U U - bUV \\
+\textrm{Infected cells} \qquad \dot I &amp; = bUV - d_I I \\
+\textrm{Virus} \qquad \dot V &amp; = pI - d_V V - gb UV \\
 \end{aligned}
 \]</span></p>
-<p>Note that while I’m showing the two mechanisms/hypotheses as two separate models for clarity. We could have put both mechanisms into a single model and switched between them by turning on/off <span class="math inline">\(f\)</span> or <span class="math inline">\(e\)</span>. That’s likely how we would implement it in the code.</p>
-<p>It turns out that for this question, what we have available as data is viral load (nasal wash) for different drug treatment conditions (early, late, never). This corresponds to <span class="math inline">\(V\)</span> in the model (though we need to check that the model quantity <span class="math inline">\(V\)</span> which measures infectious virus at the site of infection is properly mapped onto the data which is virus concentration in nasal wash). Fitting the models to the data, we get the following fits</p>
-<p><img src="media/nri_review_fig4b.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>We can also statistically evaluate the quality of fit for each model (using some approach, e.g. cross-validated goodness of fit, or some information criterion). We would find here that model/hypothesis 2 fits the data better.</p>
+<p>The process should be familiar by now. We set the left side to zero, then solve for <span class="math inline">\(U\)</span>, <span class="math inline">\(I\)</span> and <span class="math inline">\(V\)</span> such that we end up with equations that only have parameters on the right side. While conceptually not hard, it starts to get a bit messy. This is where certain software can help you (see <em>Resources</em> below). Here is a screenshot of doing this using <a href="https://maxima.sourceforge.io/index.html">Maxima</a>.</p>
+<p><img src="media/virus_ss_maxima.png" width="654" style="display: block; margin: auto;" /></p>
+<p>You can see that there are two steady states, the first one is the one we are interested in, which corresponds to a chronic infection. It gets a bit harder to read off from the equations how certain parameters influence the results, but you can still do it.</p>
+<p>Once the model gets larger (generally 4+ equations), results get so messy (and at some point unfeasible to compute) that you’ll have to resort doing it numerically.</p>
 </div>
-<div id="parameter-estimates" class="section level1">
-<h1>Parameter estimates</h1>
-<p>The parameters in our models often represent important biological quantities, fitting returns estimates for the parameter values. Thus, by fitting models, we can also <strong>estimate biologically meaningful parameters.</strong> This can be done either in the context of model comparison, or by just fitting a single model. If one fits multiple models, one can evaluate the model that is deemed statistically the best, and explore if it seems good enough to describe the data (a “best” model among a set of poorly performing models might still be a “bad” model, so one always needs to check). If one of the tested models is deemed a good approximation of the real system, the estimates for its parameters can be consider meaningful. For the above example, the best-fit estimate e=0.98 means the drug reduces virus production by 98%.</p>
-<p>One could also start with just one model that one believes to adequately describe the system. Fitting the model produces best fit parameter estimates, which likely have biological meaning. E.g. one might want to use a simple model to estimate the average lifespan of an infected cell.</p>
-<p>Fitting a single model and looking at the estimated values for the parameters also allows one to test mechanisms/hypotheses to some extent, e.g. we could use the hypothesis 2 model from above and ask if the drug has an effect (e&gt;0) or not (<span class="math inline">\(e\approx 0\)</span>). Fitting a single model and looking at the value of <span class="math inline">\(e\)</span> could answer this. To test more complex hypotheses/mechanisms, one often needs several distinct models, as shown in the example above.</p>
 </div>
-<div id="fitting-comments" class="section level1">
-<h1>Fitting comments</h1>
-<p>Fitting mechanistic models is conceptually the same as fitting phenomenological (e.g. regression) models, but technically more challenging. If a non-mechanistic model doesn’t fit well, we mainly just learned that we need a better model. If a mechanistic model that was built based on our best knowledge doesn’t fit well, we have learned something useful! Thus, mechanistic models can potentially provide deeper and more useful insights into a system, and they allow explicit testing of mechanisms. The downside is that fitting such models is still technically more complex than fitting other types of models.</p>
-<p>As you do model fitting, it is important to keep in mind the ever-present problem of overfitting. If a model is too complex, and you are trying to estimate too many parameters, you might get good fits but they might happen for biologically unreasonable parameter values. Simulation models, especially complex ones, are often flexible enough that they can get close to the data in many different ways. You want to make sure that you robustly figure out the right processes. A way to assess if your model is up to the task, given the data, is to simulate data using your model, then fit that simulated data and try to see if you can get the estimates back that you started with. If you do not, it means your model is too big for the data you have.</p>
-<div class="figure" style="text-align: center">
-<img src="media/elephant.png" alt="https://bit.ly/31UB3v9" width="100%" />
-<p class="caption">
-<a href="https://bit.ly/31UB3v9" class="uri">https://bit.ly/31UB3v9</a>
-</p>
+<div id="practice" class="section level1">
+<h1>Practice</h1>
+<p>You can further explore the steady state ideas with several of the apps in DSAIRM. You can try to compute them yourself, then compare to the simulation results. They should agree.</p>
 </div>
-<p><em>With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.</em></p>
-<p>John von Neumann</p>
-</div>
-<div id="references" class="section level1">
-<h1>References</h1>
+<div id="resources" class="section level1">
+<h1>Resources</h1>
+<p>Often, doing these mathematical computations by hand can get tedious. There are several software packages that allow solving equations like the ones above. The two main products are <a href="https://www.wolfram.com/mathematica/">Mathematica</a> and <a href="https://www.maplesoft.com/products/Maple/">Maple</a>. Both are very powerful, but also can be quite expensive. A free alternative is is <a href="https://maxima.sourceforge.io/index.html">Maxima</a>. It’s not quite as full-featured, but I find it often does the job.</p>
 </div>
 
 

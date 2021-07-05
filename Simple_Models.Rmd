@@ -147,6 +147,11 @@ The last one is the most common and the one we'll use.
 
 Note that when you implement a continuous time model on the computer, the computer has to take finite steps. There are numerical methods that choose small time-steps in a smart way such that the continous model behavior is approximated while still being numerically efficient. We'll be using the `deSolve` package in R which does that for us. Most of the time, you don't have to worry about the numerical routine (though occasionally things might go wrong, a first try if something with your model is strange is to see if changing the tolerances for the ODE numerical solver might help).
 
+For completeness, here is the continuous-time, ODE version of the model with saturating growth we introduced above
+
+$$
+\dot P  = gP(1-\frac{P}{P_{max}}) - d_P P
+$$
 
 
 
@@ -185,7 +190,7 @@ Despite the simplicity of this model, one can obtain rather interesting outcomes
 A simple model that can capture the basic pattern of a viral infection is one that does not include the immune response. The model only considers uninfected and infected cells, as well as free virus. 
 Uninfected cells, $U$, are created at some rate $n$ and die at some rate $d_U$. This process happens even in the absence of an infection. If virus is present, uninfected cells can become infected by free virus, $V$, at rate $b$. Infected cells, $I$,  produce virus at rate $p$ and die at rate $d_I$. 
 
-Free virus infects cells at rate $b^$, and is cleared due by the immune response and other mechanisms (e.g. mechanical transport) at rate $d_V$. The parameter $g$ is there to account for different experimental units (PFU or similar vs number of cells) and make sure all units are consistent (it is always good to check that each term in your model, both on the left and right side, has the same units). For an acute infection, one usually ignores growth and death of uninfected target cells [@beauchemin11; @smith11]. The diagram, equations, and two simulations of the model, one without and one with natural birth and death of unifected cells, is shown in this figure:
+Free virus infects cells at rate $b^$, and is cleared due by the immune response and other mechanisms (e.g. mechanical transport) at rate $d_V$. The parameter $g$ is there to account for different experimental units (PFU or similar vs number of cells) and make sure all units are consistent (it is always good to check that each term in your model, both on the left and right side, has the same units). For an acute infection, one usually ignores growth and death of uninfected target cells [@beauchemin11; @smith11]. The diagram, equations, and two simulations of the model, one without and one with natural birth and death of uninfected cells, is shown in this figure:
 
 
 

@@ -14,7 +14,7 @@
 
 <title>A few simple models</title>
 
-<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -328,12 +328,12 @@ div.tocify {
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row">
-<div class="col-sm-12 col-md-4 col-lg-3">
+<div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
 </div>
 
-<div class="toc-content col-sm-12 col-md-8 col-lg-9">
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -396,6 +396,9 @@ div.tocify {
         </li>
         <li>
           <a href="./Simple_Models.html">A few simple models</a>
+        </li>
+        <li>
+          <a href="./Steady_States.html">Steady States</a>
         </li>
         <li>
           <a href="./Model_Types.html">Types of simulation models</a>
@@ -516,7 +519,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">A few simple models</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2021-03-31 20:11:01</h4>
+<h4 class="date">2021-07-02 11:35:45</h4>
 
 </div>
 
@@ -616,6 +619,10 @@ P_{t+dt} = P_t + dt ( g P_t - d_P P_t )
 \dot P  = gP - d_P P
 \]</span> The last one is the most common and the one we’ll use.</p>
 <p>Note that when you implement a continuous time model on the computer, the computer has to take finite steps. There are numerical methods that choose small time-steps in a smart way such that the continous model behavior is approximated while still being numerically efficient. We’ll be using the <code>deSolve</code> package in R which does that for us. Most of the time, you don’t have to worry about the numerical routine (though occasionally things might go wrong, a first try if something with your model is strange is to see if changing the tolerances for the ODE numerical solver might help).</p>
+<p>For completeness, here is the continuous-time, ODE version of the model with saturating growth we introduced above</p>
+<p><span class="math display">\[
+\dot P  = gP(1-\frac{P}{P_{max}}) - d_P P
+\]</span></p>
 </div>
 <div id="adding-the-immune-response" class="section level2">
 <h2>Adding the immune response</h2>
@@ -646,7 +653,7 @@ Dynamics of the simple bacteria model. Note that the oscillations seen in both b
 <div id="simple-viral-infection-model" class="section level2">
 <h2>Simple viral infection model</h2>
 <p>A simple model that can capture the basic pattern of a viral infection is one that does not include the immune response. The model only considers uninfected and infected cells, as well as free virus. Uninfected cells, <span class="math inline">\(U\)</span>, are created at some rate <span class="math inline">\(n\)</span> and die at some rate <span class="math inline">\(d_U\)</span>. This process happens even in the absence of an infection. If virus is present, uninfected cells can become infected by free virus, <span class="math inline">\(V\)</span>, at rate <span class="math inline">\(b\)</span>. Infected cells, <span class="math inline">\(I\)</span>, produce virus at rate <span class="math inline">\(p\)</span> and die at rate <span class="math inline">\(d_I\)</span>.</p>
-<p>Free virus infects cells at rate <span class="math inline">\(b^\)</span>, and is cleared due by the immune response and other mechanisms (e.g. mechanical transport) at rate <span class="math inline">\(d_V\)</span>. The parameter <span class="math inline">\(g\)</span> is there to account for different experimental units (PFU or similar vs number of cells) and make sure all units are consistent (it is always good to check that each term in your model, both on the left and right side, has the same units). For an acute infection, one usually ignores growth and death of uninfected target cells <span class="citation">(Beauchemin and Handel 2011; Smith, McCullers, and Adler 2011)</span>. The diagram, equations, and two simulations of the model, one without and one with natural birth and death of unifected cells, is shown in this figure:</p>
+<p>Free virus infects cells at rate <span class="math inline">\(b^\)</span>, and is cleared due by the immune response and other mechanisms (e.g. mechanical transport) at rate <span class="math inline">\(d_V\)</span>. The parameter <span class="math inline">\(g\)</span> is there to account for different experimental units (PFU or similar vs number of cells) and make sure all units are consistent (it is always good to check that each term in your model, both on the left and right side, has the same units). For an acute infection, one usually ignores growth and death of uninfected target cells <span class="citation">(Beauchemin and Handel 2011; Smith, McCullers, and Adler 2011)</span>. The diagram, equations, and two simulations of the model, one without and one with natural birth and death of uninfected cells, is shown in this figure:</p>
 <p><img src="media/nri_review_fig3.png" width="435" style="display: block; margin: auto;" /></p>
 </div>
 <div id="modeling-the-immune-response" class="section level2">
@@ -738,6 +745,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
