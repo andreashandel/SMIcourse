@@ -52,5 +52,5 @@ In this video from SISMID 2021, Paul gives a condensed overview and reiterates s
 
 The slides for the 2020 presentations [can be found here](./slides/Introduction_to_Immunology_Slides.pdf). 
 
-**TO COME:** The 2021 presentation slides [can be found here](./slides/2021_Immunology_Highlights_Slides.pdf)
+The 2021 presentation slides [can be found here](./slides/2021_Immunology_Highlights_Slides.pdf)
 

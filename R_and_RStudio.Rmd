@@ -74,7 +74,8 @@ Here is an example, installing [Hadley Wickham's](http://hadley.nz/) `emo` packa
 
 ```{r, eval=FALSE}
 install.packages('remotes') #needed to install from GitHub
-remotes::install_github('hadley/emo')
+library('remotes')
+install_github('hadley/emo')
 ```
 
 

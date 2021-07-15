@@ -7,7 +7,23 @@ type: inverse
 left:
   - text: "Overview"
     href: ./Overview.html
-  - text: "Modules"
+  - text: "Immunology"
+    menu:
+      - text: "Introduction to Immunology"
+        href: ./Introduction_to_Immunology.html
+      - text: "Viral Infections and Immunology"
+        menu:
+          - text: "SARS-CoV-2 and Influenza"
+            href: ./COVID_Immunology.html
+          - text: "Chronic Viral Infections"
+            href: ./Chronic_Virus_Immunology.html
+      - text: "Complex Pathogen Life cycles and Immunology"
+        href: ./Complex_Pathogens_Immunology.html
+      - text: "Various Topics"
+        menu:
+          - text: "Host Genetics and Immunity"
+            href: ./Host_Genetics_Immunity.html
+  - text: "Modeling"
     menu:
       - text: "Software Setup"
         menu:
@@ -19,10 +35,6 @@ left:
             href: ./DSAIRM.html
           - text: "Further Tools"
             href: ./Further_Tools.html
-      - text: "Introduction to Immunology"
-        menu:
-          - text: "Introduction to Immunology"
-            href: ./Introduction_to_Immunology.html
       - text: "Introduction to Simulation Modeling"
         menu:
           - text: "Introduction to Simulation Modeling"
@@ -37,10 +49,6 @@ left:
             href: ./Model_Types.html
           - text: "Exercises"
             href: ./Intro_Modeling_Exercises.html
-      - text: "Viral Infections and Immunology"
-        menu:
-          - text: "Viral Infections and Immunology"
-            href: ./Viral_Infections_Immunology.html
       - text: "Using Simulation Models"
         menu:
           - text: "Uses of Simulation Models"
@@ -53,10 +61,6 @@ left:
             href: ./Models_for_Fitting.html
           - text: "Exercises"
             href: ./Model_Use_Exercises.html
-      - text: "Complex Pathogen Life cycles and Immunology"
-        menu:
-          - text: "Complex Pathogen Life cycles and Immunology"
-            href: ./Complex_Pathogens_Immunology.html
       - text: "What influences model results"
         menu:
           - text: "What influences model results"
@@ -79,8 +83,6 @@ left:
             href: ./Assessing_Models.html
       - text: "Various Topics"
         menu:
-          - text: "Host Genetics and Immunity"
-            href: ./Host_Genetics_Immunity.html
           - text: "Multiscale Models"
             href: ./Multiscale_Models.html
           - text: "DSAIRM code exploration"

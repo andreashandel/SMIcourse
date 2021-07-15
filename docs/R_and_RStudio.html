@@ -333,7 +333,33 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Modules
+    Immunology
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
+    </li>
+    <li>
+      <a href="./Viral_Infections_Immunology.html">Viral Infections and Immunology</a>
+    </li>
+    <li>
+      <a href="./Complex_Pathogens_Immunology.html">Complex Pathogen Life cycles and Immunology</a>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./Host_Genetics_Immunity.html">Host Genetics and Immunity</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Modeling
      
     <span class="caret"></span>
   </a>
@@ -352,14 +378,6 @@ div.tocify {
         </li>
         <li>
           <a href="./Further_Tools.html">Further Tools</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
@@ -387,14 +405,6 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Viral Infections and Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./Viral_Infections_Immunology.html">Viral Infections and Immunology</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Using Simulation Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
@@ -411,14 +421,6 @@ div.tocify {
         </li>
         <li>
           <a href="./Model_Use_Exercises.html">Exercises</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complex Pathogen Life cycles and Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./Complex_Pathogens_Immunology.html">Complex Pathogen Life cycles and Immunology</a>
         </li>
       </ul>
     </li>
@@ -460,9 +462,6 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./Host_Genetics_Immunity.html">Host Genetics and Immunity</a>
-        </li>
-        <li>
           <a href="./Multiscale_Models.html">Multiscale Models</a>
         </li>
         <li>
@@ -497,7 +496,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">R and RStudio</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2021-07-15 12:27:57</h4>
+<h4 class="date">2021-07-15 14:16:27</h4>
 
 </div>
 
@@ -558,7 +557,8 @@ Installing an R package. Right-click on the image to enlarge it.
 <h2>Installing R packages from GitHub</h2>
 <p>It is very common these days for packages to be developed on GitHub. It is possible to install packages from Github directly. Those usually contain the latest version of the package, with features that might not be available yet on the CRAN website. Sometimes, in early development stages, a package is only on Github until the developer(s) feel it’s good enough for CRAN submission. So installing from Github gives you the latest. The downside is that packages under development can often be buggy and not working right. To install packages from Github, you need to install the <code>remotes</code> package and then use the <code>install_github</code> function. Here is an example, installing <a href="http://hadley.nz/">Hadley Wickham’s</a> <code>emo</code> package, which allows you to easily insert emojis into RMarkdown files and which is - as of this writing - not available from CRAN.</p>
 <pre class="r"><code>install.packages(&#39;remotes&#39;) #needed to install from GitHub
-remotes::install_github(&#39;hadley/emo&#39;)</code></pre>
+library(&#39;remotes&#39;)
+install_github(&#39;hadley/emo&#39;)</code></pre>
 </div>
 <div id="loading-packages" class="section level2">
 <h2>Loading packages</h2>

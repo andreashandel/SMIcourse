@@ -41,8 +41,11 @@ To install it, type the following
 # if not installed yet, install the remotes package
 # it is needed to install from GitHub
 install.packages('remotes') 
-# once the remotes package is installed, you can install from GitHub
-remotes::install_github('ahgroup/DSAIRM')
+# once the remotes package is installed, 
+# you can load it, then use the install_github function
+#to install from GitHub
+library('remotes')
+install_github('ahgroup/DSAIRM')
 ```
 
 

@@ -333,7 +333,33 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Modules
+    Immunology
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
+    </li>
+    <li>
+      <a href="./Viral_Infections_Immunology.html">Viral Infections and Immunology</a>
+    </li>
+    <li>
+      <a href="./Complex_Pathogens_Immunology.html">Complex Pathogen Life cycles and Immunology</a>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./Host_Genetics_Immunity.html">Host Genetics and Immunity</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Modeling
      
     <span class="caret"></span>
   </a>
@@ -352,14 +378,6 @@ div.tocify {
         </li>
         <li>
           <a href="./Further_Tools.html">Further Tools</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
         </li>
       </ul>
     </li>
@@ -387,14 +405,6 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Viral Infections and Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./Viral_Infections_Immunology.html">Viral Infections and Immunology</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Using Simulation Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
@@ -411,14 +421,6 @@ div.tocify {
         </li>
         <li>
           <a href="./Model_Use_Exercises.html">Exercises</a>
-        </li>
-      </ul>
-    </li>
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complex Pathogen Life cycles and Immunology</a>
-      <ul class="dropdown-menu" role="menu">
-        <li>
-          <a href="./Complex_Pathogens_Immunology.html">Complex Pathogen Life cycles and Immunology</a>
         </li>
       </ul>
     </li>
@@ -460,9 +462,6 @@ div.tocify {
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./Host_Genetics_Immunity.html">Host Genetics and Immunity</a>
-        </li>
-        <li>
           <a href="./Multiscale_Models.html">Multiscale Models</a>
         </li>
         <li>
@@ -497,7 +496,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">DSAIRM</h1>
 <h4 class="author">Andreas Handel</h4>
-<h4 class="date">2021-07-05 12:12:18</h4>
+<h4 class="date">2021-07-15 14:16:30</h4>
 
 </div>
 
@@ -524,8 +523,11 @@ div.tocify {
 <pre class="r"><code># if not installed yet, install the remotes package
 # it is needed to install from GitHub
 install.packages(&#39;remotes&#39;) 
-# once the remotes package is installed, you can install from GitHub
-remotes::install_github(&#39;ahgroup/DSAIRM&#39;)</code></pre>
+# once the remotes package is installed, 
+# you can load it, then use the install_github function
+#to install from GitHub
+library(&#39;remotes&#39;)
+install_github(&#39;ahgroup/DSAIRM&#39;)</code></pre>
 </div>
 <div id="dsairm-hands-on" class="section level1">
 <h1>DSAIRM hands-on</h1>
