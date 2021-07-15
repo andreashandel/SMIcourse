@@ -40,7 +40,17 @@ In the second segment, he covers adaptive immunity.
 </p>
 
 
-# Slides
-The slides for these presentations [can be found here.](./slides/Introduction_to_Immunology_Slides.pdf)
+In this video from SISMID 2021, Paul gives a condensed overview and reiterates some of the most important points. He also touches on some additional topics. It is suggested to watch this after the first two lectures.
 
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EaugVmqGjD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+# Slides
+
+The slides for the 2020 presentations [can be found here](./slides/Introduction_to_Immunology_Slides.pdf). 
+
+**TO COME:** The 2021 presentation slides [can be found here](./slides/2021_Immunology_Highlights_Slides.pdf)
 
