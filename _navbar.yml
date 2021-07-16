@@ -42,7 +42,7 @@ left:
           - text: "DSAIRM Setup"
             href: ./DSAIRM.html
           - text: "DSAIRM exploration"
-            href: ./DSAIRM_Code_Exploration.html
+            href: ./DSAIRM_Exploration.html
       - text: "Introduction to Simulation Modeling"
         menu:
           - text: "Introduction to Simulation Modeling"
