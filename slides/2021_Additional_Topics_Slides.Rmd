@@ -1,0 +1,23 @@
+---
+title: "Some Additional Topics"
+author: "[Andreas Handel](https://www.andreashandel.com)"
+date: "`r file.mtime(knitr::current_input())`"
+bibliography: ../media/SMICourse.bib
+output: 
+  ioslides_presentation:
+      self_contained: true
+      css: "../media/handelslides.css"
+---
+
+
+## Intracellular Models
+
+* I mentioned that the kind of models we discuss here are applicable to many scales.
+
+
+## Intracelluar (and multiscale) Example
+
+* doi:10.1371/journal.pcbi.1003372
+
+
+

@@ -46,7 +46,7 @@ This is an overview lecture from 2021, discussing Malaria and TB in much less de
 
 # Slides
 
-The slides for the two 2020 recordings [can be found here](./slides/Complex_Pathogens_Immunology_Slides.pdf).
+The slides for the two 2020 recordings [can be found here](./slides/2020_Malaria_TB_Immunology_Slides.pdf).
 
 The slides for the 2021 recording [can be found here](./slides/2021_Complex_Pathogens_and_Helminths.pdf). Note that only the first part of the slides is covered. The remaining slides are covered in the helminth lecture.
 
