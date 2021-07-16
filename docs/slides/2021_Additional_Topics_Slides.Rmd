@@ -20,4 +20,8 @@ output:
 * doi:10.1371/journal.pcbi.1003372
 
 
+## Models for reassortment
 
+* https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1008974
+
+https://doi.org/10.1093/ve/vez018
