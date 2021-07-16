@@ -1,5 +1,5 @@
 ---
-title: Viral Infections and Immunology
+title: Chronic Viral Infections and Immunology
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -14,32 +14,23 @@ library(emo)
 
 
 # Overview
-This document provides materials that discuss a few important viral pathogens and the immune response to those pathogens.
+This document provides materials that discuss a few important chronic viral pathogens and the immune response to those pathogens. Currently only HCV is covered.
 
 # Learning Objectives
-* Describe the basic features of all virus life cycles
-* Distinguish the “big picture” unique aspects of HCV, influenza virus, and coronavirus
-* Define how in vitro experiments can be used to predict in vivo virus biology
+* Describe the basic features of the HCV virus life cycle
 
 
 # Videos
-The recordings of the lecture are broken into two segments. 
 
-In the first segment, Paul covers HCV.
+This recording from 2020 covers HCV.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5pqHBtwcpKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
-In the second segment, he covers influenza.
-
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C3o8wQeXLJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-
 
 # Slides
-The slides for the recordings [can be found here.](./slides/Viral_Infections_and_Immunology_Slides.pdf)
+The slides for the recordings [can be found here.](./slides/2020_HCV_Slides.pdf)
 
 

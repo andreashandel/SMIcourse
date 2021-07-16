@@ -14,27 +14,35 @@ left:
       - text: "Viral Infections and Immunology"
         menu:
           - text: "SARS-CoV-2 and Influenza"
-            href: ./COVID_Immunology.html
+            href: ./COVID_Flu_Immunology.html
           - text: "Chronic Viral Infections"
             href: ./Chronic_Virus_Immunology.html
       - text: "Complex Pathogen Life cycles and Immunology"
-        href: ./Complex_Pathogens_Immunology.html
+        menu:
+          - text: "Bacteria and Parasites"
+            href: ./Bacteria_Parasites_Immunology.html
+          - text: "Helminths"
+            href: ./Helminth_Immunology.html
       - text: "Various Topics"
         menu:
           - text: "Host Genetics and Immunity"
             href: ./Host_Genetics_Immunity.html
   - text: "Modeling"
     menu:
-      - text: "Software Setup"
+      - text: "General Software Setup"
         menu:
           - text: "Software Setup Overview"
             href: ./Software_Setup_Overview.html
           - text: "R and Rstudio"
             href: ./R_and_RStudio.html
-          - text: "DSAIRM"
-            href: ./DSAIRM.html
           - text: "Further Tools"
             href: ./Further_Tools.html
+      - text: "DSAIRM"
+        menu:
+          - text: "DSAIRM Setup"
+            href: ./DSAIRM.html
+          - text: "DSAIRM exploration"
+            href: ./DSAIRM_Code_Exploration.html
       - text: "Introduction to Simulation Modeling"
         menu:
           - text: "Introduction to Simulation Modeling"
@@ -85,8 +93,6 @@ left:
         menu:
           - text: "Multiscale Models"
             href: ./Multiscale_Models.html
-          - text: "DSAIRM code exploration"
-            href: ./DSAIRM_Code_Exploration.html
   - text: "Glossary"
     href: ./Glossary.html
   - text: "Resources"

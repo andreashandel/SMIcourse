@@ -340,11 +340,27 @@ div.tocify {
     <li>
       <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
     </li>
-    <li>
-      <a href="./Viral_Infections_Immunology.html">Viral Infections and Immunology</a>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Viral Infections and Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./COVID_Flu_Immunology.html">SARS-CoV-2 and Influenza</a>
+        </li>
+        <li>
+          <a href="./Chronic_Virus_Immunology.html">Chronic Viral Infections</a>
+        </li>
+      </ul>
     </li>
-    <li>
-      <a href="./Complex_Pathogens_Immunology.html">Complex Pathogen Life cycles and Immunology</a>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complex Pathogen Life cycles and Immunology</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./Bacteria_Parasites_Immunology.html">Bacteria and Parasites</a>
+        </li>
+        <li>
+          <a href="./Helminth_Immunology.html">Helminths</a>
+        </li>
+      </ul>
     </li>
     <li class="dropdown-submenu">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
@@ -364,7 +380,7 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Software Setup</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">General Software Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Software_Setup_Overview.html">Software Setup Overview</a>
@@ -373,10 +389,18 @@ div.tocify {
           <a href="./R_and_RStudio.html">R and Rstudio</a>
         </li>
         <li>
-          <a href="./DSAIRM.html">DSAIRM</a>
+          <a href="./Further_Tools.html">Further Tools</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DSAIRM</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./DSAIRM.html">DSAIRM Setup</a>
         </li>
         <li>
-          <a href="./Further_Tools.html">Further Tools</a>
+          <a href="./DSAIRM_Code_Exploration.html">DSAIRM exploration</a>
         </li>
       </ul>
     </li>
@@ -463,9 +487,6 @@ div.tocify {
         <li>
           <a href="./Multiscale_Models.html">Multiscale Models</a>
         </li>
-        <li>
-          <a href="./DSAIRM_Code_Exploration.html">DSAIRM code exploration</a>
-        </li>
       </ul>
     </li>
   </ul>
@@ -494,26 +515,36 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">SMI 2020 - DSAIRM Code Exploration</h1>
-<h4 class="date">2021-03-31 20:11:01</h4>
+<h4 class="date">2021-07-15 19:48:11</h4>
 
 </div>
 
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document provides a link to the video recording in which we looked at some of the DSAIRM code.</p>
-</div>
-<div id="slides" class="section level1">
-<h1>Slides</h1>
-<p>No slides exist for this unit.</p>
+<p>This page contains several presentations showing how to use the DSAIRM package.</p>
 </div>
 <div id="videos" class="section level1">
 <h1>Videos</h1>
-<p>The recording is embedded below.</p>
+<p>This 2021 video illustrates the Level 1 approach to DSAIRM, i.e. using the package through the graphical interface.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PHbZSY1KWuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+<p>This 2021 video illustrates the Level 2 approach to DSAIRM, i.e. writing small bits of code to call the underlying simulators.</p>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h75IV8YaZYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+<p>This 2020 recording takes a brief look at one of the underlying DSAIRM simulation functions.</p>
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BNy2D4mxn_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
+</div>
+<div id="r-scripts" class="section level1">
+<h1>R Scripts</h1>
+<p>A cleaned up version of the R script that was created during the 2021 Level 2 session <a href="./media/Rscript1.R">is here</a></p>
 </div>
 
 
