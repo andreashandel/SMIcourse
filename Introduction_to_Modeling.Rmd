@@ -53,7 +53,7 @@ You can get the slides for the first lecture here [as html](./slides/Introductio
 
 For the second lecture, you can get the slides here [as html](./slides/Simple_Models_Slides.html) or [as pdf.](./slides/Simple_Models_Slides.pdf)
 
-The slides from the short presentation shown in the 2021 video are here [as html](./slides/2021_Intro_to_Modeling_Discussion_Slides.html) or [as pdf.](./slides/Introduction_to_Modeling_Slides.pdf).  
+The slides from the short presentation shown in the 2021 video are here [as html](./slides/2021_Intro_to_Modeling_Discussion_Slides.html) or [as pdf.](./slides/2021_Intro_to_Modeling_Discussion_Slides.pdf).  
 
 
 # Reading

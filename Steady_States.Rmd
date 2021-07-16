@@ -113,7 +113,7 @@ $$
 Now we go through the same process of solving these equations until we have $B$ and $I$ on the left side, and some combination of parameters on the right side. 
 
 :::{.note}
-If you recall from your math classes, what we are doing is solving N algebraic equations with N unknowns. You might remember that this doesn't always work, sometimes there is no or no unique solution. We ignore that for now, and only focus on the steady state at which both bacteria and immune response are present (and which exists for this model). But it's important to keep in mind the possibility of multiple or no solutions, especially when your models get larger and you can only explore them by simulation.
+If you recall from your math classes, what we are doing is solving N algebraic equations with N unknowns. You might remember that this doesn't always work, sometimes there is no unique solution. We ignore that for now, and only focus on the steady state at which both bacteria and immune response are present (and which exists for this model). But it's important to keep in mind the possibility of multiple or no solutions, especially when your models get larger and you can only explore them by simulation.
 :::
 
 We start by solving the bottom equation, which is easy. We divide by $I$, move the $d_I$ term to the other side and then divide by $r$ to get

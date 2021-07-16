@@ -16,8 +16,6 @@ library(emo)
 # Overview
 This document provides links to slides and video recording for a short lecture discussing the role of host genetics on immune responses.
 
-# Slides
-The slides for that session [can be found here.](./slides/Host_Genetics_Immunity_Slides.pdf)
 
 
 # Videos
@@ -28,5 +26,7 @@ The recordings of the lecture are embedded below.
 </p>
 
 
+# Slides
+The slides for that session [can be found here.](./slides/Host_Genetics_Immunity_Slides.pdf)
 
 

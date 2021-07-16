@@ -1,5 +1,5 @@
 ---
-title: SMI 2020 - Multiscale Models
+title: Multiscale Models
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -16,8 +16,6 @@ library(emo)
 # Overview
 This document provides links to slides and video recording for a short lecture discussing multiscale models.
 
-# Slides
-The slides for that session [can be found here.](./slides/Multiscale_Models_Slides.pdf)
 
 
 # Videos
@@ -28,5 +26,7 @@ The recordings of the lecture are embedded below.
 </p>
 
 
+# Slides
+The slides for that session can be found here [as html](./slides/Multiscale_Models_Slides.html) or [as pdf.](./slides/Multiscale_Models_Slides.pdf)
 
 
