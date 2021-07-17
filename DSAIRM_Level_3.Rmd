@@ -1,0 +1,56 @@
+---
+title: DSAIRM Level 3 Exploration
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This page contains material that show how one can modify the underlying functions from the DSAIRM package to tailor the models to specific questions.
+
+# Learning Objectives
+* Know how to access and modify the DSAIRM simulation functions.
+* Understand the general process of posing a research question, the using models to answer it.
+
+
+# Videos and Code
+
+
+In this 2020 recording, Andreas takes a brief look at one of the underlying DSAIRM simulation functions and explains a bit how they work. 
+There is no code file for this recording.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BNy2D4mxn_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+In this 2021 recording, we do a small toy research project by modifying one of the underlying simulation functions.
+For background information: During the SISMID workshop, participants were asked to come up with toy research problems that we might be able to explore with a model. 
+
+We settled on two ideas. One idea was to explore antibody dependent enhancement (ADE), which Paul described in the [Dengue lecture](./Dengue_and_ADE.html). We decided to use the __Basic Virus and Immune Response__ app from DSAIRM and modify it to explore a mechanism similar to ADE and how it would impact results. The second idea was to explore the impact of different levels of pre-existing antibody immunity (acquired through e.g. infection or vaccination) on size and duration of an infection.
+
+The following video shows the implementation and exploration of those ideas. Code for the different R scripts that goes with the 2021 lecture [is available as a zip file here](./code/2021Level3.zip). It's not exactly the code you see in the video since I cleaned it up and documented it a bit more after the recording. But it runs everything you see in the recording.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9sQdiK2lAMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Note: As I was cleaning the scripts after the recording, I realized that in `Rscript6.R`, we called the wrong function. But we had previously sourced the `simulate_virusandir_new2.R` function under the `simulate_virusandir_new.R` name. This means things did work (accidentally). In the clean-up scripts, I fixed that, so now the right functions are called. 
+
+
+
+
+
+
+
+
+
+

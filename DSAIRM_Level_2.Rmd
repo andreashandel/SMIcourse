@@ -1,0 +1,52 @@
+---
+title: DSAIRM Level 2 Exploration
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+
+This page contains material showing how one can use code to call the underlying simulation functions of DSAIRM without having to go through the graphical interface.
+
+There's also some general discussion of uncertainty and sensitivity analysis and (pseudo)-random numbers for modeling.
+
+# Learning Objectives
+* Know how to interact with the DSAIRM simulation functions through code.
+
+
+
+# Videos and Code
+
+
+This 2021 video provides and introduction to the Level 2 approach to DSAIRM, i.e. writing small bits of code to call the underlying simulators. 
+A cleaned up version of the code that goes with this recording [is availabel here](./code/Rscript1.R). 
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h75IV8YaZYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+This 2021 video continues to show ways to interact with the underlying simulator functions by writing small bits of code. It illustrates some additional concepts, e.g., writing your own loop to scan across more than one parameter at a time. There is also a somewhat detailed discussion of the uncertainty and sensitivity analysis app and random numbers and reproduciblity.
+
+[This file](./code/Rscript2.R) contains the code for the first part of the recording, [this file](./code/Rscript3.R) contains the code for the second part (uncertainty and sensitivity analysis.). Note that I added some more to the code after the recording, and also did some cleanup. Thus, the code doesn't look exactly like you see in the recording, but you should still easily match and reproduce things.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pf3u7QC4Vwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+
+
+
+
+

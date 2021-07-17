@@ -15,6 +15,8 @@ left:
         menu:
           - text: "SARS-CoV-2 and Influenza"
             href: ./COVID_Flu_Immunology.html
+          - text: "Dengue and ADE"
+            href: ./Dengue_and_ADE.html
           - text: "Chronic Viral Infections"
             href: ./Chronic_Virus_Immunology.html
       - text: "Complex Pathogen Life cycles and Immunology"
@@ -27,6 +29,8 @@ left:
         menu:
           - text: "Host Genetics and Immunity"
             href: ./Host_Genetics_Immunity.html
+          - text: "Immunology in simpler animals"
+            href: ./Immunology_in_simpler_animals.html
   - text: "Modeling"
     menu:
       - text: "General Software Setup"
@@ -41,8 +45,12 @@ left:
         menu:
           - text: "DSAIRM Setup"
             href: ./DSAIRM.html
-          - text: "DSAIRM exploration"
-            href: ./DSAIRM_Exploration.html
+          - text: "DSAIRM Level 1"
+            href: ./DSAIRM_Level_1.html
+          - text: "DSAIRM Level 2"
+            href: ./DSAIRM_Level_2.html
+          - text: "DSAIRM Level 3"
+            href: ./DSAIRM_Level_3.html
       - text: "Introduction to Simulation Modeling"
         menu:
           - text: "Introduction to Simulation Modeling"
@@ -93,6 +101,8 @@ left:
         menu:
           - text: "Multiscale Models"
             href: ./Multiscale_Models.html
+          - text: "ABM and Intracellular Models"
+            href: ./ABM_Intracellular_Models.html
   - text: "Glossary"
     href: ./Glossary.html
   - text: "Resources"

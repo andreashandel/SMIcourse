@@ -1,0 +1,41 @@
+---
+title: ABM and Intracellular Models
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+bibliography: ./media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+
+This document provides links to materials that provide a brief discussion of agent/individual based models (ABM/IBM) and intracellular models. The models are also multi-scale. 
+A quick mention of re-assortment and modeling shows up as well.
+
+
+# Learning Objectives
+* Be familiar with a few ABM/IBM and their general advantages and disadvantages.
+* 
+
+
+# Videos
+
+This recording is from 2021 and briefly goes over some ABM and intracellular models.
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KBCD2q0wGp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+# References
+
+The papers that were discussed in the 2021 recording are [@].
+
+
+
