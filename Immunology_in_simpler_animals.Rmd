@@ -18,16 +18,15 @@ This document provides a very brief discussion of immunology in two simpler anim
 
 
 
-# Videos
+# Videos & Slides
 
 In this recording from 2021, Paul provides a very brief discussion of immunology in drosophila and zebrafish.
+The slides for that session [can be found here.](./slides/2021_Immunology_in_simpler_animals.pdf)
+
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GNqY_1kI3mE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-
-# Slides
-The slides for that session [can be found here.](./slides/2021_Immunology_in_simpler_animals.pdf)
 
 
