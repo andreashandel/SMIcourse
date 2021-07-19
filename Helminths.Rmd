@@ -1,0 +1,40 @@
+---
+title: Helminths
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides materials that discuss helminths, and the immune response to those pathogens.
+
+# Learning Objectives
+* Understand the unique features of helminths.
+* Be familiar with some of the most important helminths.
+
+
+# Videos & Slides
+
+This is the main lecture on the topic. It starts out with a bit of Malaria and TB, and then focuses on helminths. The slides for this session [can be found here.](./slides/2021_Complex_Pathogens_and_Helminths.pdf)
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4R4EYJYmMBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Here is a Q&A discussion following the lecture.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FClLRD8CB9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+

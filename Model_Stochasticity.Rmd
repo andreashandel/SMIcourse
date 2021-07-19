@@ -1,5 +1,5 @@
 ---
-title: Stochastic Models
+title: Model Stochasticity 
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -26,14 +26,13 @@ This document provides a brief introduction to stochastic models.
 * Understand how stochasticity affects model results 
 
 
-# Recording
-This video discusses model stochasticity.
+# Videos & Slides
+This video discusses model stochasticity. Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qfzeMYPr454" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
 
 
 # Introduction 
@@ -47,7 +46,7 @@ Taking such stochasticity and randomness into account is especially important if
 In general, any scientific question of the form "what is the probability for X" requires some amount of stochasticity. Deterministic models only produce a single result, so they can't help answer any probabilistic questions.
 
 
-# Stochastic compartmental models
+# Stochastic Compartmental Models
 We can reformulate compartmental deterministic models fairly easily as stochastic models. 
 The main difference to the ODE formulation (or discrete model equivalent) is that for this type of model, all variables take on discrete (and generally non-negative) values (0,1,2,...). These numbers increase or decrease based on model processes. The model steps through time in small steps, the steps themselves are stochastic and taken to approximate a continuous process (they are smaller if there are many entities and processes in the system that have a chance of occuring, and larger if fever events can occur.) At each time step, one of the possible processes (e.g. infection of a cell, production of a virion) is executed based on a weighted sampling of all possible processes. The model then steps through time in those small, random time steps, performing different processes and updating the system accordingly. In the stochastic context, the terms we called inflow and outflow terms (the ones on the right side of the ODE equations) are called propensities, multiplied by the time step they are probabilities. Probabilities determine what events happen. Those events, which lead to changes in variables, are often called reactions or transitions (the former term comes from Chemistry where such models are common).
 

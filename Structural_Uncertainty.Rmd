@@ -25,16 +25,16 @@ This document provides a very brief overview of the idea that models are approxi
 
 
 # Recording
-This video discusses how model structure impacts outcomes.
+This video discusses how model structure impacts outcomes. Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RW-ZgTVT1fE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-Slides that go with the recording can be found here [as html](./slides/Uncertainty_in_Models_Slides.html) or [as pdf.](./slides/Uncertainty_in_Models_Slides.pdf). These also contain the slides for the other model uncertainty units.
 
 
-# The need for simplification and abstraction
+
+# The Need for Simplification and Abstraction
 
 Every model (computer/mathematical models, a mouse model, and experimental setup) contains some abstraction/simplification to the real world. This applies to small extent even to settings like clinical trials. In those settings, one tries to get close to what would happen (for e.g. a drug or vaccine) in the real world, however the trial setup is still a simplified version of the real world. For computer and simulation models, abstractions are often very strong. This is both a great advantage and disadvantage of such models. One needs to be clear that any choice of simplification when moving from the real system to a model means making assumptions that can influence the outcome.
 
@@ -47,7 +47,7 @@ a good analogy for determining the right level of detail to put into a model is 
 knitr::include_graphics("./media/nri_review_modeldetail.png")
 ```
 
-# The impact of model choices
+# The Impact of Model Choices
 
 Now that we hopefully agree that some simplifying assumptions are necessary and even desirable when building models, we need to acknowledge that any assumption leading to a specific model choice can impact model results. Choices need to be made on multiple fronts. One choice is the decision of which components (variables) one wants to include in the model. Obviously, anything one wants to study should be in the model. The choice to include other components that one does not want to study but that might affect the model behavior is trickier. For instance if we want to study T-cell dynamics, should we include certain components of the innate response? There are arguments in favor and against, and it very much depends on the question and scenario. Unfortunately, there is no recipe to follow (though I advise to start simple and as needed, include more details). Similarly, once the components of the model have been decided, you need to decide what processes should be included. Including more details means the model is potentially more realistic, but it is also harder to analyze and one needs data to specify each model parameter.
 
@@ -57,7 +57,7 @@ Once you chose a specific model type, its components and the processes, you stil
 For instance the following two models are of the same model type, incude the same components and processes, but make different assumptions regarding the details of some of the processes.
 
 
-### Model 1: Exponential growth of bacteria and mass-action killing by the immune response.
+### Model 1: Exponential Growth of Bacteria and Mass-action Killing by the Immune Response.
 
 $$
 \begin{aligned}
@@ -67,7 +67,7 @@ $$
 $$
 
 
-### Model 2: Constant growth of bacteria and saturating killing by the immune response.
+### Model 2: Constant Growth of Bacteria and Saturating Killing by the Immune Response.
 
 $$
 \begin{aligned}
@@ -81,7 +81,7 @@ For each process/term in the model, there are likely several reasonable ways one
 
 
 
-# The impact of model details
+# The Impact of Model Details
 
 You will have to make specific choices for your model. That is ok and part of the process of building models. Just ensure you always remember that results are contingent on the choices you made, and it is not clear how well they generalize. (Just another reminder that this is not unique to simulation models. If you do an experiment in a BALB/c mouse, it doesn't mean the results would be the same in another type of mouse, let alone in humans). One way to figure out what impact the modeling choices have on outcomes is to explore a lot of different model variants. This quickly gets time-consuming and is rarely done. Occasionally, someone compares models of the same system done by different individuals/groups. A nice example is [@dobrovolny2013c] in which the authors compared several influenza models. By comparing the models to each other and to data, they were able to discuss how models differed and which ones agreed with the data (spoiler alert: there was no one single best model, most of them were good at reproducing some data and not good at reproducing other data).
 
@@ -101,7 +101,7 @@ The main important point is to always keep in mind that model results are just t
 
 # Practice
 
-* The _Model variant exploration_ app in DSAIRM explores the impact of different model formulations.
+* The _Model Variant Exploration_ app in DSAIRM explores the impact of different model formulations.
 
 
 # References

@@ -1,5 +1,5 @@
 ---
-title: Using Models for Prediction
+title: Models for Prediction
 subtitle: ""
 author: Andreas Handel
 institute: "University of Georgia"
@@ -26,20 +26,18 @@ This document describes how to use simulation models to make predictions.
 If you have a model that you think is a reasonable approximation of a real system, you can use the model to make predictions. Conceptually, this works the same as using the model for exploration. The only difference is that while for exploration, you interpret your model findings as preliminary, hypothesis generating and subject to further confirmation, in a predictive use of a model you assume that the results from the model can be trusted enough to say something definite, and potentially make decisions, about a real system.
 
 
-# Recording
-This video discusses use of models for prediction.
+# Videos & Slides
+This video discusses use of models for prediction.Slides that go with the recording can be found here [as html](./slides/Model_Uses_Slides.html) or [as pdf.](./slides/Model_Uses_Slides.pdf). These also contain the slides for the other model use units.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PgSI29dqmRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
-Slides that go with the recording can be found here [as html](./slides/Model_Uses_Slides.html) or [as pdf.](./slides/Model_Uses_Slides.pdf). These also contain the slides for the other model use units.
 
 
 
-
-# How to use models for prediction
+# How to Use Models for Prediction
 Once you have gained some general understanding of the system under study and know enough about the system to be able to build models that provide reasonable approximations of the real system, we can use those models to perform _in silico experiments_. You can make predictions what might happen to the system if we changed some of its parts. For instance in a model that includes some cytokine, you could test what would happen if we administered a drug that suppressed this cytokine. This allows you to make predictions that can be tested with further experiments. These _in silico_ approaches are much faster, cheaper and have no ethical problems, compared to real experiments. 
 
 It can be useful to think of predictions as being of the following different types:
@@ -53,7 +51,7 @@ The type of prediction you want to make affect the realism and precision you nee
 As an example, assume you have a model that includes both components of the innate response and CD8 T-cells. You want to predict if a change in innate immune activation will lead to more overall cell killing by T-cells. If you are interested in a qualitative/semi-quantitative prediction that tells you if increased innate activation will lead to more T-cell killing or not, and how the overall shape of that relation looks like, a less detailed and precise model might be enough to make useful predictions. If instead you want to predict by what fraction T-cell killing changes if you increase the innate activation by 50%, you need a more precise model. Generally, in my opinion models in immunology are suitable for the first type of prediction, but most are not quite detailed and realistic enough to make quantitative predictions.
 
 
-# Model prediction examples
+# Model Prediction Examples
 
 Assume we think that the very simple basic bacteria model is a good approximation for a real system we are interested in (that's unlikely for any real system, but let's just pretend for now). The model is given by these equations
 
@@ -86,7 +84,7 @@ Depending on the confidence we have in this model, we can consider the results a
 
 
 
-# When to use models for prediction
+# When to Use Models for Prediction
 To make predictions, you need to believe that your model captures the actual dynamics of the real system you are interested in, at least the parts that are important for the question you are trying to answer. This usually happens after models have been built, explored and tested (validated) with data. Once you, or others in your area of research, have gone through this iterative process of model building/testing/validating/adjusting often enough that there is some confidence the model captures the main features of the real system, the model might be ready to be used to make predictions. The kinds of predictions you want to make also affect the point at which you think your model is "ready". If you want to make qualitative or semi-quantitative predictions, your model needs to be less refined and detailed than if you wanted to make quantitative predictions. 
 
 If your model is fairly simple, it is best to stick with qualitative and semi-quantitative predictions. If you want to make precise and detailed predictions, it generally requires very detailed (complex) models. Detailed models are 'data hungry' and often the data are not available. They are also difficult to write and analyze. As such, models that are detailed enough for quantitative predictions are usually not advisable at the beginning of working on a specific system. Once you have a lot of experience with the system and your models and are fairly confident that the model is realistic approximation, you might be able to make quantitative predictions. If you do so, you also need to take into account uncertainty in outputs, a topic we'll discuss later.

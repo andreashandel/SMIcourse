@@ -1,0 +1,38 @@
+---
+title: Introduction to What Influences Model Results
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This module describes some of the uncertainties that can affect outputs obtained from simulation models.
+
+# Learning Objectives
+* Know how different aspects of the model building and running process affect outcomes.
+* Be familiar with approaches that allow one to quantify certain types of uncertainty.
+
+
+# Introduction
+
+Uncertainty in model outcomes can come from different sources. One can conceptually split it into several categories. 
+
+The most important (and also the hardest to quantify) is uncertainty due to model structure. Each model is an approximation of the real world, and by making certain simplifications and approximations, there is some inevitable mismatch which leads to a mismatch and uncertainties in the model outcomes. [This unit covers structural uncertainty](https://andreashandel.github.io/SMIcourse/Structural_Uncertainty.html).
+
+A more manageable, but still important source of uncertainty comes from the fact that most model inputs, specifically the model parameters, are generally not precisely known. This uncertainty in inputs propagates to uncertainty in outputs. The impact of this, and how it can be explored using uncertainty and sensitivity analysis, is covered [in this unit](https://andreashandel.github.io/SMIcourse/Parameter_Uncertainty.html).
+
+Finally, even if the model is assumed to be a good representation of the real system, and we assume that we know parameter values accurately, most real system has some inherent stochasticity which can at times be important enough to require explicit consideration. This topic of stochasticity in the system dynamics itself is covered [in this unit](https://andreashandel.github.io/SMIcourse/Model_Stochasticity.html).
+
+# Further materials
+
+Some of the other readings in this module have further pointers to additional material.

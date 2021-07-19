@@ -1,5 +1,5 @@
 ---
-title: DSAIRM Exploration
+title: DSAIRM Level 1 - Exploring the GUI
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -14,7 +14,7 @@ library(emo)
 
 
 # Overview
-This page contains several presentations showing how to use the DSAIRM package.
+This page contains a basic presentation showing how to use the DSAIRM package.
 
 
 

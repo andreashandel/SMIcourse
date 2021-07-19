@@ -1,5 +1,5 @@
 ---
-title: Dengue
+title: Dengue and Antibody-dependent Enhancement
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -19,17 +19,12 @@ This document provides materials for a brief discussion of Dengue, with a focus 
 # Learning Objectives
 * Know the basics of Dengue and ADE.
 
-# Videos
+# Videos & Slides
 
-In this recording from 2021, Paul provides a brief introduction to dengue and ADE.
+In this recording from 2021, Paul provides a brief introduction to dengue and ADE. The slides for the short lecture [can be found here.](./slides/2021_Dengue_and_ADE.pdf)
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xHO7ZUKZaOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
-
-
-
-# Slides
-The slides for the short 2021 lecture [can be found here.](./slides/2021_Dengue_and_ADE.pdf)
 
 

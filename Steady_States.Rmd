@@ -34,7 +34,7 @@ If one has a model for such a system, one can often compute this steady state ma
 Below, we assume a steady state exists and look at a few simple models introduced earlier to show how the steady state can be computed and interpreted.
 
 
-## The one-compartment  model
+## The One-compartment Model
 
 Recall the one-compartment model that tracked some population of entities (pathogens/immune cells/humans/animals) that grow or die, and that included saturating growth.
 The discrete-time version of the model was
@@ -43,7 +43,7 @@ $$
 P_{t+dt} = P_t + dt ( g P_t(1-\frac{P_t}{P_{max}}) - d_P P_t )
 $$
 
-the continous-time, ODE version was
+the continuous-time, ODE version was
 
 $$
 \dot P  = gP(1-\frac{P}{P_{max}}) - d_P P
@@ -90,7 +90,7 @@ $$
 Once you divide by $dt$, the equation is the same as above, thus you find the same steady state. Note that since parameters in discrete-time and continuous-time models can have slightly different biological interpretations (namely rate versus per-timestep change), you should always compute the steady state for your specific model.
 
 
-## Basic Bacteria model
+## Basic Bacteria Model
 
 Let's go through the process again, this time for a model with two variables, namely the basic bacteria model you encountered previously. We'll only look at the ODE formulation here, you can work your way through the discrete-time version as an exercise.
 
@@ -144,7 +144,7 @@ $$
 While this expression is a bit more complex, you can still see how various model parameters influence the steady state value of $I$.
 
 
-## Basic Virus model
+## Basic Virus Model
 
 Let's do it for one more model, the basic virus model. Without birth and death of uninfected cells, we can only get a single outbreak and no steady state at which both virus and cells are in an equilibrium. Thus, we include those processes in our model, which is then given as follows. 
 

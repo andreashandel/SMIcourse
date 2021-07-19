@@ -1,5 +1,5 @@
 ---
-title: SMI 2020 - Host Genetics and Immunity
+title: Host Genetics and Immunity
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
@@ -18,15 +18,12 @@ This document provides links to slides and video recording for a short lecture d
 
 
 
-# Videos
-The recordings of the lecture are embedded below.
+# Videos & Slides
+The recording of the lecture from 2020 is embedded below. The slides for this session [can be found here.](./slides/Host_Genetics_Immunity_Slides.pdf)
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kQAz4XfFdjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-
-# Slides
-The slides for that session [can be found here.](./slides/Host_Genetics_Immunity_Slides.pdf)
 
 

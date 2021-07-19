@@ -1,0 +1,71 @@
+---
+title: Introduction to DSAIRM
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+# Overview
+This document provides a brief introduction to the DSAIRM package, which we will use in this course. 
+
+# Learning Objectives
+* Know how to run and use the DSAIRM package.
+
+
+# DSAIRM
+
+DSAIRM, which stands for _Dynamical Systems Approach to Immune Response Modeling_ is an R package. Its goal is to let users to explore infectious disease models and topics without having to implement their own models and write code. 
+[DSAIRM has a dedicated website](https://ahgroup.github.io/DSAIRM/). Visit the website and read through the _Get started_ document. 
+
+
+# Installing DSAIRM
+
+You can install DSAIRM like any other R package.
+It is on CRAN, to install the CRAN version you type this into the `R` console:
+
+```{r packageinstall, eval = FALSE}
+install.packages('DSAIRM')
+```
+
+Alternatively, you can install from GitHub. This way, you get a more recent version of the package. It has likely more features, but might also have a few more bugs. In general, we try to make sure the GitHub version is working, and submit to CRAN every so often. So fee free to try the GitHub version.
+To install it, type the following
+
+
+```{r, eval=FALSE}
+# if not installed yet, install the remotes package
+# it is needed to install from GitHub
+install.packages('remotes') 
+# once the remotes package is installed, 
+# you can load it, then use the install_github function
+#to install from GitHub
+library('remotes')
+install_github('ahgroup/DSAIRM')
+```
+
+
+
+# DSAIRM: Hands-on Learning
+
+Once you have DSAIRM installed, load it with `library('DSAIRM')`. You need to do that every time you start R/RStudio. You should see a short message on the screen. Some packages show messages when you load them, and others don't. In this case, the package tells you that you can start using it by typing `dsairmmenu()` into the R console. Do that to start it
+
+```{r, eval=FALSE}
+dsairmmenu()
+```
+
+A menu should open in your browser, from which you can explore different models/apps.
+Explore DSAIRM briefly, just to make sure things seem to work ok. The main goal for now is to have it up and running. If you encounter any problems, let us know on Slack.
+
+# Browser-based DSAIRM
+
+While it is best to install and use DSAIRM as an R package, there is also an option to run it through your browser from a shiny server. This option is described [on the DSAIRM website](https://ahgroup.github.io/DSAIRM/). If you have problems with your installed version of DSAIRM, using it through the browser is an option, but I still recommend you try to get it working locally.
+
+
+
+
+

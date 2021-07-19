@@ -1,0 +1,50 @@
+---
+title: Bacteria and Parasites
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides materials that discuss a few important larger pathogens, specifically TB and Malaria, and the immune response to those pathogens.
+
+# Learning Objectives
+* Understand the unique features of malaria and TB biology and their consequences for infection
+* Compare and contrast immune effector mechanisms in acute vs. chronic infection settings
+* Discuss aspects of pathogen biology that promote chronic infection or immune failure
+
+# Videos & Slides
+
+These are recordings from 2020. The first lecture covers Malaria and the second segment focuses on Tuberculosis. The slides for the two recordings [can be found here](./slides/2020_Malaria_TB_Immunology_Slides.pdf).
+
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DJnoV2vV6Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vka6fqSmXYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+
+This is an overview lecture from 2021, discussing Malaria and TB in much less detail. The slides for this recording [can be found here](./slides/2021_Complex_Pathogens_and_Helminths.pdf). *Note that only the first part of the slides is covered. The remaining slides are covered in the helminths lecture.*
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sE0H_31AxFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+

@@ -1,0 +1,31 @@
+---
+title: Exercises - Model Uses
+subtitle: ""
+author: Andreas Handel
+institute: "University of Georgia"
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+
+# Overview
+
+For the exercise portion of this module, you can explore and play around with the models in the __Model use examples__ section of [DSAIRM](https://ahgroup.github.io/DSAIRM/). 
+
+
+# Start
+
+We recommend that no matter what your level of coding is, you should at least briefly explore the models, read the documentation and attempt the suggested tasks by using the graphical interface of DSAIRM. 
+
+
+# Continue
+
+Once you explored the models, you can go in several directions. Here are some suggestions:
+
+* If you want to learn more about fitting, you can go through the models in the _Model fitting_ section. 
+* If you want to try your hand at doing some exploration/prediction, you can for instance take the _Virus and immune response_ model and write a bit of code using the _Level 2_ approach described in the [DSAIRM tutorial](https://ahgroup.github.io/DSAIRM/articles/DSAIRM.html) to loop over some model parameter and plot it. 
+* If you want to build your own model, you can do that using one of the DSAIRM models and modify it (see _Level 3_ in the DSAIRM tutorial), then loop over some parameters for exploration/prediction. If none of the DSAIRM models are good starting points, you can also build one using _modelbuilder_ and then write a bit of code to loop over a parameter (or use the parameter scan option in the _modelbuilder_ analyze tab).
+* If you have some expertise fitting models to data, you could try to use some dataset you have, take the code for one of the fitting apps, and adjust the code and model to work with your data. Warning: That is challenging/advanced territory.

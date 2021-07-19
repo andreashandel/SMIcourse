@@ -1,0 +1,55 @@
+---
+title: Influenza and SARS-CoV-2
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Overview
+This document provides materials that discuss Infuenza and SARS-CoV-2 and the immune response to those pathogens.
+
+# Learning Objectives
+* Know the basics of influenza and SARS-CoV-2 virology and immunology
+* Be aware of similarities and differences between influenza and SARS-CoV-2
+
+
+# Videos & Slides
+
+This recording from 2020 focuses on influenza, with a bit of SARS-CoV-2 at the end. The slides for the recording [can be found here.](./slides/2020_Influenza_SARS-CoV-2_Slides.pdf)
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C3o8wQeXLJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+
+This recording from 2021 focuses on SARS-CoV-2, with comparison to influenza. The slides for the recordings [can be found here.](./slides/2021_SARS-CoV-2_Flu_Slides.pdf)
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j9dZpk_s9Ic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+This short recording from 2021 covers SARS-CoV-2 vaccines.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VP9B95dIN4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+This recording from 2021 is a discussion and Q&A of mainly SARS-CoV-2, and other/general viral infections.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NJj7CU6dNK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+

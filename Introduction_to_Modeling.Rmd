@@ -22,38 +22,30 @@ This module provides a brief introduction to simulation modeling.
 * Know what simulation modeling is.
 
 
-# Videos
+# Videos & Slides
 
 These videos are lecture recordings from SISMID 2020. They are broken into two segments. 
 
-The first segment provides a general introduction to simulation modeling.
+The first segment provides a general introduction to simulation modeling. You can get the slides for the first lecture here [as html](./slides/Introduction_to_Modeling_Slides.html) or [as pdf.](./slides/Introduction_to_Modeling_Slides.pdf)
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BxSSU-uHjUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
-The second segment discusses a few very simple models.
+The second segment discusses a few very simple models. You can get the slides here [as html](./slides/Simple_Models_Slides.html) or [as pdf.](./slides/Simple_Models_Slides.pdf)
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sIYiFAfMH08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
-The following video from 2021 is a very brief overview of the main points covered in the previous two lectures, followed by questions and answers. It is recommended you watch this video after the first two.
+The following video from 2021 is a very brief overview of the main points covered in the previous two lectures, followed by questions and answers. It is recommended you watch this video after the first two. The slides from this short presentation are here [as html](./slides/2021_Intro_to_Modeling_Discussion_Slides.html) or [as pdf.](./slides/2021_Intro_to_Modeling_Discussion_Slides.pdf).  
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mNrE-L9Er0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-
-
-# Slides
-You can get the slides for the first lecture here [as html](./slides/Introduction_to_Modeling_Slides.html) or [as pdf.](./slides/Introduction_to_Modeling_Slides.pdf)
-
-For the second lecture, you can get the slides here [as html](./slides/Simple_Models_Slides.html) or [as pdf.](./slides/Simple_Models_Slides.pdf)
-
-The slides from the short presentation shown in the 2021 video are here [as html](./slides/2021_Intro_to_Modeling_Discussion_Slides.html) or [as pdf.](./slides/2021_Intro_to_Modeling_Discussion_Slides.pdf).  
 
 
 # Reading

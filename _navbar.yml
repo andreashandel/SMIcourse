@@ -13,24 +13,24 @@ left:
         href: ./Introduction_to_Immunology.html
       - text: "Viral Infections and Immunology"
         menu:
-          - text: "SARS-CoV-2 and Influenza"
-            href: ./COVID_Flu_Immunology.html
-          - text: "Dengue and ADE"
+          - text: "Influenza and SARS-CoV-2"
+            href: ./Inluenza_and_SARS-CoV-2.html
+          - text: "Dengue and Antibody-dependent Enhancement"
             href: ./Dengue_and_ADE.html
           - text: "Chronic Viral Infections"
-            href: ./Chronic_Virus_Immunology.html
-      - text: "Complex Pathogen Life cycles and Immunology"
+            href: ./Chronic_Viral_Infections.html
+      - text: "Complex Pathogen Life Cycles and Immunology"
         menu:
           - text: "Bacteria and Parasites"
-            href: ./Bacteria_Parasites_Immunology.html
+            href: ./Bacteria_and_Parasites.html
           - text: "Helminths"
-            href: ./Helminth_Immunology.html
+            href: ./Helminths.html
       - text: "Various Topics"
         menu:
           - text: "Host Genetics and Immunity"
-            href: ./Host_Genetics_Immunity.html
-          - text: "Immunology in simpler animals"
-            href: ./Immunology_in_simpler_animals.html
+            href: ./Host_Genetics_and_Immunity.html
+          - text: "Immunology in Simpler Animal Models"
+            href: ./Immunology_in_Simpler_Animal_Models.html
   - text: "Modeling"
     menu:
       - text: "General Software Setup"
@@ -43,28 +43,28 @@ left:
             href: ./Further_Tools.html
       - text: "DSAIRM"
         menu:
-          - text: "DSAIRM Setup"
-            href: ./DSAIRM.html
-          - text: "DSAIRM Level 1"
+          - text: "Introduction to DSAIRM"
+            href: ./Introduction_to_DSAIRM.html
+          - text: "DSAIRM Level 1 - Exploring the GUI"
             href: ./DSAIRM_Level_1.html
-          - text: "DSAIRM Level 2"
+          - text: "DSAIRM Level 2 - Running Simulations using Code"
             href: ./DSAIRM_Level_2.html
-          - text: "DSAIRM Level 3"
+          - text: "DSAIRM Level 3 - Simulation Functions Under-the-Hood"
             href: ./DSAIRM_Level_3.html
       - text: "Introduction to Simulation Modeling"
         menu:
-          - text: "Introduction to Simulation Modeling"
+          - text: "Introduction to Modeling"
             href: ./Introduction_to_Modeling.html
-          - text: "Model Thinking"
-            href: ./Model_Thinking.html
-          - text: "A few simple models"
-            href: ./Simple_Models.html
+          - text: "Model- and Systems-Thinking"
+            href: ./Model-_and_Systems-Thinking.html
+          - text: "Types of Simulation Models"
+            href: ./Types_of_Simulation_Models.html
+          - text: "A Few Simple Models"
+            href: ./A_Few_Simple_Models.html
           - text: "Steady States"
             href: ./Steady_States.html
-          - text: "Types of simulation models"
-            href: ./Model_Types.html
-          - text: "Exercises"
-            href: ./Intro_Modeling_Exercises.html
+          - text: "Exercises - Modeling Basics"
+            href: ./Exercises_Modeling_Basics.html
       - text: "Using Simulation Models"
         menu:
           - text: "Uses of Simulation Models"
@@ -73,36 +73,36 @@ left:
             href: ./Models_for_Exploration.html
           - text: "Models for Prediction"
             href: ./Models_for_Prediction.html
-          - text: "Models for Fitting"
-            href: ./Models_for_Fitting.html
-          - text: "Exercises"
-            href: ./Model_Use_Exercises.html
-      - text: "What influences model results"
+          - text: "Models for Fitting Data"
+            href: ./Models_for_Fitting_Data.html
+          - text: "Exercises - Model Uses"
+            href: ./Exercises_Model_Uses.html
+      - text: "What Influences Model Results"
         menu:
-          - text: "What influences model results"
-            href: ./What_influences_model_results.html
+          - text: "Introduction to What Influences Model Results"
+            href: ./Introduction_to_What_Influences_Model_Results.html
           - text: "Structural Uncertainty"
             href: ./Structural_Uncertainty.html
-          - text: "Parameter Uncertainty"
-            href: ./Parameter_Uncertainty.html
+          - text: "Parameter Uncertainty and Sensitivity"
+            href: ./Parameter_Uncertainty_and_Sensitivity.html
           - text: "Model Stochasticity"
             href: ./Model_Stochasticity.html
-          - text: "Exercises"
-            href: ./Model_Variability_Exercises.html
-      - text: "How to build and assess models"
+          - text: "Exercises - Model Variability"
+            href: ./Exercises_Model_Variability.html
+      - text: "Building and Assessing Models"
         menu:
-          - text: "Model building and assessment overview"
-            href: ./Model_Building_Assessment.html
-          - text: "How to build good models"
-            href: ./Building_Models.html
-          - text: "Assessing published models"
-            href: ./Assessing_Models.html
+          - text: "Introduction to Building and Assessing Models"
+            href: ./Introduction_to_Building_and_Assessing_Models.html
+          - text: "Building Good Models"
+            href: ./Building_Good_Models.html
+          - text: "Assessing Published Models"
+            href: ./Assessing_Published_Models.html
       - text: "Various Topics"
         menu:
           - text: "Multiscale Models"
             href: ./Multiscale_Models.html
           - text: "ABM and Intracellular Models"
-            href: ./ABM_Intracellular_Models.html
+            href: ./ABM_and_Intracellular_Models.html
   - text: "Glossary"
     href: ./Glossary.html
   - text: "Resources"

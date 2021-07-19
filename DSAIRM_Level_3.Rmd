@@ -1,5 +1,5 @@
 ---
-title: DSAIRM Level 3 Exploration
+title: DSAIRM Level 3 - Simulation Functions Under-the-Hood
 subtitle: ""
 date: "`r file.mtime(knitr::current_input())`"
 #bibliography: ../media/SMICourse.bib
