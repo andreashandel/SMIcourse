@@ -36,7 +36,7 @@ We keep this website continuously online, with updates happening every time we t
 
 The __Overview__ section provides a very brief overview.
 
-The __Modules__ section and subsection contains the bulk of the content. Each module covers a specific topic and generally has several units in a drop-down/pop-out menu. Those units consist of a mix of videos, write-ups and exercises. It is generally recommended to go through them in the listed order.
+The __Immunology__ and __Modeling__ sections and subsections contain the bulk of the content. The various sections generally consist of a mix of embedded videos, slides, some code an longer write-ups.
 
 The __Glossary__ section provides a (work in progress) glossary with definitions of technical terms.
 
