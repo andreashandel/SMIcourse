@@ -14,7 +14,7 @@ left:
       - text: "Viral Infections and Immunology"
         menu:
           - text: "Influenza and SARS-CoV-2"
-            href: ./Inluenza_and_SARS-CoV-2.html
+            href: ./Influenza_and_SARS-CoV-2.html
           - text: "Dengue and Antibody-dependent Enhancement"
             href: ./Dengue_and_ADE.html
           - text: "Chronic Viral Infections"
