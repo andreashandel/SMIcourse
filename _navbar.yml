@@ -67,8 +67,8 @@ left:
             href: ./Exercises_Modeling_Basics.html
       - text: "Using Simulation Models"
         menu:
-          - text: "Uses of Simulation Models"
-            href: ./Uses_of_Simulation_Models.html
+          - text: "Introduction to Using Simulation Models"
+            href: ./Introduction_to_Using_Simulation_Models.html
           - text: "Models for Exploration"
             href: ./Models_for_Exploration.html
           - text: "Models for Prediction"
