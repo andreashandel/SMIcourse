@@ -35,5 +35,5 @@ Each of the model uses shown in the diagram above is covered in a separate unit.
 
 # Further materials
 
-* Our recent review [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/) provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven't done yet, please read the paper. 
+* Our recent review [Simulation Modelling for Immunologists](./media/2020-handel-natrevimm.pdf) provides a general introduction to the kinds of simulation models we will be discussing in this course. If you haven't done yet, please read the paper. 
 
