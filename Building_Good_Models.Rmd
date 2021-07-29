@@ -138,7 +138,7 @@ The process of writing your paper and getting it published can be fairly easy or
 For paper writing, everyone has their own workflow. I recommend one that is as reproducible as possible, and if you use R to build your models, you might want to write your paper using RMarkdown (or bookdown). If you want to learn a bit more about this topic, I recommend reading through the _GitHub_, _RMarkdown_ and _Reference Management_ sections in the _Tools Overview_ module of my [Modern Applied Data Analysis course](https://andreashandel.github.io/MADAcourse/), as well as the _Data analysis overview_ module  of that course. While that course focuses on data analysis using phenomenological/statistical models, not simulation models, almost all of the concepts explained there for the general setup of a project apply for simulation model based projects as well. (The _Visualization_ module of that course might be of interest to those that plan on using R and wanting to learn how to make publication quality figures.)
 
 
-If you are new to trying to get papers published, I gave a presentation to our PhD students where I give some suggestions (among other topics) on how to publish papers. You can find this presentation [here](https://www.andreashandel.com/talk/2020-02-reading-managing-publishing-papers/) if you are interested.
+If you are new to trying to get papers published, I gave a presentation to our PhD students where I give some suggestions (among other topics) on how to publish papers. You can find this presentation [here](https://www.andreashandel.com/presentations/2020-02-reading-managing-publishing-papers/) if you are interested.
 
 
 ```{r publish,  echo=FALSE, fig.cap='', out.width = '100%', fig.align='center'}
@@ -147,6 +147,6 @@ knitr::include_graphics("./media/phd-realimpactfactor.gif")
 
 # Further Reading
 
-* In our review paper [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/), we discuss these topics and provide a few more complementary pointers.
+* In our review paper [Simulation Modelling for Immunologists](https://doi.org/10.1038/s41577-019-0235-3), we discuss these topics and provide a few more complementary pointers.
 
 

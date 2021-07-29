@@ -67,14 +67,14 @@ Many other general software tools (some commercial, some free) can be used to bu
 
 ## Review Papers
 
-* [Simulation Modelling for Immunologists](https://handelgroup.uga.edu/publication/2020-handel-natrevimm/). A review/introduction we wrote on the topic. You will see a lot of overlap between that paper and the SMI materials. 
+* [Simulation Modelling for Immunologists](https://doi.org/10.1038/s41577-019-0235-3). A review/introduction we wrote on the topic. You will see a lot of overlap between that paper and the SMI materials. 
 * The paper [Modelling Viral and Immune System Dynamics](https://www.nature.com/articles/nri700) by Alan Perelson is another nice introduction focusing on virus models and explaining a few different models. 
 * The paper [The role of models in understanding CD8+ T-cell memory](https://www.nature.com/articles/nri1550) by Antia et al. introduces a few simple models for T-cell dynamics.
 
 
 ## Journal articles
 
-* [A software package for immunologists to learn simulation modeling](). This is a paper we wrote describing the [DSAIRM package](https://ahgroup.github.io/DSAIRM/). It's not as detailed as the documentation you can find on the DSAIRM package website, but includes some general thoughts on the motivation for the package.
+* [A software package for immunologists to learn simulation modeling](https://doi.org/10.1186/s12865-019-0321-0). This is a paper we wrote describing the [DSAIRM package](https://ahgroup.github.io/DSAIRM/). It's not as detailed as the documentation you can find on the DSAIRM package website, but includes some general thoughts on the motivation for the package.
 
 
 ## Other sources

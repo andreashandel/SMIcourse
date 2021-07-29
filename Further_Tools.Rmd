@@ -24,11 +24,11 @@ The DSAIRM package allows you to explore pre-written models. If you want to modi
 
 
 # Github
-Github is a very useful platform for working on projects, both those that mainly focus on coding and other types (e.g. data analysis, paper writing). Or hosting course materials, like the whole website for this course. It takes time to learn Github and we don't have the time in this course. But it might be of interest. If you are interested, check out [this introduction](https://andreashandel.github.io/MADAcourse/1d_Github.html) which I wrote for another online course I teach (and of course, feel free to browser through the whole course website if you have any interest in data analysis).
+Github is a very useful platform for working on projects, both those that mainly focus on coding and other types (e.g. data analysis, paper writing). Or hosting course materials, like the whole website for this course. It takes time to learn Github and we don't have the time in this course. But it might be of interest. If you are interested, check out [this introduction](https://andreashandel.github.io/MADAcourse/Github_Introduction.html) which I wrote for another online course I teach (and of course, feel free to browser through the whole course website if you have any interest in data analysis).
 
 
 # Rmarkdown
-Rmarkdown and its many variants (bookdown, blogdown, etc.) have become very powerful and versatile tools that let you write reports, papers, slides, websites (like this one), etc. all using a fairly easy format. I am currently using Rmarkdown for almost everything I write. For a brief introduction on Rmarkdown and the general concept of reproducible research (and how Rmarkdown fits into that), see e.g. [this introduction](https://andreashandel.github.io/MADAcourse/1e_ToolsforReproducibility.html), which comes from the same data analysis course as the Github introduction.
+Rmarkdown and its many variants (bookdown, blogdown, etc.) have become very powerful and versatile tools that let you write reports, papers, slides, websites (like this one), etc. all using a fairly easy format. I am currently using Rmarkdown for almost everything I write. For a brief introduction on Rmarkdown and the general concept of reproducible research (and how Rmarkdown fits into that), see e.g. [this introduction](https://andreashandel.github.io/MADAcourse/ToolsforReproducibility.html), which comes from the same data analysis course as the Github introduction.
 
 
 
