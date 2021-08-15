@@ -28,7 +28,7 @@ Github is a very useful platform for working on projects, both those that mainly
 
 
 # Rmarkdown
-Rmarkdown and its many variants (bookdown, blogdown, etc.) have become very powerful and versatile tools that let you write reports, papers, slides, websites (like this one), etc. all using a fairly easy format. I am currently using Rmarkdown for almost everything I write. For a brief introduction on Rmarkdown and the general concept of reproducible research (and how Rmarkdown fits into that), see e.g. [this introduction](https://andreashandel.github.io/MADAcourse/Tools_for_Reproducibility.html), which comes from the same data analysis course as the Github introduction.
+Rmarkdown and its many variants (bookdown, blogdown, etc.) have become very powerful and versatile tools that let you write reports, papers, slides, websites (like this one), etc. all using a fairly easy format. I am currently using Rmarkdown for almost everything I write. For a brief introduction on Rmarkdown and the general concept of reproducible research (and how Rmarkdown fits into that), see e.g. [this introduction](https://andreashandel.github.io/MADAcourse/Tools_Reproducibility.html), which comes from the same data analysis course as the Github introduction.
 
 
 
