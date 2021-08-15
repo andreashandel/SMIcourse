@@ -50,7 +50,7 @@ By default, all links open in the current tab. You'll likely want external ones 
 
 # Contribute
 
-**We welcome contributions in the form of feedback, suggestion for edits/additions, etc. You can either tell us or you can even contribute directly through a GitHub pull request.** (If you don't know what a GitHub pull request is and how you can do that, see the GitHub specific instructions [here](https://andreashandel.github.io/MADAcourse/Exercise_Tidyverse.html). You can ignore the part that talks about the `tidyverse`. You might also want to check out [this brief GitHub introduction](https://andreashandel.github.io/MADAcourse/Github_Introduction.html)).
+**We welcome contributions in the form of feedback, suggestion for edits/additions, etc. You can either [contact us](https://www.andreashandel.com/), file a GitHub Issue, or contribute through a pull request.
 
 
 # Acknowledgements
