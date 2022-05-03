@@ -12,7 +12,7 @@ css: "./media/SMICourse_style.css"
 ---
 
 ```{r, echo = FALSE}
-library(emo)
+ 
 ```
 
 
@@ -122,7 +122,7 @@ $$
 B = \frac{d_I}{r}
 $$
 
-From this equation, you can immediately determine how the steady state level of bacteria depends on model parameters. Maybe surprisingly, the steady state value for the bacterial __only__ depends on the rate of growth and death of the immune response, not any bacteria-related parameters. This shows that even for simple systems, some of the results might not be easy to intuit (and why we need models to study those systems `r emo::ji('smile')`.
+From this equation, you can immediately determine how the steady state level of bacteria depends on model parameters. Maybe surprisingly, the steady state value for the bacterial __only__ depends on the rate of growth and death of the immune response, not any bacteria-related parameters. This shows that even for simple systems, some of the results might not be easy to intuit (and why we need models to study those systems `r emoji::emoji('smile')`.
 
 Getting $I$ from the first equation takes a few more steps. First we re-arrange to get
 

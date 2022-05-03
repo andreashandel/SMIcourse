@@ -8,7 +8,7 @@ output:
 ```{r, include = FALSE}
 #just so I can use emoticons
 #devtools::install_github("hadley/emo")
-library(emo)
+ 
 ```
 
 
@@ -29,7 +29,7 @@ This website is a repository of materials covering infectious diseases and immun
 
 This resource was developed and is maintained mainly by [Andreas Handel](https://www.andreashandel.com/) and [Paul Thomas](https://www.stjude.org/directory/t/paul-thomas.html) (see below for further contributors). 
 We use some of the materials on this website for our annual course _Infectious Diseases, Immunology and Within-Host Models_ which is part of the [Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)](https://si.biostat.washington.edu/suminst/sismid). We also use the materials for other workshops we occasionally teach on this topic. 
-We keep this website continuously online, with updates happening every time we teach a course - or if we have otherwise time and reason to update things `r emo::ji('smiley')`.
+We keep this website continuously online, with updates happening every time we teach a course - or if we have otherwise time and reason to update things `r emoji::emoji('smiley')`.
 
 
 # Website content

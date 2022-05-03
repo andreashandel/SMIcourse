@@ -10,10 +10,6 @@ output:
     toc_depth: 3
 ---
 
-```{r, echo = FALSE}
-library(emo)
-```
-
 
 # Overview
 This document provides an introduction to a few basic models that describe within-host infection dynamics.

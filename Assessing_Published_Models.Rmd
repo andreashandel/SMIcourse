@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r, echo = FALSE}
-library(emo)
+ 
 ```
 
 
@@ -43,7 +43,7 @@ To evaluate if the model structure is good, it is important that the authors cle
 * Are enough details provided that someone could re-implement their model?
 * Is the model code freely available?
 
-The last two questions are not necessarily indicative of model quality and appropriateness. However, with the move toward reproducible and open science, it is important to be able to inspect a model and the model code in detail. That allows finding of bugs, makes it clear how authors implemented the model, and can also lead to further scientific advances if someone uses their model to answer further questions. As such, I consider full availability of code of ever increasing importance (and I insist on it being present when I review papers `r emo::ji('smiley')`).
+The last two questions are not necessarily indicative of model quality and appropriateness. However, with the move toward reproducible and open science, it is important to be able to inspect a model and the model code in detail. That allows finding of bugs, makes it clear how authors implemented the model, and can also lead to further scientific advances if someone uses their model to answer further questions. As such, I consider full availability of code of ever increasing importance (and I insist on it being present when I review papers `r emoji::emoji('smile')`).
 
 
 # Quality of Model Analysis

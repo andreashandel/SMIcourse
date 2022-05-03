@@ -11,10 +11,10 @@
 
 
 
-<title>Bacteria and Parasites</title>
+<title>Tuberculosis</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -63,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="media/SMICourse_style.css" type="text/css" />
 
 
@@ -87,6 +88,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -318,7 +322,7 @@ div.tocify {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -331,7 +335,7 @@ div.tocify {
   <a href="./Overview.html">Overview</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Immunology
      
     <span class="caret"></span>
@@ -341,7 +345,7 @@ div.tocify {
       <a href="./Introduction_to_Immunology.html">Introduction to Immunology</a>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Viral Infections and Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acute Viral Infections</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Influenza_and_SARS-CoV-2.html">Influenza and SARS-CoV-2</a>
@@ -349,16 +353,29 @@ div.tocify {
         <li>
           <a href="./Dengue_and_ADE.html">Dengue and Antibody-dependent Enhancement</a>
         </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chronic Viral Infections</a>
+      <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./Chronic_Viral_Infections.html">Chronic Viral Infections</a>
+          <a href="./HCV.html">Hepatitis C Virus</a>
         </li>
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Complex Pathogen Life Cycles and Immunology</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bacterial infections</a>
       <ul class="dropdown-menu" role="menu">
         <li>
-          <a href="./Bacteria_and_Parasites.html">Bacteria and Parasites</a>
+          <a href="./Tuberculosis.html">Tuberculosis</a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parasitic infections</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./Malaria.html">Malaria</a>
         </li>
         <li>
           <a href="./Helminths.html">Helminths</a>
@@ -366,7 +383,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Various Topics</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Host_Genetics_and_Immunity.html">Host Genetics and Immunity</a>
@@ -379,14 +396,14 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Modeling
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">General Software Setup</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">General Software Setup</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Software_Setup_Overview.html">Software Setup Overview</a>
@@ -400,7 +417,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DSAIRM</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DSAIRM</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Introduction_to_DSAIRM.html">Introduction to DSAIRM</a>
@@ -417,7 +434,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Introduction to Simulation Modeling</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Introduction to Simulation Modeling</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Introduction_to_Modeling.html">Introduction to Modeling</a>
@@ -440,7 +457,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Using Simulation Models</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Using Simulation Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Introduction_to_Using_Simulation_Models.html">Introduction to Using Simulation Models</a>
@@ -460,7 +477,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">What Influences Model Results</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">What Influences Model Results</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Introduction_to_What_Influences_Model_Results.html">Introduction to What Influences Model Results</a>
@@ -480,7 +497,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Building and Assessing Models</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Building and Assessing Models</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Introduction_to_Building_and_Assessing_Models.html">Introduction to Building and Assessing Models</a>
@@ -494,7 +511,7 @@ div.tocify {
       </ul>
     </li>
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Various Topics</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Various Topics</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="./Multiscale_Models.html">Multiscale Models</a>
@@ -529,38 +546,32 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Bacteria and Parasites</h1>
-<h4 class="date">2021-07-19 19:13:30</h4>
+<h1 class="title toc-ignore">Tuberculosis</h1>
+<h4 class="date">2022-05-03 12:42:02</h4>
 
 </div>
 
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document provides materials that discuss a few important larger pathogens, specifically TB and Malaria, and the immune response to those pathogens.</p>
+<p>This document provides materials that discuss TB.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Understand the unique features of malaria and TB biology and their consequences for infection</li>
-<li>Compare and contrast immune effector mechanisms in acute vs. chronic infection settings</li>
-<li>Discuss aspects of pathogen biology that promote chronic infection or immune failure</li>
+<li>Understand the unique features of TB biology and immunology.</li>
 </ul>
 </div>
 <div id="videos-slides" class="section level1">
 <h1>Videos &amp; Slides</h1>
-<p>These are recordings from 2020. The first lecture covers Malaria and the second segment focuses on Tuberculosis. The slides for the two recordings <a href="./slides/2020_Malaria_TB_Immunology_Slides.pdf">can be found here</a>.</p>
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DJnoV2vV6Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</p>
+<p>This recording from 2020 covers Tuberculosis. The slides for the recording (which also include the Malaria lecture slides) <a href="./slides/2020_Malaria_TB_Immunology_Slides.pdf">can be found here</a>.</p>
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vka6fqSmXYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
-<p>This is an overview lecture from 2021, discussing Malaria and TB in much less detail. The slides for this recording <a href="./slides/2021_Complex_Pathogens_and_Helminths.pdf">can be found here</a>. <em>Note that only the first part of the slides is covered. The remaining slides are covered in the helminths lecture.</em></p>
+<p>Here is a much shorter overview from 2021 discussing TB in much less detail. The slides for this recording <a href="./slides/2021_Complex_Pathogens_and_Helminths.pdf">can be found here</a>. <em>Note that only some part of the slides is covered in this video.</em></p>
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sE0H_31AxFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h1qcQJzvwCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
 </div>

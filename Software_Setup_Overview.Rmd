@@ -9,7 +9,7 @@ output:
 ---
 
 ```{r, echo = FALSE}
-library(emo)
+ 
 ```
 
 # Introduction

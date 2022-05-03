@@ -11,18 +11,24 @@ left:
     menu:
       - text: "Introduction to Immunology"
         href: ./Introduction_to_Immunology.html
-      - text: "Viral Infections and Immunology"
+      - text: "Acute Viral Infections"
         menu:
           - text: "Influenza and SARS-CoV-2"
             href: ./Influenza_and_SARS-CoV-2.html
           - text: "Dengue and Antibody-dependent Enhancement"
             href: ./Dengue_and_ADE.html
-          - text: "Chronic Viral Infections"
-            href: ./Chronic_Viral_Infections.html
-      - text: "Complex Pathogen Life Cycles and Immunology"
+      - text: "Chronic Viral Infections"
         menu:
-          - text: "Bacteria and Parasites"
-            href: ./Bacteria_and_Parasites.html
+          - text: "Hepatitis C Virus"
+            href: ./HCV.html
+      - text: "Bacterial infections"
+        menu:
+          - text: "Tuberculosis"
+            href: ./Tuberculosis.html
+      - text: "Parasitic infections"
+        menu:
+          - text: "Malaria"
+            href: ./Malaria.html
           - text: "Helminths"
             href: ./Helminths.html
       - text: "Various Topics"

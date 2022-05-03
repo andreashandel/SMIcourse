@@ -1,0 +1,38 @@
+---
+title: Tuberculosis 
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+ 
+```
+
+
+# Overview
+This document provides materials that discuss TB.
+
+# Learning Objectives
+* Understand the unique features of TB biology and immunology.
+
+
+# Videos & Slides
+
+This recording from 2020 covers Tuberculosis. The slides for the recording (which also include the Malaria lecture slides) [can be found here](./slides/2020_Malaria_TB_Immunology_Slides.pdf).
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vka6fqSmXYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+Here is a much shorter overview from 2021 discussing TB in much less detail. The slides for this recording [can be found here](./slides/2021_Complex_Pathogens_and_Helminths.pdf). *Note that only some part of the slides is covered in this video.*
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h1qcQJzvwCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
