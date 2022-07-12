@@ -578,105 +578,275 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>Here we discuss briefly the overall idea of taking a model perspective, sometimes also called interchangeably a <em>systems</em> perspective, and how it is applied to immune response modeling.</p>
+<p>Here we discuss briefly the overall idea of taking a model
+perspective, sometimes also called interchangeably a <em>systems</em>
+perspective, and how it is applied to immune response modeling.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Understand the basic ideas of complex systems and systems thinking/modeling</li>
+<li>Understand the basic ideas of complex systems and systems
+thinking/modeling</li>
 <li>Assess strength and weaknesses of different modeling approaches</li>
-<li>Know the difference between phenomenological and mechanistic models</li>
+<li>Know the difference between phenomenological and mechanistic
+models</li>
 </ul>
 </div>
 <div id="model--and-systems-thinking" class="section level1">
 <h1>Model- and Systems-Thinking</h1>
-<p>The scientific approach that has generally been the most successful in the past was to break down a system into its components and study the components one at a time. Usually referred to as the <em>reductionistic approach</em>. This approach to understanding the world is still very powerful and useful.</p>
-<p>A complementary approach, which has seen increased use, is to look at “the whole” system at once, instead of each component at a time. Using the whole system approach can provide insights that might not be obtained by the purely reductionist approach. Looking at the whole system at once is often referred to as <em>systems thinking/approach</em>.</p>
-<p>The term <em>systems thinking</em> or <em>systems approach</em> or similar such terminology has become popular in various fields during the last few decades. It is not a very clearly defined term, but in general, a <em>systems</em> perspective looks at multiple - often many - components that interact with each other in potentially complicated ways. Since models are an indispensable tool to study system of interacting components, the term <em>model thinking</em> is also sometimes used. More generally a systems perspective and the use of models generally go together.</p>
-<p>In the context of within-host infection and immunology, the system is the complex interactions of pathogen, host, and possibly environment, that determine the process and outcome of an infection. Since infections unfold over time, we usually want to study the <em>dynamics</em> of our system. This leads us to a <em>dynamical systems perspective</em>. Specific types of models, called <em>mechanistic models</em> are especially well suited to describe dynamical systems and are therefore the primary choice for the study of complex dynamical systems. We describe them next.</p>
+<p>The scientific approach that has generally been the most successful
+in the past was to break down a system into its components and study the
+components one at a time. Usually referred to as the <em>reductionistic
+approach</em>. This approach to understanding the world is still very
+powerful and useful.</p>
+<p>A complementary approach, which has seen increased use, is to look at
+“the whole” system at once, instead of each component at a time. Using
+the whole system approach can provide insights that might not be
+obtained by the purely reductionist approach. Looking at the whole
+system at once is often referred to as <em>systems
+thinking/approach</em>.</p>
+<p>The term <em>systems thinking</em> or <em>systems approach</em> or
+similar such terminology has become popular in various fields during the
+last few decades. It is not a very clearly defined term, but in general,
+a <em>systems</em> perspective looks at multiple - often many -
+components that interact with each other in potentially complicated
+ways. Since models are an indispensable tool to study system of
+interacting components, the term <em>model thinking</em> is also
+sometimes used. More generally a systems perspective and the use of
+models generally go together.</p>
+<p>In the context of within-host infection and immunology, the system is
+the complex interactions of pathogen, host, and possibly environment,
+that determine the process and outcome of an infection. Since infections
+unfold over time, we usually want to study the <em>dynamics</em> of our
+system. This leads us to a <em>dynamical systems perspective</em>.
+Specific types of models, called <em>mechanistic models</em> are
+especially well suited to describe dynamical systems and are therefore
+the primary choice for the study of complex dynamical systems. We
+describe them next.</p>
 </div>
 <div id="models" class="section level1">
 <h1>Models</h1>
-<p>Models are everywhere in science. Models can be conceptual (e.g. graphs or charts), experimental model systems (e.g. a specific mouse strain in immunology) or take the form of mathematical/computer models. The terms ‘model’ and ‘modeling’ are widely used and have no clearly defined meaning. We start by defining and distinguishing between 2 broad categories of models and then focus in the following on one of them.</p>
-<p>Once we take the systems perspective, we have to deal with many components that interact in potentially complicated ways. Making study and analysis complicated, especially if we are trying to gain insights into the causal and mechanistic connections between some quantity (exposure) and some outcome. When taking a systems approach, it is therefore often not enough to have a conceptual model alone. While a conceptual approach often allows some qualitative understanding, it is somewhat limiting. It is for instance almost impossible to gain a good <em>quantitative</em> understanding how changes in certain conditions and components of a system lead to changes in outcomes of interest by relying on conceptual approaches alone. If we want to go beyond qualitative and move toward a quantitative understanding, we need mathematical/computational models. There are many different types of models one can implement. The following categorizes and defines two major types of modeling approaches. In this couse, we will focus on the second type of models.</p>
+<p>Models are everywhere in science. Models can be conceptual
+(e.g. graphs or charts), experimental model systems (e.g. a specific
+mouse strain in immunology) or take the form of mathematical/computer
+models. The terms ‘model’ and ‘modeling’ are widely used and have no
+clearly defined meaning. We start by defining and distinguishing between
+2 broad categories of models and then focus in the following on one of
+them.</p>
+<p>Once we take the systems perspective, we have to deal with many
+components that interact in potentially complicated ways. Making study
+and analysis complicated, especially if we are trying to gain insights
+into the causal and mechanistic connections between some quantity
+(exposure) and some outcome. When taking a systems approach, it is
+therefore often not enough to have a conceptual model alone. While a
+conceptual approach often allows some qualitative understanding, it is
+somewhat limiting. It is for instance almost impossible to gain a good
+<em>quantitative</em> understanding how changes in certain conditions
+and components of a system lead to changes in outcomes of interest by
+relying on conceptual approaches alone. If we want to go beyond
+qualitative and move toward a quantitative understanding, we need
+mathematical/computational models. There are many different types of
+models one can implement. The following categorizes and defines two
+major types of modeling approaches. In this couse, we will focus on the
+second type of models.</p>
 <div id="phenomenological-models" class="section level2">
 <h2>Phenomenological Models</h2>
-<p>A huge class of models consists of what we usually refer to as statistical models. In the context of this discussion, I prefer to label them <em>phenomenological</em> models, but that terminology is rarely used. The idea behind the phenomenological approach is to build a parsimonious mathematical or computational model and use statistical approaches to compare the model with the data and to determine if there are any patterns in the data.</p>
-<p>For instance, a linear regression model investigates if there is a pattern/correlation between some input(s) and output(s) of interest that can be well approximated by a linear function. More complicated statistical models exist, some go by the name of <em>machine learning methods</em>. All of these models try to determine if there are patterns between inputs and outputs of interest in the data. Statistical methodology can then be used to determine if any observed pattern is “real” or might be due to chance. The simple t-test is an example.</p>
-<p>These phenomenological models do not try to describe the mechanisms by which patterns might arise. For instance, if we find that the number of T-cells at the peak of an infection correlates linearly with the number of epitope-specific naive T-cells, we can’t conclude for certain that the precursor number of T-cells is the cause of different peak T-cells (though it is a reasonable assumption). We also do not know what processes and mechanisms lead from naive T-cells to activated T-cells.</p>
-<p>This non-mechanistic, phebomenological approach is both a strength and a weakness. With this approach, we can find patterns (e.g. correlations) in data without having to be able to postulate mechanistically how those patterns arise. On the flip side, these phenomenological models also provide little insight regarding potential mechanisms. If we want to explicitly study mechanisms and processes using models, we need to use <em>mechanistic</em> models, described next.</p>
+<p>A huge class of models consists of what we usually refer to as
+statistical models. In the context of this discussion, I prefer to label
+them <em>phenomenological</em> models, but that terminology is rarely
+used. The idea behind the phenomenological approach is to build a
+parsimonious mathematical or computational model and use statistical
+approaches to compare the model with the data and to determine if there
+are any patterns in the data.</p>
+<p>For instance, a linear regression model investigates if there is a
+pattern/correlation between some input(s) and output(s) of interest that
+can be well approximated by a linear function. More complicated
+statistical models exist, some go by the name of <em>machine learning
+methods</em>. All of these models try to determine if there are patterns
+between inputs and outputs of interest in the data. Statistical
+methodology can then be used to determine if any observed pattern is
+“real” or might be due to chance. The simple t-test is an example.</p>
+<p>These phenomenological models do not try to describe the mechanisms
+by which patterns might arise. For instance, if we find that the number
+of T-cells at the peak of an infection correlates linearly with the
+number of epitope-specific naive T-cells, we can’t conclude for certain
+that the precursor number of T-cells is the cause of different peak
+T-cells (though it is a reasonable assumption). We also do not know what
+processes and mechanisms lead from naive T-cells to activated
+T-cells.</p>
+<p>This non-mechanistic, phebomenological approach is both a strength
+and a weakness. With this approach, we can find patterns
+(e.g. correlations) in data without having to be able to postulate
+mechanistically how those patterns arise. On the flip side, these
+phenomenological models also provide little insight regarding potential
+mechanisms. If we want to explicitly study mechanisms and processes
+using models, we need to use <em>mechanistic</em> models, described
+next.</p>
 </div>
 <div id="mechanistic-models" class="section level2">
 <h2>Mechanistic Models</h2>
-<p>As the name suggests, mechanistic models try to explicitly model the mechanisms leading to observed patterns for a given systen under study. Usually, the models are a highly simplified - but done well, still very powerful - abstraction of the system under study. The advantage of these kinds of models is that they potentially provide mechanistic insights, leading to a better and deeper understanding of the system. The main disadvantage is that we already need to know (or at least assume) a good bit about how the components interact for us to be able to build such a model. If we don’t know enough to even postulate potential mechanisms underlying the observed data, we can’t build a mechanistic model.</p>
-<p>Mechanistic models are generally evaluated with computer simulations, thus in this course we mostly refer to them as simulation models. While this terminology is a bit fuzzy (e.g. complex statistical/phenomenological models often also rely on simluations), for the purpose of this course all our models are mechanistic simulation models and we use either term.</p>
-<p>Both phenomenological and mechanistic models are useful tools with distinct advantages and disadvantages. Deciding which one to use depends on the question and study system. Here, we will focus our discussion on mechanistic models. Since the most common type of mechanistic model in the context of within-host modeling are ordinary differential equation based models, we will focus on those, with a brief mention of other mechanistic modeling approaches.</p>
+<p>As the name suggests, mechanistic models try to explicitly model the
+mechanisms leading to observed patterns for a given systen under study.
+Usually, the models are a highly simplified - but done well, still very
+powerful - abstraction of the system under study. The advantage of these
+kinds of models is that they potentially provide mechanistic insights,
+leading to a better and deeper understanding of the system. The main
+disadvantage is that we already need to know (or at least assume) a good
+bit about how the components interact for us to be able to build such a
+model. If we don’t know enough to even postulate potential mechanisms
+underlying the observed data, we can’t build a mechanistic model.</p>
+<p>Mechanistic models are generally evaluated with computer simulations,
+thus in this course we mostly refer to them as simulation models. While
+this terminology is a bit fuzzy (e.g. complex
+statistical/phenomenological models often also rely on simluations), for
+the purpose of this course all our models are mechanistic simulation
+models and we use either term.</p>
+<p>Both phenomenological and mechanistic models are useful tools with
+distinct advantages and disadvantages. Deciding which one to use depends
+on the question and study system. Here, we will focus our discussion on
+mechanistic models. Since the most common type of mechanistic model in
+the context of within-host modeling are ordinary differential equation
+based models, we will focus on those, with a brief mention of other
+mechanistic modeling approaches.</p>
 </div>
 </div>
-<div id="history-of-mechanistic-within-host-models" class="section level1">
+<div id="history-of-mechanistic-within-host-models"
+class="section level1">
 <h1>History of mechanistic within-host models</h1>
-<p>Early mechanistic models for the immune response, with a focus on B-cells, were developed in the 70s (see e.g. <span class="citation">(Bell 1970, 1971b, 1971a)</span>). An early, semi-mechanistic model to describe influenza infections was developed in <span class="citation">(Larson et al. 1976)</span>. The use of such mechanistic models to study infection and immune responses dynamics continued to slowly increase during the 70s and 80s, and really took off in the 90s. Mechanistic models played an important role in understanding HIV infection dynamics and treatment <span class="citation">(Ho et al. 1995; Perelson et al. 1996)</span>, and have since been applied to many other infectious diseases such as HCV <span class="citation">(Neumann et al. 1998)</span>, malaria <span class="citation">(Mideo, Day, and Read 2008)</span>, tuberculosis <span class="citation">(Wigginton and Kirschner 2001)</span> and many others.</p>
+<p>Early mechanistic models for the immune response, with a focus on
+B-cells, were developed in the 70s (see e.g. <span
+class="citation">(Bell 1970, 1971b, 1971a)</span>). An early,
+semi-mechanistic model to describe influenza infections was developed in
+<span class="citation">(Larson et al. 1976)</span>. The use of such
+mechanistic models to study infection and immune responses dynamics
+continued to slowly increase during the 70s and 80s, and really took off
+in the 90s. Mechanistic models played an important role in understanding
+HIV infection dynamics and treatment <span class="citation">(Ho et al.
+1995; Perelson et al. 1996)</span>, and have since been applied to many
+other infectious diseases such as HCV <span class="citation">(Neumann et
+al. 1998)</span>, malaria <span class="citation">(Mideo, Day, and Read
+2008)</span>, tuberculosis <span class="citation">(Wigginton and
+Kirschner 2001)</span> and many others.</p>
 </div>
 <div id="further-resources" class="section level1">
 <h1>Further Resources</h1>
-<p>The paper “Why Model?” by Joshua Epstein <span class="citation">(Epstein 2008)</span> provides a nice, short discussion of the purposes of models. Other general introductory discussions of systems thinking and model use are <span class="citation">(May 2004; Chubb and Jacobsen 2010; Garnett et al. 2011; Basu and Andrews 2013; Gunawardena 2014; Homer and Hirsch 2006; Peters 2014; Sterman 2006)</span>.</p>
+<p>The paper “Why Model?” by Joshua Epstein <span
+class="citation">(Epstein 2008)</span> provides a nice, short discussion
+of the purposes of models. Other general introductory discussions of
+systems thinking and model use are <span class="citation">(May 2004;
+Chubb and Jacobsen 2010; Garnett et al. 2011; Basu and Andrews 2013;
+Gunawardena 2014; Homer and Hirsch 2006; Peters 2014; Sterman
+2006)</span>.</p>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1 class="unnumbered">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-basu13" class="csl-entry">
-Basu, Sanjay, and Jason Andrews. 2013. <span>“Complexity in <span>Mathematical Models</span> of <span>Public Health Policies</span>: <span>A Guide</span> for <span>Consumers</span> of <span>Models</span>.”</span> <em>PLoS Medicine</em> 10 (10): e1001540. <a href="https://doi.org/10.1371/journal.pmed.1001540">https://doi.org/10.1371/journal.pmed.1001540</a>.
+Basu, Sanjay, and Jason Andrews. 2013. <span>“Complexity in
+<span>Mathematical Models</span> of <span>Public Health Policies</span>:
+<span>A Guide</span> for <span>Consumers</span> of
+<span>Models</span>.”</span> <em>PLoS Medicine</em> 10 (10): e1001540.
+<a
+href="https://doi.org/10.1371/journal.pmed.1001540">https://doi.org/10.1371/journal.pmed.1001540</a>.
 </div>
 <div id="ref-bell70" class="csl-entry">
-Bell, George I. 1970. <span>“Mathematical Model of Clonal Selection and Antibody Production.”</span> <em>Journal of Theoretical Biology</em> 29 (2): 191–232.
+Bell, George I. 1970. <span>“Mathematical Model of Clonal Selection and
+Antibody Production.”</span> <em>Journal of Theoretical Biology</em> 29
+(2): 191–232.
 </div>
 <div id="ref-bell71a" class="csl-entry">
-———. 1971a. <span>“Mathematical Model of Clonal Selection and Antibody Production <span>III</span>. <span>The</span> Cellular Basis of Immunological Paralysis.”</span> <em>Journal of Theoretical Biology</em> 33 (2): 379–98.
+———. 1971a. <span>“Mathematical Model of Clonal Selection and Antibody
+Production <span>III</span>. <span>The</span> Cellular Basis of
+Immunological Paralysis.”</span> <em>Journal of Theoretical Biology</em>
+33 (2): 379–98.
 </div>
 <div id="ref-bell71" class="csl-entry">
-———. 1971b. <span>“Mathematical Model of Clonal Selection and Antibody Production. <span>II</span>.”</span> <em>Journal of Theoretical Biology</em> 33 (2): 339–78.
+———. 1971b. <span>“Mathematical Model of Clonal Selection and Antibody
+Production. <span>II</span>.”</span> <em>Journal of Theoretical
+Biology</em> 33 (2): 339–78.
 </div>
 <div id="ref-chubb10" class="csl-entry">
-Chubb, Mikayla C., and Kathryn H. Jacobsen. 2010. <span>“Mathematical Modeling and the Epidemiological Research Process.”</span> <em>European Journal of Epidemiology</em> 25 (1): 13–19. <a href="https://doi.org/10.1007/s10654-009-9397-9">https://doi.org/10.1007/s10654-009-9397-9</a>.
+Chubb, Mikayla C., and Kathryn H. Jacobsen. 2010. <span>“Mathematical
+Modeling and the Epidemiological Research Process.”</span> <em>European
+Journal of Epidemiology</em> 25 (1): 13–19. <a
+href="https://doi.org/10.1007/s10654-009-9397-9">https://doi.org/10.1007/s10654-009-9397-9</a>.
 </div>
 <div id="ref-epstein08" class="csl-entry">
-Epstein, Joshua M. 2008. <span>“Why Model?”</span> <em>Journal of Artificial Societies and Social Simulation</em> 11 (4): 12.
+Epstein, Joshua M. 2008. <span>“Why Model?”</span> <em>Journal of
+Artificial Societies and Social Simulation</em> 11 (4): 12.
 </div>
 <div id="ref-garnett11" class="csl-entry">
-Garnett, Geoffrey P., Simon Cousens, Timothy B. Hallett, Richard Steketee, and Neff Walker. 2011. <span>“Mathematical Models in the Evaluation of Health Programmes.”</span> <em>The Lancet</em> 378 (9790): 515–25.
+Garnett, Geoffrey P., Simon Cousens, Timothy B. Hallett, Richard
+Steketee, and Neff Walker. 2011. <span>“Mathematical Models in the
+Evaluation of Health Programmes.”</span> <em>The Lancet</em> 378 (9790):
+515–25.
 </div>
 <div id="ref-gunawardena14" class="csl-entry">
-Gunawardena, Jeremy. 2014. <span>“Models in Biology:<span>‘accurate Descriptions of Our Pathetic Thinking’</span>.”</span> <em>BMC Biology</em> 12 (1): 29.
+Gunawardena, Jeremy. 2014. <span>“Models in Biology:<span>‘accurate
+Descriptions of Our Pathetic Thinking’</span>.”</span> <em>BMC
+Biology</em> 12 (1): 29.
 </div>
 <div id="ref-ho95" class="csl-entry">
-Ho, D. D., A. U. Neumann, A. S. Perelson, W. Chen, J. M. Leonard, and M. Markowitz. 1995. <span>“Rapid Turnover of Plasma Virions and <span>Cd4</span> Lymphocytes in <span>HIV</span>-1 Infection.”</span> <em>Nature</em> 373 (6510): 123–26. <a href="https://doi.org/10.1038/373123a0">https://doi.org/10.1038/373123a0</a>.
+Ho, D. D., A. U. Neumann, A. S. Perelson, W. Chen, J. M. Leonard, and M.
+Markowitz. 1995. <span>“Rapid Turnover of Plasma Virions and
+<span>Cd4</span> Lymphocytes in <span>HIV</span>-1 Infection.”</span>
+<em>Nature</em> 373 (6510): 123–26. <a
+href="https://doi.org/10.1038/373123a0">https://doi.org/10.1038/373123a0</a>.
 </div>
 <div id="ref-homer06" class="csl-entry">
-Homer, Jack B., and Gary B. Hirsch. 2006. <span>“System Dynamics Modeling for Public Health: Background and Opportunities.”</span> <em>American Journal of Public Health</em> 96 (3): 452–58.
+Homer, Jack B., and Gary B. Hirsch. 2006. <span>“System Dynamics
+Modeling for Public Health: Background and Opportunities.”</span>
+<em>American Journal of Public Health</em> 96 (3): 452–58.
 </div>
 <div id="ref-larson76" class="csl-entry">
-Larson, E. W., J. W. Dominik, A. H. Rowberg, and G. A. Higbee. 1976. <span>“Influenza Virus Population Dynamics in the Respiratory Tract of Experimentally Infected Mice.”</span> <em>Infect Immun</em> 13 (2): 438–47.
+Larson, E. W., J. W. Dominik, A. H. Rowberg, and G. A. Higbee. 1976.
+<span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/1262060">Influenza
+Virus Population Dynamics in the Respiratory Tract of Experimentally
+Infected Mice</a>.”</span> <em>Infect Immun</em> 13 (2): 438–47.
 </div>
 <div id="ref-may04" class="csl-entry">
-May, R. M. 2004. <span>“Uses and <span>Abuses</span> of <span>Mathematics</span> in <span>Biology</span>.”</span> <em>Science</em> 303 (5659): 790–93. <a href="https://doi.org/10.1126/science.1094442">https://doi.org/10.1126/science.1094442</a>.
+May, R. M. 2004. <span>“Uses and <span>Abuses</span> of
+<span>Mathematics</span> in <span>Biology</span>.”</span>
+<em>Science</em> 303 (5659): 790–93. <a
+href="https://doi.org/10.1126/science.1094442">https://doi.org/10.1126/science.1094442</a>.
 </div>
 <div id="ref-mideo08c" class="csl-entry">
-Mideo, Nicole, Troy Day, and Andrew F Read. 2008. <span>“Modelling Malaria Pathogenesis.”</span> <em>Cell Microbiol</em> 10 (10): 1947–55. <a href="https://doi.org/10.1111/j.1462-5822.2008.01208.x">https://doi.org/10.1111/j.1462-5822.2008.01208.x</a>.
+Mideo, Nicole, Troy Day, and Andrew F Read. 2008. <span>“Modelling
+Malaria Pathogenesis.”</span> <em>Cell Microbiol</em> 10 (10): 1947–55.
+<a
+href="https://doi.org/10.1111/j.1462-5822.2008.01208.x">https://doi.org/10.1111/j.1462-5822.2008.01208.x</a>.
 </div>
 <div id="ref-neumann98" class="csl-entry">
-Neumann, A. U., N. P. Lam, H. Dahari, D. R. Gretch, T. E. Wiley, T. J. Layden, and A. S. Perelson. 1998. <span>“Hepatitis <span>C</span> Viral Dynamics in Vivo and the Antiviral Efficacy of Interferon-Alpha Therapy.”</span> <em>Science</em> 282 (5386): 103–7.
+Neumann, A. U., N. P. Lam, H. Dahari, D. R. Gretch, T. E. Wiley, T. J.
+Layden, and A. S. Perelson. 1998. <span>“<a
+href="https://www.ncbi.nlm.nih.gov/pubmed/9756471">Hepatitis
+<span>C</span> Viral Dynamics in Vivo and the Antiviral Efficacy of
+Interferon-Alpha Therapy</a>.”</span> <em>Science</em> 282 (5386):
+103–7.
 </div>
 <div id="ref-perelson96" class="csl-entry">
-Perelson, A. S., A. U. Neumann, M. Markowitz, J. M. Leonard, and D. D. Ho. 1996. <span>“<span>HIV</span>-1 Dynamics in Vivo: Virion Clearance Rate, Infected Cell Life-Span, and Viral Generation Time.”</span> <em>Science</em> 271 (5255): 1582–86.
+Perelson, A. S., A. U. Neumann, M. Markowitz, J. M. Leonard, and D. D.
+Ho. 1996. <span>“<a
+href="https://www.ncbi.nlm.nih.gov/pubmed/8599114"><span>HIV</span>-1
+Dynamics in Vivo: Virion Clearance Rate, Infected Cell Life-Span, and
+Viral Generation Time</a>.”</span> <em>Science</em> 271 (5255): 1582–86.
 </div>
 <div id="ref-peters14" class="csl-entry">
-Peters, David H. 2014. <span>“The Application of Systems Thinking in Health: Why Use Systems Thinking?”</span> <em>Health Research Policy and Systems</em> 12 (1): 51.
+Peters, David H. 2014. <span>“The Application of Systems Thinking in
+Health: Why Use Systems Thinking?”</span> <em>Health Research Policy and
+Systems</em> 12 (1): 51.
 </div>
 <div id="ref-sterman06" class="csl-entry">
-Sterman, John D. 2006. <span>“Learning from Evidence in a Complex World.”</span> <em>American Journal of Public Health</em> 96 (3): 505–14.
+Sterman, John D. 2006. <span>“Learning from Evidence in a Complex
+World.”</span> <em>American Journal of Public Health</em> 96 (3):
+505–14.
 </div>
 <div id="ref-wigginton01" class="csl-entry">
-Wigginton, J. E., and D. Kirschner. 2001. <span>“A Model to Predict Cell-Mediated Immune Regulatory Mechanisms During Human Infection with <span>Mycobacterium</span> Tuberculosis.”</span> <em>J Immunol</em> 166 (3): 1951–67.
+Wigginton, J. E., and D. Kirschner. 2001. <span>“<a
+href="https://www.ncbi.nlm.nih.gov/pubmed/11160244">A Model to Predict
+Cell-Mediated Immune Regulatory Mechanisms During Human Infection with
+<span>Mycobacterium</span> Tuberculosis.</a>”</span> <em>J Immunol</em>
+166 (3): 1951–67.
 </div>
 </div>
 </div>

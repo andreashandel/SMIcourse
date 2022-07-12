@@ -50,7 +50,7 @@ By default, all links open in the current tab. You'll likely want external ones 
 
 # Contribute
 
-**We welcome contributions in the form of feedback, suggestion for edits/additions, etc. You can either [contact us](https://www.andreashandel.com/), file a GitHub Issue, or contribute through a pull request.
+We welcome contributions in the form of feedback, suggestion for edits/additions, etc. You can either [contact us](https://www.andreashandel.com/), file a GitHub Issue, or contribute through a pull request.
 
 
 # Acknowledgements

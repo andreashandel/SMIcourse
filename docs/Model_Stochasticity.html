@@ -561,15 +561,21 @@ div.tocify {
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Understand the difference between stochastic and deterministic models</li>
+<li>Understand the difference between stochastic and deterministic
+models</li>
 <li>Know when one needs to make use of stochastic models</li>
-<li>Be familiar with types of stochastic models and how to implement some of them.</li>
+<li>Be familiar with types of stochastic models and how to implement
+some of them.</li>
 <li>Understand how stochasticity affects model results</li>
 </ul>
 </div>
 <div id="videos-slides" class="section level1">
 <h1>Videos &amp; Slides</h1>
-<p>This video discusses model stochasticity. Slides that go with the recording can be found here <a href="./slides/Uncertainty_in_Models_Slides.html">as html</a> or <a href="./slides/Uncertainty_in_Models_Slides.pdf">as pdf.</a>. These also contain the slides for the other model uncertainty units.</p>
+<p>This video discusses model stochasticity. Slides that go with the
+recording can be found here <a
+href="./slides/Uncertainty_in_Models_Slides.html">as html</a> or <a
+href="./slides/Uncertainty_in_Models_Slides.pdf">as pdf.</a>. These also
+contain the slides for the other model uncertainty units.</p>
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qfzeMYPr454" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -577,23 +583,73 @@ div.tocify {
 </div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>Deterministic models (both continuous and discrete-time) give you the same result for a set of parameters and starting conditions no matter how often you run them. There is no randomness present. Biological systems are never deterministic. There is always some amount of randomness or noise present. Models that allow for such randomness are called stochastic models. Note that the terminology for stochastic models is not too well defined. The words Stochasticity, Randomness, Noise are sometimes differentiated, and sometimes used interchangeably. Here we take a somewhat cavalier approach to terminology and use these terms somewhat flexibly.</p>
-<p>There are different sources of stochasticity for models. One source can come from variability in parameters. This is further discussed under the uncertainty and sensitivity topic. Another source of outcome variability can come from (external) noise, e.g. fluctuations in (unmodeled) temperature. This can be added to the model as an explicit external source, or it can be implemented by allowing a model parameter to vary over time in a stochastic manner. Another source of variability is inherent randomness in events, e.g. the birth or death of any given cell occurs at random (unpredictable) times.</p>
-<p>Taking such stochasticity and randomness into account is especially important if numbers are small. For instance if you have 100 bacteria, it doesn’t matter if one of them first divides, then dies, or the other way around. However, if you have a single cell, the order in which things happen matters, since if the cell dies, there is no possibility for later division.</p>
-<p>In general, any scientific question of the form “what is the probability for X” requires some amount of stochasticity. Deterministic models only produce a single result, so they can’t help answer any probabilistic questions.</p>
+<p>Deterministic models (both continuous and discrete-time) give you the
+same result for a set of parameters and starting conditions no matter
+how often you run them. There is no randomness present. Biological
+systems are never deterministic. There is always some amount of
+randomness or noise present. Models that allow for such randomness are
+called stochastic models. Note that the terminology for stochastic
+models is not too well defined. The words Stochasticity, Randomness,
+Noise are sometimes differentiated, and sometimes used interchangeably.
+Here we take a somewhat cavalier approach to terminology and use these
+terms somewhat flexibly.</p>
+<p>There are different sources of stochasticity for models. One source
+can come from variability in parameters. This is further discussed under
+the uncertainty and sensitivity topic. Another source of outcome
+variability can come from (external) noise, e.g. fluctuations in
+(unmodeled) temperature. This can be added to the model as an explicit
+external source, or it can be implemented by allowing a model parameter
+to vary over time in a stochastic manner. Another source of variability
+is inherent randomness in events, e.g. the birth or death of any given
+cell occurs at random (unpredictable) times.</p>
+<p>Taking such stochasticity and randomness into account is especially
+important if numbers are small. For instance if you have 100 bacteria,
+it doesn’t matter if one of them first divides, then dies, or the other
+way around. However, if you have a single cell, the order in which
+things happen matters, since if the cell dies, there is no possibility
+for later division.</p>
+<p>In general, any scientific question of the form “what is the
+probability for X” requires some amount of stochasticity. Deterministic
+models only produce a single result, so they can’t help answer any
+probabilistic questions.</p>
 </div>
 <div id="stochastic-compartmental-models" class="section level1">
 <h1>Stochastic Compartmental Models</h1>
-<p>We can reformulate compartmental deterministic models fairly easily as stochastic models. The main difference to the ODE formulation (or discrete model equivalent) is that for this type of model, all variables take on discrete (and generally non-negative) values (0,1,2,…). These numbers increase or decrease based on model processes. The model steps through time in small steps, the steps themselves are stochastic and taken to approximate a continuous process (they are smaller if there are many entities and processes in the system that have a chance of occuring, and larger if fever events can occur.) At each time step, one of the possible processes (e.g. infection of a cell, production of a virion) is executed based on a weighted sampling of all possible processes. The model then steps through time in those small, random time steps, performing different processes and updating the system accordingly. In the stochastic context, the terms we called inflow and outflow terms (the ones on the right side of the ODE equations) are called propensities, multiplied by the time step they are probabilities. Probabilities determine what events happen. Those events, which lead to changes in variables, are often called reactions or transitions (the former term comes from Chemistry where such models are common).</p>
-<p>The following simple model illustrates this. The top is the familiar virus ODE model. The bottom is the same model, now written in stochastic model language.</p>
+<p>We can reformulate compartmental deterministic models fairly easily
+as stochastic models. The main difference to the ODE formulation (or
+discrete model equivalent) is that for this type of model, all variables
+take on discrete (and generally non-negative) values (0,1,2,…). These
+numbers increase or decrease based on model processes. The model steps
+through time in small steps, the steps themselves are stochastic and
+taken to approximate a continuous process (they are smaller if there are
+many entities and processes in the system that have a chance of
+occuring, and larger if fever events can occur.) At each time step, one
+of the possible processes (e.g. infection of a cell, production of a
+virion) is executed based on a weighted sampling of all possible
+processes. The model then steps through time in those small, random time
+steps, performing different processes and updating the system
+accordingly. In the stochastic context, the terms we called inflow and
+outflow terms (the ones on the right side of the ODE equations) are
+called propensities, multiplied by the time step they are probabilities.
+Probabilities determine what events happen. Those events, which lead to
+changes in variables, are often called reactions or transitions (the
+former term comes from Chemistry where such models are common).</p>
+<p>The following simple model illustrates this. The top is the familiar
+virus ODE model. The bottom is the same model, now written in stochastic
+model language.</p>
 <p><span class="math display">\[
 \begin{aligned}
 \textrm{Uninfected Cells} \qquad \dot{U} &amp; = n -d_U U - bUV \\
 \textrm{Infected Cells} \qquad \dot{I} &amp; =  bUV - d_I I \\     
-\textrm{Virus} \qquad  \dot{V} &amp; =  pI - d_V V -  b UV 
+\textrm{Virus} \qquad  \dot{V} &amp; =  pI - d_V V -  b UV
 \end{aligned}
 \]</span></p>
 <table>
+<colgroup>
+<col width="32%" />
+<col width="35%" />
+<col width="32%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Event type</th>
@@ -634,9 +690,33 @@ div.tocify {
 </tr>
 </tbody>
 </table>
-<p>Implementing stochastic compartmental models on the computer comes with two hurdles. The first one is that writing the code that simulates a stochastic model and does all the random sampling to get the stochastic transitions right can be technically challenging. The second is that if the numbers in a system become even mildly large (e.g. over 1000s of cells or virions), simulation of a model becomes very slow. Fortunately, there are good approximations that allow execution of stochastic models at a reasonably fast speed. One of those approximations is implemented in the <code>adaptivetau</code> package in R. This package provides an interface in which you can specify the model (i.e. the transitions and the propensities) and the package runs the simulation for you. Therefore, working with stochastic compartmental models has become almost as easy as working with ODE models in R. It still takes computationally longer since you now need to run the model multiple times to get a distribution of outcomes, while a deterministic model only needs to be run once.</p>
-<p>If you want to see how this code looks like, look at the apps in DSAIRM that include a stochastic model. You can also build a model and export the stochastic code in <em>modelbuilder.</em></p>
-<p>Stochastic models can often be a useful alternative for specific questions. They do take longer to execute, so running large stochastic models would be rather time consuming. It is also still fairly hard to fit data to stochastic models. The <code>pomp</code> package in R has lots of functionality that allow for fairly sophisticated and efficient fitting of stochastic compartmental models. However, it is still technically more challenging and takes longer to run than fitting deterministic models.</p>
+<p>Implementing stochastic compartmental models on the computer comes
+with two hurdles. The first one is that writing the code that simulates
+a stochastic model and does all the random sampling to get the
+stochastic transitions right can be technically challenging. The second
+is that if the numbers in a system become even mildly large (e.g. over
+1000s of cells or virions), simulation of a model becomes very slow.
+Fortunately, there are good approximations that allow execution of
+stochastic models at a reasonably fast speed. One of those
+approximations is implemented in the <code>adaptivetau</code> package in
+R. This package provides an interface in which you can specify the model
+(i.e. the transitions and the propensities) and the package runs the
+simulation for you. Therefore, working with stochastic compartmental
+models has become almost as easy as working with ODE models in R. It
+still takes computationally longer since you now need to run the model
+multiple times to get a distribution of outcomes, while a deterministic
+model only needs to be run once.</p>
+<p>If you want to see how this code looks like, look at the apps in
+DSAIRM that include a stochastic model. You can also build a model and
+export the stochastic code in <em>modelbuilder.</em></p>
+<p>Stochastic models can often be a useful alternative for specific
+questions. They do take longer to execute, so running large stochastic
+models would be rather time consuming. It is also still fairly hard to
+fit data to stochastic models. The <code>pomp</code> package in R has
+lots of functionality that allow for fairly sophisticated and efficient
+fitting of stochastic compartmental models. However, it is still
+technically more challenging and takes longer to run than fitting
+deterministic models.</p>
 </div>
 
 

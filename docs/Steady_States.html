@@ -556,7 +556,8 @@ div.tocify {
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>This document provides an introduction to steady states and how to compute them.</p>
+<p>This document provides an introduction to steady states and how to
+compute them.</p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
@@ -567,12 +568,34 @@ div.tocify {
 </div>
 <div id="reading" class="section level1">
 <h1>Reading</h1>
-<p>Often (but not always), biological systems can settle into an approximately steady state, where the numbers of the quantities being tracked barely change. An example for this is HIV during the chronic phase. While there are still large numbers of virions produced each day, and Cd4 T-cells are being generated and destroyed, the overall balance between virus and T-cells reaches a state that is fairly constant over short time spans (of course over years, there is a slow decline of T-cells, which if untreated eventually leads to AIDS).</p>
-<p>If one has a model for such a system, one can often compute this steady state mathematically. This works for simple models. Once the models get more complex, doing the math gets hard or impossible. It is however always possible to run the simulation long enough until the system has settled down to the steady state - provided the system/model has such a steady state. Not all systems/models do. For instance during an acute infection, the pathogen grows, then declines, without ever reaching a steady level (other than absence of pathogen, which can be considered a steady state). Similarly, in some systems there might be continuous cycles of increase and decrease without ever settling down.</p>
-<p>Below, we assume a steady state exists and look at a few simple models introduced earlier to show how the steady state can be computed and interpreted.</p>
+<p>Often (but not always), biological systems can settle into an
+approximately steady state, where the numbers of the quantities being
+tracked barely change. An example for this is HIV during the chronic
+phase. While there are still large numbers of virions produced each day,
+and Cd4 T-cells are being generated and destroyed, the overall balance
+between virus and T-cells reaches a state that is fairly constant over
+short time spans (of course over years, there is a slow decline of
+T-cells, which if untreated eventually leads to AIDS).</p>
+<p>If one has a model for such a system, one can often compute this
+steady state mathematically. This works for simple models. Once the
+models get more complex, doing the math gets hard or impossible. It is
+however always possible to run the simulation long enough until the
+system has settled down to the steady state - provided the system/model
+has such a steady state. Not all systems/models do. For instance during
+an acute infection, the pathogen grows, then declines, without ever
+reaching a steady level (other than absence of pathogen, which can be
+considered a steady state). Similarly, in some systems there might be
+continuous cycles of increase and decrease without ever settling
+down.</p>
+<p>Below, we assume a steady state exists and look at a few simple
+models introduced earlier to show how the steady state can be computed
+and interpreted.</p>
 <div id="the-one-compartment-model" class="section level2">
 <h2>The One-compartment Model</h2>
-<p>Recall the one-compartment model that tracked some population of entities (pathogens/immune cells/humans/animals) that grow or die, and that included saturating growth. The discrete-time version of the model was</p>
+<p>Recall the one-compartment model that tracked some population of
+entities (pathogens/immune cells/humans/animals) that grow or die, and
+that included saturating growth. The discrete-time version of the model
+was</p>
 <p><span class="math display">\[
 P_{t+dt} = P_t + dt ( g P_t(1-\frac{P_t}{P_{max}}) - d_P P_t )
 \]</span></p>
@@ -580,72 +603,137 @@ P_{t+dt} = P_t + dt ( g P_t(1-\frac{P_t}{P_{max}}) - d_P P_t )
 <p><span class="math display">\[
 \dot P  = gP(1-\frac{P}{P_{max}}) - d_P P
 \]</span></p>
-<p>If the system is in a steady state, it means the variables do not change. Translated to the model, it means in the first model that <span class="math inline">\(P_{t+dt} = P_t\)</span> or equivalently for the ODE model <span class="math inline">\(\dot P = 0\)</span>.</p>
-<p>This turns the dynamic differential- or difference-equation model into a simple algebraic equation. We can then often (at least for simple models) solve for the model variables and get an equation that shows the values of the variables at steady state only as function of model parameters. Let’s do that for the ODE model. Starting with</p>
+<p>If the system is in a steady state, it means the variables do not
+change. Translated to the model, it means in the first model that <span
+class="math inline">\(P_{t+dt} = P_t\)</span> or equivalently for the
+ODE model <span class="math inline">\(\dot P = 0\)</span>.</p>
+<p>This turns the dynamic differential- or difference-equation model
+into a simple algebraic equation. We can then often (at least for simple
+models) solve for the model variables and get an equation that shows the
+values of the variables at steady state only as function of model
+parameters. Let’s do that for the ODE model. Starting with</p>
 <p><span class="math display">\[
 0  = gP(1-\frac{P}{P_{max}}) - d_P P
 \]</span></p>
 <p>we can rewrite as</p>
 <p><span class="math display">\[
 gP(1-\frac{P}{P_{max}}) = d_P P
-\]</span> now divide by <span class="math inline">\(P\)</span> and <span class="math inline">\(g\)</span> on both sides to get</p>
+\]</span> now divide by <span class="math inline">\(P\)</span> and <span
+class="math inline">\(g\)</span> on both sides to get</p>
 <p><span class="math display">\[
 (1-\frac{P}{P_{max}}) = \frac{d_P}{g}
 \]</span></p>
-<p>next a bit of subtraction and addition to isolate the <span class="math inline">\(P\)</span></p>
+<p>next a bit of subtraction and addition to isolate the <span
+class="math inline">\(P\)</span></p>
 <p><span class="math display">\[
 \frac{P}{P_{max}} = 1 - \frac{d_P}{g}
-\]</span> and finally multiply by <span class="math inline">\(P_{max}\)</span> to obtain <span class="math inline">\(P\)</span> at steady state as a function of model parameters.</p>
+\]</span> and finally multiply by <span
+class="math inline">\(P_{max}\)</span> to obtain <span
+class="math inline">\(P\)</span> at steady state as a function of model
+parameters.</p>
 <p><span class="math display">\[
 P = P_{max}(1 - \frac{d_P}{g})
 \]</span></p>
-<p>This equation tells us how <span class="math inline">\(P\)</span> at steady state depends on the parameters. We can see that as the carrying capacity <span class="math inline">\(P_{max}\)</span> increases, so does the steady state value of <span class="math inline">\(P\)</span>. We can also see that if the death rate of the bacteria is higher than the growth rate (<span class="math inline">\(d_P&gt;g\)</span>) then (1 - ) and thus <span class="math inline">\(P\)</span> becomes negative. A negative number of <span class="math inline">\(P\)</span> obviously makes no biological sense. It is an indication that if death exceeds maximum growth, there can’t be a steady state. All of these findings make sense and we can get them straight from the equation, without having to run simulations. Unfortunately, once models become larger, doing it with the computer is often the only option.</p>
-<p>For completeness, let’s go through the same process for the discrete-time model. With <span class="math inline">\(P_{t+dt} = P_t\)</span> we get</p>
+<p>This equation tells us how <span class="math inline">\(P\)</span> at
+steady state depends on the parameters. We can see that as the carrying
+capacity <span class="math inline">\(P_{max}\)</span> increases, so does
+the steady state value of <span class="math inline">\(P\)</span>. We can
+also see that if the death rate of the bacteria is higher than the
+growth rate (<span class="math inline">\(d_P&gt;g\)</span>) then (1 - )
+and thus <span class="math inline">\(P\)</span> becomes negative. A
+negative number of <span class="math inline">\(P\)</span> obviously
+makes no biological sense. It is an indication that if death exceeds
+maximum growth, there can’t be a steady state. All of these findings
+make sense and we can get them straight from the equation, without
+having to run simulations. Unfortunately, once models become larger,
+doing it with the computer is often the only option.</p>
+<p>For completeness, let’s go through the same process for the
+discrete-time model. With <span class="math inline">\(P_{t+dt} =
+P_t\)</span> we get</p>
 <p><span class="math display">\[
 0 = dt ( g P_t(1-\frac{P_t}{P_{max}}) - d_P P_t )
 \]</span></p>
-<p>Once you divide by <span class="math inline">\(dt\)</span>, the equation is the same as above, thus you find the same steady state. Note that since parameters in discrete-time and continuous-time models can have slightly different biological interpretations (namely rate versus per-timestep change), you should always compute the steady state for your specific model.</p>
+<p>Once you divide by <span class="math inline">\(dt\)</span>, the
+equation is the same as above, thus you find the same steady state. Note
+that since parameters in discrete-time and continuous-time models can
+have slightly different biological interpretations (namely rate versus
+per-timestep change), you should always compute the steady state for
+your specific model.</p>
 </div>
 <div id="basic-bacteria-model" class="section level2">
 <h2>Basic Bacteria Model</h2>
-<p>Let’s go through the process again, this time for a model with two variables, namely the basic bacteria model you encountered previously. We’ll only look at the ODE formulation here, you can work your way through the discrete-time version as an exercise.</p>
+<p>Let’s go through the process again, this time for a model with two
+variables, namely the basic bacteria model you encountered previously.
+We’ll only look at the ODE formulation here, you can work your way
+through the discrete-time version as an exercise.</p>
 <p>Here is the model again:</p>
 <p><span class="math display">\[
 \begin{aligned}
-\textrm{Bacteria} \qquad \dot{B} &amp; = gB(1-\frac{B}{B_{max}}) - d_B B - kBI \\
+\textrm{Bacteria} \qquad \dot{B} &amp; = gB(1-\frac{B}{B_{max}}) - d_B B
+- kBI \\
 \textrm{Immune Response} \qquad \dot{I} &amp; =  rBI - d_I I     
 \end{aligned}
-\]</span> A steady-state condition means the variables do not change, thus the left-hand side of the model becomes 0 and we get</p>
+\]</span> A steady-state condition means the variables do not change,
+thus the left-hand side of the model becomes 0 and we get</p>
 <p><span class="math display">\[
 \begin{aligned}
 0 &amp; = gB(1-\frac{B}{B_{max}}) - d_B B - kBI \\
 0 &amp; =  rBI - d_I I     
 \end{aligned}
-\]</span> Now we go through the same process of solving these equations until we have <span class="math inline">\(B\)</span> and <span class="math inline">\(I\)</span> on the left side, and some combination of parameters on the right side.</p>
+\]</span> Now we go through the same process of solving these equations
+until we have <span class="math inline">\(B\)</span> and <span
+class="math inline">\(I\)</span> on the left side, and some combination
+of parameters on the right side.</p>
 <div class="note">
-<p>If you recall from your math classes, what we are doing is solving N algebraic equations with N unknowns. You might remember that this doesn’t always work, sometimes there is no unique solution. We ignore that for now, and only focus on the steady state at which both bacteria and immune response are present (and which exists for this model). But it’s important to keep in mind the possibility of multiple or no solutions, especially when your models get larger and you can only explore them by simulation.</p>
+<p>If you recall from your math classes, what we are doing is solving N
+algebraic equations with N unknowns. You might remember that this
+doesn’t always work, sometimes there is no unique solution. We ignore
+that for now, and only focus on the steady state at which both bacteria
+and immune response are present (and which exists for this model). But
+it’s important to keep in mind the possibility of multiple or no
+solutions, especially when your models get larger and you can only
+explore them by simulation.</p>
 </div>
-<p>We start by solving the bottom equation, which is easy. We divide by <span class="math inline">\(I\)</span>, move the <span class="math inline">\(d_I\)</span> term to the other side and then divide by <span class="math inline">\(r\)</span> to get</p>
+<p>We start by solving the bottom equation, which is easy. We divide by
+<span class="math inline">\(I\)</span>, move the <span
+class="math inline">\(d_I\)</span> term to the other side and then
+divide by <span class="math inline">\(r\)</span> to get</p>
 <p><span class="math display">\[
 B = \frac{d_I}{r}
 \]</span></p>
-<p>From this equation, you can immediately determine how the steady state level of bacteria depends on model parameters. Maybe surprisingly, the steady state value for the bacterial <strong>only</strong> depends on the rate of growth and death of the immune response, not any bacteria-related parameters. This shows that even for simple systems, some of the results might not be easy to intuit (and why we need models to study those systems 😄.</p>
-<p>Getting <span class="math inline">\(I\)</span> from the first equation takes a few more steps. First we re-arrange to get</p>
+<p>From this equation, you can immediately determine how the steady
+state level of bacteria depends on model parameters. Maybe surprisingly,
+the steady state value for the bacterial <strong>only</strong> depends
+on the rate of growth and death of the immune response, not any
+bacteria-related parameters. This shows that even for simple systems,
+some of the results might not be easy to intuit (and why we need models
+to study those systems 😄.</p>
+<p>Getting <span class="math inline">\(I\)</span> from the first
+equation takes a few more steps. First we re-arrange to get</p>
 <p><span class="math display">\[
-gB(1-\frac{B}{B_{max}}) = d_B B + kBI 
+gB(1-\frac{B}{B_{max}}) = d_B B + kBI
 \]</span></p>
-<p>Now, divide by <span class="math inline">\(B\)</span> and reshuffle such that we only have <span class="math inline">\(I\)</span> by itself.</p>
+<p>Now, divide by <span class="math inline">\(B\)</span> and reshuffle
+such that we only have <span class="math inline">\(I\)</span> by
+itself.</p>
 <p><span class="math display">\[
-\frac{g(1-\frac{B}{B_{max}}) - d_B}{k} =  I 
-\]</span> Finally, we insert the result for <span class="math inline">\(B\)</span> we got above and clean up a bit</p>
+\frac{g(1-\frac{B}{B_{max}}) - d_B}{k} =  I
+\]</span> Finally, we insert the result for <span
+class="math inline">\(B\)</span> we got above and clean up a bit</p>
 <p><span class="math display">\[
-I = \frac{ r B_{max} (g-d_B) - d_I g}{k r B_{max}} 
+I = \frac{ r B_{max} (g-d_B) - d_I g}{k r B_{max}}
 \]</span></p>
-<p>While this expression is a bit more complex, you can still see how various model parameters influence the steady state value of <span class="math inline">\(I\)</span>.</p>
+<p>While this expression is a bit more complex, you can still see how
+various model parameters influence the steady state value of <span
+class="math inline">\(I\)</span>.</p>
 </div>
 <div id="basic-virus-model" class="section level2">
 <h2>Basic Virus Model</h2>
-<p>Let’s do it for one more model, the basic virus model. Without birth and death of uninfected cells, we can only get a single outbreak and no steady state at which both virus and cells are in an equilibrium. Thus, we include those processes in our model, which is then given as follows.</p>
+<p>Let’s do it for one more model, the basic virus model. Without birth
+and death of uninfected cells, we can only get a single outbreak and no
+steady state at which both virus and cells are in an equilibrium. Thus,
+we include those processes in our model, which is then given as
+follows.</p>
 <p><span class="math display">\[
 \begin{aligned}
 \textrm{Uninfected cells} \qquad \dot U &amp; = n - d_U U - bUV \\
@@ -653,19 +741,40 @@ I = \frac{ r B_{max} (g-d_B) - d_I g}{k r B_{max}}
 \textrm{Virus} \qquad \dot V &amp; = pI - d_V V - gb UV \\
 \end{aligned}
 \]</span></p>
-<p>The process should be familiar by now. We set the left side to zero, then solve for <span class="math inline">\(U\)</span>, <span class="math inline">\(I\)</span> and <span class="math inline">\(V\)</span> such that we end up with equations that only have parameters on the right side. While conceptually not hard, it starts to get a bit messy. This is where certain software can help you (see <em>Resources</em> below). Here is a screenshot of doing this using <a href="https://maxima.sourceforge.io/index.html">Maxima</a>.</p>
-<p><img src="media/virus_ss_maxima.png" width="654" style="display: block; margin: auto;" /></p>
-<p>You can see that there are two steady states, the first one is the one we are interested in, which corresponds to a chronic infection. It gets a bit harder to read off from the equations how certain parameters influence the results, but you can still do it.</p>
-<p>Once the model gets larger (generally 4+ equations), results get so messy (and at some point unfeasible to compute) that you’ll have to resort doing it numerically.</p>
+<p>The process should be familiar by now. We set the left side to zero,
+then solve for <span class="math inline">\(U\)</span>, <span
+class="math inline">\(I\)</span> and <span
+class="math inline">\(V\)</span> such that we end up with equations that
+only have parameters on the right side. While conceptually not hard, it
+starts to get a bit messy. This is where certain software can help you
+(see <em>Resources</em> below). Here is a screenshot of doing this using
+<a href="https://maxima.sourceforge.io/index.html">Maxima</a>.</p>
+<p><img src="media/virus_ss_maxima.png" style="display: block; margin: auto;" /></p>
+<p>You can see that there are two steady states, the first one is the
+one we are interested in, which corresponds to a chronic infection. It
+gets a bit harder to read off from the equations how certain parameters
+influence the results, but you can still do it.</p>
+<p>Once the model gets larger (generally 4+ equations), results get so
+messy (and at some point unfeasible to compute) that you’ll have to
+resort doing it numerically.</p>
 </div>
 </div>
 <div id="practice" class="section level1">
 <h1>Practice</h1>
-<p>You can further explore the steady state ideas with several of the apps in DSAIRM. You can try to compute them yourself, then compare to the simulation results. They should agree.</p>
+<p>You can further explore the steady state ideas with several of the
+apps in DSAIRM. You can try to compute them yourself, then compare to
+the simulation results. They should agree.</p>
 </div>
 <div id="resources" class="section level1">
 <h1>Resources</h1>
-<p>Often, doing these mathematical computations by hand can get tedious. There are several software packages that allow solving equations like the ones above. The two main products are <a href="https://www.wolfram.com/mathematica/">Mathematica</a> and <a href="https://www.maplesoft.com/products/Maple/">Maple</a>. Both are very powerful, but also can be quite expensive. A free alternative is is <a href="https://maxima.sourceforge.io/index.html">Maxima</a>. It’s not quite as full-featured, but I find it often does the job.</p>
+<p>Often, doing these mathematical computations by hand can get tedious.
+There are several software packages that allow solving equations like
+the ones above. The two main products are <a
+href="https://www.wolfram.com/mathematica/">Mathematica</a> and <a
+href="https://www.maplesoft.com/products/Maple/">Maple</a>. Both are
+very powerful, but also can be quite expensive. A free alternative is is
+<a href="https://maxima.sourceforge.io/index.html">Maxima</a>. It’s not
+quite as full-featured, but I find it often does the job.</p>
 </div>
 
 

@@ -470,99 +470,295 @@ $(document).ready(function () {
 </div>
 
 
-<p>As in any field, there are lots of technical terms related to Modeling and Immunology. We try to explain them whenever they show up first. However, we figured it might also be useful to have one central place for quick reference. Terms are ordered alphabetically. This is how we define them, others might have slightly different definitions.</p>
-<p>This list is and will likely forever remain a work in progress and incomplete. If you think there is a specific term missing that should be listed and explained here, please let us know.</p>
+<p>As in any field, there are lots of technical terms related to
+Modeling and Immunology. We try to explain them whenever they show up
+first. However, we figured it might also be useful to have one central
+place for quick reference. Terms are ordered alphabetically. This is how
+we define them, others might have slightly different definitions.</p>
+<p>This list is and will likely forever remain a work in progress and
+incomplete. If you think there is a specific term missing that should be
+listed and explained here, please let us know.</p>
 <hr />
 <div id="modeling-related-terms" class="section level2">
 <h2>Modeling related terms</h2>
-<p><strong>Agent Based Model (ABM):</strong> Also called individual-based models (IBM). A model in which individuals/agents are explicitly modeled. Agents can be entities such as hosts, virions, bacteria, cells, etc. Models are usually stochastic and have spatial structure (see also NetLogo).</p>
-<p><strong>AIC:</strong> An Information Criterion (often also called Akaike Information Criterion). A statistical measure that allows one to compare the goodness of fit of multiple models. Other quantities, such as BIC, DIC, Likelihood ratio, etc. can also be used for model selection.</p>
-<p><strong>Compartment:</strong> Corresponds usually to a variable in a model, tracks the number of some variable in a certain stage. For instance the compartment/variable of cells in the infected state. Compartments track total numbers of a quantity, as opposed to agent-based model, where each unit is tracked individually (e.g. each infected cell is being modeled, instead of just modeling the compartment of the total number of infected cells).</p>
-<p><strong>Delay differential equation (DDE):</strong> A differential equation (or more often, a set of differential equations) that describe the dynamics of one or multiple quantities and allow for delayed actions. Example: The influx of new cells into a system could depend on the number of cells several hours/days ago.</p>
-<p><strong>Discrete time model:</strong> A mathematical model in which one or multiple variables are updated in discrete time-steps. Contrast this with differential equation models, which implement continuous-time dynamics.</p>
-<p><strong>Deterministic:</strong> A system that – for a given set of initial conditions and parameters – produces always the same dynamics/outcome</p>
-<p><strong>Dynamic model:</strong> A model that tracks how entities change as a function of time.</p>
-<p><strong>Fitting/Inference:</strong> The rigorous, statistical comparison of a (mechanistic or phenomenological) model with data. This is used to test hypotheses and estimate parameters.</p>
-<p><strong>Initial condition:</strong> The state of the system (i.e. the values of the different variables of a system) at the beginning (usually at the start of the infection, or at the start of treatment, etc.). Needs to be specified to allow simulating a model.</p>
-<p><strong>Mechanistic model:</strong> A model that explicitly describes processes/mechanisms of a system, either in terms of mathematical equations or computer instructions.</p>
-<p><strong>Parameter:</strong> A quantity of a model that is usually considered fixed. For instance the life-span of an infected cell is a parameter. Parameter values are needed to fully specify a system. They can be obtained from experimental data, either through reading the literature or through fitting of models to data.</p>
-<p><strong>Phenomenological model:</strong> A model that captures correlations between certain quantities without invoking specific mechanisms. Most statistical models fall into this category.</p>
-<p><strong>Ordinary differential equation (ODE):</strong> A differential equation (or more often, a set of differential equations) that describe the continuous-time dynamics of one or multiple quantities/variables. The left-hand side of the equation specifies the quantity/variable; the instantaneous change is specified on the right-hand side of the equation.</p>
-<p><strong>Quantitative model:</strong> A mathematical or computational description of some system of interest.</p>
-<p><strong>R:</strong> Freely available programming language that allows for relatively easy and convenient implementation of a large number of statistical and scientific research projects.</p>
-<p><strong>Spatial model:</strong> A model that in some way explicitly accounts for spatial structure. Most ABM are spatial models, compartmental models can include spatial features.</p>
-<p><strong>Statistical Learning:</strong> A term that seems to become more widely used in recent years. While some people distinguish this term from <strong>Statistics</strong> and consider it a sub-field, the two terms are often used interchangably.</p>
-<p><strong>Statistics:</strong> The basic/classical machinery for data analysis. Depending on the type of data, many different approaches have been developed (parametric vs. non-parametric methods, longitudinal analysis, time-series analysis, and many more). Models tend to be simple and interpretable, the goal is to understand how inputs (predictors) relate to outcomes. Statistics was developed when data was sparse, computers didn’t exist, and mainly scientists interested in a deep understanding of their data used it. Because of this, statistical models tend to be simple and work well on small datasets.</p>
-<p><strong>Stochastic:</strong> A system that can produce varying dynamics/outcomes when simulated multiple times, even for a given set of initial conditions and parameters.</p>
-<p><strong>Uncertainty/Sensitivity analysis:</strong> An approach in modeling that helps one to understand how uncertain model outcomes are, given uncertainty in the inputs. It also allows one to figure out how much of the outcome uncertainty can be attributed to specific inputs. Inputs are often parameters, but don’t have to be.</p>
-<p><strong>Variable:</strong> Any quantity that we consider to change (i.e. be variable). Almost always the change is over time. This change is tracked with some equation or model (e.g. an ODE, DDE, ABM). Contrast that to <strong>Parameter</strong>.</p>
-<p><strong>Mechanistic Modeling:</strong> Building and using models that explicitly incorporate mechanisms and processes of the system under study to understand <em>how</em> things interact and lead to specific outcomes. Many models in the hard sciences are of this type. A common way to formulate such models is with differential equations.</p>
+<p><strong>Agent Based Model (ABM):</strong> Also called
+individual-based models (IBM). A model in which individuals/agents are
+explicitly modeled. Agents can be entities such as hosts, virions,
+bacteria, cells, etc. Models are usually stochastic and have spatial
+structure (see also NetLogo).</p>
+<p><strong>AIC:</strong> An Information Criterion (often also called
+Akaike Information Criterion). A statistical measure that allows one to
+compare the goodness of fit of multiple models. Other quantities, such
+as BIC, DIC, Likelihood ratio, etc. can also be used for model
+selection.</p>
+<p><strong>Compartment:</strong> Corresponds usually to a variable in a
+model, tracks the number of some variable in a certain stage. For
+instance the compartment/variable of cells in the infected state.
+Compartments track total numbers of a quantity, as opposed to
+agent-based model, where each unit is tracked individually (e.g. each
+infected cell is being modeled, instead of just modeling the compartment
+of the total number of infected cells).</p>
+<p><strong>Delay differential equation (DDE):</strong> A differential
+equation (or more often, a set of differential equations) that describe
+the dynamics of one or multiple quantities and allow for delayed
+actions. Example: The influx of new cells into a system could depend on
+the number of cells several hours/days ago.</p>
+<p><strong>Discrete time model:</strong> A mathematical model in which
+one or multiple variables are updated in discrete time-steps. Contrast
+this with differential equation models, which implement continuous-time
+dynamics.</p>
+<p><strong>Deterministic:</strong> A system that – for a given set of
+initial conditions and parameters – produces always the same
+dynamics/outcome</p>
+<p><strong>Dynamic model:</strong> A model that tracks how entities
+change as a function of time.</p>
+<p><strong>Fitting/Inference:</strong> The rigorous, statistical
+comparison of a (mechanistic or phenomenological) model with data. This
+is used to test hypotheses and estimate parameters.</p>
+<p><strong>Initial condition:</strong> The state of the system (i.e. the
+values of the different variables of a system) at the beginning (usually
+at the start of the infection, or at the start of treatment, etc.).
+Needs to be specified to allow simulating a model.</p>
+<p><strong>Mechanistic model:</strong> A model that explicitly describes
+processes/mechanisms of a system, either in terms of mathematical
+equations or computer instructions.</p>
+<p><strong>Parameter:</strong> A quantity of a model that is usually
+considered fixed. For instance the life-span of an infected cell is a
+parameter. Parameter values are needed to fully specify a system. They
+can be obtained from experimental data, either through reading the
+literature or through fitting of models to data.</p>
+<p><strong>Phenomenological model:</strong> A model that captures
+correlations between certain quantities without invoking specific
+mechanisms. Most statistical models fall into this category.</p>
+<p><strong>Ordinary differential equation (ODE):</strong> A differential
+equation (or more often, a set of differential equations) that describe
+the continuous-time dynamics of one or multiple quantities/variables.
+The left-hand side of the equation specifies the quantity/variable; the
+instantaneous change is specified on the right-hand side of the
+equation.</p>
+<p><strong>Quantitative model:</strong> A mathematical or computational
+description of some system of interest.</p>
+<p><strong>R:</strong> Freely available programming language that allows
+for relatively easy and convenient implementation of a large number of
+statistical and scientific research projects.</p>
+<p><strong>Spatial model:</strong> A model that in some way explicitly
+accounts for spatial structure. Most ABM are spatial models,
+compartmental models can include spatial features.</p>
+<p><strong>Statistical Learning:</strong> A term that seems to become
+more widely used in recent years. While some people distinguish this
+term from <strong>Statistics</strong> and consider it a sub-field, the
+two terms are often used interchangably.</p>
+<p><strong>Statistics:</strong> The basic/classical machinery for data
+analysis. Depending on the type of data, many different approaches have
+been developed (parametric vs. non-parametric methods, longitudinal
+analysis, time-series analysis, and many more). Models tend to be simple
+and interpretable, the goal is to understand how inputs (predictors)
+relate to outcomes. Statistics was developed when data was sparse,
+computers didn’t exist, and mainly scientists interested in a deep
+understanding of their data used it. Because of this, statistical models
+tend to be simple and work well on small datasets.</p>
+<p><strong>Stochastic:</strong> A system that can produce varying
+dynamics/outcomes when simulated multiple times, even for a given set of
+initial conditions and parameters.</p>
+<p><strong>Uncertainty/Sensitivity analysis:</strong> An approach in
+modeling that helps one to understand how uncertain model outcomes are,
+given uncertainty in the inputs. It also allows one to figure out how
+much of the outcome uncertainty can be attributed to specific inputs.
+Inputs are often parameters, but don’t have to be.</p>
+<p><strong>Variable:</strong> Any quantity that we consider to change
+(i.e. be variable). Almost always the change is over time. This change
+is tracked with some equation or model (e.g. an ODE, DDE, ABM). Contrast
+that to <strong>Parameter</strong>.</p>
+<p><strong>Mechanistic Modeling:</strong> Building and using models that
+explicitly incorporate mechanisms and processes of the system under
+study to understand <em>how</em> things interact and lead to specific
+outcomes. Many models in the hard sciences are of this type. A common
+way to formulate such models is with differential equations.</p>
 </div>
 <div id="immunology-related-terms" class="section level2">
 <h2>Immunology related terms</h2>
-<p><strong>Adaptive immune system:</strong> That part of the immune system that uses antigen receptors and adapts or “learns??? to recognize specific antigens, and retains a memory of those antigens to enhance future responses</p>
-<p><strong>Affinity maturation:</strong> Darwinian process of variation and selection that occurs to B cell receptors in lymph nodes and spleen, leading to the evolution of B cell populations better adapted to recognize specific epitopes</p>
-<p><strong>Antibody:</strong> A soluble form of B cell receptors secreted by plasma B cells, with multiple anti-pathogen effector functions</p>
-<p><strong>Antigen:</strong> Originally, any substance that causes the production of antibodies; now, more generally, anything that is recognized by antibodies or by the antigen receptors of lymphocytes</p>
-<p><strong>Antigen processing:</strong> The process whereby antigen-presenting cells (such as B cells, dendritic cells and macrophages) engulf antigens, digest them, and present fragments of their proteins MHC/peptide complexes</p>
+<p><strong>Adaptive immune system:</strong> That part of the immune
+system that uses antigen receptors and adapts or “learns??? to recognize
+specific antigens, and retains a memory of those antigens to enhance
+future responses</p>
+<p><strong>Affinity maturation:</strong> Darwinian process of variation
+and selection that occurs to B cell receptors in lymph nodes and spleen,
+leading to the evolution of B cell populations better adapted to
+recognize specific epitopes</p>
+<p><strong>Antibody:</strong> A soluble form of B cell receptors
+secreted by plasma B cells, with multiple anti-pathogen effector
+functions</p>
+<p><strong>Antigen:</strong> Originally, any substance that causes the
+production of antibodies; now, more generally, anything that is
+recognized by antibodies or by the antigen receptors of lymphocytes</p>
+<p><strong>Antigen processing:</strong> The process whereby
+antigen-presenting cells (such as B cells, dendritic cells and
+macrophages) engulf antigens, digest them, and present fragments of
+their proteins MHC/peptide complexes</p>
 <p><strong>Apoptosis:</strong> Programmed cell death</p>
-<p><strong>B cells:</strong> Lymphocytes that mature in the bone marrow and secrete antibody</p>
-<p><strong>CD4:</strong> Cell surface molecule often used to identify T-helper lymphocytes, a co-receptor for the TCR complex, binding Class II MHC</p>
-<p><strong>CD8:</strong> Cell surface molecule often used to identify cytotoxic T lymphocytes, a co-receptor for the TCR complex, binding Class I MHC</p>
-<p><strong>Cellular response:</strong> A historical term, now used to refer to the part of the immune response that is connected with T cells</p>
-<p><strong>Central tolerance:</strong> Process of tolerizing immature T cells in the thymus</p>
-<p><strong>Chemokines:</strong> Soluble signal molecules that direct cell trafficking</p>
-<p><strong>Class I MHC:</strong> MHC, which occurs in almost all cells, that primarily presents (in an “MHC/peptide complex???) peptides generated in the cell’s interior</p>
-<p><strong>Class II MHC:</strong> MHC, which only occurs in certain cells of the immune system or when particular cells are activated that mostly presents fragments of proteins that are bound to the cell surface or that have been ingested</p>
-<p><strong>Clonal deletion:</strong> Process whereby immature T cells that strongly recognize a self antigen in the thymus die by apoptosis</p>
-<p><strong>Cluster of Differentiation (CD):</strong> System of nomenclature for classifying cell surface proteins on white blood cells, usually identified by monoclonal antibodies—over 350 “CD antigens??? are currently described</p>
-<p><strong>Complement:</strong> Molecules that participate in the immune response by binding to bound antibodies or certain microbial products, often culminating in cell or pathogen permeabilization</p>
-<p><strong>Costimulation:</strong> The mechanism whereby two or more signals participate in the process of activating a lymphocyte</p>
-<p><strong>Cross-presentation:</strong> An alternate pathway of Class I presentation that directs peptides derived from ingested proteins normally directed to Class II presentation into the Class I MHC presentation compartment; associated with professional antigen-presenting cells</p>
-<p><strong>Cytokines:</strong> Signal molecules that transmit information between cells</p>
-<p><strong>Cytotoxic T cells:</strong> T cells that are activated to kill target cells, usually CD8+</p>
-<p><strong>Dendritic cells:</strong> Professional antigen presenting cells, generally considered to be the most potent activators of naïve T cells and required for the initiation of primary responses</p>
-<p><strong>Endocytosis:</strong> The process by which cells engulf extracellular material, usually bound to their surface by a receptor. After endocytosis, the material is contained with a cytoplasmic structure called an endosome</p>
-<p><strong>Epitopes:</strong> An MHC/peptide complex or specific region of an antigen to which an antigen receptor (TCR, BCR) binds</p>
-<p><strong>Humoral response:</strong> A historical term for immune responses involving mainly B cells and their antibodies</p>
-<p><strong>Hypermutation:</strong> Mutation at the junctional or hypervariable regions of antigen receptors, typically occurring during affinity maturation</p>
-<p><strong>Immunodominance:</strong> The differential expansion of subsets of the potential epitope-specific lymphocyte responses in response to complex antigens</p>
-<p><strong>Innate immune system:</strong> That part of the immune system that depends on germline encoded receptors; it generally does not change or adapt to specific pathogens</p>
-<p><strong>Inoculum:</strong> Usually, the microorganism or biological material given to an individual as a vaccination in order to stimulate a specific immune response</p>
-<p><strong>Interferons:</strong> Types of cytokines originally discovered because of their anti-viral action</p>
-<p><strong>Isotypes:</strong> The several structural varieties of the constant regions of antibodies. Isotypes include IgM, IgG (including multiple subtypes), IgA and IgE</p>
-<p><strong>ID50:</strong> Infectious Dose 50, the dose of a pathogen minimally required to infect 50% of a culture, population of organisms etc. Similarly, LD50 is a dose required to kill 50% of a population</p>
-<p><strong>Leukocytes:</strong> White blood cells, including lymphocytes, neutrophils, eosinophils, basophils, monocytes and macrophages</p>
-<p><strong>Lymph nodes:</strong> Small organs, distributed throughout the body, in which an adaptive immune response can develop</p>
+<p><strong>B cells:</strong> Lymphocytes that mature in the bone marrow
+and secrete antibody</p>
+<p><strong>CD4:</strong> Cell surface molecule often used to identify
+T-helper lymphocytes, a co-receptor for the TCR complex, binding Class
+II MHC</p>
+<p><strong>CD8:</strong> Cell surface molecule often used to identify
+cytotoxic T lymphocytes, a co-receptor for the TCR complex, binding
+Class I MHC</p>
+<p><strong>Cellular response:</strong> A historical term, now used to
+refer to the part of the immune response that is connected with T
+cells</p>
+<p><strong>Central tolerance:</strong> Process of tolerizing immature T
+cells in the thymus</p>
+<p><strong>Chemokines:</strong> Soluble signal molecules that direct
+cell trafficking</p>
+<p><strong>Class I MHC:</strong> MHC, which occurs in almost all cells,
+that primarily presents (in an “MHC/peptide complex???) peptides
+generated in the cell’s interior</p>
+<p><strong>Class II MHC:</strong> MHC, which only occurs in certain
+cells of the immune system or when particular cells are activated that
+mostly presents fragments of proteins that are bound to the cell surface
+or that have been ingested</p>
+<p><strong>Clonal deletion:</strong> Process whereby immature T cells
+that strongly recognize a self antigen in the thymus die by
+apoptosis</p>
+<p><strong>Cluster of Differentiation (CD):</strong> System of
+nomenclature for classifying cell surface proteins on white blood cells,
+usually identified by monoclonal antibodies—over 350 “CD antigens??? are
+currently described</p>
+<p><strong>Complement:</strong> Molecules that participate in the immune
+response by binding to bound antibodies or certain microbial products,
+often culminating in cell or pathogen permeabilization</p>
+<p><strong>Costimulation:</strong> The mechanism whereby two or more
+signals participate in the process of activating a lymphocyte</p>
+<p><strong>Cross-presentation:</strong> An alternate pathway of Class I
+presentation that directs peptides derived from ingested proteins
+normally directed to Class II presentation into the Class I MHC
+presentation compartment; associated with professional
+antigen-presenting cells</p>
+<p><strong>Cytokines:</strong> Signal molecules that transmit
+information between cells</p>
+<p><strong>Cytotoxic T cells:</strong> T cells that are activated to
+kill target cells, usually CD8+</p>
+<p><strong>Dendritic cells:</strong> Professional antigen presenting
+cells, generally considered to be the most potent activators of naïve T
+cells and required for the initiation of primary responses</p>
+<p><strong>Endocytosis:</strong> The process by which cells engulf
+extracellular material, usually bound to their surface by a receptor.
+After endocytosis, the material is contained with a cytoplasmic
+structure called an endosome</p>
+<p><strong>Epitopes:</strong> An MHC/peptide complex or specific region
+of an antigen to which an antigen receptor (TCR, BCR) binds</p>
+<p><strong>Humoral response:</strong> A historical term for immune
+responses involving mainly B cells and their antibodies</p>
+<p><strong>Hypermutation:</strong> Mutation at the junctional or
+hypervariable regions of antigen receptors, typically occurring during
+affinity maturation</p>
+<p><strong>Immunodominance:</strong> The differential expansion of
+subsets of the potential epitope-specific lymphocyte responses in
+response to complex antigens</p>
+<p><strong>Innate immune system:</strong> That part of the immune system
+that depends on germline encoded receptors; it generally does not change
+or adapt to specific pathogens</p>
+<p><strong>Inoculum:</strong> Usually, the microorganism or biological
+material given to an individual as a vaccination in order to stimulate a
+specific immune response</p>
+<p><strong>Interferons:</strong> Types of cytokines originally
+discovered because of their anti-viral action</p>
+<p><strong>Isotypes:</strong> The several structural varieties of the
+constant regions of antibodies. Isotypes include IgM, IgG (including
+multiple subtypes), IgA and IgE</p>
+<p><strong>ID50:</strong> Infectious Dose 50, the dose of a pathogen
+minimally required to infect 50% of a culture, population of organisms
+etc. Similarly, LD50 is a dose required to kill 50% of a population</p>
+<p><strong>Leukocytes:</strong> White blood cells, including
+lymphocytes, neutrophils, eosinophils, basophils, monocytes and
+macrophages</p>
+<p><strong>Lymph nodes:</strong> Small organs, distributed throughout
+the body, in which an adaptive immune response can develop</p>
 <p><strong>Lymphocytes:</strong> T cells and B cells</p>
-<p><strong>Macrophages:</strong> Scavenger cells the engulf pathogens, process antigens and signal to other arms of the immune system. Macrophages also have many direct anti-pathogen effector functions</p>
-<p><strong>Major histocompatibility complex (MHC):</strong> The cell surface molecules that restrict T cell receptor recognition. Two classes of these molecules present self and foreign peptide antigen which are then recognized by TCR. Important in self/non-self determination</p>
-<p><strong>Memory cells:</strong> Lymphocytes that have been activated in the past and retain a memory of previous antigens, engendering a secondary response to future contact with the antigen</p>
-<p><strong>Natural Killer cells:</strong> Cells of the innate immune system that kill tumor cells and intracellular pathogens, recognizing them by alterations in cell surface protein expression</p>
-<p><strong>Negative selection:</strong> The process of clonal deletion used to eliminate autoreactive T cells in the thymus</p>
-<p><strong>Neutralization:</strong> The process whereby antibodies binding to pathogens prevent binding between the pathogen and its receptors on host cells</p>
-<p><strong>Opsonization:</strong> The coating of cells with complement or antibodies, leading to phagocytosis</p>
-<p><strong>Pathogens:</strong> Microorganisms such as bacteria, parasites, viruses and fungi that invade the body and cause illness</p>
+<p><strong>Macrophages:</strong> Scavenger cells the engulf pathogens,
+process antigens and signal to other arms of the immune system.
+Macrophages also have many direct anti-pathogen effector functions</p>
+<p><strong>Major histocompatibility complex (MHC):</strong> The cell
+surface molecules that restrict T cell receptor recognition. Two classes
+of these molecules present self and foreign peptide antigen which are
+then recognized by TCR. Important in self/non-self determination</p>
+<p><strong>Memory cells:</strong> Lymphocytes that have been activated
+in the past and retain a memory of previous antigens, engendering a
+secondary response to future contact with the antigen</p>
+<p><strong>Natural Killer cells:</strong> Cells of the innate immune
+system that kill tumor cells and intracellular pathogens, recognizing
+them by alterations in cell surface protein expression</p>
+<p><strong>Negative selection:</strong> The process of clonal deletion
+used to eliminate autoreactive T cells in the thymus</p>
+<p><strong>Neutralization:</strong> The process whereby antibodies
+binding to pathogens prevent binding between the pathogen and its
+receptors on host cells</p>
+<p><strong>Opsonization:</strong> The coating of cells with complement
+or antibodies, leading to phagocytosis</p>
+<p><strong>Pathogens:</strong> Microorganisms such as bacteria,
+parasites, viruses and fungi that invade the body and cause illness</p>
 <p><strong>Peptides:</strong> Protein fragments</p>
-<p><strong>Peripheral tolerance:</strong> Mechanisms that occur in individual, autoreactive lymphocytes that have escaped central tolerance to become non-functional or undergo apoptosis, preventing autoimmunity</p>
-<p><strong>Phagocytes:</strong> Professional antigen presenting cells that engulf debris, pathogens and other cells (include macrophages and dendritic cells)</p>
-<p><strong>Pharmacokinetics:</strong> The study of the fate of substances administered externally to an organism, usually drugs, including liberation, absorption, metabolism, distribution and excretion</p>
-<p><strong>Pharmacodynamics:</strong> The study of the physiological effects of drugs on the body</p>
-<p><strong>Plasma cells:</strong> Activated B cells that secrete antibodies</p>
-<p><strong>Plaque Forming Units (PFU):</strong> A measure of viral titer, performed by observing the localized growth of individual viruses which lyse their target cells creating a “plaque???.</p>
-<p><strong>Positive selection:</strong> The stimulation and maturation in the thymus of T cells with sufficient affinity to antigens presented by self MHC; T cells that do not undergo positive selection in the thymus die by apoptosis</p>
-<p><strong>Primary response:</strong> The immune response to antigens that the immune system has never before encountered</p>
-<p><strong>Red blood cell (RBC):</strong> Also erythrocyte; the most abundant blood cell, responsible for transporting oxygen throughout the organism</p>
-<p><strong>Regulatory T cell:</strong> A type of CD4 T helper cell that regulates and suppresses effector responses, limiting immune-associated pathology</p>
-<p><strong>Repertoire:</strong> The diversity of lymphocyte receptors present in the immune system</p>
-<p><strong>Secondary response:</strong> The memory-based immune response to antigens that the body has previously encountered</p>
-<p><strong>Signal I:</strong> A necessary signal for activating a lymphocyte, typically provided by the binding of antigen receptors to an antigen epitope</p>
-<p><strong>Signal II:</strong> A second signal required for activating a lymphocyte, typically provided by an activation-induced cell surface molecule on the antigen-presenting cell</p>
-<p><strong>Th1:</strong> A differentiation state of T helper cells characterized by specific cytokines (including IFN-γ) and associated with cytotoxic T cell activation and the elimination of intracellular pathogens</p>
-<p><strong>Th2:</strong> A differentiation state of T helper cells characterized by specific cytokines (including IL-4, IL-5 and IL-13) and associated with humoral responses and the elimination of extracellular pathogens, but also mediate allergy and asthmatic responses</p>
-<p><strong>Th17:</strong> A differentiation state of T helper cells characterized by specific cytokines (including IL-17 and IL-22) and associated with anti-microbial immunity at mucosal and epithelial surfaces, but also likely play an important role in autoimmune responses</p>
-<p><strong>T cell receptor (TCR):</strong> The variable antigen receptor on T lymphocytes, generated by V(D)J recombination and restricted by binding to MHC</p>
-<p><strong>VDJ recombination:</strong> Variable, Diversity, Joining recombination, the process by which B and T cell receptors are generated by semi-random recombination of the genomic DNA to create the broad diversity of the immune receptor repertoire</p>
+<p><strong>Peripheral tolerance:</strong> Mechanisms that occur in
+individual, autoreactive lymphocytes that have escaped central tolerance
+to become non-functional or undergo apoptosis, preventing
+autoimmunity</p>
+<p><strong>Phagocytes:</strong> Professional antigen presenting cells
+that engulf debris, pathogens and other cells (include macrophages and
+dendritic cells)</p>
+<p><strong>Pharmacokinetics:</strong> The study of the fate of
+substances administered externally to an organism, usually drugs,
+including liberation, absorption, metabolism, distribution and
+excretion</p>
+<p><strong>Pharmacodynamics:</strong> The study of the physiological
+effects of drugs on the body</p>
+<p><strong>Plasma cells:</strong> Activated B cells that secrete
+antibodies</p>
+<p><strong>Plaque Forming Units (PFU):</strong> A measure of viral
+titer, performed by observing the localized growth of individual viruses
+which lyse their target cells creating a “plaque???.</p>
+<p><strong>Positive selection:</strong> The stimulation and maturation
+in the thymus of T cells with sufficient affinity to antigens presented
+by self MHC; T cells that do not undergo positive selection in the
+thymus die by apoptosis</p>
+<p><strong>Primary response:</strong> The immune response to antigens
+that the immune system has never before encountered</p>
+<p><strong>Red blood cell (RBC):</strong> Also erythrocyte; the most
+abundant blood cell, responsible for transporting oxygen throughout the
+organism</p>
+<p><strong>Regulatory T cell:</strong> A type of CD4 T helper cell that
+regulates and suppresses effector responses, limiting immune-associated
+pathology</p>
+<p><strong>Repertoire:</strong> The diversity of lymphocyte receptors
+present in the immune system</p>
+<p><strong>Secondary response:</strong> The memory-based immune response
+to antigens that the body has previously encountered</p>
+<p><strong>Signal I:</strong> A necessary signal for activating a
+lymphocyte, typically provided by the binding of antigen receptors to an
+antigen epitope</p>
+<p><strong>Signal II:</strong> A second signal required for activating a
+lymphocyte, typically provided by an activation-induced cell surface
+molecule on the antigen-presenting cell</p>
+<p><strong>Th1:</strong> A differentiation state of T helper cells
+characterized by specific cytokines (including IFN-γ) and associated
+with cytotoxic T cell activation and the elimination of intracellular
+pathogens</p>
+<p><strong>Th2:</strong> A differentiation state of T helper cells
+characterized by specific cytokines (including IL-4, IL-5 and IL-13) and
+associated with humoral responses and the elimination of extracellular
+pathogens, but also mediate allergy and asthmatic responses</p>
+<p><strong>Th17:</strong> A differentiation state of T helper cells
+characterized by specific cytokines (including IL-17 and IL-22) and
+associated with anti-microbial immunity at mucosal and epithelial
+surfaces, but also likely play an important role in autoimmune
+responses</p>
+<p><strong>T cell receptor (TCR):</strong> The variable antigen receptor
+on T lymphocytes, generated by V(D)J recombination and restricted by
+binding to MHC</p>
+<p><strong>VDJ recombination:</strong> Variable, Diversity, Joining
+recombination, the process by which B and T cell receptors are generated
+by semi-random recombination of the genomic DNA to create the broad
+diversity of the immune receptor repertoire</p>
 </div>
 
 
