@@ -52,4 +52,14 @@ In this video from SISMID 2021, Paul gives a condensed overview and reiterates s
 The slides for this presentation [are here](./slides/2021_Immunology_Highlights_Slides.pdf)
 
 
+This is the video recording from 2022. It is fairly similar to the 2021 recording, with minor differences on certain topics.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EpmAiTqFkwc" title="Introduction to Immunology" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+The slides for this presentation [are here](./slides/2022_Introduction_to_Immunology_Slides.pdf)
+
+
 
