@@ -47,7 +47,7 @@ The following video from 2021 is a very brief overview of the main points covere
 </p>
 
 
-This video is from 2022. It is a bit more detailed compared to the 2021 presentation, but does not contain the simple model discussion from 2020. A question and answer segment is also included. The slides from this short presentation are here [as html](./slides/2022_Intro_to_Modeling_Slides.html) or [as pdf.](./slides/2022_Intro_to_Modeling_Slides.pdf).  
+This video is from 2022. It is a bit more detailed compared to the 2021 presentation, but does not contain the simple model discussion from 2020. A question and answer segment is also included. The slides from this short presentation are here [as html](./slides/2022_Intro_to_Modeling_Slides.html) or [as pdf](./slides/2022_Intro_to_Modeling_Slides.pdf).  
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0zh5D7iVj8c" title="Introduction to simulation modeling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

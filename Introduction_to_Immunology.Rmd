@@ -24,7 +24,7 @@ This document provides materials to give you a (VERY!) brief introduction to imm
 
 
 # Videos & Slides
-These videos are lecture recordings from SISMID 2020. They are broken into two segments. 
+These videos are lecture recordings from SISMID 2020. They are broken into two segments. The slides for these two 2020 presentations [can be found here](./slides/Introduction_to_Immunology_Slides.pdf). 
 
 In the first segment, Paul covers innate immunity.
 
@@ -39,27 +39,26 @@ In the second segment, he covers adaptive immunity.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d6IKOL-utNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-The slides for these two 2020 presentations [can be found here](./slides/Introduction_to_Immunology_Slides.pdf). 
 
 
 
-In this video from SISMID 2021, Paul gives a condensed overview and reiterates some of the most important points. He also touches on some additional topics. It is suggested to watch this after the first two lectures.
+In this video from SISMID 2021, Paul gives a condensed overview and reiterates some of the most important points. He also touches on some additional topics. It is suggested to watch this after the first two lectures. The slides for this presentation [are here](./slides/2021_Immunology_Highlights_Slides.pdf)
+
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EaugVmqGjD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-The slides for this presentation [are here](./slides/2021_Immunology_Highlights_Slides.pdf)
 
 
-This is the video recording from 2022. It is fairly similar to the 2021 recording, with minor differences on certain topics.
+This is the video recording from 2022. It is fairly similar to the 2021 recording, with minor differences on certain topics. The slides for this presentation [are here](./slides/2022_Introduction_to_Immunology_Slides.pdf)
+
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EpmAiTqFkwc" title="Introduction to Immunology" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
-The slides for this presentation [are here](./slides/2022_Introduction_to_Immunology_Slides.pdf)
 
 
 
