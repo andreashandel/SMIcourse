@@ -32,7 +32,7 @@ This 2021 video illustrates the level 1 approach to DSAIRM, i.e. using the packa
 This video from 2022 is another level 1 DSAIRM walk-through covering the _Acute Virus and IR Model_ app. Along the way, various modeling topics are covered.
 
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_pvB4_vk4QY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 
