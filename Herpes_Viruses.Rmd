@@ -1,0 +1,38 @@
+---
+title: Herpes Viruses
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+ 
+```
+
+
+# Overview
+This document provides materials that discuss Herpes Viruses.
+
+
+# Learning Objectives
+* Describe the basic features of Herpes virus biology
+
+
+# Videos & Slides
+
+This recording from 2022 covers Herpes viruses. 
+The slides for the recording [can be found here (third part of the slide deck)](./slides/2022_Chronic_Virus_Infections_Slides.pdf).
+
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RvmdGb6I_Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+
+
+
+

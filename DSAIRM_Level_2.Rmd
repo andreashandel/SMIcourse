@@ -35,7 +35,7 @@ A cleaned up version of the code that goes with this recording [is available her
 </p>
 
 
-This 2021 video continues to show ways to interact with the underlying simulator functions by writing small bits of code. It illustrates some additional concepts, e.g., writing your own loop to scan across more than one parameter at a time. There is also a somewhat detailed discussion of the uncertainty and sensitivity analysis app and random numbers and reproduciblity.
+This 2021 video continues to show ways to interact with the underlying simulator functions by writing small bits of code. It illustrates some additional concepts, e.g., writing your own loop to scan across more than one parameter at a time. There is also a somewhat detailed discussion of the uncertainty and sensitivity analysis app and random numbers and reproducibility.
 
 [This file](./code/Rscript2.R) contains the code for the first part of the recording, and [this file](./code/Rscript3.R) contains the code for the second part (uncertainty and sensitivity analysis.). Note that I added some more to the code after the recording and also did some cleanup. Thus, the code doesn't look exactly like you see in the recording, but you should still easily match and reproduce things.
 
@@ -45,8 +45,11 @@ This 2021 video continues to show ways to interact with the underlying simulator
 
 
 
+This 2022 video provides another introduction to the level 2 approach to DSAIRM, i.e. writing small bits of code to call the underlying simulators. The focus is on the _Chronic Virus and IR_ app. A full html document providing a level 2 walkthrough with all the code to reproduce the tasks [is available here](./code/chronicvirusir_solution.html). 
 
-
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkUkl4r-YZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 
 

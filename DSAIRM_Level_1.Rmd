@@ -21,12 +21,19 @@ This page contains a basic presentation showing how to use the DSAIRM package.
 # Videos
 
 
-This 2021 video illustrates the Level 1 approach to DSAIRM, i.e. using the package through the graphical interface.
+This 2021 video illustrates the level 1 approach to DSAIRM, i.e. using the package through the graphical interface. The focus is on the _Basic Bacteria_ app. Along the way, various modeling topics are covered.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PHbZSY1KWuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
+
+
+This video from 2022 is another level 1 DSAIRM walk-through covering the _Acute Virus and IR Model_ app. Along the way, various modeling topics are covered.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 
 

@@ -45,11 +45,26 @@ This short recording from 2021 covers SARS-CoV-2 vaccines.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VP9B95dIN4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
+
 This recording from 2021 is a discussion and Q&A of mainly SARS-CoV-2, and other/general viral infections.
 
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NJj7CU6dNK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
+
+
+This recording from 2022 starts out with influenza, then provides a comparison of SARS-CoV-2 with influenza, and finishes with a few remarks on RSV. The slides for the recordings [can be found here.](./slides/2022_Acute_Viral_Infections_Slides.pdf)
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9J0vFpgFvyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+This recording from 2022 followed the above presentation and is a Q&A with focus in the biology and modeling of the acute viral infections covered in the above lecture.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CJWSaF-0QfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 

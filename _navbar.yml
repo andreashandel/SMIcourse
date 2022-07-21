@@ -21,6 +21,10 @@ left:
         menu:
           - text: "Hepatitis C Virus"
             href: ./HCV.html
+          - text: "Human Immundeficiency Virus"
+            href: ./HIV.html
+          - text: "Herpes Viruses"
+            href: ./Herpes_Viruses.html
       - text: "Bacterial infections"
         menu:
           - text: "Tuberculosis"

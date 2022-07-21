@@ -19,7 +19,7 @@ This document provides materials that discuss HCV.
 
 # Learning Objectives
 * Describe the basic features of the HCV virus life cycle
-
+* Be familiar with drugs against HCV
 
 # Videos & Slides
 
@@ -30,4 +30,9 @@ This recording from 2020 covers HCV. The slides for the recording [can be found 
 </p>
 
 
+This recording from 2022 also covers HCV. There is a fair bit of overlap with the 2020 recording, but some topics are different. The slides for the recording [can be found here (first part of the slide deck)](./slides/2022_Chronic_Virus_Infections_Slides.pdf).
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/719652nH22Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
