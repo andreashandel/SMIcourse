@@ -1,0 +1,29 @@
+---
+title: Immune responses to Repeat Infections
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+ 
+```
+
+
+# Overview
+This document provides links to a recording for a short lecture discussing immune responses to repeat infections.
+
+
+
+# Videos & Slides
+The recording of the lecture from 2022 is embedded below. 
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8aVUkWkRESo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
+

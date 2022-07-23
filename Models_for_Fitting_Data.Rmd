@@ -39,6 +39,13 @@ This video discusses use of models for data fitting and inference. Slides that g
 </p>
 
 
+This video from 2022 discusses model fitting using the DSAIRM apps. It also includes general modeling discussion towards the end.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tFEyS6Mqxho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
 
 
 # How to Fit Models to Data

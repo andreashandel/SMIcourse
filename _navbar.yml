@@ -29,6 +29,10 @@ left:
         menu:
           - text: "Tuberculosis"
             href: ./Tuberculosis.html
+          - text: "Streptococcus"
+            href: ./Strep.html
+          - text: "Staphylococcus"
+            href: ./Staph.html
       - text: "Parasitic infections"
         menu:
           - text: "Malaria"
@@ -39,8 +43,11 @@ left:
         menu:
           - text: "Host Genetics and Immunity"
             href: ./Host_Genetics_and_Immunity.html
+          - text: "Immune responses to Repeat Infections"
+            href: ./Repeat_Infections.html
           - text: "Immunology in Simpler Animal Models"
             href: ./Immunology_in_Simpler_Animal_Models.html
+            
   - text: "Modeling"
     menu:
       - text: "General Software Setup"
@@ -75,7 +82,7 @@ left:
             href: ./Steady_States.html
           - text: "Exercises - Modeling Basics"
             href: ./Exercises_Modeling_Basics.html
-      - text: "Using Simulation Models"
+      - text: "Using Models without Data"
         menu:
           - text: "Introduction to Using Simulation Models"
             href: ./Introduction_to_Using_Simulation_Models.html
@@ -83,10 +90,12 @@ left:
             href: ./Models_for_Exploration.html
           - text: "Models for Prediction"
             href: ./Models_for_Prediction.html
-          - text: "Models for Fitting Data"
-            href: ./Models_for_Fitting_Data.html
           - text: "Exercises - Model Uses"
             href: ./Exercises_Model_Uses.html
+      - text: "Using Models with Data"
+        menu:
+          - text: "Fitting models to data"
+            href: ./Models_for_Fitting_Data.html
       - text: "What Influences Model Results"
         menu:
           - text: "Introduction to What Influences Model Results"

@@ -47,6 +47,12 @@ Note: As I was cleaning the scripts after the recording, I realized that in `Rsc
 
 
 
+This 2022 recording shows an example where we use the _Extended Bacteria Model_ app and modify the code to include various additional features. Code for the different R scripts that goes with the lecture [is available as a zip file here](./code/2022_DSAIRM_level_3.zip). It's not exactly the code you see in the video since we cleaned it up and documented it a bit more after the recording. But it runs everything you see in the recording.
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dgwjQDSNrN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
 
 
 

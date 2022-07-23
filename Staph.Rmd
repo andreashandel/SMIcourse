@@ -1,0 +1,30 @@
+---
+title: Staphylococcus Aureus
+subtitle: ""
+date: "`r file.mtime(knitr::current_input())`"
+#bibliography: ../media/SMICourse.bib
+output: 
+  html_document:
+    toc_depth: 3
+---
+
+```{r, echo = FALSE}
+ 
+```
+
+
+# Overview
+This document provides materials that discuss Staph immunology.
+
+# Learning Objectives
+* Be familiar with some of the basics of Staph biology and immunology.
+
+
+# Videos & Slides
+
+This recording from 2022 provides a brief introduction. The slides for this recording [can be found here (third part of slides)](./slides/2022_TB_Strep_Staph.pdf).
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0VagtxK4EVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+

@@ -35,4 +35,11 @@ Here is a much shorter overview from 2021 discussing TB in much less detail. The
 </p>
 
 
+This recording from 2022 covers very similar topics to the 2021 recording.The slides for this recording [can be found here (first part of slides)](./slides/2022_TB_Strep_Staph.pdf).
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-ZyyfNnBho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+
 
