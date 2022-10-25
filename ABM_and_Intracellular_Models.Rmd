@@ -33,9 +33,9 @@ This recording is from 2021 and briefly goes over some ABM and intracellular mod
 
 
 
-# References
+<!-- # References -->
 
-The papers that were discussed in the 2021 recording are [@].
+<!-- The papers that were discussed in the 2021 recording are [@]. -->
 
 
 
