@@ -1,0 +1,269 @@
+---
+title: "DSAIRM Solutions: Bacteria Model Exploration"
+date: "`r as.Date(file.mtime(knitr::current_input()))`"
+output: 
+  html_document:
+    css: dsairm_solutions_style.css
+bibliography: dsairm_references.bib
+always_allow_html: true
+---
+
+
+```{r, echo = FALSE, include = FALSE}
+#This chunk defines the global options for all chunks in the RMD file.
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+#load various variable definitions that are the same for each app
+source('../helperfunctions/startup_script.R')
+currentrmdfile = knitr::current_input() 
+#currentrmdfile = "basicbacteria_solution.Rmd" #only use for debugging
+appsettings = get_settings(currentrmdfile)
+appid = appsettings$appid #for convenience/less typing below
+```
+
+```{r, include = FALSE}
+#load the tsv file with all task information for this app
+# Result needs to be saved in object "tasktable" for rest of code to work below
+tasktable <- load_tasktable(appsettings)
+```
+
+
+If you haven't already loaded the `DSAIRM` package, it needs to be loaded. 
+
+
+```{R Load package}
+library(DSAIRM)
+```
+
+
+<!-- Start task 1 -->
+
+
+<div class = "task">
+```{r, echo=FALSE, results='asis'}
+#Start of next task
+tid = 1 #task ID
+print_text(tid,tasktable)
+```
+</div>
+
+
+We call the underlying simulation model (which you can always find in the __More Information__ section of the app) with the specified settings as follows
+
+```{r}
+sim_result <- simulate_basicbacteria_modelexploration(B = 100, I = 10, 
+                                                      g=2, Bmax=1e5, dB=1, 
+                                                      k=1e-4, r=1e-4, dI=2, 
+                                                      tstart = 0, tfinal = 300, dt = 0.1, 
+                                                      samples = 10, parmin=2, parmax=10, 
+                                                      samplepar='g',  pardist = 'lin')
+```
+
+You inspect the `sim_result` object that's being returned in different ways, using the `str` function is an easy way
+
+```{r}
+str(sim_result)
+```
+
+As you can see, instead of the time-series for each simulation, the function only records the outcomes of interest. In addition, it returns the values for the parameter that is varied in column `xvals` and a logical called `steady` which indicates if a steady state has been reached.
+
+Since we only ran 10 simulations, you can just print all values of `sim_result$dat$steady` to see that each simulation run reached a steady state after 300 days simulation time, i.e., all are `TRUE`. However, that's not convenient if you run more simulations. So we can instead just use the feature that `R` considers TRUE to equal 1 and FALSE equal 0. If we were to sum all values of `sim_result$dat$steady`, we would get a returned value equal to the total number of `TRUE` elements in the vector. However, since we want the total number of `FALSE`, we need to invert using the `!` operator which flips the `TRUE` / `FALSE` designations. To do that we invert, as follows
+
+```{r}
+TRUE
+!TRUE
+FALSE
+!FALSE
+
+
+print(sum(!sim_result$dat$steady))
+```
+
+If you don't know why this gives 0, you can do each operation by itself.
+
+Now we'll call the underlying simulation model with a shorter time
+
+```{r}
+sim_result <- simulate_basicbacteria_modelexploration(B = 100, I = 10, 
+                                                      g=2, Bmax=1e5, dB=1, 
+                                                      k=1e-4, r=1e-4, dI=2, 
+                                                      tstart = 0, tfinal = 20, dt = 0.1, 
+                                                      samples = 10, parmin=2, parmax=10, 
+                                                      samplepar='g',  pardist = 'lin')
+```
+
+and look at the number of times we didn't reach steady state.
+
+```{r}
+N_not_steady = sum(!sim_result$dat$steady)
+print(N_not_steady)
+```
+
+As a side note, while we call the number of parameter we want `samples` there is no sampling going on in the sense that there is randomness. Everything is deterministic and reproducible, so each time you run it you'll get the same answers.
+
+
+
+```{r, include = FALSE}
+outcomes <- list(N_not_steady)
+tasktable <- record_answers(tasktable, tid, outcomes)
+```
+
+<div class = "solution">
+```{r, echo=FALSE, results='asis'}
+print_solutions(tid,tasktable)
+```
+</div>
+
+
+<!-- Start Task 2-->
+
+<div class = "task">
+```{r, echo=FALSE, results='asis'}
+#Start of next task
+tid = tid + 1 #task ID
+print_text(tid,tasktable)
+```
+</div>
+
+A lot of this is open-ended exploration. 
+
+As a repeat, here are the steady states for the model again that were discussed in the _Basic Bacteria Model_ app. 
+We found there that the steady state values for $B$ and $I$ are
+
+$$
+\begin{aligned}
+B_{steady} & = \frac{d_I}{r} \\
+I_{steady} & = \frac{r B_{max} (g-d_B) - d_I g}{k r B_{max}}
+\end{aligned}
+$$
+
+So as $g$ increases, the steady state for $B$ does not change, while the steady state for $I$ does depend on $g$. You can play around with the other parameters to check that the dependence of $I$ on $g$ depends on those other parameters.
+
+From these equations, we find that with the given values, we have $B_{steady} = 2/1e-4 = 20,000$, independent of $g$. We can check that the numerics agree.
+
+
+```{r}
+sim_result <- simulate_basicbacteria_modelexploration(B = 100, I = 10, 
+                                                      g=2, Bmax=1e5, dB=1, 
+                                                      k=1e-4, r=1e-4, dI=2, 
+                                                      tstart = 0, tfinal = 300, dt = 0.1, 
+                                                      samples = 10, parmin=2, parmax=10, 
+                                                      samplepar='g',  pardist = 'lin')
+```
+
+
+```{r}
+B_steady = tail(sim_result$dat$Bsteady,1)
+print(B_steady)
+```
+
+
+```{r, include = FALSE}
+outcomes <- list(B_steady)
+tasktable <- record_answers(tasktable, tid, outcomes)
+```
+
+<div class = "solution">
+```{r, echo=FALSE, results='asis'}
+print_solutions(tid,tasktable)
+```
+</div>
+
+
+<!-- Start Task 3-->
+
+<div class = "task">
+```{r, echo=FALSE, results='asis'}
+#Start of next task
+tid = tid + 1 #task ID
+print_text(tid,tasktable)
+```
+</div>
+
+
+Here is the code to vary over parameter $d_I$.
+
+
+```{r}
+sim_result <- simulate_basicbacteria_modelexploration(B = 100, I = 10, 
+                                                      g=2, Bmax=1e5, dB=1, 
+                                                      k=1e-4, r=1e-4, dI=2, 
+                                                      tstart = 0, tfinal = 300, dt = 0.1, 
+                                                      samples = 20, parmin=1, parmax=10, 
+                                                      samplepar='dI',  pardist = 'lin')
+```
+
+
+We can plot it using the `generate_ggplot` function.
+
+```{r}
+sim_result$dat$steady <- NULL #remove this column
+plot_list = list(sim_result)
+plot_list[[1]]$plottype = "Scatterplot" #change plot type
+generate_ggplot(plot_list)
+```
+
+From the steady state equation, above, we see that if $d_I g > r B_{max} (g-d_B)$, the whole expression for $I_{steady}$ becomes negative, i.e., there is no steady state anymore. For the parameter values we have here, that happens at $d_I = 5$. At this point, the steady-state equations don't apply anymore, the only steady state that exists is one that has no immune response and some level of bacteria. We can find that steady state value for the bacteria in the absence of an immune response by looking at the bacteria equation when nothing changes anymore, i.e. $\dot B = 0$ and assuming there is no immune response, i.e., $I=0$. We get $g(1-\frac{B}{B_{max}})=d_B$. We can solve that for $B$ to find $B = \frac{B_{max}}{g}(g-d_B)$.
+
+With the numbers used here, we have
+```{r}
+Bmax = 1e5; g = 2; dB = 1;
+Bsteady = Bmax/g*(g-dB)
+print(Bsteady)
+```
+
+
+We can reason similarly for the peaks by looking at the approximation when no immune response is present. From the model equations, we see that the immune response only grows for $r B > d_I$. The maximum value that the bacteria can take in the absence of the immune response is given by the balance of growth and decline, namely $g(1-\frac{B}{B_{max}})=d_B$. That's the same as the steady state equation since, in the absence of the immune response, the bacteria increase until they reach the maximum value determined by a balance of growth and death.
+
+So $B_{steady} = B_{peak}$ in the absence of the immune response, and this is the maximum to which $B$ can grow. If we use this number, we find that $r*B = 5$, so if $d_I>5$ the immune response can never grow, and we thus have no peak for $I$ and $B$ at the level we just determined.
+
+To get at these values, we assumed that the immune response killing term $kBI$ could be ignored. As soon as the immune response is present and the variables interact, this approximation is not possible anymore and thus we can only obtain numeric solutions.
+
+
+
+```{r, include = FALSE}
+outcomes <- list(Bsteady)
+tasktable <- record_answers(tasktable, tid, outcomes)
+```
+
+<div class = "solution">
+```{r, echo=FALSE, results='asis'}
+print_solutions(tid,tasktable)
+```
+</div>
+
+
+<!-- Start Task 4-->
+
+<div class = "task">
+```{r, echo=FALSE, results='asis'}
+#Start of next task
+tid = tid + 1 #task ID
+print_text(tid,tasktable)
+```
+</div>
+
+
+This is an open-ended task with nothing to report.
+
+
+
+```{r, include = FALSE}
+outcomes <- list("")
+tasktable <- record_answers(tasktable, tid, outcomes)
+```
+
+<div class = "solution">
+```{r, echo=FALSE, results='asis'}
+print_solutions(tid,tasktable)
+```
+</div>
+
+
+
+<!-- All tasks done, generate solution sheets and sheets for students -->
+
+```{r, include = FALSE }
+# Write two versions of solution sheet, a complete one and one without a few columns (answers and some notes) for students.
+# folders complete_solution_sheets and student_solution_sheets need to exist
+write_solution_sheets(tasktable)
+```
